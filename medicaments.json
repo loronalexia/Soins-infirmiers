@@ -1,0 +1,75 @@
+[
+    {
+        "id": "m1",
+        "title": "Paracétamol",
+        "category": "medicaments",
+        "preview": "Antalgique de palier 1 et antipyrétique. Le plus prescrit en première intention.",
+        "details": {
+            "classe": "Antalgique / Antipyrétique",
+            "indications": [
+                "Douleurs légères à modérées",
+                "Fièvre"
+            ],
+            "effets_secondaires": [
+                "Rares",
+                "Toxicité hépatique en cas de surdosage"
+            ],
+            "surveillance": [
+                "Douleur (EVA)",
+                "Température",
+                "Respecter l'intervalle de 4-6h entre les prises",
+                "Dose max 4g/j"
+            ]
+        }
+    },
+    {
+        "id": "m2",
+        "title": "Furosémide (Lasix)",
+        "category": "medicaments",
+        "preview": "Diurétique de l'anse utilisé notamment dans l'insuffisance cardiaque et l'HTA.",
+        "details": {
+            "classe": "Diurétique de l'anse",
+            "indications": [
+                "Oedèmes (cardiaques, rénaux, hépatiques)",
+                "Hypertension Artérielle"
+            ],
+            "effets_secondaires": [
+                "Déshydratation",
+                "Hypokaliémie",
+                "Hyponatrémie",
+                "Hypotension"
+            ],
+            "surveillance": [
+                "Diurèse",
+                "Poids",
+                "(K+)",
+                "Tension Artérielle"
+            ]
+        }
+    },
+    {
+        "id": "m2",
+        "title": "Furosémide (Lasix)",
+        "category": "medicaments",
+        "preview": "Diurétique de l'anse utilisé notamment dans l'insuffisance cardiaque et l'HTA.",
+        "details": {
+            "classe": "Diurétique de l'anse",
+            "indications": [
+                "Oedèmes (cardiaques, rénaux, hépatiques)",
+                "Hypertension Artérielle"
+            ],
+            "effets_secondaires": [
+                "Déshydratation",
+                "Hypokaliémie",
+                "Hyponatrémie",
+                "Hypotension"
+            ],
+            "surveillance": [
+                "Diurèse",
+                "Poids",
+                "(K+)",
+                "Tension Artérielle"
+            ]
+        }
+    }
+]

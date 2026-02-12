@@ -1,0 +1,52 @@
+[
+    {
+        "id": "ec1",
+        "title": "Prise de Constantes",
+        "category": "examens-cliniques",
+        "preview": "Mesure des paramètres vitaux de base : TA, FC, FR, SatO2, Temp.",
+        "details": {
+            "description": "Surveillance de base de tout patient hospitalisé.",
+            "elements": [
+                "Pression Artérielle (PA)",
+                "Fréquence Cardiaque (FC)",
+                "Fréquence Respiratoire (FR)",
+                "SpO2",
+                "Température"
+            ],
+            "normes": [
+                "PA: 120/80 mmHg",
+                "FC: 60-100 bpm",
+                "FR: 12-20 cpm",
+                "SpO2: >95%",
+                "T°: 36.5-37.5°C"
+            ],
+            "images": [
+                {
+                    "url": "https://placehold.co/400x300/E0F2F1/00695C?text=Tension+Arterielle",
+                    "titre": "Prise de Tension"
+                },
+                {
+                    "url": "https://placehold.co/400x300/FFEBEE/C62828?text=Saturometre",
+                    "titre": "Saturomètre (SpO2)"
+                }
+            ]
+        }
+    },
+    {
+        "id": "ec2",
+        "title": "Auscultation Pulmonaire",
+        "category": "examens-cliniques",
+        "preview": "Écoute des bruits respiratoires à l'aide d'un stéthoscope.",
+        "details": {
+            "description": "Examen permettant de détecter des anomalies respiratoires.",
+            "bruits_normaux": [
+                "Murmure vésiculaire (MV)"
+            ],
+            "bruits_anormaux": [
+                "Crépitants (OAP, pneumonie)",
+                "Sibilants (Asthme)",
+                "Ronchi (Bronchite)"
+            ]
+        }
+    }
+]

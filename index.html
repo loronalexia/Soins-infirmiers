@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Études Soins Infirmiers</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="app-container">
+        <header class="main-header">
+            <div class="header-content">
+                <div class="logo">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="feather feather-activity">
+                        <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+                    </svg>
+                    <h1>Soins Infirmiers</h1>
+                </div>
+                <p class="subtitle">Plateforme de révision par Alexia Loron</p>
+                <div class="search-container">
+                    <input type="text" id="search-input" placeholder="Rechercher une fiche...">
+                </div>
+            </div>
+        </header>
+
+        <nav class="main-nav">
+            <button class="nav-item active" data-category="pathologies">Pathologies</button>
+            <button class="nav-item" data-category="medicaments">Médicaments</button>
+            <button class="nav-item" data-category="examens-paracliniques">Examens Paracliniques</button>
+            <button class="nav-item" data-category="examens-cliniques">Examens Cliniques</button>
+        </nav>
+
+        <main id="content-area" class="content-area">
+            <!-- Dynamic content will be loaded here -->
+            <div class="empty-state">
+                <p>Sélectionnez une catégorie pour commmencer vos révisions.</p>
+            </div>
+        </main>
+    </div>
+
+    <!-- Modal for details -->
+    <div id="modal" class="modal hidden">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div id="modal-body"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

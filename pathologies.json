@@ -1,0 +1,95 @@
+[
+    {
+        "id": "p1",
+        "title": "Insuffisance Cardiaque",
+        "category": "pathologies",
+        "preview": "Incapacité du cœur à pomper suffisamment de sang pour répondre aux besoins métaboliques de l'organisme.",
+        "details": {
+            "definition": "État pathologique où le cœur ne peut plus assurer un débit sanguin suffisant pour satisfaire les besoins de l'organisme.",
+            "symptomes": [
+                "Essoufflement (dyspnée)",
+                "Fatigue",
+                "Oedèmes des membres inférieurs",
+                "Tachycardie"
+            ],
+            "traitements": [
+                "Diurétiques",
+                "Bêta-bloquants",
+                "IEC",
+                "Règles hygiéno-diététiques (sel, eau)"
+            ],
+            "illustration_coeur": {
+                "type": "image",
+                "url": "https://placehold.co/600x300/FFE5EC/D65D7A?text=Insuffisance+Cardiaque",
+                "title": "Schéma de l'Insuffisance Cardiaque"
+            },
+            "surveillance": [
+                "Poids",
+                "Tension artérielle",
+                "Fréquence cardiaque",
+                "Oedèmes"
+            ]
+        }
+    },
+    {
+        "id": "p2",
+        "title": "Diabète de Type 2",
+        "category": "pathologies",
+        "preview": "Maladie chronique caractérisée par une hyperglycémie liée à une insulinorésistance.",
+        "details": {
+            "definition": "Trouble métabolique caractérisé par une hyperglycémie chronique résultant d'une résistance à l'insuline et/ou d'un défaut de sécrétion.",
+            "symptomes": [
+                "Polyurie",
+                "Polydipsie",
+                "Fatigue",
+                "Vision floue",
+                "Cicatrisation lente"
+            ],
+            "traitements": [
+                "Antidiabétiques oraux",
+                "Insulinothérapie (parfois)",
+                "Activité physique",
+                "Régime alimentaire"
+            ],
+            "surveillance": [
+                "Glycémie capillaire",
+                "HbA1c",
+                "Poids",
+                "Pied diabétique"
+            ]
+        }
+    },
+    {
+        "id": "p3",
+        "title": "Pneumonie",
+        "category": "pathologies",
+        "preview": "Infection aiguë du parenchyme pulmonaire, le plus souvent d'origine bactérienne.",
+        "details": {
+            "definition": "Infection des poumons (alvéoles) provoquée par une bactérie, un virus ou un champignon.",
+            "symptomes": [
+                "Toux productive",
+                "Fièvre élevée",
+                "Douleur thoracique",
+                "Dyspnée"
+            ],
+            "traitements": [
+                "Antibiotiques",
+                "Antipyrétiques",
+                "Oxygénothérapie",
+                "Hydratation"
+            ],
+            "surveillance": [
+                "Saturation O2",
+                "Fréquence respiratoire",
+                "Température",
+                "Expectoration"
+            ]
+        },
+        "images": [
+            {
+                "url": "./pneumoniaxray.webp",
+                "title": "Pneumonie"
+            }
+        ]
+    }
+]

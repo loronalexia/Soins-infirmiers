@@ -1,0 +1,39 @@
+[
+    {
+        "id": "ep1",
+        "title": "NFS (Numération Formule Sanguine)",
+        "category": "examens-paracliniques",
+        "preview": "Analyse quantitative et qualitative des éléments figurés du sang (hématies, leucocytes, plaquettes).",
+        "details": {
+            "but": "Évaluer l'état général, rechercher une infection, une anémie ou un trouble de la coagulation.",
+            "normes": [
+                "Hémoglobine: 12-16 g/dL (F), 13-17 g/dL (H)",
+                "Leucocytes: 4-10 G/L",
+                "Plaquettes: 150-400 G/L"
+            ],
+            "interpretations": [
+                "Anémie (Hb basse)",
+                "Hyperleucocytose (Infection)",
+                "Thrombopénie (risque saignement)"
+            ]
+        }
+    },
+    {
+        "id": "ep2",
+        "title": "Ionogramme Sanguin",
+        "category": "examens-paracliniques",
+        "preview": "Dosage des principaux électrolytes du sang (Sodium, Potassium, Chlore, Bicarbs).",
+        "details": {
+            "but": "Surveiller l'équilibre hydro-électrolytique, la fonction rénale.",
+            "normes": [
+                "Sodium (Na+): 135-145 mmol/L",
+                "Potassium (K+): 3.5-5.0 mmol/L",
+                "Chlore (Cl-): 98-106 mmol/L"
+            ],
+            "interpretations": [
+                "Hyponatrémie / Hypernatrémie",
+                "Hypokaliémie / Hyperkaliémie (Risque cardiaque!)"
+            ]
+        }
+    }
+]
