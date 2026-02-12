@@ -13,6 +13,11 @@
                 "Oedèmes des membres inférieurs",
                 "Tachycardie"
             ],
+            "examens_diagnostiques": [
+                "Échocardiographie",
+                "Dosage BNP / NT-proBNP",
+                "Radiographie pulmonaire"
+            ],
             "traitements": [
                 "Diurétiques",
                 "Bêta-bloquants",
@@ -47,6 +52,11 @@
                 "Vision floue",
                 "Cicatrisation lente"
             ],
+            "examens_diagnostiques": [
+                "Glycémie à jeun",
+                "HbA1c (Hémoglobine glyquée)",
+                "Hyperglycémie provoquée orale (HGPO)"
+            ],
             "traitements": [
                 "Antidiabétiques oraux",
                 "Insulinothérapie (parfois)",
@@ -74,6 +84,11 @@
                 "Fièvre élevée",
                 "Douleur thoracique",
                 "Dyspnée"
+            ],
+            "examens_diagnostiques": [
+                "Radiographie pulmonaire",
+                "Formule sanguine (FSC)",
+                "Culture des expectorations"
             ],
             "traitements": [
                 "Antibiotiques",
@@ -127,6 +142,11 @@
                 "Troubles visuels",
                 "Céphalées intenses (si hémorragique)"
             ],
+            "examens_diagnostiques": [
+                "Scanner (TDM) Cérébral",
+                "IRM cérébrale",
+                "Échographie Doppler cervicale"
+            ],
             "traitements": [
                 "Thrombolyse (si \u003c 4.5h)",
                 "Anticoagulants / Antiplaquettaires",
@@ -154,6 +174,11 @@
                 "Irradiation bras gauche/mâchoire",
                 "Disparition au repos (\u003c 15 min)",
                 "Soulagée par Nitroglycérine"
+            ],
+            "examens_diagnostiques": [
+                "ECG de repos",
+                "Épreuve d'effort (tapis)",
+                "Coronarographie (si indiqué)"
             ],
             "traitements": [
                 "Modification habitudes de vie",
@@ -183,6 +208,11 @@
                 "Non soulagée par repos/Nitro",
                 "Angoisse"
             ],
+            "examens_diagnostiques": [
+                "ECG en série",
+                "Dosage des Troponines",
+                "Coronarographie"
+            ],
             "traitements": [
                 "Hospitalisation",
                 "Oxygène si besoin",
@@ -211,6 +241,11 @@
                 "Diaphorèse (sueurs froides)",
                 "Nausées / Vomissements"
             ],
+            "examens_diagnostiques": [
+                "ECG (Élévation ST)",
+                "Troponines / CK-MB",
+                "Coronarographie d'urgence"
+            ],
             "traitements": [
                 "MONA (Morphine, Oxygène, Nitroglycérine, Aspirine)",
                 "Thrombolyse ou Angioplastie (PCI)",
@@ -238,6 +273,11 @@
                 "Angine à l'effort",
                 "Essoufflement",
                 "Fatigue"
+            ],
+            "examens_diagnostiques": [
+                "Bilan lipidique",
+                "Test à l'effort",
+                "Scintigraphie myocardique"
             ],
             "traitements": [
                 "Contrôle des facteurs de risque (HTA, diabète, tabac)",
@@ -268,6 +308,11 @@
                 "Dyspnée",
                 "Parfois asymptomatique"
             ],
+            "examens_diagnostiques": [
+                "ECG (fibro-auriculaire)",
+                "Holter cardiaque",
+                "Échographie cardiaque"
+            ],
             "traitements": [
                 "Contrôle de la fréquence (Bêta-bloquants, inhibiteurs calciques)",
                 "Rétablissement du rythme (Cardioversion)",
@@ -294,6 +339,11 @@
                 "Toux chronique productive",
                 "Expectoration matinale",
                 "Fatigue"
+            ],
+            "examens_diagnostiques": [
+                "Spirométrie (VEMS/CVF)",
+                "Gazométrie artérielle",
+                "Radiographie pulmonaire"
             ],
             "traitements": [
                 "Arrêt tabagique (Essentiel)",
@@ -324,6 +374,11 @@
                 "Angiomes stellaires",
                 "Encéphalopathie hépatique"
             ],
+            "examens_diagnostiques": [
+                "Biopsie hépatique",
+                "Bilan hépatique (ASAT/ALAT)",
+                "Échographie abdominale"
+            ],
             "traitements": [
                 "Traiter la cause (Alcool, Virus B/C)",
                 "Régime hyposodé",
@@ -351,6 +406,10 @@
                 "Prise de poids rapide",
                 "Dyspnée (gêne diaphragmatique)",
                 "Matité à la percussion"
+            ],
+            "examens_diagnostiques": [
+                "Échographie abdominale",
+                "Ponction d'ascite (analyse liquide)"
             ],
             "traitements": [
                 "Restriction sodée (\u003c 2g/j)",
@@ -380,6 +439,11 @@
                 "Fièvre",
                 "Défense abdominale"
             ],
+            "examens_diagnostiques": [
+                "Dosage Lipase / Amylase",
+                "Scanner abdominal",
+                "Échographie abdominale"
+            ],
             "traitements": [
                 "Mise au repos digestif (NPO)",
                 "Hydratation IV vigoureuse",
@@ -408,6 +472,11 @@
                 "Confusion / Perte de mémoire",
                 "Anomalies pupillaires"
             ],
+            "examens_diagnostiques": [
+                "Scanner (TDM) Cérébral (urgence)",
+                "IRM cérébrale (lésions)",
+                "Échelle de Glasgow"
+            ],
             "traitements": [
                 "Repos strict et surveillance",
                 "Analgésiques (éviter sédatifs)",
@@ -435,6 +504,11 @@
                 "Désorientation (temps/espace)",
                 "Troubles du langage (Aphasie)",
                 "Changements de comportement"
+            ],
+            "examens_diagnostiques": [
+                "Tests cognitifs (MMSE/MoCA)",
+                "IRM cérébrale (atrophie)",
+                "Bilan sanguin (éliminer autres causes)"
             ],
             "traitements": [
                 "Inhibiteurs de l'acétylcholinestérase",
@@ -470,6 +544,11 @@
                 "Hallucinations / Agitation",
                 "Inversion du cycle éveil-sommeil"
             ],
+            "examens_diagnostiques": [
+                "CAM (Confusion Assessment Method)",
+                "Bilan métabolique/infectieux (Urgence)",
+                "Revue médicamenteuse"
+            ],
             "traitements": [
                 "Traiter la cause sous-jacente",
                 "Réorientation constante",
@@ -497,6 +576,11 @@
                 "Bradykinésie (lenteur)",
                 "Rigidité musculaire",
                 "Instabilité posturale"
+            ],
+            "examens_diagnostiques": [
+                "Examen clinique (motricité)",
+                "Réponse à la Lévodopa",
+                "IRM cérébrale (éliminer autres causes)"
             ],
             "traitements": [
                 "Lévodopa (horaires stricts)",
@@ -526,6 +610,11 @@
                 "Troubles visuels (névrite optique)",
                 "Troubles spastiques"
             ],
+            "examens_diagnostiques": [
+                "IRM cérébrale et médullaire (plaques)",
+                "Ponction lombaire (bandes oligoclonales)",
+                "Potentiels évoqués"
+            ],
             "traitements": [
                 "Corticostéroïdes (poussées)",
                 "Traitements de fond (immunomodulateurs)",
@@ -553,6 +642,11 @@
                 "Amyotrophie / Fasciculations",
                 "Troubles de la déglutition",
                 "Détresse respiratoire"
+            ],
+            "examens_diagnostiques": [
+                "Électromyogramme (EMG)",
+                "IRM (éliminer autres causes)",
+                "Tests de fonction respiratoire"
             ],
             "traitements": [
                 "Riluzole (ralentissement)",
@@ -582,6 +676,11 @@
                 "Photophobie",
                 "Nausées / Vomissements"
             ],
+            "examens_diagnostiques": [
+                "Ponction lombaire (LCR)",
+                "Hémocultures",
+                "Signes de Kernig et Brudzinski"
+            ],
             "traitements": [
                 "Antibiotiques IV (en urgence)",
                 "Antiviraux / Corticoïdes",
@@ -609,6 +708,11 @@
                 "Vision tubulaire (stade avancé)",
                 "Céphalées / Douleur oculaire (si aigu)",
                 "Vision de halos colorés"
+            ],
+            "examens_diagnostiques": [
+                "Tonométrie (pression intraoculaire)",
+                "Fond d'oeil (nerf optique)",
+                "Pachymétrie (cornée)"
             ],
             "traitements": [
                 "Collyres hypotonisants (à vie)",
@@ -638,6 +742,11 @@
                 "Altération des couleurs",
                 "Baisse de l'acuité visuelle nocturne"
             ],
+            "examens_diagnostiques": [
+                "Examen à la lampe à fente",
+                "Mesure de l'acuité visuelle",
+                "Fond d'oeil"
+            ],
             "traitements": [
                 "Correction optique (début)",
                 "Chirurgie (phacoémulsification)",
@@ -665,6 +774,11 @@
                 "Incompréhension en milieu bruyant",
                 "Augmentation du volume (TV/Radio)",
                 "Acouphènes associés"
+            ],
+            "examens_diagnostiques": [
+                "Audiométrie tonale et vocale",
+                "Otoscopie",
+                "Tympanométrie"
             ],
             "traitements": [
                 "Appareillage auditif",
@@ -694,6 +808,10 @@
                 "Diminution de l'audition",
                 "Écoulement (otorrhée)"
             ],
+            "examens_diagnostiques": [
+                "Otoscopie (tympan rouge/bombé)",
+                "Tympanométrie"
+            ],
             "traitements": [
                 "Antibiotiques (systémiques ou gouttes)",
                 "Antalgiques / Antipyrétiques",
@@ -721,6 +839,11 @@
                 "Hémoptysie (crachats de sang)",
                 "Douleur thoracique",
                 "Perte de poids inexpliquée / Fatigue"
+            ],
+            "examens_diagnostiques": [
+                "Radiographie pulmonaire",
+                "Scanner (TDM) thoracique",
+                "Biopsie bronchique (Bronchoscopie)"
             ],
             "traitements": [
                 "Chirurgie (exérèse)",
@@ -750,6 +873,11 @@
                 "Expectoration mousseuse et rosée",
                 "Angoisse majeure et cyanose"
             ],
+            "examens_diagnostiques": [
+                "Radiographie pulmonaire (ailes de papillon)",
+                "Gazométrie artérielle",
+                "BNP"
+            ],
             "traitements": [
                 "Position assise (jambes pendantes)",
                 "Nitroglycérine (Vaso-dilatateur)",
@@ -777,6 +905,11 @@
                 "Toux sèche (souvent nocturne)",
                 "Oppression thoracique",
                 "Dyspnée épisodique"
+            ],
+            "examens_diagnostiques": [
+                "Spirométrie (VEMS)",
+                "Tests d'allergie",
+                "Débitmétrie de pointe (Peak Flow)"
             ],
             "traitements": [
                 "Bronchodilatateurs (Salbutamol)",
@@ -806,6 +939,11 @@
                 "Tirage (utilisation muscles accessoires)",
                 "Difficultés alimentaires"
             ],
+            "examens_diagnostiques": [
+                "Recherche virale (VRS)",
+                "Saturation O2",
+                "Radiographie (si doute)"
+            ],
             "traitements": [
                 "Désobstruction Rhino-Pharyngée (DRP)",
                 "Fractionnement des repas",
@@ -833,6 +971,11 @@
                 "Céphalées (nuque, matin)",
                 "Vertiges / Acouphènes",
                 "Palpitations / Dyspnée d'effort"
+            ],
+            "examens_diagnostiques": [
+                "MAPA (Holter tensionnel)",
+                "Mesures répétées au repos",
+                "Bilan de retentissement (Créat, ECG)"
             ],
             "traitements": [
                 "Hygiène de vie (DASH, baisse du sel, sport)",
@@ -880,6 +1023,11 @@
                 "Fatigue inexpliquée",
                 "Parfois asymptomatique (Diabétiques)"
             ],
+            "examens_diagnostiques": [
+                "Bilan lipidique",
+                "ECG d'effort",
+                "Coronarographie"
+            ],
             "traitements": [
                 "Antiplaquettaires (Aspirine)",
                 "Statines (Antihyperlipidémiants)",
@@ -907,6 +1055,11 @@
                 "Peau froide, pâle ou cyanosée",
                 "Diminution/absence des pouls pédieux",
                 "Cicatrisation lente / Gangrène (stade critique)"
+            ],
+            "examens_diagnostiques": [
+                "Indice Tibial-Brachial (ITB)",
+                "Échographie Doppler artérielle",
+                "Angiographie"
             ],
             "traitements": [
                 "Activité physique supervisée (marche)",
@@ -936,6 +1089,10 @@
                 "Dermatite ocre (peau brune/rouge)",
                 "Ulcère péri-malléolaire (plaie atone, humide)"
             ],
+            "examens_diagnostiques": [
+                "Échographie Doppler veineuse",
+                "Examen clinique (signe du godet)"
+            ],
             "traitements": [
                 "Compression veineuse (bas ou bandages)",
                 "Élévation des membres au repos",
@@ -963,6 +1120,10 @@
                 "Démangeaisons (prurit)",
                 "Fatigue des jambes en fin de journée"
             ],
+            "examens_diagnostiques": [
+                "Échographie Doppler veineuse (reflux)",
+                "Test de Trendelenburg"
+            ],
             "traitements": [
                 "Bas de compression",
                 "Sclérothérapie",
@@ -989,6 +1150,11 @@
                 "Oedème du membre avec augmentation de la circonférence",
                 "Chaleur et rougeur locale",
                 "Signe de Homans positif (douleur à la dorsiflexion)"
+            ],
+            "examens_diagnostiques": [
+                "Échographie Doppler veineuse",
+                "D-Dimères (produits de dégradation fibrine)",
+                "Phlébographie (rare)"
             ],
             "traitements": [
                 "Anticoagulants (Héparine puis AVK ou AOD)",
@@ -1060,6 +1226,11 @@
                 "Anémie inflammatoire",
                 "Déshydratation et perte protéique"
             ],
+            "examens_diagnostiques": [
+                "Évaluation clinique (Stadification)",
+                "Prélèvement de plaie (culture)",
+                "Bilan nutritionnel (Albumine)"
+            ],
             "interventions": [
                 "Mobilisation toutes les 2 heures (changement de position)",
                 "Utilisation de surfaces thérapeutiques (matelas à air)",
@@ -1088,6 +1259,10 @@
                 "Impuissance fonctionnelle partielle",
                 "Sensibilité à la palpation"
             ],
+            "examens_diagnostiques": [
+                "Radiographie standard (face/profil)",
+                "Scanner (si doute)"
+            ],
             "traitements": [
                 "Immobilisation (Plâtre, attelle ou orthèse)",
                 "Repos et élévation du membre",
@@ -1115,6 +1290,11 @@
                 "Douleur atroce",
                 "Oedème massif et rapide",
                 "Crépitation osseuse possible"
+            ],
+            "examens_diagnostiques": [
+                "Radiographie (pré et post réduction)",
+                "Angiographie (si atteinte vasculaire)",
+                "Scanner (reconstruction 3D)"
             ],
             "traitements": [
                 "Réduction fermée (traction) ou ouverte (chirurgie)",
@@ -1150,6 +1330,11 @@
                 "Incapacité de porter du poids",
                 "Ecchymose trochantérienne"
             ],
+            "examens_diagnostiques": [
+                "Radiographie bassin/hanche",
+                "IRM (si radio normale mais douleur persistance)",
+                "Bilan pré-opératoire (ECG, Sang)"
+            ],
             "traitements": [
                 "Réduction et fixation (Vis gamma, plaques)",
                 "Hémi-arthroplastie ou Prothèse Totale de Hanche (PTH)",
@@ -1184,6 +1369,10 @@
                 "Diminution de l'amplitude articulaire",
                 "Boiterie à la marche"
             ],
+            "examens_diagnostiques": [
+                "Radiographie du bassin et hanche",
+                "IRM (si doute)"
+            ],
             "traitements": [
                 "Perte de poids si nécessaire",
                 "Physiothérapie (renforcement musculaire)",
@@ -1212,6 +1401,11 @@
                 "Déformation en varus (genoux arqués) ou valgus",
                 "Sensation de dérobement ou craquement"
             ],
+            "examens_diagnostiques": [
+                "Radiographie en charge (debout)",
+                "Analyse du liquide synovial (ponction)",
+                "IRM (ménisques/ligaments)"
+            ],
             "traitements": [
                 "Exercices d'impact faible (natation, vélo)",
                 "Injections intra-articulaires (Cortisone, Viscosuppléance)",
@@ -1239,6 +1433,11 @@
                 "Système TNM : T (Taille tumeur), N (Nodes/Ganglions), M (Métastases)",
                 "Stades : I (Localisé) à IV (Métastatique)",
                 "Grade : Degré de différenciation cellulaire (G1 à G4)"
+            ],
+            "examens_diagnostiques": [
+                "Biopsie (Preuve histologique)",
+                "Marqueurs tumoraux (PSA, CEA, CA-125)",
+                "Imagerie (TEP-Scan, TDM, IRM)"
             ],
             "traitements": [
                 "Chimiothérapie : Administration de substances chimiques pour détruire les cellules à croissance rapide",
@@ -1289,6 +1488,11 @@
                 "Extrémités froides et cyanosées",
                 "Oligurie"
             ],
+            "examens_diagnostiques": [
+                "ECG (ischémie/arythmie)",
+                "Échocardiographie (FEVG)",
+                "Lactates (hypoperfusion)"
+            ],
             "surveillance": [
                 "Paramètres hémodynamiques (TA, FC, SpO2)",
                 "Bilan In/Out strict",
@@ -1312,6 +1516,11 @@
                 "Soif intense",
                 "Pâleur et peau moite",
                 "Confusion ou agitation"
+            ],
+            "examens_diagnostiques": [
+                "Gazométrie (acidose lactique)",
+                "Hémoglobine / Hématocrite",
+                "Ionogramme / Créatinine"
             ],
             "surveillance": [
                 "Fréquence cardiaque et tension artérielle",
@@ -1337,6 +1546,11 @@
                 "Confusion (encéphalopathie septique)",
                 "Leucocytose ou leucopénie"
             ],
+            "examens_diagnostiques": [
+                "Hémocultures x2",
+                "Lactates (Sepsis)",
+                "Bilan infectieux complet"
+            ],
             "surveillance": [
                 "Température et signes d'infection",
                 "Lactates sériques (reflet de l'hypoxie tissulaire)",
@@ -1359,6 +1573,10 @@
                 "Angioedème (gonflement du visage/gorge)",
                 "Sifflements respiratoires (wheezing) et dyspnée",
                 "Tachycardie et chute brutale de tension"
+            ],
+            "examens_diagnostiques": [
+                "Clinique (diagnostic immédiat)",
+                "Tryptase sérique (a posteriori)"
             ],
             "surveillance": [
                 "Liberté des voies aériennes (risque d'obstruction)",
@@ -1383,6 +1601,11 @@
                 "Peau chaude et sèche (en dessous de la lésion)",
                 "Déficit neurologique"
             ],
+            "examens_diagnostiques": [
+                "IRM rachidienne (lésion)",
+                "Scanner rachidien",
+                "Examen neurologique complet"
+            ],
             "surveillance": [
                 "Rythme cardiaque (risque d'asystolie)",
                 "Température corporelle (poïkilothermie)",
@@ -1406,6 +1629,11 @@
                 "Bruits du coeur assourdis (si tamponnade)",
                 "Hypotension et dyspnée aiguë"
             ],
+            "examens_diagnostiques": [
+                "Échographie FAST (Tamponnade)",
+                "Radiographie pulmonaire (Pneumothorax)",
+                "Angio-Scanner (Embolie)"
+            ],
             "surveillance": [
                 "Soulager la cause (Drainage, Péricardiocentèse, Thrombolyse)",
                 "SpO2 et monitoring cardiaque",
@@ -1426,6 +1654,10 @@
                 "Exsudat important",
                 "Peau périlésionnelle pigmentée (ocre)",
                 "Oedème important"
+            ],
+            "examens_diagnostiques": [
+                "Index de Pression Systolique (IPS > 0.8)",
+                "Échographie Doppler veineuse"
             ],
             "traitements": [
                 "Compression veineuse (Gold standard)",
@@ -1454,6 +1686,11 @@
                 "Très douloureux (surtout la nuit)",
                 "Peau froide, atrophique et sans poils"
             ],
+            "examens_diagnostiques": [
+                "Index de Pression Systolique (IPS < 0.9)",
+                "Angiographie",
+                "Mesure de la TcPO2"
+            ],
             "traitements": [
                 "Revascularisation (chirurgie)",
                 "Protection locale (pas de compression !)",
@@ -1480,6 +1717,11 @@
                 "Douleur de repos (stade avancé)",
                 "Diminution ou absence des pouls pédieux",
                 "Temps de remplissage capillaire allongé"
+            ],
+            "examens_diagnostiques": [
+                "Indice de pression cheville-bras (IPCB)",
+                "Échographie Doppler artérielle",
+                "Angiographie"
             ],
             "surveillance": [
                 "Indice de pression cheville-bras (IPCB)",
@@ -1509,6 +1751,11 @@
                 "Diarrhée profuse (si C. Difficile)",
                 "Purulence des plaies chirurgicales"
             ],
+            "examens_diagnostiques": [
+                "Hémocultures",
+                "Culture de plaies / Urines",
+                "Recherche de toxines C. Difficile"
+            ],
             "surveillance": [
                 "Hygiène des mains (5 moments)",
                 "Précautions additionnelles (contact, gouttelettes, lien aérien)",
@@ -1530,6 +1777,11 @@
                 "Asthénie (Fatigue intense)",
                 "Sudations",
                 "Myalgies (Douleurs musculaires)"
+            ],
+            "examens_diagnostiques": [
+                "Bilan sanguin (FSC, CRP)",
+                "Hémocultures",
+                "Prélèvements locaux (gorge, urine, selles)"
             ],
             "traitements": [
                 "Antibiotiques, Antiviraux ou Antifongiques",
@@ -1558,6 +1810,11 @@
                 "Phase asymptomatique : Virus actif mais peu de symptômes",
                 "SIDA : Stade avancé avec infections opportunistes et cancers"
             ],
+            "examens_diagnostiques": [
+                "Sérologie VIH (Dépistage)",
+                "Charge virale (ARN VIH)",
+                "Numération des CD4"
+            ],
             "traitements": [
                 "Trithérapie (Traitement antirétroviral - TAR)",
                 "Prophylaxie pré-exposition (PrEP)",
@@ -1580,10 +1837,15 @@
         "details": {
             "definition": "Mutation du gène CFTR entraînant une production de mucus anormalement épais et visqueux.",
             "symptomes": [
-                "Toux chronique et infections respiratoires fréquentes",
-                "Insuffisance pancréatique (Malabsorption)",
-                "Retard de croissance",
-                "Sueur anormalement salée"
+                "Toux",
+                "Infections respiratoires récurrentes",
+                "Malabsorption des graisses",
+                "Retard de croissance"
+            ],
+            "examens_diagnostiques": [
+                "Test à la sueur (Chlorure)",
+                "Test génétique (CFTR)",
+                "Élastase fécale"
             ],
             "traitements": [
                 "Physiothérapie respiratoire quotidienne",
@@ -1608,6 +1870,11 @@
         "details": {
             "definition": "Ralentissement significatif de la croissance staturale ou pondérale par rapport aux normes d'âge et de sexe.",
             "causes": "Nutritionnelle, endocrinienne, psychologique ou organique (maladie chronique).",
+            "examens_diagnostiques": [
+                "Courbe de croissance (OMS)",
+                "Âge osseux (radiographie)",
+                "Bilan endocrinien (TSH, hormone de croissance)"
+            ],
             "surveillance_infirmiere": [
                 "Mesures anthropométriques précises (Poids, Taille, PC)",
                 "Positionnement sur les courbes de l'OMS",
@@ -1634,6 +1901,11 @@
                 "Perte de poids inexpliquée",
                 "Fatigue intense",
                 "Risque élevé d'acidocétose"
+            ],
+            "examens_diagnostiques": [
+                "Glycémie à jeun / aléatoire",
+                "HbA1c",
+                "Anticorps anti-îlots (GAD, IA2)"
             ],
             "traitements": [
                 "Insulinothérapie à vie (SC ou pompe)",
@@ -1662,6 +1934,9 @@
                 "Faim intense",
                 "Irritabilité"
             ],
+            "examens_diagnostiques": [
+                "Glycémie capillaire (< 4 mmol/L)"
+            ],
             "traitement_regle_du_15": [
                 "Ingérer 15g de glucides simples (ex: 3-4 comprimés de glucose, 150ml jus)",
                 "Attendre 15 min et revérifier la glycémie",
@@ -1684,6 +1959,11 @@
                 "Haleine fruitée (acétosique)",
                 "Douleurs abdominales, nausées, vomissements",
                 "Polyurie massive puis déshydratation"
+            ],
+            "examens_diagnostiques": [
+                "Gazométrie artérielle (pH < 7.30)",
+                "Glycémie (> 14 mmol/L)",
+                "Recherche de corps cétoniques (Sang/Urine)"
             ],
             "criteres_bio": "Glycémie \u003e 14 mmol/L, pH \u003c 7.30, présence de corps cétoniques.",
             "traitements_urgence": [
@@ -1708,6 +1988,11 @@
                 "Troubles neurologiques (torpeur, coma)",
                 "Absence d'haleine fruitée"
             ],
+            "examens_diagnostiques": [
+                "Glycémie (> 34 mmol/L)",
+                "Osmolarité sérique (> 320 mOsm/kg)",
+                "Bilan rénal et électrolytique"
+            ],
             "surveillance": [
                 "Réhydratation IV prudente (risque d'oedème cérébral)",
                 "Surveillance électrolytique",
@@ -1728,6 +2013,12 @@
                 "Hyperglycémie à jeun",
                 "Triglycérides élevés / Cholestérol HDL bas"
             ],
+            "examens_diagnostiques": [
+                "Tour de taille",
+                "Glycémie à jeun",
+                "Bilan lipidique",
+                "Tension artérielle"
+            ],
             "risques": "Multiplie par 2 le risque de maladie cardiovasculaire et par 5 le risque de Diabète Type 2.",
             "interventions": [
                 "Modification des habitudes de vie (Alimentation, Sport)",
@@ -1744,6 +2035,11 @@
         "preview": "Accumulation excessive de graisse corporelle nuisible pour la santé.",
         "details": {
             "definition": "Indice de Masse Corporelle (IMC) supérieur ou égal à 30 kg/m².",
+            "examens_diagnostiques": [
+                "Calcul de l'IMC (Poids/Taille²)",
+                "Tour de taille",
+                "Bilan métabolique"
+            ],
             "complications": [
                 "Diabète Type 2 et Syndrome métabolique",
                 "Apnée du sommeil",
@@ -1772,6 +2068,11 @@
                 "Prise de poids malgré un appétit diminué",
                 "Peau sèche et constipation"
             ],
+            "examens_diagnostiques": [
+                "TSH (élevée)",
+                "T4 libre (basse)",
+                "Anticorps antithyroïdiens"
+            ],
             "traitements": [
                 "Hormonothérapie substitutive (Lévothyroxine/Levothroid)",
                 "Administration le matin à jeun (30-60 min avant repas)"
@@ -1796,6 +2097,11 @@
                 "Tachycardie, palpitations, tremblements",
                 "Thermophobie (intolérance à la chaleur)",
                 "Exophtalmie (parfois)"
+            ],
+            "examens_diagnostiques": [
+                "TSH (basse)",
+                "T3 et T4 libres (élevées)",
+                "Scintigraphie thyroïdienne"
             ],
             "traitements": [
                 "Antithyroïdiens de synthèse (Tapazole)",
@@ -1829,6 +2135,11 @@
                 "Limitée à la muqueuse intestinale",
                 "Diarrhée sanglante fréquente"
             ],
+            "examens_diagnostiques": [
+                "Coloscopie avec biopsie",
+                "Calprotectine fécale",
+                "Scanner/IRM entéro"
+            ],
             "complications": [
                 "Malnutrition et anémie",
                 "Obstruction intestinale",
@@ -1857,6 +2168,11 @@
                 "Vomissements (fécaloïdes si occlusion basse)",
                 "Distension abdominale",
                 "Arrêt des gaz et des matières"
+            ],
+            "examens_diagnostiques": [
+                "Radiographie abdominale (ASP)",
+                "Scanner abdominal",
+                "Bilan électrolytique"
             ],
             "surveillance_infirmiere": [
                 "Auscultation des bruits intestinaux (absents ou métalliques)",
@@ -1890,6 +2206,11 @@
                 "Douleurs abdominales vagues",
                 "Anémie inexpliquée"
             ],
+            "examens_diagnostiques": [
+                "Coloscopie avec biopsie",
+                "Recherche de sang occulte (RSOS)",
+                "Marqueur ACE"
+            ],
             "depistage": "Recherche de sang occulte dans les selles (RSOS) tous les 2 ans.",
             "traitements": [
                 "Résection chirurgicale",
@@ -1910,6 +2231,11 @@
                 "Nausées et vomissements",
                 "Fièvre et frissons",
                 "Signe de Murphy positif (douleur à l'inspiration lors de la palpation sous le foie)"
+            ],
+            "examens_diagnostiques": [
+                "Échographie abdominale (Calculs)",
+                "Bilan hépatique",
+                "Formule sanguine (Leucocytose)"
             ],
             "diagnostic": "Échographie abdominale (calculs, paroi épaissie).",
             "traitements": [
@@ -1932,6 +2258,11 @@
                 "Ventre de bois (rigidité musculaire involontaire)",
                 "Vomissements et fièvre élevée",
                 "Signes de choc (tachycardie, hypotension)"
+            ],
+            "examens_diagnostiques": [
+                "Scanner abdominal",
+                "Radiographie (Pneumopéritoine)",
+                "Formule sanguine (Leucocytose élevée)"
             ],
             "surveillance": [
                 "Signes vitaux (détection choc septique)",
@@ -1963,6 +2294,11 @@
                 "DCA (Culture d'urine)",
                 "Échographie (si récurrent ou grave)"
             ],
+            "examens_diagnostiques": [
+                "Bandelette urinaire",
+                "Culture d'urine (DCA)",
+                "Bilan sanguin (si pyélonéphrite)"
+            ],
             "traitements": [
                 "Antibiothérapie",
                 "Augmenter l'apport hydrique",
@@ -1987,6 +2323,11 @@
                 "Oedèmes",
                 "Confusion (accumulation de toxines)"
             ],
+            "examens_diagnostiques": [
+                "Créatinine / Urée élevées",
+                "Électrolytes (K+)",
+                "Échographie rénale"
+            ],
             "surveillance": [
                 "Bilan In/Out strict",
                 "Créatinine et Urée sanguine",
@@ -2010,6 +2351,11 @@
                 "Surcharge volémique (OAP)",
                 "Ostéodystrophie rénale (trouble Ca2+/PO4)"
             ],
+            "examens_diagnostiques": [
+                "DFG (Débit de Filtration Glomérulaire)",
+                "Albuminurie / Protéinurie",
+                "Bilan phosphocalcique"
+            ],
             "traitements": [
                 "Régime pauvre en K+ et en protéines",
                 "Contrôle TA et Glycémie",
@@ -2030,6 +2376,11 @@
                 "Urgence: Envie pressante irrépressible",
                 "Trop-plein (Regorgement): Vidange incomplète (vessie pleine)",
                 "Fonctionnelle: Difficulté à atteindre les toilettes"
+            ],
+            "examens_diagnostiques": [
+                "Calendrier mictionnel",
+                "Analyse d'urine (éliminer infection)",
+                "Urodynamique (spécialisé)"
             ],
             "interventions": [
                 "Exercices de Kegel (renforcement plancher pelvien)",
@@ -2052,6 +2403,11 @@
                 "Lésions cutanées (ulcères, verrues, vésicules)",
                 "Douleurs pelviennes",
                 "Asymptomatique (très fréquent)"
+            ],
+            "examens_diagnostiques": [
+                "PCR (Chlamydia/Gonorrhée)",
+                "Sérologie (Syphilis, VIH, Hépatites)",
+                "Examen microscopique (Trichomonas)"
             ],
             "dépistage": [
                 "Prélèvements locaux (écouvillon)",
@@ -2081,6 +2437,11 @@
                 "Saignements irréguliers",
                 "Dyspareunie (douleur lors des rapports)"
             ],
+            "examens_diagnostiques": [
+                "Échographie pelvienne",
+                "Laparoscopie (Endométriose)",
+                "Hystéroscopie"
+            ],
             "traitements": [
                 "Contraceptifs hormonaux",
                 "Analgésiques (AINS)",
@@ -2102,6 +2463,11 @@
                 "Saignements après les rapports",
                 "Pertes vaginales inhabituelles"
             ],
+            "examens_diagnostiques": [
+                "Test Pap / VPH",
+                "Colposcopie (Biopsie)",
+                "IRM pelvienne"
+            ],
             "prévention": [
                 "Vaccination VPH",
                 "Suivi régulier (dépistage)"
@@ -2117,6 +2483,11 @@
         "details": {
             "facteurs_risque": "Obésité, exposition prolongée aux oestrogènes.",
             "symptomes": "Saignements post-ménopausiques (Signe d'alerte majeur).",
+            "examens_diagnostiques": [
+                "Biopsie de l'endomètre",
+                "Échographie transvaginale",
+                "Hystéroscopie"
+            ],
             "diagnostic": "Biopsie de l'endomètre, échographie pelvienne.",
             "traitements": [
                 "Hystérectomie",
@@ -2137,6 +2508,11 @@
                 "Sensation de satiété précoce",
                 "Augmentation du volume abdominal",
                 "Urgence mictionnelle"
+            ],
+            "examens_diagnostiques": [
+                "Échographie pelvienne",
+                "Marqueur CA-125",
+                "Scanner abdominal"
             ],
             "facteurs_risque": "Génétique (BRCA1/BRCA2), nulliparité.",
             "traitements": [
@@ -2159,6 +2535,11 @@
                 "Écoulement mamelonnaire",
                 "Peau d'orange"
             ],
+            "examens_diagnostiques": [
+                "Mammographie",
+                "Échographie mammaire",
+                "Biopsie (histologie)"
+            ],
             "traitements": [
                 "Tumorectomie ou Mastectomie",
                 "Radiothérapie / Chimiothérapie",
@@ -2179,6 +2560,11 @@
                 "Nicturie (lever la nuit)",
                 "Impériosité mictionnelle"
             ],
+            "examens_diagnostiques": [
+                "Toucher rectal (prostate augmentée, lisse)",
+                "Antigène prostatique spécifique (APS)",
+                "Échographie de la prostate"
+            ],
             "complications": "Rétention urinaire aiguë, calculs urinaires.",
             "traitements": [
                 "Alpha-bloquants",
@@ -2198,6 +2584,11 @@
             "symptomes": [
                 "Peuvent être identiques à l'HBP",
                 "Douleurs osseuses (si métastases)"
+            ],
+            "examens_diagnostiques": [
+                "Toucher rectal (nodule dur)",
+                "APS élevé",
+                "Biopsie prostatique"
             ],
             "traitements": [
                 "Surveillance active",
@@ -2220,6 +2611,10 @@
                 "Dysurie (brûlure à la miction)",
                 "Douleurs pelviennes ou testiculaires"
             ],
+            "examens_diagnostiques": [
+                "TAAN (Test d'Amplification des Acides Nucléiques)",
+                "Prélèvement urinaire ou vaginal"
+            ],
             "complications": [
                 "Salpingite (PID)",
                 "Infertilité",
@@ -2240,6 +2635,10 @@
                 "Écoulement purulent (jaunâtre/verdâtre)",
                 "Brûlures mictionnelles intenses",
                 "Douleur et oedème testiculaire"
+            ],
+            "examens_diagnostiques": [
+                "TAAN (Test d'Amplification des Acides Nucléiques)",
+                "Culture bactérienne (site infecté)"
             ],
             "complications": [
                 "Maladie inflammatoire pelvienne",
@@ -2262,6 +2661,10 @@
                 "Secondaire: Éruptions cutanées (mains/pieds), fièvre, fatigue",
                 "Tertiaire: Dommages irréparables au cerveau, coeur et nerfs"
             ],
+            "examens_diagnostiques": [
+                "VDRL / RPR (Dépistage)",
+                "TP-PA / FTA-ABS (Confirmation)"
+            ],
             "traitement": "Pénicilline G (Benzathine) par voie intramusculaire."
         }
     },
@@ -2276,6 +2679,11 @@
             "prevention": [
                 "Vaccination (Gardasil 9)",
                 "Dépistage régulier (test Pap / test VPH)"
+            ],
+            "examens_diagnostiques": [
+                "Test Pap (Cytologie)",
+                "Test VPH (ADN viral)",
+                "Biopsie (si lésion suspecte)"
             ],
             "traitements_lésions": [
                 "Cryothérapie (azote liquide)",
@@ -2296,6 +2704,11 @@
                 "Vésicules douloureuses qui éclatent en ulcères",
                 "Démangeaisons et picotements avant la poussée",
                 "Symptômes grippaux lors de la primo-infection"
+            ],
+            "examens_diagnostiques": [
+                "Culture virale (vésicule active)",
+                "PCR (plus sensible)",
+                "Sérologie (Type 1 vs Type 2)"
             ],
             "gestion": [
                 "Traitement antiviral (Acyclovir, Valacyclovir)",

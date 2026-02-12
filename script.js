@@ -278,6 +278,17 @@ function formatCategoryName(slug) {
 // Helper to format key names (snake_case to Title Case)
 function formatKey(key) {
     if (!key) return '';
+
+    // Custom mappings
+    const mappings = {
+        'symptomes': 'Manifestations Cliniques',
+        'examens_diagnostiques': 'Examens diagnostiques',
+        'types_avc': 'Types d\'AVC',
+        'img': 'Image'
+    };
+
+    if (mappings[key]) return mappings[key];
+
     return key.charAt(0).toUpperCase() + key.slice(1).replace(/_/g, ' ');
 }
 
@@ -524,16 +535,21 @@ function formatSmartLinks(text) {
 
     selectedMatches.forEach(match => {
         // Escape the text BEFORE the match
-        result += escapeHtml(text.slice(lastIndex, match.start));
+        result += "<div>" + escapeHtml(text.slice(lastIndex, match.start));
 
         const escapedTarget = match.target.replace(/'/g, "\\'");
+
+        // Check if this specific link should be non-breaking (e.g. short acronyms like HTA)
+        const isShortAcronym = ['HTA', 'AVC', 'IVG', 'IMG', 'AAS', 'IEC', 'ARA', 'VPH', 'GCS', 'ECG'].includes(match.text.toUpperCase());
+        const extraClass = isShortAcronym ? ' no-break' : '';
+
         // The match text itself is also escaped just in case, though usually safe
-        result += `<span class="smart-link" onclick="handleSmartLink(this.textContent, '${escapedTarget}')">${escapeHtml(match.text)}</span>`;
+        result += `<span class="smart-link${extraClass}" onclick="handleSmartLink(this.textContent, '${escapedTarget}')">${escapeHtml(match.text)}</span>`;
         lastIndex = match.end;
     });
 
     // Escape the remaining text
-    result += escapeHtml(text.slice(lastIndex));
+    result += escapeHtml(text.slice(lastIndex)) + "</div>";
     return result;
 }
 
@@ -670,7 +686,24 @@ function openModal(item, isBack = false) {
     `;
 
     // Dynamically generate details based on keys
-    for (const key in item.details) {
+    // Define preferred order of sections
+    const keyOrder = ['definition', 'symptomes', 'examens_diagnostiques', 'traitements', 'surveillance'];
+
+    // Get all keys from the item
+    const itemKeys = Object.keys(item.details);
+
+    // Sort keys based on preferred order (unlisted keys go to the end)
+    itemKeys.sort((a, b) => {
+        const indexA = keyOrder.indexOf(a);
+        const indexB = keyOrder.indexOf(b);
+
+        if (indexA !== -1 && indexB !== -1) return indexA - indexB;
+        if (indexA !== -1) return -1;
+        if (indexB !== -1) return 1;
+        return a.localeCompare(b);
+    });
+
+    for (const key of itemKeys) {
         // Skip grouping-only fields and special fields handled separately
         if (key === 'classe' || key === 'sous_classe' || key === 'images' || key === 'liens') continue;
 

@@ -727,6 +727,9 @@ body {
     margin: 0;
     border-radius: 0;
     display: inline;
+}
+
+.smart-link.no-break {
     white-space: nowrap;
 }
 
