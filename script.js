@@ -190,24 +190,118 @@ function renderMedicationsByClass(className, allData) {
     `;
     contentArea.appendChild(header);
 
-    const gridContainer = document.createElement('div');
-    gridContainer.className = 'grid-container';
+    // Grouping by sub-class if they exist
+    const hasSubClasses = filteredData.some(item => item.details.sous_classe);
 
-    filteredData.forEach(item => {
-        const card = createCard(item, 'bg-medicament', 'medicaments');
-        gridContainer.appendChild(card);
-    });
+    if (hasSubClasses) {
+        // Get unique sub-classes in their appearance order (or alphabetical)
+        const subClasses = [...new Set(filteredData.map(item => item.details.sous_classe || 'Divers'))].sort();
 
-    contentArea.appendChild(gridContainer);
+        subClasses.forEach(subName => {
+            const subHeader = document.createElement('h3');
+            subHeader.className = 'sub-class-header';
+            subHeader.textContent = subName;
+            contentArea.appendChild(subHeader);
+
+            const gridContainer = document.createElement('div');
+            gridContainer.className = 'grid-container';
+            gridContainer.style.marginBottom = '2.5rem';
+
+            filteredData
+                .filter(item => (item.details.sous_classe || 'Divers') === subName)
+                .forEach(item => {
+                    const card = createCard(item, 'bg-medicament', 'medicaments');
+                    gridContainer.appendChild(card);
+                });
+
+            contentArea.appendChild(gridContainer);
+        });
+    } else {
+        const gridContainer = document.createElement('div');
+        gridContainer.className = 'grid-container';
+
+        filteredData.forEach(item => {
+            const card = createCard(item, 'bg-medicament', 'medicaments');
+            gridContainer.appendChild(card);
+        });
+
+        contentArea.appendChild(gridContainer);
+    }
 }
 
 // Helper to format category name
 function formatCategoryName(slug) {
-    if (slug === 'examens-paracliniques') return 'Examen Paraclinique';
-    if (slug === 'examens-cliniques') return 'Examen Clinique';
-    if (slug === 'recherche') return 'Résultat';
-    if (!slug) return '';
-    return slug.charAt(0).toUpperCase() + slug.slice(1, -1);
+    const names = {
+        'pathologies': 'Pathologies',
+        'medicaments': 'Médicaments',
+        'examens-paracliniques': 'Examens Paracliniques',
+        'examens-cliniques': 'Examens Cliniques',
+        'recherche': 'Résultat'
+    };
+    return names[slug] || slug;
+}
+
+// SMART LINKING LOGIC
+const linkMapping = [
+    { keywords: ['diurétique', 'diuretique'], target: 'Diurétiques' },
+    { keywords: ['bêta-bloquant', 'beta-bloquant', 'bêtabloquant'], target: 'Antihypertenseurs' },
+    { keywords: ['ieca', 'iec', 'inhibiteur de l’enzyme de conversion'], target: 'Antihypertenseurs' },
+    { keywords: ['ara ii', 'ara 2', 'antagoniste récepteur de l’angiotensine'], target: 'Antihypertenseurs' },
+    { keywords: ['bloqueur des canaux calciques', 'inhibiteur calcique'], target: 'Antihypertenseurs' },
+    { keywords: ['aspirine', 'aas'], target: 'Aspirine' },
+    { keywords: ['anticoagulant'], target: 'Anticoagulant' },
+    { keywords: ['statine'], target: 'Antihypertenseurs' }
+];
+
+function formatSmartLinks(text) {
+    if (typeof text !== 'string') return text;
+    let newText = text;
+
+    linkMapping.forEach(link => {
+        link.keywords.forEach(keyword => {
+            // Case insensitive, handling potential plural 's'
+            const regex = new RegExp(`(\\b${keyword}s?\\b)`, 'gi');
+            // Escape single quotes for the onclick attribute
+            const escapedTarget = link.target.replace(/'/g, "\\'");
+            newText = newText.replace(regex, `<span class="smart-link" onclick="handleSmartLink(this.textContent, '${escapedTarget}')">$1</span>`);
+        });
+    });
+
+    return newText;
+}
+
+function handleSmartLink(originalText, targetName) {
+    closeModal();
+
+    // Ensure data is available
+    const allMedData = studyData['medicaments'];
+    if (!allMedData) {
+        console.error('Données médicaments non chargées');
+        loadCategory('medicaments');
+        return;
+    }
+
+    // 1. Try to find a direct medication by title (exact case insensitive)
+    // Clean text: lowercase and remove trailing 's' if any
+    const cleanText = originalText.toLowerCase().trim().replace(/s$/, '');
+    const exactMed = allMedData.find(m =>
+        m.title.toLowerCase().includes(cleanText) ||
+        (m.details.sous_classe && m.details.sous_classe.toLowerCase().includes(cleanText))
+    );
+
+    if (exactMed && cleanText.length > 3) { // Avoid false positives on very short words
+        // If it's a very specific medication, open it
+        setTimeout(() => openModal(exactMed), 100);
+        return;
+    }
+
+    // 2. Otherwise navigate to class view
+    loadCategory('medicaments');
+    setTimeout(() => {
+        renderMedicationsByClass(targetName, allMedData);
+        // Scroll to top to ensure visibility
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }, 100);
 }
 
 // Open Modal with Details
@@ -228,6 +322,9 @@ function openModal(item) {
 
     // Dynamically generate details based on keys
     for (const [key, value] of Object.entries(item.details)) {
+        // Skip grouping-only fields in the modal
+        if (key === 'classe' || key === 'sous_classe') continue;
+
         // Check for special image object
         if (value && typeof value === 'object' && value.type === 'image' && !Array.isArray(value)) {
             contentHtml += `
@@ -248,10 +345,10 @@ function openModal(item) {
 
         if (Array.isArray(value)) {
             contentHtml += `<ul>`;
-            value.forEach(li => contentHtml += `<li>${li}</li>`);
+            value.forEach(li => contentHtml += `<li>${formatSmartLinks(li)}</li>`);
             contentHtml += `</ul>`;
         } else {
-            contentHtml += `<p>${value}</p>`;
+            contentHtml += `<p>${formatSmartLinks(value)}</p>`;
         }
 
         contentHtml += `</div>`;

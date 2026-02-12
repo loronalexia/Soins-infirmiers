@@ -28,7 +28,8 @@
         "category": "medicaments",
         "preview": "Diurétique de l'anse utilisé notamment dans l'insuffisance cardiaque et l'HTA.",
         "details": {
-            "classe": "Diurétique de l'anse",
+            "classe": "Diurétiques",
+            "sous_classe": "Diurétique de l'anse",
             "indications": [
                 "Oedèmes (cardiaques, rénaux, hépatiques)",
                 "Hypertension Artérielle"
@@ -48,27 +49,221 @@
         }
     },
     {
-        "id": "m2",
-        "title": "Furosémide (Lasix)",
+        "id": "m3",
+        "title": "Métoprolol (Lopressor)",
         "category": "medicaments",
-        "preview": "Diurétique de l'anse utilisé notamment dans l'insuffisance cardiaque et l'HTA.",
+        "preview": "Bêtabloquant cardio-sélectif utilisé pour l'HTA, l'angine de poitrine et après un infarctus.",
         "details": {
-            "classe": "Diurétique de l'anse",
+            "classe": "Antihypertenseurs",
+            "sous_classe": "BÉTABLOQUANT (Sélectif)",
             "indications": [
-                "Oedèmes (cardiaques, rénaux, hépatiques)",
+                "Hypertension Artérielle",
+                "Angine de poitrine",
+                "Prévention post-infarctus"
+            ],
+            "effets_secondaires": [
+                "Bradycardie",
+                "Hypotension",
+                "Fatigue",
+                "Masquage des signes d'hypoglycémie"
+            ],
+            "surveillance": [
+                "Fréquence cardiaque (avis médical si < 50-60 bpm)",
+                "Tension artérielle",
+                "Signes d'insuffisance cardiaque"
+            ]
+        }
+    },
+    {
+        "id": "m4",
+        "title": "Propranolol (Indéral)",
+        "category": "medicaments",
+        "preview": "Bêtabloquant non sélectif agissant sur les récepteurs B1 et B2.",
+        "details": {
+            "classe": "Antihypertenseurs",
+            "sous_classe": "BÉTABLOQUANT (Non Sélectif)",
+            "indications": [
+                "Hypertension Artérielle",
+                "Migraines",
+                "Tremblements essentiels",
+                "Troubles du rythme"
+            ],
+            "effets_secondaires": [
+                "Bronchospasme (Contre-indiqué chez asthmatiques)",
+                "Bradycardie",
+                "Extrémités froides"
+            ],
+            "surveillance": [
+                "Fréquence cardiaque",
+                "Fonction respiratoire",
+                "Tension artérielle"
+            ]
+        }
+    },
+    {
+        "id": "m5",
+        "title": "Norvasc (Amlodipine)",
+        "category": "medicaments",
+        "preview": "Bloqueur des canaux calciques (Dihydropyridine) pour l'HTA et l'angine.",
+        "details": {
+            "classe": "Antihypertenseurs",
+            "sous_classe": "Bloqueur des Canaux calciques",
+            "indications": [
+                "Hypertension Artérielle",
+                "Angine de poitrine chronique"
+            ],
+            "effets_secondaires": [
+                "Oedèmes périphériques (chevilles)",
+                "Céphalées",
+                "Bouffées vasomotrices"
+            ],
+            "surveillance": [
+                "Tension artérielle",
+                "Présence d'oedèmes aux membres inférieurs"
+            ]
+        }
+    },
+    {
+        "id": "m6",
+        "title": "Adalat (Nifédipine)",
+        "category": "medicaments",
+        "preview": "Bloqueur des canaux calciques utilisé pour l'hypertension et l'angine de poitrine.",
+        "details": {
+            "classe": "Antihypertenseurs",
+            "sous_classe": "Bloqueur des Canaux calciques",
+            "indications": [
+                "Hypertension Artérielle",
+                "Angine de poitrine"
+            ],
+            "effets_secondaires": [
+                "Hypotension orthostatique",
+                "Céphalées",
+                "Hyperplasie gingivale"
+            ],
+            "surveillance": [
+                "Tension artérielle (attention si action rapide)",
+                "État des gencives"
+            ]
+        }
+    },
+    {
+        "id": "m7",
+        "title": "Monopril (Fosinopril)",
+        "category": "medicaments",
+        "preview": "IECA utilisé pour le traitement de l'hypertension et de l'insuffisance cardiaque.",
+        "details": {
+            "classe": "Antihypertenseurs",
+            "sous_classe": "Inhibiteur de l’enzyme de conversion de l’angiotensine (IECA)",
+            "indications": [
+                "Hypertension Artérielle",
+                "Insuffisance cardiaque congestive"
+            ],
+            "effets_secondaires": [
+                "Toux sèche persistante",
+                "Hypotension",
+                "Hyperkaliémie",
+                "Angio-oedème (rare mais grave)"
+            ],
+            "surveillance": [
+                "Ionogramme (K+)",
+                "Fonction rénale (Créatinine)",
+                "Tension artérielle",
+                "Survenue d'une toux"
+            ]
+        }
+    },
+    {
+        "id": "m8",
+        "title": "Candésartan (Atacand)",
+        "category": "medicaments",
+        "preview": "Antagoniste des récepteurs de l'angiotensine II (ARA II).",
+        "details": {
+            "classe": "Antihypertenseurs",
+            "sous_classe": "Antagoniste récepteur de l’angiotensine 2",
+            "indications": [
+                "Hypertension Artérielle",
+                "Insuffisance cardiaque"
+            ],
+            "effets_secondaires": [
+                "Hyperkaliémie",
+                "Étourdissements",
+                "Insuffisance rénale"
+            ],
+            "surveillance": [
+                "Ionogramme (K+)",
+                "Fonction rénale",
+                "Tension artérielle"
+            ]
+        }
+    },
+    {
+        "id": "m9",
+        "title": "Aliskirène (Rasilez)",
+        "category": "medicaments",
+        "preview": "Inhibiteur direct de la rénine pour le traitement de l'hypertension.",
+        "details": {
+            "classe": "Antihypertenseurs",
+            "sous_classe": "Inhibiteur de la rénine",
+            "indications": [
                 "Hypertension Artérielle"
             ],
             "effets_secondaires": [
-                "Déshydratation",
-                "Hypokaliémie",
-                "Hyponatrémie",
-                "Hypotension"
+                "Diarrhée",
+                "Hyperkaliémie",
+                "Angio-oedème"
             ],
             "surveillance": [
-                "Diurèse",
-                "Poids",
-                "(K+)",
-                "Tension Artérielle"
+                "Tension artérielle",
+                "Potassium sérique",
+                "Fonction rénale"
+            ]
+        }
+    },
+    {
+        "id": "m10",
+        "title": "Clonidine (Catapress)",
+        "category": "medicaments",
+        "preview": "Agoniste alpha-2 adrénergique agissant au niveau central.",
+        "details": {
+            "classe": "Antihypertenseurs",
+            "sous_classe": "Agoniste Alpha 2- adrénergique à action centrale",
+            "indications": [
+                "Hypertension Artérielle sévère",
+                "Sevrage alcoolique/opioïdes (hors AMM)"
+            ],
+            "effets_secondaires": [
+                "Sécheresse buccale",
+                "Sédation / Somnolence",
+                "Bradycardie",
+                "Hypertension de rebond si arrêt brutal"
+            ],
+            "surveillance": [
+                "Ne jamais arrêter brutalement le traitement",
+                "Tension artérielle",
+                "Fréquence cardiaque"
+            ]
+        }
+    },
+    {
+        "id": "m11",
+        "title": "Doxazosine (Cardura)",
+        "category": "medicaments",
+        "preview": "Antagoniste alpha-1 adrénergique bloquant les récepteurs en périphérie.",
+        "details": {
+            "classe": "Antihypertenseurs",
+            "sous_classe": "Antagoniste Alpha 1- adrénergique à action périphérique",
+            "indications": [
+                "Hypertension Artérielle",
+                "Hypertrophie bénigne de la prostate"
+            ],
+            "effets_secondaires": [
+                "Hypotension orthostatique (surtout 1ère dose)",
+                "Vertiges",
+                "Palpitations"
+            ],
+            "surveillance": [
+                "Tension artérielle (couché/debout)",
+                "Apparition de vertiges"
             ]
         }
     }

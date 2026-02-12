@@ -4,9 +4,9 @@
         "title": "Insuffisance Cardiaque",
         "category": "pathologies",
         "systeme": "Cardiologie",
-        "preview": "Incapacité du cœur à pomper suffisamment de sang pour répondre aux besoins métaboliques de l'organisme.",
+        "preview": "Incapacité du coeur à effectuer ses fonctions de pompage (dysfonction systole) et de remplissage (dysfonction diastole).",
         "details": {
-            "definition": "État pathologique où le cœur ne peut plus assurer un débit sanguin suffisant pour satisfaire les besoins de l'organisme.",
+            "definition": "Incapacité du coeur à effectuer ses fonctions de pompage (dysfonction systole) et de remplissage (dysfonction diastole).",
             "symptomes": [
                 "Essoufflement (dyspnée)",
                 "Fatigue",
@@ -94,5 +94,286 @@
                 "title": "Pneumonie"
             }
         ]
+    },
+    {
+        "id": "p4",
+        "title": "AVC (Accident Vasculaire Cérébral)",
+        "category": "pathologies",
+        "systeme": "Nerveux",
+        "preview": "Perte soudaine d'une fonction cérébrale causée par un arrêt de l'apport sanguin ou une rupture vasculaire.",
+        "details": {
+            "definition": "Déficit neurologique soudain d'origine vasculaire (ischémique 80% ou hémorragique 20%).",
+            "symptomes": [
+                "Hémiplégie / Hémiparésie",
+                "Troubles du langage (Aphasie)",
+                "Troubles visuels",
+                "Céphalées intenses (si hémorragique)"
+            ],
+            "traitements": [
+                "Thrombolyse (si < 4.5h)",
+                "Anticoagulants / Antiplaquettaires",
+                "Contrôle TA et Glycémie",
+                "Rééducation précoce"
+            ],
+            "surveillance": [
+                "État de conscience (Glasgow)",
+                "Signes vitaux (TA, pls, sat)",
+                "Glycémie",
+                "Déglutition"
+            ]
+        }
+    },
+    {
+        "id": "p5",
+        "title": "Angine Stable",
+        "category": "pathologies",
+        "systeme": "Cardiologie",
+        "preview": "Douleur thoracique prévisible survenant à l'effort et soulagée par le repos ou la nitroglycérine.",
+        "details": {
+            "definition": "Ischémie myocardique transitoire déclenchée par une augmentation de la demande en oxygène (effort, émotion).",
+            "symptomes": [
+                "Douleur thoracique (serrement)",
+                "Irradiation bras gauche/machoire",
+                "Disparition au repos (< 15 min)",
+                "Soulagée par Nitroglycérine"
+            ],
+            "traitements": [
+                "Modification habitudes de vie",
+                "Antiplaquettaires (AAS)",
+                "Hypolipidémiants (Statines)",
+                "Nitroglycérine PRN"
+            ],
+            "surveillance": [
+                "Fréquence des crises",
+                "Tolérance à l'effort",
+                "Tension artérielle",
+                "Fréquence cardiaque"
+            ]
+        }
+    },
+    {
+        "id": "p6",
+        "title": "Angine Instable",
+        "category": "pathologies",
+        "systeme": "Cardiologie",
+        "preview": "Douleur thoracique imprévisible, survenant au repos ou s'aggravant, risque d'infarctus imminent.",
+        "details": {
+            "definition": "Syndrome coronarien aigu sans nécrose myocardique (Troponines négatives) mais avec ischémie sévère.",
+            "symptomes": [
+                "Douleur thoracique au repos",
+                "Durée > 20 min",
+                "Non soulagée par repos/Nitro",
+                "Angoisse"
+            ],
+            "traitements": [
+                "Hospitalisation",
+                "Oxygène si besoin",
+                "Nitroglycérine IV",
+                "Antiplaquettaires / Anticoagulants"
+            ],
+            "surveillance": [
+                "ECG en série",
+                "Troponines",
+                "Signes vitaux",
+                "Douleur (PQRST)"
+            ]
+        }
+    },
+    {
+        "id": "p7",
+        "title": "Infarctus du Myocarde",
+        "category": "pathologies",
+        "systeme": "Cardiologie",
+        "preview": "Nécrose d'une partie du muscle cardiaque due à une obstruction complète d'une artère coronaire.",
+        "details": {
+            "definition": "Destruction du tissu myocardique (nécrose) par ischémie prolongée (obstruction coronaire).",
+            "symptomes": [
+                "Douleur thoracique intense (étau)",
+                "Irradiations (bras, cou, machoire)",
+                "Diaphorèse (sueurs froides)",
+                "Nausées / Vomissements"
+            ],
+            "traitements": [
+                "MONA (Morphine, Oxygène, Nitroglycérine, Aspirine)",
+                "Thrombolyse ou Angioplastie (PCI)",
+                "Bêta-bloquants",
+                "IEC"
+            ],
+            "surveillance": [
+                "ECG (segment ST)",
+                "Troponines / CK-MB",
+                "Arythmies cardiaques",
+                "Signes d'insuffisance cardiaque"
+            ]
+        }
+    },
+    {
+        "id": "p8",
+        "title": "MCAS",
+        "category": "pathologies",
+        "systeme": "Cardiologie",
+        "preview": "Maladie Coronarienne Athérosclérotique : rétrécissement des artères du coeur par l'athérosclérose.",
+        "details": {
+            "definition": "Accumulation de plaques d'athérome (lipides, fibrose) dans les artères coronaires réduisant le flux sanguin.",
+            "symptomes": [
+                "Souvent asymptomatique initialement",
+                "Angine à l'effort",
+                "Essoufflement",
+                "Fatigue"
+            ],
+            "traitements": [
+                "Contrôle des facteurs de risque (HTA, diabète, tabac)",
+                "Statines",
+                "Antiplaquettaires",
+                "Revascularisation (pontage/stent)"
+            ],
+            "surveillance": [
+                "Lipidogramme (LDL)",
+                "Tension artérielle",
+                "Poids / IMC",
+                "Tabagisme"
+            ]
+        }
+    },
+    {
+        "id": "p9",
+        "title": "Fibrillation Auriculaire",
+        "category": "pathologies",
+        "systeme": "Cardiologie",
+        "preview": "Trouble du rythme cardiaque caractérisé par des battements irréguliers et souvent rapides des oreillettes.",
+        "details": {
+            "definition": "Arythmie supraventriculaire caractérisée par une activité électrique auriculaire désorganisée et rapide.",
+            "symptomes": [
+                "Palpitations",
+                "Fatigue",
+                "Étourdissements",
+                "Dyspnée",
+                "Parfois asymptomatique"
+            ],
+            "traitements": [
+                "Contrôle de la fréquence (Bêta-bloquants, inhibiteurs calciques)",
+                "Rétablissement du rythme (Cardioversion)",
+                "Anticoagulation (Prévention AVC)"
+            ],
+            "surveillance": [
+                "Fréquence cardiaque (irrégulière)",
+                "Signes d'AVC",
+                "INR (si Coumadin)",
+                "Tolérance hémodynamique"
+            ]
+        }
+    },
+    {
+        "id": "p10",
+        "title": "MPOC",
+        "category": "pathologies",
+        "systeme": "Pulmonaire",
+        "preview": "Maladie Pulmonaire Obstructive Chronique : obstruction progressive et irréversible des voies aériennes.",
+        "details": {
+            "definition": "Affection caractérisée par une obstruction bronchique non complètement réversible (Bronchite chronique + Emphysème).",
+            "symptomes": [
+                "Dyspnée à l'effort puis au repos",
+                "Toux chronique productive",
+                "Expectoration matinale",
+                "Fatigue"
+            ],
+            "traitements": [
+                "Arrêt tabagique (Essentiel)",
+                "Bronchodilatateurs (BACA, LAMA)",
+                "Corticostéroïdes inhalés",
+                "Réadaptation respiratoire"
+            ],
+            "surveillance": [
+                "Saturation O2 (cible souvent 88-92%)",
+                "Fréquence respiratoire",
+                "Utilisation muscles accessoires",
+                "Coloration / Quantité expectorations"
+            ]
+        }
+    },
+    {
+        "id": "p11",
+        "title": "Cirrhose",
+        "category": "pathologies",
+        "systeme": "Gastro Intestinal",
+        "preview": "Stade avancé de fibrose hépatique avec désorganisation de l'architecture du foie.",
+        "details": {
+            "definition": "Maladie chronique du foie caractérisée par le remplacement du tissu hépatique sain par de la fibrose et des nodules de régénération.",
+            "symptomes": [
+                "Fatigue",
+                "Ictère (jaunisse)",
+                "Ascite / Oedèmes",
+                "Angiomes stellaires",
+                "Encéphalopathie hépatique"
+            ],
+            "traitements": [
+                "Traiter la cause (Alcool, Virus B/C)",
+                "Régime hyposodé",
+                "Diurétiques (si ascite)",
+                "Lactulose (si encéphalopathie)"
+            ],
+            "surveillance": [
+                "Poids / Périmètre abdominal",
+                "État de conscience",
+                "Bilan hépatique / Coagulation",
+                "Selles (Varices oesophagiennes - méléna)"
+            ]
+        }
+    },
+    {
+        "id": "p12",
+        "title": "Ascite",
+        "category": "pathologies",
+        "systeme": "Gastro Intestinal",
+        "preview": "Accumulation pathologique de liquide dans la cavité péritonéale (abdomen).",
+        "details": {
+            "definition": "Épanchement liquide intrapéritonéal, complication fréquente de la cirrhose (hypertension portale).",
+            "symptomes": [
+                "Distension abdominale",
+                "Prise de poids rapide",
+                "Dyspnée (gêne diaphragmatique)",
+                "Matité à la percussion"
+            ],
+            "traitements": [
+                "Restriction sodée (< 2g/j)",
+                "Diurétiques (Spironolactone + Furosémide)",
+                "Paracenthèse (Ponction d'ascite)",
+                "Restriction hydrique (si hyponatrémie)"
+            ],
+            "surveillance": [
+                "Poids quotidien",
+                "Périmètre abdominal",
+                "Fonction rénale (Créatinine)",
+                "Électrolytes (Na+, K+)"
+            ]
+        }
+    },
+    {
+        "id": "p13",
+        "title": "Pancréatite Aiguë",
+        "category": "pathologies",
+        "systeme": "Gastro Intestinal",
+        "preview": "Inflammation aiguë du pancréas, souvent due à des calculs biliaires ou à l'alcool.",
+        "details": {
+            "definition": "Inflammation soudaine du pancréas pouvant aller de l'oedème léger à la nécrose grave.",
+            "symptomes": [
+                "Douleur épigastrique intense transfixiante (en barre)",
+                "Nausées / Vomissements",
+                "Fièvre",
+                "Défense abdominale"
+            ],
+            "traitements": [
+                "Mise au repos digestif (NPO)",
+                "Hydratation IV vigoureuse",
+                "Gestion de la douleur (Opioïdes)",
+                "Traitement de la cause (ex: CPRE pour calcul)"
+            ],
+            "surveillance": [
+                "Douleur",
+                "Bilan électrolytique et pancréatique (Lipase)",
+                "Signes de choc / Sepsis",
+                "Glycémie"
+            ]
+        }
     }
 ]
