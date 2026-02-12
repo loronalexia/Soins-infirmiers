@@ -429,6 +429,12 @@
                 "Nutrition et hydratation",
                 "Sécurité / Risque d'errance",
                 "État cutané et hygiène"
+            ],
+            "liens": [
+                {
+                    "titre": "Guide INESSS : Échelle MMSE",
+                    "url": "https://www.iplusinteractif.com/cached/books/1778/2846/files?category=14289#:~:text=en%20sant%C3%A9%20Canada-,Ch03%20%2D%20L%E2%80%99%C3%A9chelle%20MMSE.%20%C3%89chelle%20de%20statut%20mental%20%2D%20Institut%20national%20d%E2%80%99excellence%20en%20sant%C3%A9%20et%20en%20services%20sociaux%20(INESSS),-Ch03%20%2D%20L%E2%80%99%C3%A9chelle%20MMSE"
+                }
             ]
         }
     },
@@ -1192,6 +1198,388 @@
                 "Stabilité de l'articulation",
                 "Capacité à effectuer les activités quotidiennes",
                 "Signes d'inflammation aiguë"
+            ]
+        }
+    },
+    {
+        "id": "p43",
+        "title": "Cancer (Généralités)",
+        "category": "pathologies",
+        "systeme": "Multisystémique",
+        "preview": "Maladie caractérisée par une prolifération cellulaire anarchique et incontrôlée.",
+        "details": {
+            "physiopathologie": "Mutation de l'ADN cellulaire entraînant une perte des mécanismes de régulation du cycle cellulaire, une invasion tissulaire et un potentiel métastatique.",
+            "classification": [
+                "Système TNM : T (Taille tumeur), N (Nodes/Ganglions), M (Métastases)",
+                "Stades : I (Localisé) à IV (Métastatique)",
+                "Grade : Degré de différenciation cellulaire (G1 à G4)"
+            ],
+            "traitements": [
+                "Chimiothérapie : Administration de substances chimiques pour détruire les cellules à croissance rapide",
+                "Radiothérapie : Utilisation de rayonnements ionisants pour détruire l'ADN des cellules cancéreuses",
+                "Immunothérapie : Activation du système immunitaire pour combattre les cellules malignes",
+                "Chirurgie d'exérèse (Curative ou palliative)"
+            ],
+            "complications": [
+                "Neutropénie fébrile (Risque élevé d'infection)",
+                "Syndrome de lyse tumorale (Urgences métaboliques)",
+                "Compression médullaire",
+                "Obtruction de la veine cave supérieure",
+                "Douleur cancéreuse chronique"
+            ],
+            "liens": [
+                {
+                    "titre": "Guide INESSS : Approche palliative",
+                    "url": "https://www.iplusinteractif.com/cached/books/1778/2846/files?category=14289#:~:text=traitements%20%2D%20Institut%20national%20d%E2%80%99excellence%20en%20sant%C3%A9%20et%20en%20services%20sociaux%20(INESSS),-Ch18%20%2D%20Approche%20palliative"
+                }
+            ]
+        }
+    },
+    {
+        "id": "p44",
+        "title": "Choc Cardiogénique",
+        "category": "pathologies",
+        "systeme": "Multisystémique",
+        "preview": "Incapacité du coeur à pomper suffisamment de sang pour répondre aux besoins métaboliques.",
+        "details": {
+            "definition": "Défaillance de la pompe cardiaque entraînant une baisse du débit cardiaque malgré une volémie adéquate.",
+            "causes": "Infarctus du myocarde (principale), myocardite, arythmies sévères, insuffisance valvulaire aiguë.",
+            "symptomes": [
+                "Hypotension (PAS < 90 mmHg)",
+                "Tachycardie",
+                "Tachypnée et crépitants (oedème pulmonaire)",
+                "Extrémités froides et cyanosées",
+                "Oligurie"
+            ],
+            "surveillance": [
+                "Paramètres hémodynamiques (TA, FC, SpO2)",
+                "Bilan In/Out strict",
+                "État de conscience",
+                "Signes de surcharge pulmonaire"
+            ]
+        }
+    },
+    {
+        "id": "p45",
+        "title": "Choc Hypovolémique",
+        "category": "pathologies",
+        "systeme": "Multisystémique",
+        "preview": "Baisse critique du volume sanguin circulant entraînant une hypoperfusion tissulaire.",
+        "details": {
+            "definition": "Perte de plus de 15 à 20% du volume sanguin ou plasmatique.",
+            "causes": "Hémorragie (trauma, GI), déshydratation sévère (vomissements, diarrhée), brûlures étendues.",
+            "symptomes": [
+                "Tachycardie (signe précoce)",
+                "Hypotension (signe tardif)",
+                "Soif intense",
+                "Pâleur et peau moite",
+                "Confusion ou agitation"
+            ],
+            "surveillance": [
+                "Fréquence cardiaque et tension artérielle",
+                "Débit urinaire (cible > 30 mL/h)",
+                "Hémoglobine et électrolytes",
+                "Remplissage liquidien (Cristalloïdes, Sang)"
+            ]
+        }
+    },
+    {
+        "id": "p46",
+        "title": "Choc Septique",
+        "category": "pathologies",
+        "systeme": "Multisystémique",
+        "preview": "Sepsis sévère avec hypotension persistante malgré un remplissage adéquat.",
+        "details": {
+            "definition": "Réaction inflammatoire systémique démesurée à une infection, entraînant une vasodilatation massive.",
+            "causes": "Infections bactériennes (poumons, urinaire, abdomen), fongiques ou virales.",
+            "symptomes": [
+                "Fièvre ou hypothermie",
+                "Peau d'abord chaude (phase hyperdynamique) puis froide",
+                "Tachycardie et hypotension",
+                "Confusion (encéphalopathie septique)",
+                "Leucocytose ou leucopénie"
+            ],
+            "surveillance": [
+                "Température et signes d'infection",
+                "Lactates sériques (reflet de l'hypoxie tissulaire)",
+                "Administration précoce d'antibiotiques",
+                "Support vasopresseur (ex: Noradrénaline)"
+            ]
+        }
+    },
+    {
+        "id": "p47",
+        "title": "Choc Anaphylactique",
+        "category": "pathologies",
+        "systeme": "Multisystémique",
+        "preview": "Réaction allergique systémique grave et potentiellement mortelle.",
+        "details": {
+            "definition": "Hypersensibilité immédiate médiée par les IgE provoquant une vasodilatation et un bronchospasme.",
+            "causes": "Médicaments, piqûres d'insectes, aliments (noix, crustacés), latex.",
+            "symptomes": [
+                "Urticaire et prurit",
+                "Angioedème (gonflement du visage/gorge)",
+                "Sifflements respiratoires (wheezing) et dyspnée",
+                "Tachycardie et chute brutale de tension"
+            ],
+            "surveillance": [
+                "Liberté des voies aériennes (risque d'obstruction)",
+                "Administration urgente d'Épinéphrine (Adrénaline)",
+                "Position de Trendelenburg modifiée",
+                "Signes de réaction biphasique"
+            ]
+        }
+    },
+    {
+        "id": "p48",
+        "title": "Choc Neurogénique",
+        "category": "pathologies",
+        "systeme": "Multisystémique",
+        "preview": "Chute de tension due à une perte du tonus sympathique, souvent suite à une lésion médullaire.",
+        "details": {
+            "definition": "Déséquilibre entre les systèmes nerveux sympathique et parasympathique.",
+            "causes": "Lésion de la moelle épinière (au-dessus de T6), anesthésie rachidienne, traumatisme crânien.",
+            "symptomes": [
+                "Hypotension",
+                "Bradycardie (unique aux chocs non compensés par le coeur)",
+                "Peau chaude et sèche (en dessous de la lésion)",
+                "Déficit neurologique"
+            ],
+            "surveillance": [
+                "Rythme cardiaque (risque d'asystolie)",
+                "Température corporelle (poïkilothermie)",
+                "Stabilisation rachidienne",
+                "Support vasopresseur (alpha-adrénergique)"
+            ]
+        }
+    },
+    {
+        "id": "p49",
+        "title": "Choc Obstructif",
+        "category": "pathologies",
+        "systeme": "Multisystémique",
+        "preview": "Obstacle physique au remplissage ou à l'éjection du coeur.",
+        "details": {
+            "definition": "Débit cardiaque abaissé à cause d'une obstruction mécanique.",
+            "causes": "Embolie pulmonaire massive, tamponnade cardiaque, pneumothorax sous tension.",
+            "symptomes": [
+                "Turgescence des veines jugulaires",
+                "Déviation de la trachée (si pneumothorax)",
+                "Bruits du coeur assourdis (si tamponnade)",
+                "Hypotension et dyspnée aiguë"
+            ],
+            "surveillance": [
+                "Soulager la cause (Drainage, Péricardiocentèse, Thrombolyse)",
+                "SpO2 et monitoring cardiaque",
+                "Anxiété et douleur thoracique"
+            ]
+        }
+    },
+    {
+        "id": "p50",
+        "title": "Ulcère Veineux",
+        "category": "pathologies",
+        "systeme": "Vasculaire",
+        "preview": "Plaie chronique au niveau de la cheville causée par une insuffisance veineuse.",
+        "details": {
+            "definition": "Plaie résultant d'une hypertension veineuse persistante entraînant une fuite de liquide dans les tissus.",
+            "symptomes": [
+                "Bords irréguliers et superficiels",
+                "Exsudat important",
+                "Peau périlésionnelle pigmentée (ocre)",
+                "Oedème important"
+            ],
+            "traitements": [
+                "Compression veineuse (Gold standard)",
+                "Détérsion et pansements absorbants",
+                "Mobilisation et surélévation des membres"
+            ],
+            "liens": [
+                {
+                    "titre": "Guide INESSS : Ulcère veineux",
+                    "url": "https://www.iplusinteractif.com/cached/books/1778/2846/files?category=14289#:~:text=services%20sociaux%20(INESSS)-,Ch06%20%2D%20Soins%20de%20plaies.%20Ulc%C3%A8re%20veineux%20%2D%20Institut%20national%20d%E2%80%99excellence%20en%20sant%C3%A9%20et%20en%20services%20sociaux%20(INESSS),-Ch06%20%2D%20Soins%20de"
+                }
+            ]
+        }
+    },
+    {
+        "id": "p51",
+        "title": "Ulcère Artériel",
+        "category": "pathologies",
+        "systeme": "Vasculaire",
+        "preview": "Plaie causée par une ischémie (manque d'oxygène), souvent douloureuse et située aux pieds.",
+        "details": {
+            "definition": "Plaie résultant d'une mauvaise circulation artérielle.",
+            "symptomes": [
+                "Bords réguliers 'emporte-pièce'",
+                "Fond atone ou nécrotique",
+                "Très douloureux (surtout la nuit)",
+                "Peau froide, atrophique et sans poils"
+            ],
+            "traitements": [
+                "Revascularisation (chirurgie)",
+                "Protection locale (pas de compression !)",
+                "Contrôle des facteurs de risque (tabac, diabète)"
+            ],
+            "liens": [
+                {
+                    "titre": "Guide INESSS : Ulcère artériel",
+                    "url": "https://www.iplusinteractif.com/cached/books/1778/2846/files?category=14289#:~:text=p%C3%A9riph%C3%A9rique%20%2D%20Merck%20%26%20Co.-,Ch06%20%2D%20Soins%20de%20plaies.%20Ulc%C3%A8re%20art%C3%A9riel%20%2D%20Institut%20national%20d%E2%80%99excellence%20en%20sant%C3%A9%20et%20en%20services%20sociaux%20(INESSS),-Ch06%20%2D%20Soins%20de"
+                }
+            ]
+        }
+    },
+    {
+        "id": "p52",
+        "title": "Maladie Artérielle Périphérique (MAP)",
+        "category": "pathologies",
+        "systeme": "Vasculaire",
+        "preview": "Obstruction des artères des membres inférieurs par l'athérosclérose.",
+        "details": {
+            "definition": "Sténose ou occlusion des artères irriguant les jambes.",
+            "symptomes": [
+                "Claudication intermittente (douleur à la marche)",
+                "Douleur de repos (stade avancé)",
+                "Diminution ou absence des pouls pédieux",
+                "Temps de remplissage capillaire allongé"
+            ],
+            "surveillance": [
+                "Indice de pression cheville-bras (IPCB)",
+                "État cutané des pieds",
+                "Capacité de marche"
+            ],
+            "liens": [
+                {
+                    "titre": "Merck : Maladie artérielle périphérique",
+                    "url": "https://www.iplusinteractif.com/cached/books/1778/2846/files?category=14289#:~:text=services%20sociaux%20(INESSS)-,Ch06%20%2D%20Maladie%20art%C3%A9rielle%20p%C3%A9riph%C3%A9rique%20%2D%20Merck%20%26%20Co.,-Ch06%20%2D%20Maladie%20art%C3%A9rielle"
+                }
+            ]
+        }
+    },
+    {
+        "id": "p53",
+        "title": "Infections Nosocomiales",
+        "category": "pathologies",
+        "systeme": "Multisystémique",
+        "preview": "Infections contractées au cours d'un séjour dans un établissement de santé.",
+        "details": {
+            "definition": "Infection qui apparaît au cours ou à la suite d'une hospitalisation et qui n'était ni présente, ni en incubation à l'admission.",
+            "causes": "Bactéries multi-résistantes (SARM, ERV, C. Difficile), dispositifs invasifs (sondes, cathéters).",
+            "symptomes": [
+                "Fièvre inexpliquée",
+                "Signes inflammatoires au site d'un dispositif",
+                "Diarrhée profuse (si C. Difficile)",
+                "Purulence des plaies chirurgicales"
+            ],
+            "surveillance": [
+                "Hygiène des mains (5 moments)",
+                "Précautions additionnelles (contact, gouttelettes, lien aérien)",
+                "Surveillance des sites invasifs",
+                "Nettoyage de l'environnement"
+            ]
+        }
+    },
+    {
+        "id": "p54",
+        "title": "Maladies Infectieuses",
+        "category": "pathologies",
+        "systeme": "Multisystémique",
+        "preview": "Pathologies causées par des agents pathogènes (bactéries, virus, parasites, champignons).",
+        "details": {
+            "definition": "Ensemble des signes cliniques résultant de l'invasion et de la multiplication d'un agent pathogène dans l'organisme.",
+            "symptomes": [
+                "Fièvre / Frissons",
+                "Asthénie (Fatigue intense)",
+                "Sudations",
+                "Myalgies (Douleurs musculaires)"
+            ],
+            "traitements": [
+                "Antibiotiques, Antiviraux ou Antifongiques",
+                "Hydratation",
+                "Antipyrétiques (Contrôle fièvre)",
+                "Isolement préventif"
+            ],
+            "surveillance": [
+                "Température et Fréquence cardiaque",
+                "Bilan sanguin (Leucocytes, CRP)",
+                "Hydratation et élimination",
+                "Signes de choc (Sepsis)"
+            ]
+        }
+    },
+    {
+        "id": "p55",
+        "title": "VIH (Virus de l'Immunodéficience Humaine)",
+        "category": "pathologies",
+        "systeme": "Multisystémique",
+        "preview": "Infection chronique s'attaquant au système immunitaire, pouvant mener au SIDA.",
+        "details": {
+            "definition": "Virus qui cible les lymphocytes T CD4, affaiblissant l'immunité contre les infections opportunistes.",
+            "stades_et_symptomes": [
+                "Primo-infection : Syndrome pseudo-grippal",
+                "Phase asymptomatique : Virus actif mais peu de symptômes",
+                "SIDA : Stade avancé avec infections opportunistes et cancers"
+            ],
+            "traitements": [
+                "Trithérapie (Traitement antirétroviral - TAR)",
+                "Prophylaxie pré-exposition (PrEP)",
+                "Traitement post-exposition (PPE)"
+            ],
+            "surveillance": [
+                "Adhésion au traitement (Crucial)",
+                "Charge virale et taux de CD4",
+                "Prévention des infections opportunistes",
+                "Support psychologique et social"
+            ]
+        }
+    },
+    {
+        "id": "p56",
+        "title": "Fibrose Kystique (Mucoviscidose)",
+        "category": "pathologies",
+        "systeme": "Multisystémique",
+        "preview": "Maladie génétique affectant les sécrétions de plusieurs organes (poumons, pancréas).",
+        "details": {
+            "definition": "Mutation du gène CFTR entraînant une production de mucus anormalement épais et visqueux.",
+            "symptomes": [
+                "Toux chronique et infections respiratoires fréquentes",
+                "Insuffisante pancréatique (Malasbsorption)",
+                "Retard de croissance",
+                "Sueur anormalement salée"
+            ],
+            "traitements": [
+                "Physiothérapie respiratoire quotidienne",
+                "Enzymes pancréatiques à chaque repas",
+                "Antibiotiques (nébulisés ou IV)",
+                "Modulateurs de la protéine CFTR"
+            ],
+            "surveillance": [
+                "Fonction pulmonaire (VEMS)",
+                "État nutritionnel et courbe de poids",
+                "Apport en sel et hydratation",
+                "Contrôle des infections (Ségrégation des patients)"
+            ]
+        }
+    },
+    {
+        "id": "p57",
+        "title": "Altération de la croissance",
+        "category": "pathologies",
+        "systeme": "Multisystémique",
+        "preview": "Retard ou anomalie de la croissance physique chez l'enfant.",
+        "details": {
+            "definition": "Ralentissement significatif de la croissance staturale ou pondérale par rapport aux normes d'âge et de sexe.",
+            "causes": "Nutritionnelle, endocrinienne, psychologique ou organique (maladie chronique).",
+            "surveillance_infirmiere": [
+                "Mesures anthropométriques précises (Poids, Taille, PC)",
+                "Positionnement sur les courbes de l'OMS",
+                "Évaluation des apports nutritionnels",
+                "Dépistage des troubles du développement"
+            ],
+            "soins": [
+                "Support parental et éducation nutritionnelle",
+                "Suivi multidisciplinaire (Pédiatre, Diététiste)",
+                "Traitement de la cause sous-jacente"
             ]
         }
     }

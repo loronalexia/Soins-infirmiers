@@ -25,6 +25,16 @@
                 "Insuffisance rénale aiguë",
                 "Thrombose de stent",
                 "Dissection coronaire"
+            ],
+            "liens": [
+                {
+                    "titre": "ROC : Récupération optimisée Canada",
+                    "url": "https://www.iplusinteractif.com/cached/books/1778/2846/files?category=14289#:~:text=en%20sant%C3%A9%20Canada-,Ch02%20%2D%20R%C3%A9cup%C3%A9ration%20optimis%C3%A9e%20Canada%20(ROC)%20%2D%20Excellence%20en%20sant%C3%A9%20Canada,-Ch02%20%2D%20R%C3%A9cup%C3%A9ration%20optimis%C3%A9e"
+                },
+                {
+                    "titre": "ROC : Ressources prestataires",
+                    "url": "https://www.iplusinteractif.com/cached/books/1778/2846/files?category=14289#:~:text=en%20sant%C3%A9%20Canada-,Ch02%20%2D%20Ressources%20pour%20les%20prestataires%20de%20soins%20de%20sant%C3%A9%20et%20les%20leaders%20%2D%20Excellence%20en%20sant%C3%A9%20Canada,-Ch02%20%2D%20Ressources%20pour"
+                }
             ]
         }
     },
@@ -259,6 +269,113 @@
                 "Signes d'infection ou de nécrose cutanée",
                 "Réadaptation (prothétisation)",
                 "Acceptation psychologique et de l'image corporelle"
+            ]
+        }
+    },
+    {
+        "id": "int13",
+        "title": "Intubation et Ventilation Mécanique",
+        "category": "interventions",
+        "preview": "Maintien des voies aériennes et assistance respiratoire par pression positive.",
+        "details": {
+            "description": "Utilisée en cas d'insuffisance respiratoire aiguë, d'apnée ou de protection des voies respiratoires.",
+            "parametres_de_base": [
+                "Mode (VC, AI, VPC, BiPAP)",
+                "Fréquence Respiratoire (FR)",
+                "Volume Courant (VC)",
+                "FiO2 (Fraction inspirée en oxygène)",
+                "PEP (Pression Expiratoire Positive)"
+            ],
+            "surveillance_infirmiere": [
+                "Position et fixation de la sonde (repère en cm)",
+                "Pression du ballonnet (20-30 cmH2O)",
+                "Synchronisation patient-ventilateur",
+                "Auscultation pulmonaire bilatérale",
+                "Soins de bouche (prévention des pneumonies acquises sous ventilateur - PAV)"
+            ],
+            "urgences": [
+                "Extubation accidentelle",
+                "Obstruction (bouchon muqueux)",
+                "Pneumothorax sous tension",
+                "Déconnexion du circuit (alarmes)"
+            ]
+        }
+    },
+    {
+        "id": "int14",
+        "title": "Hémodialyse",
+        "category": "interventions",
+        "preview": "Épuration extra-rénale du sang pour remplacer la fonction des reins défaillants.",
+        "details": {
+            "description": "Technique permettant d'éliminer les déchets (urée, créatinine) et l'excès d'eau.",
+            "acces_vasculaires": [
+                "Fistule Artério-Veineuse (FAV) : Gold standard",
+                "Greffon synthétique",
+                "Cathéter veineux central (Quinton)"
+            ],
+            "soins_fistule": [
+                "Palpation du 'thrill' (vibrissement) et auscultation du souffle",
+                "Interdiction de prendre la TA ou de faire des prélèvements sur le membre porteur",
+                "Surveillance des signes d'infection ou d'anévrisme"
+            ],
+            "surveillance_traitement": [
+                "Poids pré et post-dialyse (calcul de l'ultrafiltration)",
+                "Hypotension per-dialytique (fréquent)",
+                "Crampes musculaires et déséquilibres électrolytiques"
+            ]
+        }
+    },
+    {
+        "id": "int15",
+        "title": "Vaccination",
+        "category": "interventions",
+        "preview": "Administration d'un vaccin pour stimuler le système immunitaire contre une maladie spécifique.",
+        "details": {
+            "description": "Prévention primaire essentielle contre les maladies infectieuses (Grippe, Pneumocoque, Tétanos, etc.).",
+            "principes": [
+                "Vérification du calendrier vaccinal",
+                "Consentement éclairé",
+                "Asepsie rigoureuse au site d'injection",
+                "Documentation (lot, date, site)"
+            ],
+            "surveillance": [
+                "Réaction locale (douleur, rougeur, induration)",
+                "Fièvre modérée (réaction normale)",
+                "Surveillance de l'anaphylaxie (rester 15-30 min)",
+                "Malaise vagal (chez l'adolescent/adulte)"
+            ],
+            "contre_indications": [
+                "Réaction allergique grave antérieure",
+                "Immunodéficience sévère (pour vaccins vivants)",
+                "Maladie aiguë modérée ou grave"
+            ]
+        }
+    },
+    {
+        "id": "int16",
+        "title": "Transfusion sanguine",
+        "category": "interventions",
+        "preview": "Administration intraveineuse de produits sanguins (culots globulaires, plaquettes, plasma).",
+        "details": {
+            "description": "Acte critique nécessitant une double vérification et une surveillance étroite.",
+            "soins_pre_transfusionnels": [
+                "Vérification de l'ordonnance et du consentement",
+                "Groupe sanguin et compatibilité (Cross-match)",
+                "Double vérification au chevet (identité, groupe, lot)",
+                "Prise des signes vitaux de base"
+            ],
+            "surveillance_pendant": [
+                "Présence infirmière continue les 15 premières minutes",
+                "Débit lent au début (2ml/min)",
+                "Signes vitaux aux 15 min, puis horaire",
+                "Détection précoce des réactions transfusionnelles"
+            ],
+            "complications_rections": [
+                "Réaction hémolytique aiguë (Incompatibilité ABO)",
+                "Réaction fébrile non hémolytique",
+                "Surcharge volémique (TACO)",
+                "Lésion pulmonaire aiguë (TRALI)",
+                "Réaction allergique / Anaphylaxie"
             ]
         }
     }

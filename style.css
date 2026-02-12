@@ -108,6 +108,47 @@ body {
     opacity: 0.7;
 }
 
+/* External Resources in Modal */
+.external-resources {
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 2px dashed #FFE5EC;
+}
+
+.external-links-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.external-link-card {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 1rem;
+    background: #F8F9FA;
+    border: 1px solid #E9ECEF;
+    border-radius: 12px;
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: var(--transition);
+}
+
+.external-link-card:hover {
+    background: #FFF0F5;
+    border-color: var(--primary-color);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(214, 93, 122, 0.15);
+}
+
+.external-link-icon {
+    color: var(--primary-color);
+    display: flex;
+}
+
 /* Navigation */
 .main-nav {
     display: flex;
@@ -237,6 +278,12 @@ body {
 .bg-intervention {
     background-color: #E2F3F5;
     color: #227093;
+}
+
+/* Sage / Vert pour Soins de plaies */
+.bg-wound {
+    background-color: #E8F5E9;
+    color: #2E7D32;
 }
 
 .card-preview {

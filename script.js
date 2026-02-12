@@ -10,7 +10,7 @@ let currentCategory = 'pathologies';
 // Cache for loaded data
 // We will fill this object with keys corresponding to categories
 let studyData = {};
-const categories = ['pathologies', 'medicaments', 'interventions', 'examens-paracliniques', 'examens-cliniques'];
+const categories = ['pathologies', 'medicaments', 'examens-paracliniques', 'examens-cliniques', 'soins-de-plaies', 'interventions'];
 
 // Modal Navigation History
 let currentModalItem = null;
@@ -30,7 +30,7 @@ async function preloadAllData() {
     contentArea.innerHTML = '<div class="loading">Chargement des données...</div>';
     try {
         // Categories for main navigation
-        const mainCategories = ['pathologies', 'medicaments', 'interventions', 'examens-paracliniques', 'examens-cliniques'];
+        const mainCategories = ['pathologies', 'medicaments', 'interventions', 'examens-paracliniques', 'examens-cliniques', 'soins-de-plaies'];
         // All files to load (including invisible ones like sources)
         const filesToLoad = [...mainCategories, 'sources'];
 
@@ -128,6 +128,8 @@ function renderContent(viewName, data) {
         if (itemCat === 'medicaments') labelClass = 'bg-medicament';
         else if (itemCat === 'examens-paracliniques') labelClass = 'bg-para';
         else if (itemCat === 'examens-cliniques') labelClass = 'bg-clinic';
+        else if (itemCat === 'soins-de-plaies') labelClass = 'bg-wound';
+        else if (itemCat === 'interventions') labelClass = 'bg-intervention';
 
         const card = createCard(item, labelClass, itemCat);
         gridContainer.appendChild(card);
@@ -266,9 +268,17 @@ function formatCategoryName(slug) {
         'medicaments': 'Médicaments',
         'examens-paracliniques': 'Ex. Paracliniques',
         'examens-cliniques': 'Ex. Cliniques',
+        'soins-de-plaies': 'Soins de plaies',
+        'interventions': 'Interventions',
         'recherche': 'Résultat'
     };
     return names[slug] || slug;
+}
+
+// Helper to format key names (snake_case to Title Case)
+function formatKey(key) {
+    if (!key) return '';
+    return key.charAt(0).toUpperCase() + key.slice(1).replace(/_/g, ' ');
 }
 
 // SMART LINKING LOGIC
@@ -317,22 +327,22 @@ const linkMapping = [
     { keywords: ['doppler', 'échographie doppler'], target: 'Échographie Doppler (Veineuse/Artérielle)' },
     { keywords: ['homans'], target: 'Signe de Homans' },
     { keywords: ['amputation', 'moignon'], target: 'Amputation' },
-    { keywords: ['ulcère', 'ulcere'], target: 'IVC & Ulcères Veineux' },
+    { keywords: ['ulcère', 'ulcere'], target: 'Ulcère Veineux' },
     { keywords: ['varice'], target: 'Varices' },
 
     // Pathologies manquantes
-    { keywords: ['avc', 'ischémique', 'ischémie cérébrale'], target: 'AVC' },
+    { keywords: ['avc', 'ischémique', 'ischémie cérébrale'], target: 'AVC (Accident Vasculaire Cérébral)' },
     { keywords: ['alzheimer'], target: 'Alzheimer' },
     { keywords: ['parkinson'], target: 'Parkinson' },
     { keywords: ['sep', 'sclérose en plaques'], target: 'Sclérose en Plaques' },
     { keywords: ['pneumonie'], target: 'Pneumonie' },
     { keywords: ['insuffisance cardiaque'], target: 'Insuffisance Cardiaque' },
-    { keywords: ['infarctus', 'sca', 'stemi'], target: 'Infarctus' },
+    { keywords: ['infarctus', 'sca', 'stemi'], target: 'Infarctus du Myocarde' },
     { keywords: ['diabète', 'diabete'], target: 'Diabète de Type 2' },
 
     // Interventions
     { keywords: ['angioplastie', 'stent'], target: 'Angioplastie Coronarienne' },
-    { keywords: ['pontage', 'pac '], target: 'Pontage Aortocoronarien (PAC)' },
+    { keywords: ['pontage', 'pac'], target: 'Pontage Aortocoronarien (PAC)' },
     { keywords: ['thrombectomie'], target: 'Thrombectomie Mécanique' },
     { keywords: ['pth', 'prothèse de hanche', 'prothèse totale de hanche'], target: 'Prothèse Totale de Hanche (PTH)' },
     { keywords: ['lobectomie', 'pneumonectomie'], target: 'Lobectomie / Pneumonectomie' },
@@ -351,7 +361,40 @@ const linkMapping = [
     { keywords: ['arthrose', 'coxarthrose', 'gonarthrose'], target: 'Arthrose de la hanche (Coxarthrose)' },
     { keywords: ['ptg', 'prothèse de genou'], target: 'Arthrose du genou (Gonarthrose)' },
     { keywords: ['compartiment', 'syndrome du compartiment'], target: 'Fracture avec déplacement ou écrasement' },
-    { keywords: ['plâtre', 'immobilisation'], target: 'Fracture sans déplacement' }
+    { keywords: ['plâtre', 'immobilisation'], target: 'Fracture sans déplacement' },
+
+    // Soins de plaies
+    { keywords: ['pansement', 'soins de plaies'], target: 'Soins de plaies' },
+    { keywords: ['hydrocolloïde', 'duoderm'], target: 'Hydrocolloïde' },
+    { keywords: ['alginate', 'aquacel'], target: 'Alginate' },
+    { keywords: ['hydrofibre'], target: 'Hydrofibre' },
+    { keywords: ['argent', 'antimicrobien', 'biofilm'], target: "Pansement à l'Argent" },
+    { keywords: ['hydrogel', 'détersion'], target: 'Hydrogel' },
+    { keywords: ['interface', 'mepitel', 'adaptic'], target: 'Pansement Interface' },
+    { keywords: ['charbon', 'odeur'], target: 'Charbon Actif' },
+
+    // Multisystémique
+    { keywords: ['cancer', 'chimio', 'radio', 'onco', 'tumeur'], target: 'Cancer (Généralités)' },
+    { keywords: ['choc septique', 'sepsis'], target: 'Choc Septique' },
+    { keywords: ['choc cardiogénique'], target: 'Choc Cardiogénique' },
+    { keywords: ['choc hypovolémique', 'hémorragie'], target: 'Choc Hypovolémique' },
+    { keywords: ['choc anaphylactique', 'allergie'], target: 'Choc Anaphylactique' },
+    { keywords: ['choc neurogénique'], target: 'Choc Neurogénique' },
+    { keywords: ['choc obstructif', 'embolie pulmonaire'], target: 'Choc Obstructif' },
+
+    // Soins Critiques
+    { keywords: ['intubation', 'ventilation', 'ventilateur', 'bipap'], target: 'Intubation et Ventilation Mécanique' },
+    { keywords: ['hémodialyse', 'dialyse', 'fistule'], target: 'Hémodialyse' },
+    { keywords: ['phq-9', 'phq9', 'dépression'], target: 'Dépistage de la dépression (PHQ-9)' },
+
+    // Nouveaux sujets Multisystémiques
+    { keywords: ['infection nosocomiale', 'sarm', 'erv', 'difficile'], target: 'Infections Nosocomiales' },
+    { keywords: ['maladie infectieuse', 'infection', 'sepsis'], target: 'Maladies Infectieuses' },
+    { keywords: ['vih', 'sida', 'antirétroviral'], target: "VIH (Virus de l'Immunodéficience Humaine)" },
+    { keywords: ['fibrose kystique', 'mucoviscidose'], target: 'Fibrose Kystique (Mucoviscidose)' },
+    { keywords: ['croissance', 'retard de croissance', 'anthropométrie'], target: 'Altération de la croissance' },
+    { keywords: ['vaccin', 'vaccination', 'immunisation'], target: 'Vaccination' },
+    { keywords: ['transfusion', 'produit sanguin', 'culot'], target: 'Transfusion sanguine' }
 ];
 
 function formatSmartLinks(text) {
@@ -483,11 +526,13 @@ function openModal(item, isBack = false) {
     `;
 
     // Dynamically generate details based on keys
-    for (const [key, value] of Object.entries(item.details)) {
-        // Skip grouping-only fields in the modal
-        if (key === 'classe' || key === 'sous_classe') continue;
+    for (const key in item.details) {
+        // Skip grouping-only fields and special fields handled separately
+        if (key === 'classe' || key === 'sous_classe' || key === 'images' || key === 'liens') continue;
 
-        // Check for special image object
+        let value = item.details[key];
+
+        // Check for special image object (like illustration_coeur)
         if (value && typeof value === 'object' && value.type === 'image' && !Array.isArray(value)) {
             contentHtml += `
                 <div class="detail-section detail-image-container">
@@ -498,22 +543,37 @@ function openModal(item, isBack = false) {
             continue;
         }
 
-        const label = key.charAt(0).toUpperCase() + key.slice(1).replace(/_/g, ' ');
-
-        contentHtml += `
-            <div class="detail-section">
-                <h3>${label}</h3>
-        `;
+        contentHtml += `<div class="detail-section">`;
+        contentHtml += `<h3>${formatKey(key)}</h3>`;
 
         if (Array.isArray(value)) {
             contentHtml += `<ul>`;
-            value.forEach(li => contentHtml += `<li>${formatSmartLinks(li)}</li>`);
+            value.forEach(point => {
+                contentHtml += `<li>${formatSmartLinks(point)}</li>`;
+            });
             contentHtml += `</ul>`;
         } else {
             contentHtml += `<p>${formatSmartLinks(value)}</p>`;
         }
-
         contentHtml += `</div>`;
+    }
+
+    // External Links Section
+    if (item.details.liens && item.details.liens.length > 0) {
+        contentHtml += `<div class="detail-section external-resources">`;
+        contentHtml += `<h3>Ressources & Guides Externes</h3>`;
+        contentHtml += `<div class="external-links-container">`;
+        item.details.liens.forEach(link => {
+            contentHtml += `
+                <a href="${link.url}" target="_blank" class="external-link-card">
+                    <div class="external-link-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                    </div>
+                    <span>${link.titre}</span>
+                </a>
+            `;
+        });
+        contentHtml += `</div></div>`;
     }
 
     // Image Section (Comparison or Gallery)

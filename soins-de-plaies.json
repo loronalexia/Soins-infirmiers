@@ -1,0 +1,161 @@
+[
+    {
+        "id": "sp1",
+        "title": "Hydrocolloïde",
+        "category": "soins-de-plaies",
+        "preview": "Pansement imperméable créant un milieu humide, idéal pour les plaies peu à moyennement exsudatives.",
+        "details": {
+            "but": "Favoriser l'autolyse (détersion naturelle) et protéger le bourgeonnement.",
+            "indications": [
+                "Plaies en phase de granulation ou d'épithélialisation",
+                "Escarres de stade 1 et 2",
+                "Plaies sèches à modérément humides"
+            ],
+            "frequence": "Tous les 3 à 7 jours (selon l'exsudat)",
+            "precautions": [
+                "Ne pas utiliser sur des plaies infectées (milieu occlusif)",
+                "Odeur caractéristique au retrait (normale)",
+                "Risque de macération si exsudat trop important"
+            ],
+            "liens": [
+                {
+                    "titre": "INESSS : Soins de plaies (Evaluation)",
+                    "url": "https://www.iplusinteractif.com/cached/books/1778/2846/files?category=14289#:~:text=services%20sociaux%20(INESSS)-,Ch07%20%2D%20Soins%20de%20plaies%3A%20%C3%89valuation%2C%20prise%20en%20charge%20et%20usage%20optimal,traitements%20%2D%20Institut%20national%20d%E2%80%99excellence%20en%20sant%C3%A9%20et%20en%20services%20sociaux%20(INESSS),-Ch18%20%2D%20Approche%20palliative"
+                }
+            ]
+        }
+    },
+    {
+        "id": "sp2",
+        "title": "Alginate",
+        "category": "soins-de-plaies",
+        "preview": "Pansement hautement absorbant dérivé d'algues, idéal pour les plaies très exsudatives ou hémorragiques.",
+        "details": {
+            "but": "Absorber les exsudats massifs et favoriser l'hémostase.",
+            "indications": [
+                "Plaies très exsudatives (ex: ulcères, escarres cavitaires)",
+                "Plaies hémorragiques",
+                "Méchage de plaies profondes"
+            ],
+            "frequence": "Quotidien à tous les 2 jours",
+            "precautions": [
+                "Nécessite un pansement secondaire",
+                "Ne pas utiliser sur des plaies sèches (adhérence douloureuse)",
+                "Irriguer abondamment au NaCl pour le retrait"
+            ]
+        }
+    },
+    {
+        "id": "sp3",
+        "title": "Hydrofibre",
+        "category": "soins-de-plaies",
+        "preview": "Fibres transformant l'exsudat en gel, offrant une capacité d'absorption supérieure aux alginates.",
+        "details": {
+            "but": "Gérer les exsudats importants tout en maintenant un milieu humide.",
+            "indications": [
+                "Ulcères de jambe",
+                "Escarres profondes",
+                "Plaies post-opératoires exsudatives"
+            ],
+            "frequence": "Jusqu'à 7 jours (selon saturation)",
+            "precautions": [
+                "Nécessite un pansement secondaire",
+                "Se transforme en gel (aspect parfois confondu avec du pus)"
+            ]
+        }
+    },
+    {
+        "id": "sp4",
+        "title": "Pansement à l'Argent",
+        "category": "soins-de-plaies",
+        "preview": "Pansement antimicrobien libérant des ions argent pour réduire la charge bactérienne.",
+        "details": {
+            "but": "Traiter et prévenir l'infection locale.",
+            "indications": [
+                "Plaies infectées ou à haut risque d'infection",
+                "Plaies stagnantes avec biofilm suspecté"
+            ],
+            "frequence": "Tous les 1 à 3 jours",
+            "precautions": [
+                "Utilisation limitée dans le temps (souvent 2 semaines)",
+                "Ne pas utiliser avec du NaCl si argent ionique (vérifier notice)",
+                "Retirer avant une IRM (certains types)"
+            ]
+        }
+    },
+    {
+        "id": "sp5",
+        "title": "Hydrogel",
+        "category": "soins-de-plaies",
+        "preview": "Gel composé majoritairement d'eau, utilisé pour hydrater les plaies sèches ou nécrotiques.",
+        "details": {
+            "but": "Réhydrater la nécrose sèche pour favoriser la détersion autolytique.",
+            "indications": [
+                "Plaies nécrotiques noires (escarres sèches)",
+                "Plaies fibrineuses sèches"
+            ],
+            "frequence": "Tous les 1 à 3 jours",
+            "precautions": [
+                "Protéger la peau périlésionnelle contre la macération",
+                "Nécessite un pansement secondaire occlusif ou semi-occlusif"
+            ]
+        }
+    },
+    {
+        "id": "sp6",
+        "title": "Pansement Interface",
+        "category": "soins-de-plaies",
+        "preview": "Filet non adhérent (souvent siliconé) permettant le passage de l'exsudat vers un pansement secondaire.",
+        "details": {
+            "but": "Protéger le lit de la plaie et éviter la douleur au retrait.",
+            "indications": [
+                "Brûlures superficielles",
+                "Déchirures cutanées (Skin tears)",
+                "Plaies fragiles en cours d'épithélialisation"
+            ],
+            "frequence": "Peut rester plusieurs jours (changer uniquement le secondaire)",
+            "precautions": [
+                "Ne pas superposer trop de couches (risque d'occlusion des pores)",
+                "Éviter sur plaies très infectées sans surveillance"
+            ]
+        }
+    },
+    {
+        "id": "sp7",
+        "title": "Charbon Actif",
+        "category": "soins-de-plaies",
+        "preview": "Pansement conçu pour absorber les odeurs nauséabondes des plaies infectées ou cancéreuses.",
+        "details": {
+            "but": "Gestion des odeurs et de la charge bactérienne.",
+            "indications": [
+                "Plaies malodorantes (ex: plaies tumorales, gangrène)",
+                "Plaies infectées"
+            ],
+            "frequence": "Quotidien ou selon saturation",
+            "precautions": [
+                "Ne pas découper le sachet de charbon (perte de poudre)",
+                "Souvent combiné à l'argent pour un effet complet"
+            ]
+        }
+    },
+    {
+        "id": "sp8",
+        "title": "Ulcère du pied diabétique",
+        "category": "soins-de-plaies",
+        "preview": "Complication majeure du diabète nécessitant une prise en charge multidisciplinaire.",
+        "details": {
+            "definition": "Plaie du pied chez un patient diabétique, souvent liée à la neuropathie et/ou l'artériopathie.",
+            "soins": [
+                "Décharge de la plaie (mise au repos)",
+                "Contrôle glycémique optimal",
+                "Détersion des berges hyperkératosiques"
+            ],
+            "liens": [
+                {
+                    "titre": "INESSS : Ulcère du pied diabétique",
+                    "url": "https://www.iplusinteractif.com/cached/books/1778/2846/files?category=14289#:~:text=services%20sociaux%20(INESSS)-,Ch06%20%2D%20Soins%20de%20plaies.%20Ulc%C3%A8re%20du%20pied%20diab%C3%A9tique%20%2D%20Institut%20national%20d%E2%80%99excellence%20en%20sant%C3%A9%20et%20en%20services%20sociaux%20(INESSS),-Ch06%20%2D%20Soins%20de"
+                }
+            ]
+        }
+    }
+]
