@@ -1,0 +1,265 @@
+[
+    {
+        "id": "int1",
+        "title": "Angioplastie Coronarienne",
+        "category": "interventions",
+        "preview": "Procédure mini-invasive visant à dilater une artère coronaire obstruée à l'aide d'un ballonnet et souvent d'un stent.",
+        "details": {
+            "description": "Indiquée en cas de syndrome coronarien aigu (SCA) ou d'angine de poitrine stable résistante au traitement médical.",
+            "soins_pre_op": [
+                "À jeun depuis minuit",
+                "Vérification des allergies à l'iode",
+                "Bilan sanguin (Créatinine, Coagulation)",
+                "Préparation cutanée (rasage du point de ponction si besoin)"
+            ],
+            "surveillance_post_op": [
+                "Repos au lit strict (4-6h si voie fémorale)",
+                "Surveillance du pansement compressif (absence d'hématome)",
+                "Surveillance des pouls périphériques",
+                "Hydratation pour éliminer le produit de contraste",
+                "Surveillance ECG et signes de douleur thoracique"
+            ],
+            "complications": [
+                "Hématome ou pseudo-anévrisme au point de ponction",
+                "Réaction allergique au produit contraste",
+                "Insuffisance rénale aiguë",
+                "Thrombose de stent",
+                "Dissection coronaire"
+            ]
+        }
+    },
+    {
+        "id": "int2",
+        "title": "Pontage Aortocoronarien (PAC)",
+        "category": "interventions",
+        "preview": "Chirurgie cardiaque à cœur ouvert visant à contourner une artère bouchée par un greffon (veine saphène ou artère mammaire).",
+        "details": {
+            "description": "Utilisé pour les sténoses multiples ou complexes ne pouvant être traitées par angioplastie.",
+            "soins_post_op": [
+                "Admission initiale en soins intensifs",
+                "Surveillance de la sternotomie (cicatrisation)",
+                "Gestion des drains pleuraux/médiastinaux",
+                "Kinésithérapie respiratoire intensive",
+                "Surveillance du rythme cardiaque (risque de FA post-op)"
+            ],
+            "surveillance_infirmiere": [
+                "Douleur (Échelle EVA)",
+                "Saturation O2 et auscultation",
+                "Signes d'infection de la plaie (rougeur, écoulement)",
+                "Surveillance de la fonction rénale"
+            ],
+            "complications": [
+                "Hémorragie médiastinale",
+                "Infarctus péri-opératoire",
+                "Tamponnade cardiaque",
+                "Infection du sternum (médiastinite)",
+                "AVC péri-opératoire"
+            ]
+        }
+    },
+    {
+        "id": "int3",
+        "title": "Thrombectomie Mécanique",
+        "category": "interventions",
+        "preview": "Retrait chirurgical (souvent par voie endovasculaire) d'un caillot sanguin obstruant une artère, principalement en cas d'AVC ischémique.",
+        "details": {
+            "description": "Réalisée en urgence pour les AVC avec occlusion d'une grosse artère cérébrale.",
+            "soins_infirmiers": [
+                "Surveillance neurologique horaire (NIHSS)",
+                "Contrôle strict de la tension artérielle (éviter l'HTA)",
+                "Surveillance du point de ponction fémoral",
+                "Évaluation de la déglutition avant reprise alimentaire"
+            ],
+            "complications": [
+                "Transformation hémorragique de l'AVC",
+                "Hématome au point de ponction",
+                "Dissection artérielle",
+                "Vasospasme"
+            ]
+        }
+    },
+    {
+        "id": "int4",
+        "title": "Prothèse Totale de Hanche (PTH)",
+        "category": "interventions",
+        "preview": "Remplacement de l'articulation de la hanche par des composants artificiels.",
+        "details": {
+            "description": "Indiquée pour l'arthrose sévère ou les fractures du col du fémur.",
+            "soins_infirmiers_post_op": [
+                "Mobilisation précoce (souvent J0 ou J1)",
+                "Positionnement : éviter la rotation interne et l'adduction forcée (coussin abducteur)",
+                "Surveillance des signes de phlébite (TVP)",
+                "Gestion de la douleur post-opératoire"
+            ],
+            "complications_specifiques": [
+                "Luxation de la prothèse",
+                "Infection de la prothèse",
+                "Embolie graisseuse ou gazeuse",
+                "Inégalité de longueur des membres"
+            ]
+        }
+    },
+    {
+        "id": "int5",
+        "title": "Lobectomie / Pneumonectomie",
+        "category": "interventions",
+        "preview": "Ablation chirurgicale d'un lobe (lobectomie) ou d'un poumon entier (pneumonectomie).",
+        "details": {
+            "description": "Généralement réalisée pour traiter des néoplasies pulmonaires.",
+            "surveillance_post_op": [
+                "Surveillance du drainage thoracique (bullage, quantité)",
+                "Kinésithérapie respiratoire (spirométrie incitative)",
+                "Positionnement : demi-assis pour favoriser l'expansion pulmonaire",
+                "Surveillance de la saturation et signes de détresse respiratoire"
+            ],
+            "complications": [
+                "Pneumothorax persistant (fuite d'air)",
+                "Hémorragie pleurale",
+                "Atélectasie",
+                "Pneumonie post-opératoire"
+            ]
+        }
+    },
+    {
+        "id": "int6",
+        "title": "Chirurgie de la Cataracte",
+        "category": "interventions",
+        "preview": "Remplacement du cristallin opacifié par un implant intraoculaire synthétique.",
+        "details": {
+            "description": "Intervention courte, le plus souvent en ambulatoire sous anesthésie locale.",
+            "conseils_post_op": [
+                "Ne pas frotter l'œil opéré",
+                "Porter une coque protectrice la nuit",
+                "Instillation rigoureuse de collyres (antibiotiques/anti-inflammatoires)",
+                "Éviter les efforts physiques intenses et la poussière"
+            ],
+            "signes_alerte": [
+                "Douleur oculaire intense",
+                "Baisse brutale de l'acuité visuelle",
+                "Rougeur croissante",
+                "Éclairs ou corps flottants massifs (risque décollement rétine)"
+            ]
+        }
+    },
+    {
+        "id": "int7",
+        "title": "Myringotomie (Aérateurs)",
+        "category": "interventions",
+        "preview": "Incision du tympan pour drainer le liquide et souvent poser des tubes de ventilation (diabolos).",
+        "details": {
+            "description": "Traitement des otites séreuses chroniques chez l'enfant ou l'adulte.",
+            "soins_et_precautions": [
+                "Protéger l'oreille de l'eau (bouchons lors du bain)",
+                "Surveillance de l'écoulement otopurulent",
+                "Audition : amélioration attendue rapide"
+            ],
+            "complications": [
+                "Perforation tympanique persistante après chute du tube",
+                "Infection (otorrhée)",
+                "Granulome"
+            ]
+        }
+    },
+    {
+        "id": "int8",
+        "title": "Pose de Pacemaker",
+        "category": "interventions",
+        "preview": "Implantation d'un stimulateur cardiaque pour traiter les bradycardies ou troubles de conduction.",
+        "details": {
+            "description": "Boîtier placé sous la clavicule avec des sondes menant au cœur.",
+            "surveillance_post_op": [
+                "Surveillance locale (hématome, infection du boîtier)",
+                "Interdiction de lever le bras opéré au-dessus de l'épaule pendant 4-6 semaines (risque de déplacement de sonde)",
+                "Vérification du rythme cardiaque (ECG)"
+            ],
+            "education_patient": [
+                "Port de la carte de porteur de pacemaker",
+                "Précautions avec les champs magnétiques (IRM souvent contre-indiquée si non compatible)",
+                "Surveillance des signes de défaillance (vertiges, essoufflement)"
+            ]
+        }
+    },
+    {
+        "id": "int9",
+        "title": "Endartériectomie Carotidienne",
+        "category": "interventions",
+        "preview": "Chirurgie visant à retirer la plaque d'athérome dans l'artère carotide pour prévenir l'AVC.",
+        "details": {
+            "description": "Indiquée pour les sténoses carotidiennes serrées et symptomatiques.",
+            "surveillance_infirmiere": [
+                "Surveillance neurologique immédiate (parole, force motrice)",
+                "Surveillance locale du cou (hématome compressif = URGENCE)",
+                "Contrôle de la tension artérielle pour éviter le syndrome d'hyperperfusion"
+            ],
+            "complications": [
+                "AVC péri-opératoire",
+                "Atteinte des nerfs crâniens (dysphonie, dysphagie)",
+                "Hémorragie cervicale"
+            ]
+        }
+    },
+    {
+        "id": "int10",
+        "title": "Trachéotomie",
+        "category": "interventions",
+        "preview": "Ouverture chirurgicale de la trachée pour assurer la respiration.",
+        "details": {
+            "description": "Réalisée en réanimation pour ventilation prolongée ou en cas d'obstruction ORL.",
+            "soins_standard": [
+                "Nettoyage et désinfection de la canule",
+                "Aspirations endotrachéales stériles si besoin",
+                "Surveillance de l'emphysème sous-cutané",
+                "Soins du stome (propreté, rougeurs)"
+            ],
+            "urgences": [
+                "Obstruction de la canule (bouchon muqueux)",
+                "Décanulation accidentelle",
+                "Fausse route massive"
+            ]
+        }
+    },
+    {
+        "id": "int11",
+        "title": "Stripping (Éveinage)",
+        "category": "interventions",
+        "preview": "Retrait chirurgical des veines variqueuses (veine saphène le plus souvent).",
+        "details": {
+            "description": "Traitement de l'insuffisance veineuse superficielle sévère.",
+            "soins_post_op": [
+                "Mobilisation précoce (marche conseillée)",
+                "Port de compression veineuse (bas de contention)",
+                "Surveillance des hématomes le long du trajet",
+                "Surveillance de l'insensibilité cutanée (lésion nerveuse possible)"
+            ],
+            "complications": [
+                "TVP (Thrombose Veineuse Profonde)",
+                "Lésion du nerf saphène",
+                "Infection des cicatrices"
+            ]
+        }
+    },
+    {
+        "id": "int12",
+        "title": "Amputation",
+        "category": "interventions",
+        "preview": "Perte d'un membre suite à une ischémie sévère, un traumatisme ou une tumeur.",
+        "details": {
+            "description": "Intervention chirurgicale consistant à retirer un membre pour sauver le patient d'un sepsis ou d'une gangrène.",
+            "soins_moignon": [
+                "Bandage compressif (modelage du moignon)",
+                "Positionnement (éviter rétractions musculaires)",
+                "Soins de la cicatrice (asepsie)"
+            ],
+            "douleur": [
+                "Gestion de la douleur post-opératoire",
+                "Douleur fantôme (sensations dans le membre absent)",
+                "Prise en charge neurologique et psychologique"
+            ],
+            "surveillance": [
+                "Signes d'infection ou de nécrose cutanée",
+                "Réadaptation (prothétisation)",
+                "Acceptation psychologique et de l'image corporelle"
+            ]
+        }
+    }
+]

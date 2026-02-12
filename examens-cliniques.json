@@ -144,5 +144,20 @@
                 "Anisocorie: Inégalité de taille entre les deux pupilles"
             ]
         }
+    },
+    {
+        "id": "ec8",
+        "title": "Signe de Homans",
+        "category": "examens-cliniques",
+        "preview": "Test de dépistage clinique de la thrombose veineuse profonde (TVP).",
+        "details": {
+            "description": "Consiste à induire une douleur au mollet lors de la dorsiflexion forcée du pied.",
+            "technique": "Le patient est allongé, le soignant soulève la jambe et fléchit brusquement le pied vers le haut.",
+            "interpretation": [
+                "Positif: Douleur vive dans le mollet (Suspect de TVP)",
+                "Négatif: Absence de douleur"
+            ],
+            "limites": "Peu sensible et peu spécifique. Un signe de Homans négatif n'exclut pas une TVP, et un signe positif peut être lié à une douleur musculaire simple."
+        }
     }
 ]

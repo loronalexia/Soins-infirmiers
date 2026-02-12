@@ -234,6 +234,10 @@ body {
 }
 
 /* Beige Brun */
+.bg-intervention {
+    background-color: #E2F3F5;
+    color: #227093;
+}
 
 .card-preview {
     color: var(--text-muted);
@@ -519,6 +523,10 @@ body {
 
 /* Responsive */
 @media (max-width: 768px) {
+    .app-container {
+        padding: 2rem 1rem;
+    }
+
     .main-nav {
         flex-direction: column;
         align-items: stretch;
@@ -528,15 +536,40 @@ body {
 
     .nav-item {
         text-align: center;
+        padding: 0.6rem 1.25rem;
+        font-size: 0.9rem;
     }
 
     .header-content {
         padding: 0 1rem;
     }
 
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+
     .logo h1 {
         font-size: 1.75rem;
     }
+}
+
+.header-nav-group {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+
+.referrer-back {
+    background-color: var(--secondary-color) !important;
+    color: white !important;
+    border-color: var(--secondary-color) !important;
+}
+
+.referrer-back:hover {
+    background-color: var(--primary-color) !important;
+    border-color: var(--primary-color) !important;
+    transform: translateY(-2px);
 }
 
 /* Class View Styling */

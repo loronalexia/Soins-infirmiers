@@ -795,5 +795,404 @@
                 "Thermorégulation"
             ]
         }
+    },
+    {
+        "id": "p29",
+        "title": "HTA (Hypertension Artérielle)",
+        "category": "pathologies",
+        "systeme": "Cardiovasculaire",
+        "preview": "Élévation chronique de la pression artérielle dans les artères.",
+        "details": {
+            "definition": "Pression artérielle systolique >= 140 mmHg et/ou diastolique >= 90 mmHg de façon permanente.",
+            "symptomes": [
+                "Souvent asymptomatique (tueur silencieux)",
+                "Céphalées (nuque, matin)",
+                "Vertiges / Acouphènes",
+                "Palpitations / Dyspnée d'effort"
+            ],
+            "traitements": [
+                "Hygiène de vie (DASH, baisse du sel, sport)",
+                "Antihypertenseurs (IECA, ARA II, Bêta-bloquants)",
+                "Diurétiques",
+                "Gestion du stress"
+            ],
+            "complications": [
+                "AVC",
+                "Infarctus du Myocarde",
+                "Insuffisance rénale chronique",
+                "Rétinopathie hypertensive"
+            ],
+            "urgence_hypertensive": [
+                "TA > 180/120 mmHg avec souffrance organe cible",
+                "Encéphalopathie, OAP, Douleur thoracique",
+                "Nécessite hospitalisation et traitement IV monitoré"
+            ],
+            "surveillance": [
+                "Mesure régulière de la TA (repos)",
+                "Observance du traitement",
+                "Poids et diurèse",
+                "Effets secondaires des médicaments"
+            ]
+        }
+    },
+    {
+        "id": "p30",
+        "title": "Coronaropathie",
+        "category": "pathologies",
+        "systeme": "Cardiovasculaire",
+        "preview": "Diminution du flux sanguin vers le muscle cardiaque due à l'athérosclérose.",
+        "details": {
+            "definition": "Atteinte des artères coronaires par des plaques d'athérome, pouvant mener à l'angine de poitrine ou l'Infarctus.",
+            "symptomes": [
+                "Douleur thoracique à l'effort (Angine)",
+                "Essoufflement",
+                "Fatigue inexpliquée",
+                "Parfois asymptomatique (Diabétiques)"
+            ],
+            "traitements": [
+                "Antiplaquettaires (Aspirine)",
+                "Statines (Antihyperlipidémiants)",
+                "Bêta-bloquants / Nitrates",
+                "Angioplastie ou Pontage (si sténose sévère)"
+            ],
+            "surveillance": [
+                "Récurrence des douleurs thoraciques (EVA)",
+                "Tolérance à l'effort",
+                "ECG d'effort ou de repos",
+                "Facteurs de risque (Tabac, Cholestérol)"
+            ]
+        }
+    },
+    {
+        "id": "p31",
+        "title": "MAP (Maladie Artérielle Périphérique)",
+        "category": "pathologies",
+        "systeme": "Cardiovasculaire",
+        "preview": "Rétrécissement des artères des membres inférieurs réduisant l'apport en oxygène.",
+        "details": {
+            "definition": "Athérosclérose des artères des jambes entraînant une ischémie chronique.",
+            "symptomes": [
+                "Claudication intermittente (douleur à la marche)",
+                "Peau froide, pâle ou cyanosée",
+                "Diminution/absence des pouls pédieux",
+                "Cicatrisation lente / Gangrène (stade critique)"
+            ],
+            "traitements": [
+                "Activité physique supervisée (marche)",
+                "Antiplaquettaires",
+                "Statines et contrôle HTA/Diabète",
+                "Revascularisation (stent ou pontage)"
+            ],
+            "surveillance": [
+                "Température et coloration des pieds",
+                "Présence des pouls périphériques",
+                "Intégrité cutanée (prévention d'ulcères)",
+                "Périmètre de marche"
+            ]
+        }
+    },
+    {
+        "id": "p33",
+        "title": "IVC & Ulcères Veineux",
+        "category": "pathologies",
+        "systeme": "Cardiovasculaire",
+        "preview": "Mauvais retour veineux entraînant oedème et plaies chroniques.",
+        "details": {
+            "definition": "Insuffisance Veineuse Chronique : reflux ou stagnation du sang dans les veines des jambes.",
+            "symptomes": [
+                "Jambes lourdes et tendues",
+                "Oedème malléolaire (cheville) le soir",
+                "Dermatite ocre (peau brune/rouge)",
+                "Ulcère péri-malléolaire (plaie atone, humide)"
+            ],
+            "traitements": [
+                "Compression veineuse (bas ou bandages)",
+                "Élévation des membres au repos",
+                "Exercice (marche, pompe veineuse)",
+                "Soins de plaie spécifiques pour l'ulcère"
+            ],
+            "surveillance": [
+                "Volume de l'oedème",
+                "Évolution de la plaie (taille, exsudat)",
+                "Douleur et signes de surinfection (érysipèle)"
+            ]
+        }
+    },
+    {
+        "id": "p34",
+        "title": "Varices",
+        "category": "pathologies",
+        "systeme": "Cardiovasculaire",
+        "preview": "Dilatation permanente et tortueuse des veines superficielles.",
+        "details": {
+            "definition": "Vaisseaux sanguins dont les valvules ne sont plus étanches, provoquant un reflux.",
+            "symptomes": [
+                "Cordon veineux visible et palpable",
+                "Douleurs ou crampes nocturnes",
+                "Démangeaisons (prurit)",
+                "Fatigue des jambes en fin de journée"
+            ],
+            "traitements": [
+                "Bas de compression",
+                "Sclérothérapie",
+                "Chirurgie (Stripping / Éveinage)",
+                "Laser endoveineux"
+            ],
+            "surveillance": [
+                "Apparition de signes d'IVC",
+                "Risque de thrombose superficielle (phlébite)",
+                "Confort du patient"
+            ]
+        }
+    },
+    {
+        "id": "p35",
+        "title": "TVP (Thrombose Veineuse Profonde)",
+        "category": "pathologies",
+        "systeme": "Cardiovasculaire",
+        "preview": "Formation d'un caillot sanguin dans une veine profonde de la jambe.",
+        "details": {
+            "definition": "Phlébite profonde risquant de se détacher pour causer une embolie pulmonaire.",
+            "symptomes": [
+                "Douleur unilatérale au mollet",
+                "Oedème du membre avec augmentation de la circonférence",
+                "Chaleur et rougeur locale",
+                "Signe de Homans positif (douleur à la dorsiflexion)"
+            ],
+            "traitements": [
+                "Anticoagulants (Héparine puis AVK ou AOD)",
+                "Repos initial puis marche avec contention",
+                "Compression élastique (classe 2 ou 3)"
+            ],
+            "complication_majeure": [
+                "Embolie pulmonaire (Dyspnée, douleur thoracique, malaise)"
+            ],
+            "surveillance": [
+                "Périmètre du mollet",
+                "Douleur et dissociation thermique (mollet chaud/pouls présent)",
+                "Signes respiratoire suspect d'EP",
+                "Bilan de coagulation (INR / TCA)"
+            ]
+        }
+    },
+    {
+        "id": "p36",
+        "title": "Cancer cutané",
+        "category": "pathologies",
+        "systeme": "Tégumentaire",
+        "preview": "Tumeurs malignes de la peau, incluant les carcinomes et le mélanome.",
+        "details": {
+            "definition": "Prolifération anarchique de cellules cutanées (mélanocytes ou kératinocytes) pouvant être bénigne ou maligne.",
+            "types_principaux": [
+                "Carcinome basocellulaire (plus fréquent, peu de métastases)",
+                "Carcinome spinocellulaire (risque de métastases)",
+                "Mélanome malin (plus agressif, risque métastatique élevé)"
+            ],
+            "symptomes": [
+                "Règle ABCDE (Asymétrie, Bords irréguliers, Couleur non uniforme, Diamètre > 6mm, Évolution)",
+                "Nouvelle lésion cutanée qui ne guérit pas",
+                "Modification d'un grain de beauté existant",
+                "Lésion squameuse ou croûteuse persistante"
+            ],
+            "traitements": [
+                "Exérèse chirurgicale (chirurgie micrographique de Mohs)",
+                "Curiethérapie / Radiothérapie",
+                "Chimiothérapie topique ou systémique",
+                "Immunothérapie (pour le mélanome avancé)"
+            ],
+            "surveillance": [
+                "Auto-examen régulier de la peau",
+                "Protection solaire (FPS 30+, vêtements, éviter heures de pointe)",
+                "Surveillance de la cicatrisation post-exérèse",
+                "Dépistage des ganglions lymphatique (si mélanome)"
+            ]
+        }
+    },
+    {
+        "id": "p37",
+        "title": "Lésion de pression (Escarre)",
+        "category": "pathologies",
+        "systeme": "Tégumentaire",
+        "preview": "Dommage localisé à la peau et/ou aux tissus sous-jacents, souvent au-dessus d'une saillie osseuse.",
+        "details": {
+            "definition": "Nécrose cutanée et tissulaire causée par une pression prolongée, un cisaillement ou une friction.",
+            "stades_cliniques": [
+                "Stade 1 : Érythème persistant (rougeur) ne blanchissant pas à la pression",
+                "Stade 2 : Perte tissulaire partielle (ampoule ou ulcère superficiel rose/rouge)",
+                "Stade 3 : Perte tissulaire totale (graisse visible, mais pas les os/tendons)",
+                "Stade 4 : Perte tissulaire totale avec exposition des os, tendons ou muscles"
+            ],
+            "complications": [
+                "Sepsis (infection généralisée)",
+                "Ostéomyélite (infection de l'os)",
+                "Cellulite infectieuse",
+                "Anémie inflammatoire",
+                "Déshydratation et perte protéique"
+            ],
+            "interventions": [
+                "Mobilisation toutes les 2 heures (changement de position)",
+                "Utilisation de surfaces thérapeutiques (matelas à air)",
+                "Nutrition riche en protéines, Vitamine C et Zinc",
+                "Soins de plaie (pansements humides, débridement si nécrose)"
+            ],
+            "surveillance": [
+                "Évaluation de la peau aux points de pression (talons, sacrum, ischions)",
+                "Échelle de Braden (évaluation du risque)",
+                "Gestion de l'humidité (incontinence)",
+                "Signes d'infection locale (pus, odeur, chaleur)"
+            ]
+        }
+    },
+    {
+        "id": "p38",
+        "title": "Fracture sans déplacement",
+        "category": "pathologies",
+        "systeme": "Musculosquelettique",
+        "preview": "Rupture de la continuité osseuse où les fragments restent alignés.",
+        "details": {
+            "definition": "Fracture simple sans déviation des segments osseux, nécessitant généralement une immobilisation seule.",
+            "symptomes": [
+                "Douleur localisée vive",
+                "Oedème et ecchymose",
+                "Impuissance fonctionnelle partielle",
+                "Sensibilité à la palpation"
+            ],
+            "traitements": [
+                "Immobilisation (Plâtre, attelle ou orthèse)",
+                "Repos et élévation du membre",
+                "Analgésiques (AINS, paracétamol)",
+                "Rééducation progressive après consolidation"
+            ],
+            "surveillance": [
+                "Signes neurovasculaires (CCSMS : Chaleur, Couleur, Sensibilité, Mobilité, Signaux/Pouls)",
+                "Confort sous le plâtre (points de pression)",
+                "Évolution de la douleur",
+                "Radiographies de contrôle"
+            ]
+        }
+    },
+    {
+        "id": "p39",
+        "title": "Fracture avec déplacement ou écrasement",
+        "category": "pathologies",
+        "systeme": "Musculosquelettique",
+        "preview": "Rupture osseuse avec désalignement ou fragmentation des segments.",
+        "details": {
+            "definition": "Fracture complexe où les os ne sont plus en contact anatomique ou sont broyés, nécessitant souvent une réduction.",
+            "symptomes": [
+                "Déformation visible du membre",
+                "Douleur atroce",
+                "Oedème massif et rapide",
+                "Crépitation osseuse possible"
+            ],
+            "traitements": [
+                "Réduction fermée (traction) ou ouverte (chirurgie)",
+                "Fixation interne (plaque, vis, clou) ou externe",
+                "Gestion agressive de la douleur",
+                "Antibioprophylaxie si fracture ouverte"
+            ],
+            "complication_majeure": [
+                "Syndrome du compartiment (Urgence chirurgicale : douleur disproportionnée, paresthésie, pâleur)",
+                "Embolie graisseuse",
+                "Infection (ostéomyélite)",
+                "Nécrose avasculaire"
+            ],
+            "surveillance": [
+                "CCSMS horaire en phase aiguë",
+                "Évaluation de la douleur (signe d'alerte syndrome compartiment)",
+                "Surveillance du drainage post-op",
+                "Stabilité du matériel de fixation"
+            ]
+        }
+    },
+    {
+        "id": "p40",
+        "title": "Fracture de la hanche",
+        "category": "pathologies",
+        "systeme": "Musculosquelettique",
+        "preview": "Fracture du col du fémur ou de la région trochantérienne, fréquente chez l'aîné.",
+        "details": {
+            "definition": "Lésion traumatique majeure affectant l'extrémité supérieure du fémur, souvent liée à l'ostéoporose et aux chutes.",
+            "symptomes": [
+                "Membre inférieur raccourci et en rotation externe",
+                "Douleur à l'aine ou au genou",
+                "Incapacité de porter du poids",
+                "Ecchymose trochantérienne"
+            ],
+            "traitements": [
+                "Réduction et fixation (Vis gamma, plaques)",
+                "Hémi-arthroplastie ou Prothèse Totale de Hanche (PTH)",
+                "Mobilisation précoce au fauteuil (J1)",
+                "Prévention de la perte d'autonomie"
+            ],
+            "complications": [
+                "TVP et Embolie pulmonaire (alitement)",
+                "Délirium post-opératoire",
+                "Pneumonie d'aspiration ou d'hypostase",
+                "Plaie de pression (sacrum/talon)"
+            ],
+            "surveillance": [
+                "Positionnement du membre (coussin abducteur)",
+                "Surveillance du saignement (hémoglobine)",
+                "CCSMS du pied",
+                "État cognitif et hydratation"
+            ]
+        }
+    },
+    {
+        "id": "p41",
+        "title": "Arthrose de la hanche (Coxarthrose)",
+        "category": "pathologies",
+        "systeme": "Musculosquelettique",
+        "preview": "Dégénérescence chronique du cartilage de l'articulation de la hanche.",
+        "details": {
+            "definition": "Usure progressive du cartilage articulaire entraînant une douleur mécanique et une raideur.",
+            "symptomes": [
+                "Douleur à l'effort soulagée par le repos",
+                "Raideur matinale de courte durée (< 30 min)",
+                "Diminution de l'amplitude articulaire",
+                "Boiterie à la marche"
+            ],
+            "traitements": [
+                "Perte de poids si nécessaire",
+                "Physiothérapie (renforcement musculaire)",
+                "Analgésiques (Paracétamol, AINS)",
+                "Chirurgie : Prothèse Totale de Hanche (PTH) en dernier recours"
+            ],
+            "surveillance": [
+                "Qualité de vie et niveau de douleur",
+                "Périmètre de marche",
+                "Effets secondaires des AINS (gastrite, fonction rénale)",
+                "Besoin d'aide à la marche (canne)"
+            ]
+        }
+    },
+    {
+        "id": "p42",
+        "title": "Arthrose du genou (Gonarthrose)",
+        "category": "pathologies",
+        "systeme": "Musculosquelettique",
+        "preview": "Usure du cartilage de l'articulation du genou, causant douleur et déformation.",
+        "details": {
+            "definition": "Pathologie dégénérative la plus fréquente au genou, touchant un ou plusieurs compartiments (fémoro-tibial, fémoro-patellaire).",
+            "symptomes": [
+                "Douleur au genou (escaliers, marche prolongée)",
+                "Darthrose (gonflement articulaire par épanchement)",
+                "Déformation en varus (genoux arqués) ou valgus",
+                "Sensation de dérobement ou craquement"
+            ],
+            "traitements": [
+                "Exercices d'impact faible (natation, vélo)",
+                "Injections intra-articulaires (Cortisone, Viscosuppléance)",
+                "Supports (genouillère)",
+                "Chirurgie : Prothèse Totale de Genou (PTG) ou Ostéotomie"
+            ],
+            "surveillance": [
+                "Volume de l'oedème (périmètre du genou)",
+                "Stabilité de l'articulation",
+                "Capacité à effectuer les activités quotidiennes",
+                "Signes d'inflammation aiguë"
+            ]
+        }
     }
 ]

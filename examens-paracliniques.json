@@ -195,5 +195,39 @@
                 "Cible Diabétique: Souvent < 7.0%"
             ]
         }
+    },
+    {
+        "id": "ep13",
+        "title": "Échographie Doppler (Veineuse/Artérielle)",
+        "category": "examens-paracliniques",
+        "preview": "Imagerie par ultrasons permettant de visualiser le flux sanguin et les vaisseaux.",
+        "details": {
+            "but": "Diagnostiquer une TVP (manque de compressibilité de la veine) ou une MAP (rétrécissement artériel).",
+            "points_cles": [
+                "Examen non invasif et indolore",
+                "Permet de mesurer la vitesse du sang",
+                "Recherche de caillots ou de plaques d'athérome"
+            ]
+        }
+    },
+    {
+        "id": "ep14",
+        "title": "Coronarographie",
+        "category": "examens-paracliniques",
+        "preview": "Radiographie invasive des artères du cœur utilisant un produit de contraste.",
+        "details": {
+            "but": "Localiser précisément une obstruction coronaire avant une angioplastie ou un pontage.",
+            "surveillance_post_op": [
+                "Repos strict au lit (jambe tendue si fémorale)",
+                "Surveillance du point de ponction (hématome, saignement)",
+                "Hydratation pour éliminer l'iode",
+                "Signes de perfusion du membre (chaleur, pouls)"
+            ],
+            "risques": [
+                "Hémorragie au point de ponction",
+                "Réaction allergique à l'iode",
+                "Insuffisance rénale aiguë (produit de contraste)"
+            ]
+        }
     }
 ]

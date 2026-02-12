@@ -10,9 +10,14 @@ let currentCategory = 'pathologies';
 // Cache for loaded data
 // We will fill this object with keys corresponding to categories
 let studyData = {};
-const categories = ['pathologies', 'medicaments', 'examens-paracliniques', 'examens-cliniques'];
+const categories = ['pathologies', 'medicaments', 'interventions', 'examens-paracliniques', 'examens-cliniques'];
 
-// Initialize
+// Modal Navigation History
+let currentModalItem = null;
+let modalHistory = [];
+let referringItem = null; // Track item that triggered a cross-view link
+
+// Global Constants
 async function init() {
     await preloadAllData();
     // Start with default category - rendering from cache
@@ -25,7 +30,7 @@ async function preloadAllData() {
     contentArea.innerHTML = '<div class="loading">Chargement des données...</div>';
     try {
         // Categories for main navigation
-        const mainCategories = ['pathologies', 'medicaments', 'examens-paracliniques', 'examens-cliniques'];
+        const mainCategories = ['pathologies', 'medicaments', 'interventions', 'examens-paracliniques', 'examens-cliniques'];
         // All files to load (including invisible ones like sources)
         const filesToLoad = [...mainCategories, 'sources'];
 
@@ -55,6 +60,9 @@ async function preloadAllData() {
 
 // Load Category Data
 function loadCategory(category) {
+    currentCategory = category;
+    referringItem = null; // Clear referrer when switching tabs manually
+
     // Update active tab UI
     updateActiveTab(category);
 
@@ -94,6 +102,9 @@ function renderContent(viewName, data) {
         return;
     }
 
+    // Sort alphabetically by title
+    const sortedData = [...data].sort((a, b) => a.title.localeCompare(b.title));
+
     // Special handling for medicaments view
     if (viewName === 'medicaments') {
         renderMedicationClasses(data);
@@ -109,7 +120,7 @@ function renderContent(viewName, data) {
     const gridContainer = document.createElement('div');
     gridContainer.className = 'grid-container';
 
-    data.forEach(item => {
+    sortedData.forEach(item => {
         // Determine style based on item's category, not global view
         const itemCat = item.category || viewName;
 
@@ -186,11 +197,25 @@ function renderMedicationsByClass(className, allData) {
     // Header with back button
     const header = document.createElement('div');
     header.className = 'class-view-header';
+
+    let backToReferrer = '';
+    if (referringItem) {
+        backToReferrer = `
+            <button class="back-button referrer-back" onclick="openReferrer()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-left"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+                Retour à : ${referringItem.title}
+            </button>
+        `;
+    }
+
     header.innerHTML = `
-        <button class="back-button" onclick="loadCategory('medicaments')">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-left"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
-            Retour aux classes
-        </button>
+        <div class="header-nav-group">
+            <button class="back-button" onclick="loadCategory('medicaments')">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-left"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+                Retour aux classes
+            </button>
+            ${backToReferrer}
+        </div>
         <h2>${className}</h2>
     `;
     contentArea.appendChild(header);
@@ -239,8 +264,8 @@ function formatCategoryName(slug) {
     const names = {
         'pathologies': 'Pathologies',
         'medicaments': 'Médicaments',
-        'examens-paracliniques': 'Examens Paracliniques',
-        'examens-cliniques': 'Examens Cliniques',
+        'examens-paracliniques': 'Ex. Paracliniques',
+        'examens-cliniques': 'Ex. Cliniques',
         'recherche': 'Résultat'
     };
     return names[slug] || slug;
@@ -263,7 +288,7 @@ const linkMapping = [
     { keywords: ['nitroglycérine', 'nitro', 'nitrates'], target: 'Nitroglycérine (Nitro)' },
     { keywords: ['morphine', 'opioïde', 'opioïden'], target: 'Morphine' },
     { keywords: ['antibiotique'], target: 'Antibiotiques' },
-    { keywords: ['lévodopa', 'levodopa', 'sinemet'], target: 'Lévodopa + Carbidopa (Sinemet)' },
+    { keywords: ['lévodopa', 'levodopa', 'sinemet'], target: 'Sinemet' },
 
     // Examens Cliniques
     { keywords: ['glasgow', 'gcs'], target: 'Échelle de Glasgow (GCS)' },
@@ -283,7 +308,50 @@ const linkMapping = [
     { keywords: ['inr', 'tca', 'bilan de coagulation'], target: 'Bilan de Coagulation (INR / TCA)' },
     { keywords: ['créatinine', 'creatinine', 'urée'], target: 'Créatinine & Urée' },
     { keywords: ['hba1c'], target: 'HbA1c (Hémoglobine Glyquée)' },
-    { keywords: ['gsa', 'gaz sanguins artériels'], target: 'Gaz Sanguins Artériels (GSA)' }
+    { keywords: ['gsa', 'gaz sanguins artériels'], target: 'Gaz Sanguins Artériels (GSA)' },
+    { keywords: ['hta', 'hypertension'], target: 'HTA (Hypertension Artérielle)' },
+    { keywords: ['tvp', 'thrombose veineuse profonde', 'phlébite'], target: 'TVP (Thrombose Veineuse Profonde)' },
+    { keywords: ['map', 'maladie artérielle périphérique'], target: 'MAP (Maladie Artérielle Périphérique)' },
+    { keywords: ['coronaropathie', 'mcas'], target: 'MCAS' },
+    { keywords: ['coronarographie'], target: 'Coronarographie' },
+    { keywords: ['doppler', 'échographie doppler'], target: 'Échographie Doppler (Veineuse/Artérielle)' },
+    { keywords: ['homans'], target: 'Signe de Homans' },
+    { keywords: ['amputation', 'moignon'], target: 'Amputation' },
+    { keywords: ['ulcère', 'ulcere'], target: 'IVC & Ulcères Veineux' },
+    { keywords: ['varice'], target: 'Varices' },
+
+    // Pathologies manquantes
+    { keywords: ['avc', 'ischémique', 'ischémie cérébrale'], target: 'AVC' },
+    { keywords: ['alzheimer'], target: 'Alzheimer' },
+    { keywords: ['parkinson'], target: 'Parkinson' },
+    { keywords: ['sep', 'sclérose en plaques'], target: 'Sclérose en Plaques' },
+    { keywords: ['pneumonie'], target: 'Pneumonie' },
+    { keywords: ['insuffisance cardiaque'], target: 'Insuffisance Cardiaque' },
+    { keywords: ['infarctus', 'sca', 'stemi'], target: 'Infarctus' },
+    { keywords: ['diabète', 'diabete'], target: 'Diabète de Type 2' },
+
+    // Interventions
+    { keywords: ['angioplastie', 'stent'], target: 'Angioplastie Coronarienne' },
+    { keywords: ['pontage', 'pac '], target: 'Pontage Aortocoronarien (PAC)' },
+    { keywords: ['thrombectomie'], target: 'Thrombectomie Mécanique' },
+    { keywords: ['pth', 'prothèse de hanche', 'prothèse totale de hanche'], target: 'Prothèse Totale de Hanche (PTH)' },
+    { keywords: ['lobectomie', 'pneumonectomie'], target: 'Lobectomie / Pneumonectomie' },
+    { keywords: ['cataracte', 'cristallin'], target: 'Chirurgie de la Cataracte' },
+    { keywords: ['myringotomie', 'diabolo', 'aérateur'], target: 'Myringotomie (Aérateurs)' },
+    { keywords: ['pacemaker', 'stimulateur cardiaque'], target: 'Pose de Pacemaker' },
+    { keywords: ['endartériectomie', 'carotidienne'], target: 'Endartériectomie Carotidienne' },
+    { keywords: ['trachéotomie', 'cannule'], target: 'Trachéotomie' },
+    { keywords: ['stripping', 'éveinage'], target: 'Stripping (Éveinage)' },
+
+    // Tégumentaire
+    { keywords: ['escarre', 'pression', 'lésion de pression'], target: 'Lésion de pression (Escarre)' },
+    { keywords: ['cancer cutané', 'mélanome', 'abcde', 'carcinome'], target: 'Cancer cutané' },
+
+    // Musculosquelettique
+    { keywords: ['arthrose', 'coxarthrose', 'gonarthrose'], target: 'Arthrose de la hanche (Coxarthrose)' },
+    { keywords: ['ptg', 'prothèse de genou'], target: 'Arthrose du genou (Gonarthrose)' },
+    { keywords: ['compartiment', 'syndrome du compartiment'], target: 'Fracture avec déplacement ou écrasement' },
+    { keywords: ['plâtre', 'immobilisation'], target: 'Fracture sans déplacement' }
 ];
 
 function formatSmartLinks(text) {
@@ -316,28 +384,32 @@ function formatSmartLinks(text) {
 }
 
 function handleSmartLink(originalText, targetName) {
-    closeModal();
+    if (!targetName) return;
+    const target = targetName.trim().toLowerCase();
 
     // Strategy: Find the target anywhere in studyData
     let foundItem = null;
-    let categoryFound = null;
 
     for (const cat of categories) {
         if (studyData[cat]) {
-            // Find exact title OR find where targetName is mentioned
-            foundItem = studyData[cat].find(item =>
-                item.title.toLowerCase() === targetName.toLowerCase() ||
-                item.title.toLowerCase().includes(targetName.toLowerCase())
-            );
-            if (foundItem) {
-                categoryFound = cat;
-                break;
+            // Priority 1: Exact Match (ignoring case)
+            foundItem = studyData[cat].find(item => item.title.toLowerCase().trim() === target);
+
+            // Priority 2: Title includes target
+            if (!foundItem) {
+                foundItem = studyData[cat].find(item => item.title.toLowerCase().includes(target));
             }
+
+            // Priority 3: Target includes title (for cases like link target "AVC" and item title "AVC (Accident...)")
+            if (!foundItem) {
+                foundItem = studyData[cat].find(item => target.includes(item.title.toLowerCase().trim()));
+            }
+
+            if (foundItem) break;
         }
     }
 
     if (foundItem) {
-        // If it's a specific object, open it directly
         setTimeout(() => openModal(foundItem), 100);
         return;
     }
@@ -346,10 +418,14 @@ function handleSmartLink(originalText, targetName) {
     const allMedData = studyData['medicaments'];
     if (allMedData) {
         const distinctClasses = [...new Set(allMedData.map(m => m.details.classe))];
-        const matchedClass = distinctClasses.find(c => c.toLowerCase().includes(targetName.toLowerCase()));
+        const matchedClass = distinctClasses.find(c => c.toLowerCase().includes(target));
 
         if (matchedClass) {
+            const savedItem = currentModalItem; // Capture before closeModal clears it
+            closeModal();
             loadCategory('medicaments');
+            referringItem = savedItem; // Set after loadCategory might have cleared it
+
             setTimeout(() => {
                 renderMedicationsByClass(matchedClass, allMedData);
                 window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -358,24 +434,47 @@ function handleSmartLink(originalText, targetName) {
         }
     }
 
-    // 3. Last fallback: Global Search for that term
+    // 3. Fallback: Search for that term
     const searchInput = document.getElementById('search-input');
     if (searchInput) {
+        const savedItem = currentModalItem; // Capture before closeModal clears it
+        closeModal();
+        referringItem = savedItem;
+
         searchInput.value = targetName;
-        // Trigger input event to fire search logic
         searchInput.dispatchEvent(new Event('input'));
     }
 }
 
 // Open Modal with Details
-function openModal(item) {
+function openModal(item, isBack = false) {
+    // Handle history
+    if (!isBack && currentModalItem && currentModalItem.id !== item.id) {
+        modalHistory.push(currentModalItem);
+    }
+    currentModalItem = item;
+
     // Get color class for category label
     let labelClass = 'bg-pathology';
     if (item.category === 'medicaments') labelClass = 'bg-medicament';
+    else if (item.category === 'interventions') labelClass = 'bg-intervention';
     else if (item.category === 'examens-paracliniques') labelClass = 'bg-para';
     else if (item.category === 'examens-cliniques') labelClass = 'bg-clinic';
 
-    let contentHtml = `
+    let contentHtml = '';
+
+    // Add back button if history exists
+    if (modalHistory.length > 0) {
+        const previousItem = modalHistory[modalHistory.length - 1];
+        contentHtml += `
+            <button class="modal-back-button" onclick="goBackInModal()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-left"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+                Retour à : ${previousItem.title}
+            </button>
+        `;
+    }
+
+    contentHtml += `
         <div class="detail-header">
             <h2 class="detail-title">${item.title}</h2>
             <div class="card-category-label ${labelClass}" style="margin:0">${formatCategoryName(item.category)}</div>
@@ -472,6 +571,29 @@ function openModal(item) {
 function closeModal() {
     modal.classList.add('hidden');
     document.body.style.overflow = '';
+    // Clear history on full close
+    modalHistory = [];
+    currentModalItem = null;
+}
+
+// Open Referrer (Back to Pathology)
+function openReferrer() {
+    if (referringItem) {
+        const itemToOpen = referringItem;
+        referringItem = null; // Clear it so it doesn't persist
+        openModal(itemToOpen);
+
+        // Optionally refresh the view to hdie the button immediately 
+        // if the modal is closed later, but opening modal is priority
+    }
+}
+
+// Back in Modal logic
+function goBackInModal() {
+    if (modalHistory.length > 0) {
+        const previousItem = modalHistory.pop();
+        openModal(previousItem, true);
+    }
 }
 
 // Event Listeners
@@ -519,6 +641,10 @@ function setupEventListeners() {
                         allResults.push(...filtered);
                     }
                 });
+
+                // Sort all search results alphabetically
+                allResults.sort((a, b) => a.title.localeCompare(b.title));
+
                 renderContent('recherche', allResults);
             } else {
                 loadCategory(currentCategory);
