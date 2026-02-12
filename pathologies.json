@@ -102,7 +102,25 @@
         "systeme": "Nerveux",
         "preview": "Perte soudaine d'une fonction cérébrale causée par un arrêt de l'apport sanguin ou une rupture vasculaire.",
         "details": {
-            "definition": "Déficit neurologique soudain d'origine vasculaire (ischémique 80% ou hémorragique 20%).",
+            "definition": "Privation O2 et nutriments essentiels dans une section du cerveau causée par: circulation interrompue ou saignement. Conséquences: mort cellulaire et la partie du cerveau touchée subit des dysfonctionnements.",
+            "types_avc": {
+                "ischémique": {
+                    "description": "Représente 85% des cas. Il est causé par l'obstruction d'un vaisseau sanguin cérébral.",
+                    "sous_types": [
+                        "Thrombotique : Lésion sur la paroi d'un vaisseau sanguin favorisant la formation d'un caillot qui obstrue la circulation.",
+                        "Embolique : Un caillot sanguin (embole) se déplace dans la circulation jusqu'à bloquer une artère cérébrale plus étroite.",
+                        "Lacunaire : Occulsion d'une petite artère profonde, souvent asymptomatique, pouvant entraîner des troubles cognitifs ou une démence vasculaire."
+                    ]
+                },
+                "hémorragique": {
+                    "description": "Représente 15% des cas. Il est causé par la rupture d'un vaisseau sanguin et présente une mortalité élevée (30 à 50% des décès surviennent dans les 48 premières heures).",
+                    "sous_types": [
+                        "Sous-arachnoïdienne (HSA) : Épanchement de sang dans l'espace sous-arachnoïdien, souvent dû à la rupture d'un anévrisme.",
+                        "Intraventriculaire : Saignement dans les ventricules cérébraux, souvent associé à un traumatisme ou à la consommation de drogues.",
+                        "Intracérébral : Rupture d'un vaisseau sanguin à l'intérieur du cerveau, dont l'HTA est la cause principale."
+                    ]
+                }
+            },
             "symptomes": [
                 "Hémiplégie / Hémiparésie",
                 "Troubles du langage (Aphasie)",
@@ -818,9 +836,12 @@
             ],
             "traitements": [
                 "Hygiène de vie (DASH, baisse du sel, sport)",
-                "Antihypertenseurs (IECA, ARA II, Bêta-bloquants)",
-                "Diurétiques",
-                "Gestion du stress"
+                "Antihypertenseurs (IECA, ARA, Bêta-bloquants)",
+                "Diurétiques : diminution volume plasmatique (ex: Furosémide)",
+                "Bêta-bloquants : diminution Fc = diminution PA",
+                "Bloqueurs des canaux calciques : vasodilatation artérielle (ex: Amlodipine)",
+                "IECA : inhibition de la vasoconstriction = diminution rétention Na+ et H2O (ex: Ramipril)",
+                "ARA : vasodilatation (ex: Valsartan)"
             ],
             "complications": [
                 "AVC",
@@ -829,13 +850,17 @@
                 "Rétinopathie hypertensive"
             ],
             "urgence_hypertensive": [
-                "TA \u003e 180/120 mmHg avec souffrance organe cible",
+                "TA \u003e 180/110 mmHg avec souffrance organe cible",
                 "Encéphalopathie, OAP, Douleur thoracique",
                 "Nécessite hospitalisation et traitement IV monitoré"
             ],
             "surveillance": [
                 "Mesure régulière de la TA (repos)",
-                "Observance du traitement",
+                "ECG",
+                "Analyse d'urine",
+                "E+",
+                "Créatinine, Hb glyquée, glycémie à jeun",
+                "Profil lipidique et hépatique",
                 "Poids et diurèse",
                 "Effets secondaires des médicaments"
             ]
@@ -1208,6 +1233,7 @@
         "systeme": "Multisystémique",
         "preview": "Maladie caractérisée par une prolifération cellulaire anarchique et incontrôlée.",
         "details": {
+            "definition": "Transformation maligne de cellules saines échappant aux mécanismes de régulation de l'organisme.",
             "physiopathologie": "Mutation de l'ADN cellulaire entraînant une perte des mécanismes de régulation du cycle cellulaire, une invasion tissulaire et un potentiel métastatique.",
             "classification": [
                 "Système TNM : T (Taille tumeur), N (Nodes/Ganglions), M (Métastases)",
@@ -1220,11 +1246,23 @@
                 "Immunothérapie : Activation du système immunitaire pour combattre les cellules malignes",
                 "Chirurgie d'exérèse (Curative ou palliative)"
             ],
+            "surveillance_infirmiere": [
+                "Gestion de la douleur",
+                "Suivi nutritionnel et hydratation",
+                "Prévention des infections (Neutropénie)",
+                "Accompagnement psychologique"
+            ],
+            "effets_chimio": [
+                "Alopécie",
+                "Nausées et vomissements",
+                "Mucite (inflammation des muqueuses)",
+                "Fatigue extrême"
+            ],
             "complications": [
                 "Neutropénie fébrile (Risque élevé d'infection)",
                 "Syndrome de lyse tumorale (Urgences métaboliques)",
                 "Compression médullaire",
-                "Obtruction de la veine cave supérieure",
+                "Obstruction de la veine cave supérieure",
                 "Douleur cancéreuse chronique"
             ],
             "liens": [
@@ -1543,7 +1581,7 @@
             "definition": "Mutation du gène CFTR entraînant une production de mucus anormalement épais et visqueux.",
             "symptomes": [
                 "Toux chronique et infections respiratoires fréquentes",
-                "Insuffisante pancréatique (Malasbsorption)",
+                "Insuffisance pancréatique (Malabsorption)",
                 "Retard de croissance",
                 "Sueur anormalement salée"
             ],
@@ -1768,34 +1806,6 @@
             "surveillance": [
                 "Crise thyrotoxique (Urgence : fièvre, tachycardie extrême)",
                 "Poids et rythme cardiaque"
-            ]
-        }
-    },
-    {
-        "id": "p66",
-        "title": "Cancer (Généralités)",
-        "category": "pathologies",
-        "systeme": "Multisystémique",
-        "preview": "Processus de prolifération cellulaire incontrôlée pouvant toucher n'importe quel organe.",
-        "details": {
-            "definition": "Transformation maligne de cellules saines échappant aux mécanismes de régulation de l'organisme.",
-            "traitements": [
-                "Chirurgie (exérèse)",
-                "Chimiothérapie (Agents cytotoxiques)",
-                "Radiothérapie",
-                "Immunothérapie et Hormonothérapie"
-            ],
-            "surveillance_infirmiere": [
-                "Gestion de la douleur",
-                "Suivi nutritionnel et hydratation",
-                "Prévention des infections (Neutropénie)",
-                "Accompagnement psychologique"
-            ],
-            "effets_chimio": [
-                "Alopécie",
-                "Nausées et vomissements",
-                "Mucite (inflammation des muqueuses)",
-                "Fatigue extrême"
             ]
         }
     },

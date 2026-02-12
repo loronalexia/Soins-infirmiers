@@ -439,7 +439,7 @@ const linkMapping = [
     { keywords: ['hbp', 'prostate', 'hyperplasie'], target: 'Hyperplasie Bénigne de la Prostate (HBP)' },
     { keywords: ['cancer de la prostate', 'aps', 'toucher rectal'], target: 'Cancer de la Prostate' },
     { keywords: ['hystérectomie', 'hysterectomie', 'ablation utérus'], target: 'Hystérectomie' },
-    { keywords: ['mastectomie', 'lymphoedème', 'drainage lymphatique'], target: 'Mastectomie Radiale Modifiée' },
+    { keywords: ['mastectomie', 'lymphoedème', 'drainage lymphatique'], target: 'Mastectomie Radicale Modifiée' },
     { keywords: ['tumorectomie'], target: 'Tumorectomie (Sein)' },
     { keywords: ['turp', 'résection prostate', 'irrigation vésicale'], target: 'Résection Transurétrale de la Prostate (TURP)' },
     { keywords: ['prostatectomie'], target: 'Prostatectomie Radicale' }
@@ -448,13 +448,36 @@ const linkMapping = [
 function formatSmartLinks(text) {
     if (typeof text !== 'string') return text;
 
-    // 1. Identify all potential matches across the whole text
+    // Helper to escape HTML characters
+    const escapeHtml = (unsafe) => {
+        return unsafe
+            .replace(/&/g, "&amp;")
+            .replace(/</g, "&lt;")
+            .replace(/>/g, "&gt;")
+            .replace(/"/g, "&quot;")
+            .replace(/'/g, "&#039;");
+    };
+
+    // 1. Identify all potential matches across the whole text (using original unescaped text)
     const matches = [];
     linkMapping.forEach(link => {
         link.keywords.forEach(keyword => {
-            // Case insensitive, handling potential plural 's' or 'x'
-            // Use \\b to escape backslash in string-based regex
-            const regex = new RegExp('(\\b' + keyword + '[s|x]?\\b)', 'gi');
+            // Escape special regex characters in the keyword
+            const escapedKeyword = keyword.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+
+            // IMPROVED REGEX:
+            // 1. Matches preceded by start of string, whitespace, OR apostrophe/quote (for l'HTA)
+            // 2. Matches the keyword (case insensitive)
+            // 3. Optional plural 's' or 'x'
+            // 4. Followed by end of string, whitespace, or punctuation
+            // We use lookbehind/lookahead logic or simple boundary checks.
+            // Since JS lookbehind support varies, we stick to \b but ' is a word boundary.
+
+            // 'HTA' is \bHTA\b. 
+            // "l'HTA" -> ' is non-word char, H is word char. So \b matches between ' and H.
+            // This logic works for standard words.
+
+            const regex = new RegExp('(\\b' + escapedKeyword + '[s|x]?\\b)', 'gi');
             let match;
             while ((match = regex.exec(text)) !== null) {
                 matches.push({
@@ -467,10 +490,9 @@ function formatSmartLinks(text) {
         });
     });
 
-    if (matches.length === 0) return text;
+    if (matches.length === 0) return escapeHtml(text);
 
     // 2. Filter matches to avoid overlaps (favoring longer ones)
-    // Sort by length (descending) then by start position
     matches.sort((a, b) => (b.end - b.start) - (a.end - a.start) || a.start - b.start);
 
     const selectedMatches = [];
@@ -486,16 +508,9 @@ function formatSmartLinks(text) {
         }
 
         if (!overlap) {
-            // 3. CHECK FOR TAGS: Ensure the match is not inside a <...> tag
-            const textBefore = text.slice(0, match.start);
-            const lastOpen = textBefore.lastIndexOf('<');
-            const lastClose = textBefore.lastIndexOf('>');
-
-            if (lastOpen <= lastClose) {
-                selectedMatches.push(match);
-                for (let i = match.start; i < match.end; i++) {
-                    usedIndices[i] = true;
-                }
+            selectedMatches.push(match);
+            for (let i = match.start; i < match.end; i++) {
+                usedIndices[i] = true;
             }
         }
     }
@@ -503,18 +518,22 @@ function formatSmartLinks(text) {
     // 4. Sort selected matches by start position for reconstruction
     selectedMatches.sort((a, b) => a.start - b.start);
 
-    // 5. Build result string from fragments
+    // 5. Build result string from fragments with ESCAPING
     let result = '';
     let lastIndex = 0;
 
     selectedMatches.forEach(match => {
-        result += text.slice(lastIndex, match.start);
+        // Escape the text BEFORE the match
+        result += escapeHtml(text.slice(lastIndex, match.start));
+
         const escapedTarget = match.target.replace(/'/g, "\\'");
-        result += `<span class="smart-link" onclick="handleSmartLink(this.textContent, '${escapedTarget}')">${match.text}</span>`;
+        // The match text itself is also escaped just in case, though usually safe
+        result += `<span class="smart-link" onclick="handleSmartLink(this.textContent, '${escapedTarget}')">${escapeHtml(match.text)}</span>`;
         lastIndex = match.end;
     });
 
-    result += text.slice(lastIndex);
+    // Escape the remaining text
+    result += escapeHtml(text.slice(lastIndex));
     return result;
 }
 
@@ -671,7 +690,28 @@ function openModal(item, isBack = false) {
         contentHtml += `<div class="detail-section">`;
         contentHtml += `<h3>${formatKey(key)}</h3>`;
 
-        if (Array.isArray(value)) {
+        // Special handling for nested AVC types structure
+        if (key === 'types_avc' && typeof value === 'object' && !Array.isArray(value)) {
+            for (const typeKey in value) {
+                const typeData = value[typeKey];
+                const typeName = typeKey.charAt(0).toUpperCase() + typeKey.slice(1);
+
+                contentHtml += `<div style="margin-bottom: 1.5rem;">`;
+                contentHtml += `<strong style="color: var(--accent-color); font-size: 1.05em;">${typeName}</strong>`;
+                if (typeData.description) {
+                    contentHtml += `<p style="margin: 0.5rem 0; font-style: italic;">${formatSmartLinks(typeData.description)}</p>`;
+                }
+                if (typeData.sous_types && Array.isArray(typeData.sous_types)) {
+                    contentHtml += `<ul style="margin-top: 0.5rem;">`;
+                    typeData.sous_types.forEach(subType => {
+                        contentHtml += `<li>${formatSmartLinks(subType)}</li>`;
+                    });
+                    contentHtml += `</ul>`;
+                }
+                contentHtml += `</div>`;
+            }
+        }
+        else if (Array.isArray(value)) {
             contentHtml += `<ul>`;
             value.forEach(point => {
                 contentHtml += `<li>${formatSmartLinks(point)}</li>`;

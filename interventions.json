@@ -470,7 +470,7 @@
             "types": [
                 "Totale: Utérus et col",
                 "Subtotale: Corps de l'utérus uniquement",
-                "Avec salpingo-ovariectomie: Trompes et ovaires (ménaopause induite)"
+                "Avec salpingo-ovariectomie: Trompes et ovaires (ménopause induite)"
             ],
             "soins_post_op": [
                 "Surveillance des saignements (serviettes périnéales)",
@@ -481,7 +481,7 @@
     },
     {
         "id": "int22",
-        "title": "Mastectomie Radiale Modifiée",
+        "title": "Mastectomie Radicale Modifiée",
         "category": "interventions",
         "preview": "Ablation du sein et des ganglions axillaires.",
         "details": {
@@ -497,7 +497,7 @@
         "id": "int23",
         "title": "Tumorectomie (Sein)",
         "category": "interventions",
-        "preview": "Ablation de la tumeur mammaire with une marge de tissu sain conservant le sein.",
+        "preview": "Ablation de la tumeur mammaire avec une marge de tissu sain conservant le sein.",
         "details": {
             "description": "Souvent complétée par une radiothérapie.",
             "soins": [

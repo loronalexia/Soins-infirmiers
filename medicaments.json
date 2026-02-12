@@ -176,7 +176,7 @@
         "id": "m8",
         "title": "Candésartan (Atacand)",
         "category": "medicaments",
-        "preview": "Antagoniste des récepteurs de l'angiotensine II (ARA II).",
+        "preview": "Antagoniste des récepteurs de l'angiotensine II (ARA).",
         "details": {
             "classe": "Antihypertenseurs",
             "sous_classe": "Antagoniste récepteur de l’angiotensine 2",
@@ -935,7 +935,7 @@
             "familles_principales": [
                 "Bêta-bloquants (ex: Métoprolol)",
                 "IECA (ex: Ramipril)",
-                "ARA II (ex: Candésartan)",
+                "ARA (ex: Candésartan)",
                 "Bloqueurs calciques (ex: Amlodipine)"
             ],
             "surveillance": [
