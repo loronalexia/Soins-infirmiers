@@ -3,7 +3,7 @@
         "id": "p1",
         "title": "Insuffisance Cardiaque",
         "category": "pathologies",
-        "systeme": "Cardiologie",
+        "systeme": "Cardiovasculaire",
         "preview": "Incapacité du coeur à effectuer ses fonctions de pompage (dysfonction systole) et de remplissage (dysfonction diastole).",
         "details": {
             "definition": "Incapacité du coeur à effectuer ses fonctions de pompage (dysfonction systole) et de remplissage (dysfonction diastole).",
@@ -36,7 +36,7 @@
         "id": "p2",
         "title": "Diabète de Type 2",
         "category": "pathologies",
-        "systeme": "Endocrinologie",
+        "systeme": "Endocrinien",
         "preview": "Maladie chronique caractérisée par une hyperglycémie liée à une insulinorésistance.",
         "details": {
             "definition": "Trouble métabolique caractérisé par une hyperglycémie chronique résultant d'une résistance à l'insuline et/ou d'un défaut de sécrétion.",
@@ -65,7 +65,7 @@
         "id": "p3",
         "title": "Pneumonie",
         "category": "pathologies",
-        "systeme": "Pulmonaire",
+        "systeme": "Respiratoire",
         "preview": "Infection aiguë du parenchyme pulmonaire, le plus souvent d'origine bactérienne.",
         "details": {
             "definition": "Infection des poumons (alvéoles) provoquée par une bactérie, un virus ou un champignon.",
@@ -127,7 +127,7 @@
         "id": "p5",
         "title": "Angine Stable",
         "category": "pathologies",
-        "systeme": "Cardiologie",
+        "systeme": "Cardiovasculaire",
         "preview": "Douleur thoracique prévisible survenant à l'effort et soulagée par le repos ou la nitroglycérine.",
         "details": {
             "definition": "Ischémie myocardique transitoire déclenchée par une augmentation de la demande en oxygène (effort, émotion).",
@@ -155,7 +155,7 @@
         "id": "p6",
         "title": "Angine Instable",
         "category": "pathologies",
-        "systeme": "Cardiologie",
+        "systeme": "Cardiovasculaire",
         "preview": "Douleur thoracique imprévisible, survenant au repos ou s'aggravant, risque d'infarctus imminent.",
         "details": {
             "definition": "Syndrome coronarien aigu sans nécrose myocardique (Troponines négatives) mais avec ischémie sévère.",
@@ -183,7 +183,7 @@
         "id": "p7",
         "title": "Infarctus du Myocarde",
         "category": "pathologies",
-        "systeme": "Cardiologie",
+        "systeme": "Cardiovasculaire",
         "preview": "Nécrose d'une partie du muscle cardiaque due à une obstruction complète d'une artère coronaire.",
         "details": {
             "definition": "Destruction du tissu myocardique (nécrose) par ischémie prolongée (obstruction coronaire).",
@@ -211,7 +211,7 @@
         "id": "p8",
         "title": "MCAS",
         "category": "pathologies",
-        "systeme": "Cardiologie",
+        "systeme": "Cardiovasculaire",
         "preview": "Maladie Coronarienne Athérosclérotique : rétrécissement des artères du coeur par l'athérosclérose.",
         "details": {
             "definition": "Accumulation de plaques d'athérome (lipides, fibrose) dans les artères coronaires réduisant le flux sanguin.",
@@ -239,7 +239,7 @@
         "id": "p9",
         "title": "Fibrillation Auriculaire",
         "category": "pathologies",
-        "systeme": "Cardiologie",
+        "systeme": "Cardiovasculaire",
         "preview": "Trouble du rythme cardiaque caractérisé par des battements irréguliers et souvent rapides des oreillettes.",
         "details": {
             "definition": "Arythmie supraventriculaire caractérisée par une activité électrique auriculaire désorganisée et rapide.",
@@ -267,7 +267,7 @@
         "id": "p10",
         "title": "MPOC",
         "category": "pathologies",
-        "systeme": "Pulmonaire",
+        "systeme": "Respiratoire",
         "preview": "Maladie Pulmonaire Obstructive Chronique : obstruction progressive et irréversible des voies aériennes.",
         "details": {
             "definition": "Affection caractérisée par une obstruction bronchique non complètement réversible (Bronchite chronique + Emphysème).",
@@ -373,6 +373,426 @@
                 "Bilan électrolytique et pancréatique (Lipase)",
                 "Signes de choc / Sepsis",
                 "Glycémie"
+            ]
+        }
+    },
+    {
+        "id": "p14",
+        "title": "TCC (Traumatisme Crânio-Cérébral)",
+        "category": "pathologies",
+        "systeme": "Nerveux",
+        "preview": "Lésion cérébrale causée par une force externe, entraînant une altération de l'état de conscience.",
+        "details": {
+            "definition": "Blessure physique du tissu cérébral résultant d'un choc à la tête (accidents, chutes).",
+            "symptomes": [
+                "Altération de la conscience",
+                "Céphalées / Vomissements",
+                "Confusion / Perte de mémoire",
+                "Anomalies pupillaires"
+            ],
+            "traitements": [
+                "Repos strict et surveillance",
+                "Analgésiques (éviter sédatifs)",
+                "Chirurgie (si hématome)",
+                "Réadaptation neuro-psychologique"
+            ],
+            "surveillance": [
+                "Échelle de Glasgow (GCS)",
+                "Réflexes pupillaires",
+                "Signes vitaux",
+                "Signes de pression intracrânienne"
+            ]
+        }
+    },
+    {
+        "id": "p15",
+        "title": "Maladie d'Alzheimer",
+        "category": "pathologies",
+        "systeme": "Nerveux",
+        "preview": "Maladie neurodégénérative progressive entraînant une perte de mémoire et d'autonomie.",
+        "details": {
+            "definition": "Forme de démence la plus courante caractérisée par une perte neuronale progressive et irréversible.",
+            "symptomes": [
+                "Perte de mémoire à court terme",
+                "Désorientation (temps/espace)",
+                "Troubles du langage (Aphasie)",
+                "Changements de comportement"
+            ],
+            "traitements": [
+                "Inhibiteurs de l'acétylcholinestérase",
+                "Antagonistes NMDA",
+                "Approches non pharmacologiques",
+                "Soutien aux proches aidants"
+            ],
+            "surveillance": [
+                "Fonctions cognitives (MMSE/MoCA)",
+                "Nutrition et hydratation",
+                "Sécurité / Risque d'errance",
+                "État cutané et hygiène"
+            ]
+        }
+    },
+    {
+        "id": "p16",
+        "title": "Délirium",
+        "category": "pathologies",
+        "systeme": "Nerveux",
+        "preview": "État confusionnel aigu, transitoire et fluctuant, souvent réversible.",
+        "details": {
+            "definition": "Dysfonction cérébrale aiguë se développant rapidement, caractérisée par une inattention.",
+            "symptomes": [
+                "Désorientation fluctuante",
+                "Troubles de l'attention",
+                "Hallucinations / Agitation",
+                "Inversion du cycle éveil-sommeil"
+            ],
+            "traitements": [
+                "Traiter la cause sous-jacente",
+                "Réorientation constante",
+                "Mobilisation précoce",
+                "Environnement calme et familier"
+            ],
+            "surveillance": [
+                "Signes vitaux",
+                "Élimination (globe/fécalome)",
+                "Niveau de sédation / douleur",
+                "Hydratation"
+            ]
+        }
+    },
+    {
+        "id": "p17",
+        "title": "Maladie de Parkinson",
+        "category": "pathologies",
+        "systeme": "Nerveux",
+        "preview": "Maladie neurodégénérative affectant le mouvement par manque de dopamine.",
+        "details": {
+            "definition": "Dégénérescence des neurones dopaminergiques entraînant un déficit moteur progressif.",
+            "symptomes": [
+                "Tremblement de repos",
+                "Bradykinésie (lenteur)",
+                "Rigidité musculaire",
+                "Instabilité posturale"
+            ],
+            "traitements": [
+                "Lévodopa (horaires stricts)",
+                "Agonistes dopaminergiques",
+                "Physiothérapie / Orthophonie",
+                "Stimulation cérébrale profonde"
+            ],
+            "surveillance": [
+                "Efficacité/Effets du traitement",
+                "Risque de chutes",
+                "Troubles de la déglutition",
+                "Hypotension orthostatique"
+            ]
+        }
+    },
+    {
+        "id": "p18",
+        "title": "Sclérose en Plaques (SEP)",
+        "category": "pathologies",
+        "systeme": "Nerveux",
+        "preview": "Maladie auto-immune inflammatoire démyélinisante du système nerveux central.",
+        "details": {
+            "definition": "Atteinte de la myéline entraînant des plaques de sclérose et des troubles neurologiques variés.",
+            "symptomes": [
+                "Fatigue intense",
+                "Troubles moteurs et sensoriels",
+                "Troubles visuels (névrite optique)",
+                "Troubles spastiques"
+            ],
+            "traitements": [
+                "Corticostéroïdes (poussées)",
+                "Traitements de fond (immunomodulateurs)",
+                "Réadaptation physique",
+                "Gestion de la douleur"
+            ],
+            "surveillance": [
+                "Apparition de nouvelles poussées",
+                "Vessie et transit",
+                "État psychologique",
+                "Fatigue et tolérance à l'effort"
+            ]
+        }
+    },
+    {
+        "id": "p19",
+        "title": "Sclérose Latérale Amyotrophique (SLA)",
+        "category": "pathologies",
+        "systeme": "Nerveux",
+        "preview": "Dégénérescence des motoneurones entraînant une paralysie musculaire progressive.",
+        "details": {
+            "definition": "Maladie de Charcot affectant les muscles volontaires, sans toucher les fonctions sensorielles.",
+            "symptomes": [
+                "Faiblesse musculaire / Crampes",
+                "Amyotrophie / Fasciculations",
+                "Troubles de la déglutition",
+                "Détresse respiratoire"
+            ],
+            "traitements": [
+                "Riluzole (ralentissement)",
+                "Ventilation non invasive (VNI)",
+                "Soutien nutritionnel (gastrostomie)",
+                "Soins palliatifs et confort"
+            ],
+            "surveillance": [
+                "Fonction respiratoire (Sat/FR)",
+                "Déglutition / État nutritionnel",
+                "Communication",
+                "Autonomie et aides techniques"
+            ]
+        }
+    },
+    {
+        "id": "p20",
+        "title": "Méningite",
+        "category": "pathologies",
+        "systeme": "Nerveux",
+        "preview": "Inflammation des membranes entourant le cerveau et la moelle épinière.",
+        "details": {
+            "definition": "Infection (bactérienne ou virale) des méninges nécessitant une prise en charge rapide.",
+            "symptomes": [
+                "Forte fièvre / Céphalées",
+                "Raideur de nuque",
+                "Photophobie",
+                "Nausées / Vomissements"
+            ],
+            "traitements": [
+                "Antibiotiques IV (en urgence)",
+                "Antiviraux / Corticoïdes",
+                "Isolement (si contagieux)",
+                "Antipyrétiques / Analgésiques"
+            ],
+            "surveillance": [
+                "État de conscience",
+                "Température / Signes vitaux",
+                "Purpura (signe de gravité)",
+                "Position de confort (obscurité)"
+            ]
+        }
+    },
+    {
+        "id": "p21",
+        "title": "Glaucome",
+        "category": "pathologies",
+        "systeme": "Visuel et Auditif",
+        "preview": "Maladie oculaire caractérisée par une destruction progressive du nerf optique.",
+        "details": {
+            "definition": "Atteinte du nerf optique souvent liée à une pression intraoculaire (PIO) trop élevée, menant à une perte du champ visuel.",
+            "symptomes": [
+                "Perte de vision périphérique",
+                "Vision tubulaire (stade avancé)",
+                "Céphalées / Douleur oculaire (si aigu)",
+                "Vision de halos colorés"
+            ],
+            "traitements": [
+                "Collyres hypotonisants (à vie)",
+                "Trabéculoplastie au laser",
+                "Chirurgie filtrante",
+                "Suivi ophtalmologique régulier"
+            ],
+            "surveillance": [
+                "Pression intraoculaire (PIO)",
+                "Champ visuel",
+                "Adhésion au traitement (observance)",
+                "Sécurité et autonomie visuelle"
+            ]
+        }
+    },
+    {
+        "id": "p22",
+        "title": "Cataracte",
+        "category": "pathologies",
+        "systeme": "Visuel et Auditif",
+        "preview": "Opacification progressive du cristallin entraînant une baisse de la vision.",
+        "details": {
+            "definition": "Perte de transparence du cristallin liée au vieillissement, au diabète ou à des traumatismes.",
+            "symptomes": [
+                "Vision floue ou voilée",
+                "Éblouissement à la lumière",
+                "Altération des couleurs",
+                "Baisse de l'acuité visuelle nocturne"
+            ],
+            "traitements": [
+                "Correction optique (début)",
+                "Chirurgie (phacoémulsification)",
+                "Implantation d'un cristallin artificiel",
+                "Protection solaire"
+            ],
+            "surveillance": [
+                "Baisse de l'autonomie",
+                "Évaluation pré/post opératoire",
+                "Instillation des collyres post-op",
+                "Signes d'infection ou douleur post-op"
+            ]
+        }
+    },
+    {
+        "id": "p23",
+        "title": "Presbyacousie",
+        "category": "pathologies",
+        "systeme": "Visuel et Auditif",
+        "preview": "Perte auditive progressive liée à l'âge, affectant surtout les sons aigus.",
+        "details": {
+            "definition": "Dégénérescence des cellules ciliées de l'oreille interne due au vieillissement biologique.",
+            "symptomes": [
+                "Difficulté à suivre une conversation",
+                "Incompréhension en milieu bruyant",
+                "Augmentation du volume (TV/Radio)",
+                "Acouphènes associés"
+            ],
+            "traitements": [
+                "Appareillage auditif",
+                "Aides techniques (casques TV)",
+                "Orthophonie (lecture labiale)",
+                "Stratégies de communication"
+            ],
+            "surveillance": [
+                "Isolement social / Dépression",
+                "Bilan ORL annuel",
+                "Entretien des prothèses auditives",
+                "Déclin cognitif associé"
+            ]
+        }
+    },
+    {
+        "id": "p24",
+        "title": "Otite",
+        "category": "pathologies",
+        "systeme": "Visuel et Auditif",
+        "preview": "Inflammation ou infection de l'oreille, moyenne ou externe.",
+        "details": {
+            "definition": "Atteinte inflammatoire du conduit auditif (externe) ou de la caisse du tympan (moyenne).",
+            "symptomes": [
+                "Douleur intense (otalgie)",
+                "Fièvre (si moyenne aiguë)",
+                "Diminution de l'audition",
+                "Écoulement (otorrhée)"
+            ],
+            "traitements": [
+                "Antibiotiques (systémiques ou gouttes)",
+                "Antalgiques / Antipyrétiques",
+                "Désinfection rhino-pharyngée",
+                "Repos et hydratation"
+            ],
+            "surveillance": [
+                "Douleur et température",
+                "État du tympan (si otoscopie)",
+                "Signes de complications (mastoïdite)",
+                "Audition résiduelle"
+            ]
+        }
+    },
+    {
+        "id": "p25",
+        "title": "Cancer du Poumon",
+        "category": "pathologies",
+        "systeme": "Respiratoire",
+        "preview": "Tumeur maligne du parenchyme pulmonaire ou des bronches.",
+        "details": {
+            "definition": "Prolifération anarchique de cellules malignes dans les poumons, souvent liée au tabagisme.",
+            "symptomes": [
+                "Toux persistante ou changeante",
+                "Hémoptysie (crachats de sang)",
+                "Douleur thoracique",
+                "Perte de poids inexpliquée / Fatigue"
+            ],
+            "traitements": [
+                "Chirurgie (exérèse)",
+                "Chimiothérapie",
+                "Radiothérapie",
+                "Soins palliatifs et gestion de la douleur"
+            ],
+            "surveillance": [
+                "Fonction respiratoire et dyspnée",
+                "Apparition de douleur (EVA)",
+                "État nutritionnel",
+                "Effets secondaires de la chimio/radio"
+            ]
+        }
+    },
+    {
+        "id": "p26",
+        "title": "OAP (Oedème Aigu du Poumon)",
+        "category": "pathologies",
+        "systeme": "Respiratoire",
+        "preview": "Urgence vitale : passage de liquide dans les alvéoles pulmonaires.",
+        "details": {
+            "definition": "Accumulation brutale de liquide dans les poumons, souvent due à une insuffisance cardiaque gauche aiguë.",
+            "symptomes": [
+                "Détresse respiratoire intense (orthopnée)",
+                "Râles crépitants à l'auscultation",
+                "Expectoration mousseuse et rosée",
+                "Angoisse majeure et cyanose"
+            ],
+            "traitements": [
+                "Position assise (jambes pendantes)",
+                "Nitroglycérine (Vaso-dilatateur)",
+                "Diurétiques IV (Furosémide)",
+                "Oxygénothérapie / VNI (CPAP)"
+            ],
+            "surveillance": [
+                "Saturation O2 et fréquence respiratoire",
+                "Tension artérielle et fréquence cardiaque",
+                "Diurèse (efficacité des diurétiques)",
+                "État de conscience"
+            ]
+        }
+    },
+    {
+        "id": "p27",
+        "title": "Asthme",
+        "category": "pathologies",
+        "systeme": "Respiratoire",
+        "preview": "Inflammation chronique des voies respiratoires avec épisodes de bronchospasme.",
+        "details": {
+            "definition": "Hyperréactivité bronchique entraînant une obstruction réversible des voies aériennes.",
+            "symptomes": [
+                "Sifflements respiratoires (sibilances)",
+                "Toux sèche (souvent nocturne)",
+                "Oppression thoracique",
+                "Dyspnée épisodique"
+            ],
+            "traitements": [
+                "Bronchodilatateurs (Salbutamol)",
+                "Corticostéroïdes inhalés ou oraux",
+                "Éviction des facteurs déclenchants",
+                "Éducation thérapeutique (Peak Flow)"
+            ],
+            "surveillance": [
+                "Efficacité de la technique d'inhalation",
+                "Fréquence des crises",
+                "Débit de pointe (Peak Flow)",
+                "Signes de détresse (asthme aigu grave)"
+            ]
+        }
+    },
+    {
+        "id": "p28",
+        "title": "Bronchiolite",
+        "category": "pathologies",
+        "systeme": "Respiratoire",
+        "preview": "Infection virale des petites bronches chez le nourrisson de moins de 2 ans.",
+        "details": {
+            "definition": "Inflammation aiguë des bronchioles, le plus souvent due au virus respiratoire syncytial (VRS).",
+            "symptomes": [
+                "Toux et encombrement nasal",
+                "Polypnée (respiration rapide)",
+                "Tirage (utilisation muscles accessoires)",
+                "Difficultés alimentaires"
+            ],
+            "traitements": [
+                "Désobstruction Rhino-Pharyngée (DRP)",
+                "Fractionnement des repas",
+                "Hydratation adéquate",
+                "Oxygénothérapie PRN"
+            ],
+            "surveillance": [
+                "Signes de lutte respiratoire",
+                "Saturation O2",
+                "Prise alimentaire et hydratation",
+                "Thermorégulation"
             ]
         }
     }

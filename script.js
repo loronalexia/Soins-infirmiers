@@ -247,30 +247,68 @@ function formatCategoryName(slug) {
 }
 
 // SMART LINKING LOGIC
+// SMART LINKING LOGIC
 const linkMapping = [
+    // Médicaments
     { keywords: ['diurétique', 'diuretique'], target: 'Diurétiques' },
     { keywords: ['bêta-bloquant', 'beta-bloquant', 'bêtabloquant'], target: 'Antihypertenseurs' },
     { keywords: ['ieca', 'iec', 'inhibiteur de l’enzyme de conversion'], target: 'Antihypertenseurs' },
     { keywords: ['ara ii', 'ara 2', 'antagoniste récepteur de l’angiotensine'], target: 'Antihypertenseurs' },
     { keywords: ['bloqueur des canaux calciques', 'inhibiteur calcique'], target: 'Antihypertenseurs' },
-    { keywords: ['aspirine', 'aas'], target: 'Aspirine' },
-    { keywords: ['anticoagulant'], target: 'Anticoagulant' },
-    { keywords: ['statine'], target: 'Antihypertenseurs' },
+    { keywords: ['aspirine', 'aas'], target: 'AAS (Aspirine)' },
+    { keywords: ['anticoagulant', 'anticoagulation'], target: 'Anticoagulants' },
+    { keywords: ['statine'], target: 'Hypolipidémiants' },
     { keywords: ['diabète', 'diabete', 'antidiabétique', 'antidiabetique'], target: 'Antidiabétiques' },
-    { keywords: ['insuline'], target: 'Antidiabétiques' }
+    { keywords: ['insuline'], target: 'Antidiabétiques' },
+    { keywords: ['nitroglycérine', 'nitro', 'nitrates'], target: 'Nitroglycérine (Nitro)' },
+    { keywords: ['morphine', 'opioïde', 'opioïden'], target: 'Morphine' },
+    { keywords: ['antibiotique'], target: 'Antibiotiques' },
+    { keywords: ['lévodopa', 'levodopa', 'sinemet'], target: 'Lévodopa + Carbidopa (Sinemet)' },
+
+    // Examens Cliniques
+    { keywords: ['glasgow', 'gcs'], target: 'Échelle de Glasgow (GCS)' },
+    { keywords: ['auscultation cardiaque'], target: 'Auscultation Cardiaque' },
+    { keywords: ['auscultation pulmonaire'], target: 'Auscultation Pulmonaire' },
+    { keywords: ['pqrst', 'douleur (pqrst)'], target: 'Évaluation de la Douleur (PQRST)' },
+    { keywords: ['pupille', 'pupillaire'], target: 'Réflexes Pupillaires' },
+    { keywords: ['mmse', 'moca'], target: 'Évaluation Cognitive (MMSE/MoCA)' },
+
+    // Examens Paracliniques
+    { keywords: ['ecg', 'électrocardiogramme'], target: 'ECG (Électrocardiogramme)' },
+    { keywords: ['troponine', 'troponines', 'ck-mb'], target: 'Troponines & CK-MB' },
+    { keywords: ['bilan lipidique', 'lipidogramme'], target: 'Lipidogramme' },
+    { keywords: ['scanner cérébral', 'scanner cerebral', 'tdm cérébral'], target: 'Scanner (TDM) Cérébral' },
+    { keywords: ['scanner thoracique', 'tdm thoracique'], target: 'Scanner (TDM) Thoracique' },
+    { keywords: ['bilan hépatique', 'asat', 'alat'], target: 'Bilan Hépatique (ASAT/ALAT)' },
+    { keywords: ['inr', 'tca', 'bilan de coagulation'], target: 'Bilan de Coagulation (INR / TCA)' },
+    { keywords: ['créatinine', 'creatinine', 'urée'], target: 'Créatinine & Urée' },
+    { keywords: ['hba1c'], target: 'HbA1c (Hémoglobine Glyquée)' },
+    { keywords: ['gsa', 'gaz sanguins artériels'], target: 'Gaz Sanguins Artériels (GSA)' }
 ];
 
 function formatSmartLinks(text) {
     if (typeof text !== 'string') return text;
     let newText = text;
 
-    linkMapping.forEach(link => {
+    // Sort mapping by keyword length to avoid partial replacements (e.g., 'ECG' vs 'ECG dynamique')
+    const sortedMapping = [...linkMapping].sort((a, b) => {
+        const maxA = Math.max(...a.keywords.map(k => k.length));
+        const maxB = Math.max(...b.keywords.map(k => k.length));
+        return maxB - maxA;
+    });
+
+    sortedMapping.forEach(link => {
         link.keywords.forEach(keyword => {
-            // Case insensitive, handling potential plural 's'
-            const regex = new RegExp(`(\\b${keyword}s?\\b)`, 'gi');
+            // Case insensitive, handling potential plural 's' or 'x'
+            const regex = new RegExp(`(\\b${keyword}[s|x]?\\b)`, 'gi');
             // Escape single quotes for the onclick attribute
             const escapedTarget = link.target.replace(/'/g, "\\'");
-            newText = newText.replace(regex, `<span class="smart-link" onclick="handleSmartLink(this.textContent, '${escapedTarget}')">$1</span>`);
+
+            // Avoid re-linking already linked parts
+            // This is a simple protection to avoid nested <span>
+            if (!newText.includes(`handleSmartLink(this.textContent, '${escapedTarget}')`)) {
+                newText = newText.replace(regex, `<span class="smart-link" onclick="handleSmartLink(this.textContent, '${escapedTarget}')">$1</span>`);
+            }
         });
     });
 
@@ -280,35 +318,53 @@ function formatSmartLinks(text) {
 function handleSmartLink(originalText, targetName) {
     closeModal();
 
-    // Ensure data is available
+    // Strategy: Find the target anywhere in studyData
+    let foundItem = null;
+    let categoryFound = null;
+
+    for (const cat of categories) {
+        if (studyData[cat]) {
+            // Find exact title OR find where targetName is mentioned
+            foundItem = studyData[cat].find(item =>
+                item.title.toLowerCase() === targetName.toLowerCase() ||
+                item.title.toLowerCase().includes(targetName.toLowerCase())
+            );
+            if (foundItem) {
+                categoryFound = cat;
+                break;
+            }
+        }
+    }
+
+    if (foundItem) {
+        // If it's a specific object, open it directly
+        setTimeout(() => openModal(foundItem), 100);
+        return;
+    }
+
+    // 2. If no exact item, maybe it's a Medication Class
     const allMedData = studyData['medicaments'];
-    if (!allMedData) {
-        console.error('Données médicaments non chargées');
-        loadCategory('medicaments');
-        return;
+    if (allMedData) {
+        const distinctClasses = [...new Set(allMedData.map(m => m.details.classe))];
+        const matchedClass = distinctClasses.find(c => c.toLowerCase().includes(targetName.toLowerCase()));
+
+        if (matchedClass) {
+            loadCategory('medicaments');
+            setTimeout(() => {
+                renderMedicationsByClass(matchedClass, allMedData);
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            }, 100);
+            return;
+        }
     }
 
-    // 1. Try to find a direct medication by title (exact case insensitive)
-    // Clean text: lowercase and remove trailing 's' if any
-    const cleanText = originalText.toLowerCase().trim().replace(/s$/, '');
-    const exactMed = allMedData.find(m =>
-        m.title.toLowerCase().includes(cleanText) ||
-        (m.details.sous_classe && m.details.sous_classe.toLowerCase().includes(cleanText))
-    );
-
-    if (exactMed && cleanText.length > 3) { // Avoid false positives on very short words
-        // If it's a very specific medication, open it
-        setTimeout(() => openModal(exactMed), 100);
-        return;
+    // 3. Last fallback: Global Search for that term
+    const searchInput = document.getElementById('search-input');
+    if (searchInput) {
+        searchInput.value = targetName;
+        // Trigger input event to fire search logic
+        searchInput.dispatchEvent(new Event('input'));
     }
-
-    // 2. Otherwise navigate to class view
-    loadCategory('medicaments');
-    setTimeout(() => {
-        renderMedicationsByClass(targetName, allMedData);
-        // Scroll to top to ensure visibility
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-    }, 100);
 }
 
 // Open Modal with Details

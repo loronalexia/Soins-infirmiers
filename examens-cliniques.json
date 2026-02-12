@@ -48,5 +48,101 @@
                 "Ronchi (Bronchite)"
             ]
         }
+    },
+    {
+        "id": "ec3",
+        "title": "Auscultation Cardiaque",
+        "category": "examens-cliniques",
+        "preview": "Évaluation des bruits du cœur pour détecter des anomalies du rythme ou des valves.",
+        "details": {
+            "description": "Examen clinique réalisé avec un stéthoscope sur les différents foyers cardiaques.",
+            "bruits_normaux": [
+                "B1 (Fermeture des valves mitrale et tricuspide)",
+                "B2 (Fermeture des valves aortique et pulmonaire)"
+            ],
+            "bruits_anormaux": [
+                "B3 ou B4 (Signes d'insuffisance cardiaque)",
+                "Souffles cardiaques (Atteintes valvulaires)",
+                "Frottement péricardique"
+            ],
+            "foyers": [
+                "Aortique (2e espace intercostal droit)",
+                "Pulmonaire (2e espace intercostal gauche)",
+                "Mitral (Apex du coeur)"
+            ]
+        }
+    },
+    {
+        "id": "ec4",
+        "title": "Échelle de Glasgow (GCS)",
+        "category": "examens-cliniques",
+        "preview": "Outil standardisé pour évaluer le niveau de conscience d'un patient.",
+        "details": {
+            "description": "Évaluation basée sur trois critères : Ouverture des yeux, Réponse verbale, Réponse motrice.",
+            "criteres": [
+                "Ouverture des yeux (1 à 4 pts)",
+                "Réponse verbale (1 à 5 pts)",
+                "Réponse motrice (1 à 6 pts)"
+            ],
+            "scores": [
+                "Score max: 15 (Conscience normale)",
+                "Score min: 3 (Coma profond)",
+                "Score <= 8: Coma grave (Nécessite souvent intubation)"
+            ]
+        }
+    },
+    {
+        "id": "ec5",
+        "title": "Évaluation Cognitive (MMSE/MoCA)",
+        "category": "examens-cliniques",
+        "preview": "Tests rapides pour évaluer les fonctions cognitives (mémoire, orientation).",
+        "details": {
+            "description": "Utilisé pour dépister des troubles cognitifs ou suivre l'évolution d'une démence.",
+            "domaines": [
+                "Orientation temporelle et spatiale",
+                "Apprentissage et Rappel (mémoire)",
+                "Attention et Calcul",
+                "Langage et Praxies"
+            ],
+            "interpretation": [
+                "MMSE < 24: Suspicion de trouble cognitif",
+                "MoCA: Plus sensible pour les troubles légers"
+            ]
+        }
+    },
+    {
+        "id": "ec6",
+        "title": "Évaluation de la Douleur (PQRST)",
+        "category": "examens-cliniques",
+        "preview": "Méthode systématique pour caractériser une douleur.",
+        "details": {
+            "description": "Acronyme permettant de ne rien oublier lors de l'interrogatoire sur une douleur.",
+            "elements": [
+                "P (Provoquer/Pallié): Qu'est-ce qui a causé la douleur? Qu'est-ce qui la soulage?",
+                "Q (Qualité/Quantité): Quel est le type de douleur (brûlure, étau)? Intensité (0-10)?",
+                "R (Région/Irradiation): Où est la douleur? Est-ce qu'elle se déplace?",
+                "S (Signes/Symptômes): Y a-t-il d'autres signes (nausées, sueurs)?",
+                "T (Temps): Quand a-t-elle commencé? Est-ce constant?"
+            ]
+        }
+    },
+    {
+        "id": "ec7",
+        "title": "Réflexes Pupillaires",
+        "category": "examens-cliniques",
+        "preview": "Évaluation de la taille et de la réactivité des pupilles à la lumière (PERRLA).",
+        "details": {
+            "description": "Indicateur crucial de la fonction neurologique et de la pression intracrânienne.",
+            "observations": [
+                "Taille (en mm)",
+                "Symétrie (Isocorie vs Anisocorie)",
+                "Réactivité à la lumière (Réflexe photomoteur)"
+            ],
+            "terminologie": [
+                "Miosis: Pupille contractée",
+                "Mydriase: Pupille dilatée",
+                "Anisocorie: Inégalité de taille entre les deux pupilles"
+            ]
+        }
     }
 ]

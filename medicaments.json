@@ -360,5 +360,550 @@
                 "Rotation rigoureuse des sites d'injection"
             ]
         }
+    },
+    {
+        "id": "m16",
+        "title": "Héparine",
+        "category": "medicaments",
+        "preview": "Anticoagulant injectable utilisé pour la prévention et le traitement des thromboses.",
+        "details": {
+            "classe": "Anticoagulants",
+            "sous_classe": "Héparine non fractionnée",
+            "indications": [
+                "Thrombose veineuse profonde (TVP) / Embolie pulmonaire",
+                "Phase aiguë de l'infarctus du myocarde",
+                "Prévention thrombo-embolique post-op"
+            ],
+            "effets_secondaires": [
+                "Hémorragies",
+                "Thrombopénie induite par l'héparine (TIH)",
+                "Hématome au point d'injection"
+            ],
+            "surveillance": [
+                "TCA (Temps de Céphaline Activée)",
+                "Numération plaquettaire (2 fois par semaine)",
+                "Signes de saignement (gencives, urines, selles)"
+            ]
+        }
+    },
+    {
+        "id": "m17",
+        "title": "Warfarine (Coumadin)",
+        "category": "medicaments",
+        "preview": "Anticoagulant oral (Anti-vitamine K) nécessitant un suivi biologique strict.",
+        "details": {
+            "classe": "Anticoagulants",
+            "sous_classe": "Anti-vitamine K (AVK)",
+            "indications": [
+                "Fibrillation auriculaire (FA)",
+                "Prothèses valvulaires cardiaques",
+                "Prévention des récidives de thrombo-embolies"
+            ],
+            "effets_secondaires": [
+                "Hémorragies majeures",
+                "Interaction avec l'alimentation (Vitamine K)",
+                "Nombreuses interactions médicamenteuses"
+            ],
+            "surveillance": [
+                "INR (cible souvent entre 2.0 et 3.0)",
+                "Signes de surdosage (saignements)",
+                "Éducation alimentaire (choux, brocolis, etc.)"
+            ]
+        }
+    },
+    {
+        "id": "m18",
+        "title": "Apixaban (Eliquis)",
+        "category": "medicaments",
+        "preview": "Anticoagulant oral direct (AOD) ne nécessitant pas de suivi routine de l'INR.",
+        "details": {
+            "classe": "Anticoagulants",
+            "sous_classe": "Inhibiteur direct du facteur Xa",
+            "indications": [
+                "Prévention de l'AVC en cas de FA non valvulaire",
+                "Traitement des TVP et embolies pulmonaires"
+            ],
+            "effets_secondaires": [
+                "Hémorragies",
+                "Nausées",
+                "Anémie"
+            ],
+            "surveillance": [
+                "Fonction rénale (élimination)",
+                "Signes de saignement",
+                "Absence d'oubli de prise (demi-vie courte)"
+            ]
+        }
+    },
+    {
+        "id": "m19",
+        "title": "AAS (Aspirine)",
+        "category": "medicaments",
+        "preview": "Antiplaquettaire utilisé en prévention cardiovasculaire et neurovasculaire.",
+        "details": {
+            "classe": "Antiplaquettaires",
+            "indications": [
+                "Prévention de l'infarctus et de l'AVC",
+                "Phase aiguë de l'infarctus du myocarde",
+                "Angine de poitrine"
+            ],
+            "effets_secondaires": [
+                "Irritation gastrique / Ulcère",
+                "Risque hémorragique",
+                "Acouphènes (si forte dose)"
+            ],
+            "surveillance": [
+                "Signes de saignement digestif (méléna)",
+                "Douleurs épigastriques",
+                "Prendre au milieu d'un repas"
+            ]
+        }
+    },
+    {
+        "id": "m20",
+        "title": "Clopidogrel (Plavix)",
+        "category": "medicaments",
+        "preview": "Antiplaquettaire souvent associé à l'aspirine après la pose d'un stent.",
+        "details": {
+            "classe": "Antiplaquettaires",
+            "indications": [
+                "Prévention des événements athérothrombotiques",
+                "Syndrome Coronarien Aigu",
+                "Après angioplastie coronaire"
+            ],
+            "effets_secondaires": [
+                "Saignements",
+                "Troubles gastro-intestinaux",
+                "Éruptions cutanées"
+            ],
+            "surveillance": [
+                "Signes d'hémorragie",
+                "Numération formule sanguine (rarement neutropénie)"
+            ]
+        }
+    },
+    {
+        "id": "m21",
+        "title": "Nitroglycérine (Nitro)",
+        "category": "medicaments",
+        "preview": "Vasodilatateur coronaire puissant utilisé pour l'angine et l'insuffisance cardiaque.",
+        "details": {
+            "classe": "Vasodilatateurs",
+            "sous_classe": "Dérivés nitrés",
+            "indications": [
+                "Angine de poitrine (prévention et crise)",
+                "Oedème Aigu du Poumon (OAP)",
+                "Insuffisance ventriculaire gauche"
+            ],
+            "effets_secondaires": [
+                "Céphalées intenses (très fréquent)",
+                "Hypotension orthostatique",
+                "Bouffées vasomotrices",
+                "Tachycardie réflexe"
+            ],
+            "surveillance": [
+                "Tension artérielle avant et après administration",
+                "Efficacité sur la douleur thoracique",
+                "Position assise lors de la prise de Nitro PRN",
+                "Intervalle libre de nitrates (prévenir tolérance)"
+            ]
+        }
+    },
+    {
+        "id": "m22",
+        "title": "Atorvastatine (Lipitor)",
+        "category": "medicaments",
+        "preview": "Hypolipidémiant de la famille des statines diminuant le cholestérol LDL.",
+        "details": {
+            "classe": "Hypolipidémiants",
+            "sous_classe": "Statines",
+            "indications": [
+                "Hypercholestérolémie",
+                "Prévention cardiovasculaire (MCAS, AVC)"
+            ],
+            "effets_secondaires": [
+                "Myalgies (douleurs musculaires)",
+                "Élévation des enzymes hépatiques",
+                "Troubles digestifs"
+            ],
+            "surveillance": [
+                "Bilan lipidique (LDL)",
+                "Enzymes musculaires (CPK si douleurs)",
+                "Bilan hépatique (ASAT/ALAT)",
+                "Prendre le soir (synthèse du cholestérol nocturne)"
+            ]
+        }
+    },
+    {
+        "id": "m23",
+        "title": "Salbutamol (Ventolin)",
+        "category": "medicaments",
+        "preview": "Bronchodilatateur d'action rapide (BACA) pour le soulagement immédiat.",
+        "details": {
+            "classe": "Bronchodilatateurs",
+            "sous_classe": "Bêta-2 agoniste d'action courte (BACA)",
+            "indications": [
+                "Crise d'asthme",
+                "Exacerbation de MPOC",
+                "Prévention de l'asthme d'effort"
+            ],
+            "effets_secondaires": [
+                "Tremblements",
+                "Tachycardie / Palpitations",
+                "Hypokaliémie (à forte dose)"
+            ],
+            "surveillance": [
+                "Fréquence respiratoire et aisance",
+                "Fréquence cardiaque",
+                "Technique d'utilisation de la pompe (MDI)",
+                "Consultation si usage > 3 fois/semaine"
+            ]
+        }
+    },
+    {
+        "id": "m24",
+        "title": "Tiotropium (Spiriva)",
+        "category": "medicaments",
+        "preview": "Bronchodilatateur d'action longue (LAMA) utilisé quotidiennement dans la MPOC.",
+        "details": {
+            "classe": "Bronchodilatateurs",
+            "sous_classe": "Anticholinergique d'action longue (LAMA)",
+            "indications": [
+                "Traitement de fond de la MPOC",
+                "Asthme sévère (en association)"
+            ],
+            "effets_secondaires": [
+                "Sécheresse buccale",
+                "Toux",
+                "Rétention urinaire (rare)",
+                "Vision floue"
+            ],
+            "surveillance": [
+                "Fréquence des exacerbations",
+                "Tolérance clinique",
+                "Rincer la bouche après prise",
+                "Vérifier la technique d'inhalation (HandiHaler/Respimat)"
+            ]
+        }
+    },
+    {
+        "id": "m25",
+        "title": "Fluticasone (Flovent)",
+        "category": "medicaments",
+        "preview": "Corticostéroïde inhalé (CSI) diminuant l'inflammation des bronches.",
+        "details": {
+            "classe": "Corticostéroïdes",
+            "sous_classe": "Inhalés",
+            "indications": [
+                "Traitement de fond de l'asthme",
+                "MPOC sévère (avec bronchodilatateurs)"
+            ],
+            "effets_secondaires": [
+                "Candidose buccale (muguet)",
+                "Dysphonie (voix enrouée)",
+                "Irritation de la gorge"
+            ],
+            "surveillance": [
+                "Rincer la bouche après chaque inhalation",
+                "Qualité de la technique d'inhalation",
+                "Usage régulier (n'est pas un médicament de secours)"
+            ]
+        }
+    },
+    {
+        "id": "m26",
+        "title": "Prédnisone",
+        "category": "medicaments",
+        "preview": "Corticostéroïde oral utilisé pour ses puissantes propriétés anti-inflammatoires.",
+        "details": {
+            "classe": "Corticostéroïdes",
+            "sous_classe": "Systémiques (Sujet à effets systémiques)",
+            "indications": [
+                "Exacerbation d'asthme ou de MPOC",
+                "Maladies auto-immunes (ex: SEP)",
+                "Réactions allergiques sévères"
+            ],
+            "effets_secondaires": [
+                "Hyperglycémie",
+                "Ostéoporose (long terme)",
+                "Prise de poids / Syndrome de Cushing",
+                "Troubles de l'humeur / Insomnie"
+            ],
+            "surveillance": [
+                "Glycémie",
+                "Tension artérielle",
+                "Poids et oedèmes",
+                "Arrêt progressif (sevrage) si traitement prolongé"
+            ]
+        }
+    },
+    {
+        "id": "m27",
+        "title": "Morphine",
+        "category": "medicaments",
+        "preview": "Analgésique opioïde puissant pour les douleurs sévères et l'OAP.",
+        "details": {
+            "classe": "Analgésiques Opioïdes",
+            "indications": [
+                "Douleur sévère aiguë ou chronique",
+                "Oedème Aigu du Poumon (OAP) : réduit la précharge et l'anxiété",
+                "Douleur de l'infarctus (si Nitro inefficace)"
+            ],
+            "effets_secondaires": [
+                "Dépression respiratoire",
+                "Constipation (systématique)",
+                "Nausées / Vomissements",
+                "Somnolence / Confusion"
+            ],
+            "surveillance": [
+                "Fréquence respiratoire (ne pas donner si < 10-12/min)",
+                "Niveau de conscience (Pops / Sedation scale)",
+                "Échelle de douleur (EVA/EN)",
+                "Transit intestinal"
+            ]
+        }
+    },
+    {
+        "id": "m28",
+        "title": "Amoxicilline",
+        "category": "medicaments",
+        "preview": "Antibiotique de la famille des pénicillines couramment utilisé.",
+        "details": {
+            "classe": "Antibiotiques",
+            "sous_classe": "Bêta-lactamines (Pénicillines)",
+            "indications": [
+                "Pneumonie communautaire",
+                "Otite moyenne aiguë",
+                "Infections urinaires / dentaires"
+            ],
+            "effets_secondaires": [
+                "Réactions allergiques (Urticaire -> Choc)",
+                "Diarrhée / Troubles digestifs",
+                "Candidose"
+            ],
+            "surveillance": [
+                "Signes d'allergie",
+                "Respecter la durée totale du traitement",
+                "Apparition de diarrhées sévères (C. Difficile)"
+            ]
+        }
+    },
+    {
+        "id": "m29",
+        "title": "Ceftriaxone",
+        "category": "medicaments",
+        "preview": "Céphalosporine de 3ème génération injectable à large spectre.",
+        "details": {
+            "classe": "Antibiotiques",
+            "sous_classe": "Céphalosporines de 3G",
+            "indications": [
+                "Méningites bactériennes",
+                "Pneumonies sévères",
+                "Sepsis"
+            ],
+            "effets_secondaires": [
+                "Allergies (croisées avec pénicillines)",
+                "Troubles hépato-biliaires",
+                "Douleur au point d'injection"
+            ],
+            "surveillance": [
+                "Signes d'hypersensibilité",
+                "Fonction hépatique et rénale",
+                "Selles (risque de colite pseudomembraneuse)"
+            ]
+        }
+    },
+    {
+        "id": "m30",
+        "title": "Lévodopa + Carbidopa (Sinemet)",
+        "category": "medicaments",
+        "preview": "Traitement de référence de la maladie de Parkinson.",
+        "details": {
+            "classe": "Antiparkinsoniens",
+            "sous_classe": "Précurseur de la dopamine",
+            "indications": [
+                "Maladie de Parkinson",
+                "Syndromes parkinsoniens"
+            ],
+            "effets_secondaires": [
+                "Dyskinésies (mouvements involontaires)",
+                "Hypotension orthostatique",
+                "Nausées / Vomissements",
+                "Hallucinations"
+            ],
+            "surveillance": [
+                "Horaires de prise STRICTS (respecter les cycles ON/OFF)",
+                "Tension artérielle (couché/debout)",
+                "Efficacité motrice",
+                "Prendre à distance des repas riches en protéines"
+            ]
+        }
+    },
+    {
+        "id": "m31",
+        "title": "Donépézil (Aricept)",
+        "category": "medicaments",
+        "preview": "Médicament utilisé dans le traitement symptomatique de la maladie d'Alzheimer.",
+        "details": {
+            "classe": "Anti-Alzheimer",
+            "sous_classe": "Inhibiteur de l'acétylcholinestérase",
+            "indications": [
+                "Maladie d'Alzheimer (stades léger à modéré)"
+            ],
+            "effets_secondaires": [
+                "Troubles digestifs (diarrhée, nausées)",
+                "Bradycardie",
+                "Insomnie / Rêves anormaux",
+                "Crampes musculaires"
+            ],
+            "surveillance": [
+                "Fréquence cardiaque",
+                "Poids (risque d'anorexie)",
+                "Fonctions cognitives",
+                "Tolérance digestive"
+            ]
+        }
+    },
+    {
+        "id": "m32",
+        "title": "Lactulose",
+        "category": "medicaments",
+        "preview": "Laxatif osmotique utilisé pour la constipation et l'encéphalopathie hépatique.",
+        "details": {
+            "classe": "Laxatifs",
+            "sous_classe": "Laxatif osmotique",
+            "indications": [
+                "Constipation chronique",
+                "Encéphalopathie hépatique (réduit l'ammoniémie)"
+            ],
+            "effets_secondaires": [
+                "Ballonnements / Gaz",
+                "Crampes abdominales",
+                "Diarrhée si surdosage"
+            ],
+            "surveillance": [
+                "Nombre et consistance des selles (Objectif 2-3 selles molles/j en cas de cirrhose)",
+                "État de conscience (si encéphalopathie)",
+                "Électrolytes (si diarrhée)"
+            ]
+        }
+    },
+    {
+        "id": "m33",
+        "title": "Latanoprost (Xalatan)",
+        "category": "medicaments",
+        "preview": "Collyre analogue des prostaglandines utilisé pour réduire la pression oculaire.",
+        "details": {
+            "classe": "Antiglaucomateux",
+            "sous_classe": "Analogues des prostaglandines",
+            "indications": [
+                "Glaucome à angle ouvert",
+                "Hypertension intraoculaire"
+            ],
+            "effets_secondaires": [
+                "Modification de la couleur des yeux (brunissement)",
+                "Allongement des cils",
+                "Hypérémie conjonctivale (oeil rouge)"
+            ],
+            "surveillance": [
+                "Pression intraoculaire",
+                "Technique d'instillation (propreté, un seul point)",
+                "Prendre de préférence le soir"
+            ]
+        }
+    },
+    {
+        "id": "m34",
+        "title": "Ciprofloxacine + Dexaméthasone (Ciprodex)",
+        "category": "medicaments",
+        "preview": "Gouttes auriculaires combinant un antibiotique et un corticoïde.",
+        "details": {
+            "classe": "Préparations auriculaires",
+            "indications": [
+                "Otite externe aiguë",
+                "Otite moyenne avec tubes de tympanostomie"
+            ],
+            "effets_secondaires": [
+                "Inconfort local passager",
+                "Démangeaisons"
+            ],
+            "surveillance": [
+                "Disparition de l'otalgie",
+                "Absence d'écoulement",
+                "Technique d'instillation (garder la tête penchée 2-3 min)"
+            ]
+        }
+    },
+    {
+        "id": "m35",
+        "title": "Spironolactone (Aldactone)",
+        "category": "medicaments",
+        "preview": "Diurétique d'épargne potassique utilisé notamment pour l'ascite et l'insuffisance cardiaque.",
+        "details": {
+            "classe": "Diurétiques",
+            "sous_classe": "Antagoniste de l'aldostérone",
+            "indications": [
+                "Ascite liée à la cirrhose",
+                "Insuffisance cardiaque congestive",
+                "Hypertension artérielle"
+            ],
+            "effets_secondaires": [
+                "Hyperkaliémie (Risque majeur)",
+                "Gynécomastie (chez l'homme)",
+                "Troubles menstruels"
+            ],
+            "surveillance": [
+                "Ionogramme (K+)",
+                "Fonction rénale (élimination)",
+                "Signes d'hyperkaliémie",
+                "Poids et diurèse"
+            ]
+        }
+    },
+    {
+        "id": "m36",
+        "title": "Riluzole",
+        "category": "medicaments",
+        "preview": "Médicament utilisé pour ralentir l'évolution de la Sclérose Latérale Amyotrophique (SLA).",
+        "details": {
+            "classe": "Agents neurologiques divers",
+            "indications": [
+                "Sclérose Latérale Amyotrophique (SLA/Maladie de Charcot)"
+            ],
+            "effets_secondaires": [
+                "Fatigue / Asthénie",
+                "Nausées",
+                "Élévation des enzymes hépatiques"
+            ],
+            "surveillance": [
+                "Bilan hépatique régulier",
+                "État général du patient",
+                "Fonction respiratoire"
+            ]
+        }
+    },
+    {
+        "id": "m37",
+        "title": "Aciclovir",
+        "category": "medicaments",
+        "preview": "Antiviral utilisé pour traiter les infections à herpès virus et les méningites virales.",
+        "details": {
+            "classe": "Antiviraux",
+            "indications": [
+                "Zona / Herpès simplex",
+                "Méningo-encéphalite virale",
+                "Prévention chez les immunodéprimés"
+            ],
+            "effets_secondaires": [
+                "Toxicité rénale (si déshydraté)",
+                "Troubles digestifs",
+                "Troubles neurologiques (RARE)"
+            ],
+            "surveillance": [
+                "Fonction rénale (hydratation IV importante)",
+                "Surveillance du point d'injection (si IV)",
+                "Bilan neurologique"
+            ]
+        }
     }
 ]
