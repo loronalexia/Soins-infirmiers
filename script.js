@@ -420,19 +420,15 @@ function setupEventListeners() {
             if (category !== currentCategory) {
                 currentCategory = category;
                 loadCategory(currentCategory);
-                document.getElementById('search-input').value = '';
+                const searchInput = document.getElementById('search-input');
+                if (searchInput) searchInput.value = '';
             }
         });
     });
 
-    // Modal Close
     closeModalBtn.addEventListener('click', closeModal);
-
-    // Close on click outside
     window.addEventListener('click', (e) => {
-        if (e.target === modal) {
-            closeModal();
-        }
+        if (e.target === modal) closeModal();
     });
 
     // Close on escape key
@@ -444,29 +440,55 @@ function setupEventListeners() {
 
     // Search functionality
     const searchInput = document.getElementById('search-input');
-    searchInput.addEventListener('input', (e) => {
-        const query = e.target.value.toLowerCase();
+    if (searchInput) {
+        searchInput.addEventListener('input', (e) => {
+            const query = e.target.value.toLowerCase().trim();
+            if (query.length > 0) {
+                // Pre-filter across all categories for global search
+                const allResults = [];
+                const categoriesToSearch = Object.keys(studyData);
+                categoriesToSearch.forEach(cat => {
+                    if (studyData[cat]) {
+                        const filtered = studyData[cat].filter(item =>
+                            item.title.toLowerCase().includes(query) ||
+                            (item.preview && item.preview.toLowerCase().includes(query))
+                        ).map(item => ({ ...item, category: cat }));
+                        allResults.push(...filtered);
+                    }
+                });
+                renderContent('recherche', allResults);
+            } else {
+                loadCategory(currentCategory);
+            }
+        });
+    }
 
-        if (query.trim() === '') {
-            renderContent(currentCategory, studyData[currentCategory]);
-            return;
+    // Sources and References Logic
+    const sourcesBtn = document.getElementById('sources-btn');
+    if (sourcesBtn) {
+        sourcesBtn.addEventListener('click', showSources);
+    }
+}
+
+function showSources() {
+    const sourcesData = {
+        title: "Sources & Références",
+        category: "recherche",
+        details: {
+            "Ouvrages de référence": [
+                "Brunner & Suddarth, 'Soins infirmiers en médecine et chirurgie'",
+                "P. Lewis, 'Soins infirmiers : Pratique et théorie'",
+                "Vidals et guides pharmacologiques officiels"
+            ],
+            "Ressources Académiques": [
+                "Protocoles cliniques des centres hospitaliers universitaires",
+                "Cours et modules de formation en soins infirmiers (IFSI / Cégep)",
+                "OIIQ / Ordres professionnels de santé"
+            ],
+            "Note sur le plagiat": "Cette plateforme est un outil de révision personnel. Les contenus sont synthétisés à partir de sources académiques et cliniques reconnues pour garantir l'exactitude des informations tout en respectant la propriété intellectuelle."
         }
-
-        let allData = [];
-        Object.values(studyData).forEach(catData => {
-            if (catData) allData = allData.concat(catData);
-        });
-
-        const filteredData = allData.filter(item => {
-            const titleMatch = item.title.toLowerCase().includes(query);
-            const previewMatch = item.preview.toLowerCase().includes(query);
-            return titleMatch || previewMatch;
-        });
-
-        renderContent('recherche', filteredData);
-
-        navButtons.forEach(btn => btn.classList.remove('active'));
-    });
+    };
+    openModal(sourcesData);
 }
 
 // Run

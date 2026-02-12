@@ -630,8 +630,32 @@ body {
     border-radius: 4px;
 }
 
-.smart-link:hover {
-    background-color: #FFE5EC;
+/* Footer & Sources */
+.main-footer {
+    margin-top: 5rem;
+    padding-top: 2rem;
+    border-top: 2px solid #FFF0F5;
+    text-align: center;
+    color: var(--text-muted);
+    font-size: 0.85rem;
+}
+
+.sources-link {
+    background: none;
+    border: none;
+    color: var(--primary-color);
+    text-decoration: underline dotted 1px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    margin-bottom: 1rem;
+    display: inline-block;
+    transition: var(--transition);
+    opacity: 0.7;
+}
+
+.sources-link:hover {
+    opacity: 1;
     color: var(--secondary-color);
     text-decoration-style: solid;
 }
