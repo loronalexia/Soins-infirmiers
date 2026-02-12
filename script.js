@@ -89,6 +89,18 @@ function renderContent(viewName, data) {
         return;
     }
 
+    // Special handling for medicaments view
+    if (viewName === 'medicaments') {
+        renderMedicationClasses(data);
+        return;
+    }
+
+    // Special handling for pathologies view (System grouping)
+    if (viewName === 'pathologies') {
+        renderPathologySystems(data);
+        return;
+    }
+
     const gridContainer = document.createElement('div');
     gridContainer.className = 'grid-container';
 
@@ -101,20 +113,88 @@ function renderContent(viewName, data) {
         else if (itemCat === 'examens-paracliniques') labelClass = 'bg-para';
         else if (itemCat === 'examens-cliniques') labelClass = 'bg-clinic';
 
+        const card = createCard(item, labelClass, itemCat);
+        gridContainer.appendChild(card);
+    });
+
+    contentArea.appendChild(gridContainer);
+}
+
+// Helper to create a card (extracted for reuse)
+function createCard(item, labelClass, itemCat) {
+    const card = document.createElement('div');
+    card.className = 'card';
+    card.onclick = () => openModal(item);
+
+    card.innerHTML = `
+        <span class="card-category-label ${labelClass}">${formatCategoryName(itemCat)}</span>
+        <h3 class="card-title">${item.title}</h3>
+        <p class="card-preview">${item.preview}</p>
+        <div class="card-cta">
+            Voir la fiche
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+        </div>
+    `;
+    return card;
+}
+
+// Render Medication Classes
+function renderMedicationClasses(data) {
+    // Extract unique classes
+    const classes = [...new Set(data.map(item => item.details.classe))].sort();
+
+    const gridContainer = document.createElement('div');
+    gridContainer.className = 'grid-container';
+
+    classes.forEach(classeName => {
         const card = document.createElement('div');
-        card.className = 'card';
-        card.onclick = () => openModal(item);
+        card.className = 'card class-card'; // Add specific class for styling if needed
+        // Count items in this class
+        const count = data.filter(item => item.details.classe === classeName).length;
+
+        card.onclick = () => renderMedicationsByClass(classeName, data);
 
         card.innerHTML = `
-            <span class="card-category-label ${labelClass}">${formatCategoryName(itemCat)}</span>
-            <h3 class="card-title">${item.title}</h3>
-            <p class="card-preview">${item.preview}</p>
+             <div class="card-category-label bg-medicament">Classe Thérapeutique</div>
+            <h3 class="card-title">${classeName}</h3>
+            <p class="card-preview">${count} médicament${count > 1 ? 's' : ''}</p>
             <div class="card-cta">
-                Voir la fiche
+                Voir la liste
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
             </div>
         `;
+        gridContainer.appendChild(card);
+    });
 
+    contentArea.appendChild(gridContainer);
+}
+
+// Render Medications by Specific Class
+function renderMedicationsByClass(className, allData) {
+    contentArea.innerHTML = '';
+
+    // Filter and Sort
+    const filteredData = allData
+        .filter(item => item.details.classe === className)
+        .sort((a, b) => a.title.localeCompare(b.title));
+
+    // Header with back button
+    const header = document.createElement('div');
+    header.className = 'class-view-header';
+    header.innerHTML = `
+        <button class="back-button" onclick="loadCategory('medicaments')">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-left"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+            Retour aux classes
+        </button>
+        <h2>${className}</h2>
+    `;
+    contentArea.appendChild(header);
+
+    const gridContainer = document.createElement('div');
+    gridContainer.className = 'grid-container';
+
+    filteredData.forEach(item => {
+        const card = createCard(item, 'bg-medicament', 'medicaments');
         gridContainer.appendChild(card);
     });
 
@@ -294,3 +374,65 @@ function setupEventListeners() {
 
 // Run
 document.addEventListener('DOMContentLoaded', init);
+
+// Render Pathology Systems
+function renderPathologySystems(data) {
+    // Extract unique systems
+    const systems = [...new Set(data.map(item => item.systeme || 'Autres'))].sort();
+
+    const gridContainer = document.createElement('div');
+    gridContainer.className = 'grid-container';
+
+    systems.forEach(systemName => {
+        const card = document.createElement('div');
+        card.className = 'card class-card';
+        const count = data.filter(item => (item.systeme || 'Autres') === systemName).length;
+
+        card.onclick = () => renderPathologiesBySystem(systemName, data);
+
+        card.innerHTML = `
+             <div class="card-category-label bg-pathology">Système</div>
+            <h3 class="card-title">${systemName}</h3>
+            <p class="card-preview">${count} pathologie${count > 1 ? 's' : ''}</p>
+            <div class="card-cta">
+                Voir la liste
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </div>
+        `;
+        gridContainer.appendChild(card);
+    });
+
+    contentArea.appendChild(gridContainer);
+}
+
+// Render Pathologies by System
+function renderPathologiesBySystem(systemName, allData) {
+    contentArea.innerHTML = '';
+
+    // Filter and Sort
+    const filteredData = allData
+        .filter(item => (item.systeme || 'Autres') === systemName)
+        .sort((a, b) => a.title.localeCompare(b.title));
+
+    // Header with back button
+    const header = document.createElement('div');
+    header.className = 'class-view-header';
+    header.innerHTML = `
+        <button class="back-button" onclick="loadCategory('pathologies')">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-left"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+            Retour aux systèmes
+        </button>
+        <h2>${systemName}</h2>
+    `;
+    contentArea.appendChild(header);
+
+    const gridContainer = document.createElement('div');
+    gridContainer.className = 'grid-container';
+
+    filteredData.forEach(item => {
+        const card = createCard(item, 'bg-pathology', 'pathologies');
+        gridContainer.appendChild(card);
+    });
+
+    contentArea.appendChild(gridContainer);
+}
