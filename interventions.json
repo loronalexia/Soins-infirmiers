@@ -378,5 +378,159 @@
                 "Réaction allergique / Anaphylaxie"
             ]
         }
+    },
+    {
+        "id": "int17",
+        "title": "Thyroïdectomie",
+        "category": "interventions",
+        "preview": "Ablation chirurgicale partielle ou totale de la glande thyroïde.",
+        "details": {
+            "description": "Indiquée pour les cancers thyroïdiens, les goitres volumineux ou l'hyperthyroïdie sévère.",
+            "soins_pre_op": [
+                "Vérification du bilan thyroïdien",
+                "Information sur le risque de modification de la voix",
+                "Administration de solution de Lugol (parfois, pour réduire la vascularisation)"
+            ],
+            "surveillance_post_op_immediate": [
+                "Position de Fowler haute (réduction de l'oedème)",
+                "Surveillance de la respiration (risque de compression trachéale/stridor)",
+                "Surveillance des pansements (vérifier l'arrière du cou pour les hémorragies)",
+                "Évaluation de la voix (nerf laryngé récurrent)"
+            ],
+            "surveillance_calcium": [
+                "Dépistage de l'hypocalcémie (lésion accidentelle des parathyroïdes)",
+                "Signe de Chvostek (contraction faciale à la percussion)",
+                "Signe de Trousseau (spasme du carpe avec brassard TA)",
+                "Paresthésies (fourmillements) des extrémités"
+            ]
+        }
+    },
+    {
+        "id": "int18",
+        "title": "Chirurgie Gastro-intestinale (Résection)",
+        "category": "interventions",
+        "preview": "Ablation d'une partie de l'intestin suivie d'une anastomose ou d'une stomie.",
+        "details": {
+            "description": "Indiquée pour le cancer colorectal, les MICI ou les occlusions sévères.",
+            "en_post_op": [
+                "Surveillance de la reprise du péristaltisme (gaz, selles)",
+                "Gestion de la douleur (souvent péridurale ou ACP)",
+                "Mobilisation précoce (prévention iléus)",
+                "Surveillance du pansement et des drains (Jackson-Pratt)"
+            ],
+            "complications": [
+                "Lâchage de suture (anastomose) -> Péritonite",
+                "Iléus paralytique",
+                "Infection du site opératoire"
+            ]
+        }
+    },
+    {
+        "id": "int19",
+        "title": "Stomies (Iléostomie & Colostomie)",
+        "category": "interventions",
+        "preview": "Dérivation chirurgicale d'un conduit naturel vers l'extérieur (peau).",
+        "details": {
+            "types": [
+                "Iléostomie: Selles liquides et irritantes (intestin grêle)",
+                "Colostomie: Selles formées ou semi-formées (côlon)"
+            ],
+            "surveillance_stomie": [
+                "Aspect de la stomie (doit être rouge/rosée et humide)",
+                "Peau péristomiale (absence d'irritation)",
+                "Quantité et consistance des effluents"
+            ],
+            "soins_et_education": [
+                "Vider le sac lorsqu'il est au tiers plein",
+                "Hygiène à l'eau tiede et savon doux",
+                "Soutien psychologique (image corporelle)"
+            ]
+        }
+    },
+    {
+        "id": "int20",
+        "title": "Cholécystectomie",
+        "category": "interventions",
+        "preview": "Ablation chirurgicale de la vésicule biliaire, souvent par laparoscopie.",
+        "details": {
+            "description": "Traitement de choix pour la cholécystite ou les lithiases biliaires symptomatiques.",
+            "post_op": [
+                "Douleur résiduelle à l'épaule (due au gaz de laparoscopie)",
+                "Alimentation progressive pauvre en graisses",
+                "Surveillance des selles (recherche d'acholie si canal bloqué)"
+            ]
+        }
+    },
+    {
+        "id": "int21",
+        "title": "Hystérectomie",
+        "category": "interventions",
+        "preview": "Ablation chirurgicale de l'utérus.",
+        "details": {
+            "types": [
+                "Totale: Utérus et col",
+                "Subtotale: Corps de l'utérus uniquement",
+                "Avec salpingo-ovariectomie: Trompes et ovaires (ménaopause induite)"
+            ],
+            "soins_post_op": [
+                "Surveillance des saignements (serviettes périnéales)",
+                "Reprise précoce de la marche (prévention TVP)",
+                "Soutien émotionnel (perte de fertilité/féminité)"
+            ]
+        }
+    },
+    {
+        "id": "int22",
+        "title": "Mastectomie Radiale Modifiée",
+        "category": "interventions",
+        "preview": "Ablation du sein et des ganglions axillaires.",
+        "details": {
+            "soins_post_op": [
+                "Élévation du bras du côté opéré",
+                "PAS de prises de TA ou ponctions sur le bras opéré (risque lymphoedème)",
+                "Exercices graduels du bras",
+                "Surveillance du drain"
+            ]
+        }
+    },
+    {
+        "id": "int23",
+        "title": "Tumorectomie (Sein)",
+        "category": "interventions",
+        "preview": "Ablation de la tumeur mammaire with une marge de tissu sain conservant le sein.",
+        "details": {
+            "description": "Souvent complétée par une radiothérapie.",
+            "soins": [
+                "Surveillance de l'incision",
+                "Soutien gorge de maintien post-opératoire"
+            ]
+        }
+    },
+    {
+        "id": "int24",
+        "title": "Résection Transurétrale de la Prostate (TURP)",
+        "category": "interventions",
+        "preview": "Procédure chirurgicale visant à retirer une partie de la prostate par l'urètre.",
+        "details": {
+            "soins_post_op": [
+                "Irrigation vésicale continue (3-voies) pour prévenir les caillots",
+                "Calcul de la diurèse réelle (déduire le soluté d'irrigation)",
+                "Surveillance de la couleur de l'urine (hématurie)"
+            ],
+            "complication": "Syndrome de la TURP (absorption excessive du liquide d'irrigation)."
+        }
+    },
+    {
+        "id": "int25",
+        "title": "Prostatectomie Radicale",
+        "category": "interventions",
+        "preview": "Ablation complète de la prostate, des vésicules séminales et parfois des ganglions.",
+        "details": {
+            "post_op": [
+                "Sonde urinaire prolongée (1-2 semaines)",
+                "Risque d'incontinence et de dysfonction érectile",
+                "Rééducation pelvienne"
+            ]
+        }
     }
 ]

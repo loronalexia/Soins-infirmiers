@@ -159,5 +159,50 @@
             ],
             "limites": "Peu sensible et peu spécifique. Un signe de Homans négatif n'exclut pas une TVP, et un signe positif peut être lié à une douleur musculaire simple."
         }
+    },
+    {
+        "id": "ec9",
+        "title": "Dépistage de la dépression (PHQ-9)",
+        "category": "examens-cliniques",
+        "preview": "Questionnaire standardisé de 9 questions pour évaluer la sévérité de la dépression.",
+        "details": {
+            "description": "Outil validé permettant de quantifier les symptômes dépressifs au cours des 2 dernières semaines.",
+            "scores": [
+                "0-4: Dépression minimale ou absente",
+                "5-9: Dépression légère",
+                "10-14: Dépression modérée",
+                "15-19: Dépression modérément sévère",
+                "20-27: Dépression sévère"
+            ],
+            "surveillance": [
+                "Évaluation du risque suicidaire (Question 9)",
+                "Orientation vers les ressources appropriées",
+                "Suivi de l'efficacité du traitement"
+            ],
+            "liens": [
+                {
+                    "titre": "Outil PHQ-9 (INESSS)",
+                    "url": "https://www.inesss.qc.ca/fileadmin/doc/INESSS/Rapports/Sante/INESSS_Outil_DSM-5_Depression.pdf"
+                }
+            ]
+        }
+    },
+    {
+        "id": "ec10",
+        "title": "Auscultation de la Thyroïde",
+        "category": "examens-cliniques",
+        "preview": "Examen physique de la glande thyroïde (palpation et auscultation).",
+        "details": {
+            "description": "Recherche d'un goitre, de nodules ou d'un souffle vasculaire (en cas d'hyperthyroïdie).",
+            "palpation": [
+                "Demander au patient d'avaler de l'eau (la thyroïde monte)",
+                "Évaluer la taille, la consistance et la mobilité",
+                "Recherche de nodules ou de sensibilité"
+            ],
+            "auscultation": [
+                "Recherche d'un souffle (bruit de sifflement) indiquant une hypervascularisation (ex: Graves)"
+            ],
+            "normes": "Glande non palpable ou petite, souple, lisse et non douloureuse."
+        }
     }
 ]

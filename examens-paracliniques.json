@@ -87,8 +87,8 @@
         "details": {
             "but": "Confirmer ou infirmer un Infarctus du Myocarde.",
             "interpretations": [
-                "Troponine élevée: Indique une lésion myocardique (Nécronse)",
-                "CK-MB: Plus spécifique pour le suivi de la ré-infarctition"
+                "Troponine élevée: Indique une lésion myocardique (Nécrose)",
+                "CK-MB: Plus spécifique pour le suivi de la ré-infarctus"
             ],
             "normes": [
                 "Troponine T/I: < 0.04 ng/mL (Valeur variable selon labo)",

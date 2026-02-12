@@ -905,5 +905,120 @@
                 "Bilan neurologique"
             ]
         }
+    },
+    {
+        "id": "m38",
+        "title": "Diurétiques",
+        "category": "medicaments",
+        "preview": "Classe de médicaments augmentant l'élimination de l'eau et du sodium par les reins.",
+        "details": {
+            "description": "Utilisés pour traiter l'insuffisance cardiaque, l'hypertension et les oedèmes.",
+            "exemples": [
+                "Furosémide (Anse)",
+                "Hydrochlorothiazide (Thiazidique)",
+                "Spironolactone (Épargneur de potassium)"
+            ],
+            "surveillance_generale": [
+                "Poids quotidien et diurèse",
+                "Tension artérielle (risque d'hypotension orthostatique)",
+                "Électrolytes (K+, Na+)"
+            ]
+        }
+    },
+    {
+        "id": "m39",
+        "title": "Antihypertenseurs",
+        "category": "medicaments",
+        "preview": "Classe regroupant les médicaments destinés à abaisser la pression artérielle.",
+        "details": {
+            "description": "Inclut plusieurs familles agissant par des mécanismes différents.",
+            "familles_principales": [
+                "Bêta-bloquants (ex: Métoprolol)",
+                "IECA (ex: Ramipril)",
+                "ARA II (ex: Candésartan)",
+                "Bloqueurs calciques (ex: Amlodipine)"
+            ],
+            "surveillance": [
+                "Tension Artérielle et Fréquence Cardiaque",
+                "Signes de vertiges ou fatigue",
+                "Fonction rénale (pour IECA/ARA)"
+            ]
+        }
+    },
+    {
+        "id": "m40",
+        "title": "Anticoagulants",
+        "category": "medicaments",
+        "preview": "Médicaments empêchant la formation ou l'extension de caillots sanguins.",
+        "details": {
+            "description": "Cruciaux dans la prévention des AVC, TVP et Embolies.",
+            "exemples": [
+                "Héparine (IV/SC)",
+                "Warfarine (Coumadin)",
+                "AOD (ex: Rivaroxaban / Xarelto)"
+            ],
+            "surveillance_majeure": [
+                "Signes de saignement (gingivorragies, hématurie, méléna)",
+                "Bilan de coagulation (INR / TCA)",
+                "Éducation sur le risque de chutes"
+            ]
+        }
+    },
+    {
+        "id": "m41",
+        "title": "Antibiotiques",
+        "category": "medicaments",
+        "preview": "Substances utilisées pour traiter les infections causées par des bactéries.",
+        "details": {
+            "description": "Action bactéricide (tue) ou bactériostatique (bloque la croissance).",
+            "principes_infirmiers": [
+                "Respecter strictement les heures d'administration",
+                "Vérifier les allergies avant la première dose",
+                "Prélever les cultures avant de débuter si possible",
+                "Évaluer la réponse (baisse de fièvre, globules blancs)"
+            ],
+            "complications": [
+                "Diarrhée (risque de C. Difficile)",
+                "Candidose (muguet)",
+                "Réactions allergiques"
+            ]
+        }
+    },
+    {
+        "id": "m42",
+        "title": "Antidiabétiques",
+        "category": "medicaments",
+        "preview": "Médicaments utilisés pour abaisser la glycémie chez les patients diabétiques.",
+        "details": {
+            "description": "Comprend les agents oraux et les insulines.",
+            "familles": [
+                "Biguanides (ex: Metformine)",
+                "Sulfonylurées (au risque d'hypoglycémie)",
+                "Insulines (Rapide, NPH, Longue)"
+            ],
+            "surveillance": [
+                "Glycémie capillaire (HGT)",
+                "Signes d'hypoglycémie",
+                "Poids et HbA1c"
+            ]
+        }
+    },
+    {
+        "id": "m43",
+        "title": "Hypolipidémiants",
+        "category": "medicaments",
+        "preview": "Médicaments visant à réduire le taux de lipides (cholestérol) sanguin.",
+        "details": {
+            "description": "Principalement les Statines.",
+            "exemples": [
+                "Atorvastatine (Lipitor)",
+                "Rosuvastatine (Crestor)"
+            ],
+            "surveillance": [
+                "Douleurs musculaires (risque de rhabdomyolyse)",
+                "Bilan hépatique",
+                "Profil lipidique"
+            ]
+        }
     }
 ]

@@ -250,6 +250,24 @@ body {
     align-self: flex-start;
 }
 
+.card-category-label.clickable {
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.card-category-label.clickable:hover {
+    filter: brightness(1.1);
+    transform: translateY(-1px);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.detail-header-badges {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-bottom: 0px;
+}
+
 /* Couleurs Catégories adaptées au thème */
 .bg-pathology {
     background-color: #FFE5EC;

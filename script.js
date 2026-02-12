@@ -394,58 +394,162 @@ const linkMapping = [
     { keywords: ['fibrose kystique', 'mucoviscidose'], target: 'Fibrose Kystique (Mucoviscidose)' },
     { keywords: ['croissance', 'retard de croissance', 'anthropométrie'], target: 'Altération de la croissance' },
     { keywords: ['vaccin', 'vaccination', 'immunisation'], target: 'Vaccination' },
-    { keywords: ['transfusion', 'produit sanguin', 'culot'], target: 'Transfusion sanguine' }
+    { keywords: ['transfusion', 'produit sanguin', 'culot'], target: 'Transfusion sanguine' },
+
+    // Endocrine
+    { keywords: ['diabète type 1', 'diabete type 1'], target: 'Diabète de Type 1' },
+    { keywords: ['hypoglycémie', 'hypoglycemie'], target: 'Hypoglycémie (Complication Diabète)' },
+    { keywords: ['acidocétose', 'acidocetose', 'acd'], target: 'Acidocétose Diabétique (ACD)' },
+    { keywords: ['choc hyperosmolaire', 'shh'], target: 'Syndrome Hyperglycémique Hyperosmolaire (SHH)' },
+    { keywords: ['syndrome métabolique', 'syndrome metabolique'], target: 'Syndrome Métabolique' },
+    { keywords: ['obésité', 'obesite', 'imc'], target: 'Obésité' },
+    { keywords: ['thyroïde', 'thyroide', 'goitre'], target: 'Auscultation de la Thyroïde' },
+    { keywords: ['hypothyroïdie', 'hypothyroidie', 'levothyroxine'], target: 'Hypothyroïdie' },
+    { keywords: ['hyperthyroïdie', 'hyperthyroidie', 'basedow'], target: 'Hyperthyroïdie' },
+    { keywords: ['thyroïdectomie', 'thyroidectomie'], target: 'Thyroïdectomie' },
+
+    // Gastro-intestinal
+    { keywords: ['mici', 'crohn', 'colite'], target: "Maladies Inflammatoires Chroniques de l'Intestin (MICI)" },
+    { keywords: ['occlusion', 'iléus', 'ileus'], target: 'Occlusion Intestinale' },
+    { keywords: ['cancer colorectal', 'côlon', 'colon', 'rectum'], target: 'Cancer Colorectal' },
+    { keywords: ['cholécystite', 'cholecystite', 'vésicule', 'vesicule', 'biliaire'], target: 'Cholécystite' },
+    { keywords: ['péritonite', 'peritonite'], target: 'Péritonite' },
+    { keywords: ['chirurgie gi', 'résection', 'resection', 'anastomose'], target: 'Chirurgie Gastro-intestinale (Résection)' },
+    { keywords: ['stomie', 'iléostomie', 'colostomie', 'poche'], target: 'Stomies (Iléostomie & Colostomie)' },
+    { keywords: ['cholécystectomie', 'cholecystectomie'], target: 'Cholécystectomie' },
+
+    // Urinaire
+    { keywords: ['infection urinaire', 'cystite', 'pyélonéphrite'], target: 'Infection Urinaire' },
+    { keywords: ['insuffisance rénale aiguë', 'ira'], target: 'Insuffisance Rénale Aiguë (IRA)' },
+    { keywords: ['insuffisance rénale chronique', 'irc'], target: 'Insuffisance Rénale Chronique (IRC)' },
+    { keywords: ['incontinence', 'vessie'], target: 'Incontinence Urinaire' },
+
+    // Reproducteur
+    { keywords: ['itss'], target: 'ITSS (Infections Transmissibles Sexuellement et par le Sang)' },
+    { keywords: ['chlamydia'], target: 'Chlamydia' },
+    { keywords: ['gonorrhée', 'gonorrhee'], target: 'Gonorrhée' },
+    { keywords: ['syphilis'], target: 'Syphilis' },
+    { keywords: ['vph', 'papillome', 'verrue génitale'], target: 'VPH (Virus du Papillome Humain)' },
+    { keywords: ['herpès', 'herpes', 'vésicule génitale'], target: 'Herpès Génital' },
+    { keywords: ['endométriose', 'fibrome', 'kyste ovarien'], target: 'Troubles Bénins (Féminin)' },
+    { keywords: ['cancer du col', 'paptest'], target: "Cancer du Col de l'Utérus" },
+    { keywords: ['cancer de l\'utérus', 'endomètre', 'saignement post-ménopause'], target: "Cancer de l'Utérus (Endomètre)" },
+    { keywords: ['cancer de l\'ovaire', 'ovaire'], target: "Cancer de l'Ovaire" },
+    { keywords: ['cancer du sein', 'sein', 'mammographie', 'masse mammaire'], target: 'Cancer du Sein' },
+    { keywords: ['hbp', 'prostate', 'hyperplasie'], target: 'Hyperplasie Bénigne de la Prostate (HBP)' },
+    { keywords: ['cancer de la prostate', 'aps', 'toucher rectal'], target: 'Cancer de la Prostate' },
+    { keywords: ['hystérectomie', 'hysterectomie', 'ablation utérus'], target: 'Hystérectomie' },
+    { keywords: ['mastectomie', 'lymphoedème', 'drainage lymphatique'], target: 'Mastectomie Radiale Modifiée' },
+    { keywords: ['tumorectomie'], target: 'Tumorectomie (Sein)' },
+    { keywords: ['turp', 'résection prostate', 'irrigation vésicale'], target: 'Résection Transurétrale de la Prostate (TURP)' },
+    { keywords: ['prostatectomie'], target: 'Prostatectomie Radicale' }
 ];
 
 function formatSmartLinks(text) {
     if (typeof text !== 'string') return text;
-    let newText = text;
 
-    // Sort mapping by keyword length to avoid partial replacements (e.g., 'ECG' vs 'ECG dynamique')
-    const sortedMapping = [...linkMapping].sort((a, b) => {
-        const maxA = Math.max(...a.keywords.map(k => k.length));
-        const maxB = Math.max(...b.keywords.map(k => k.length));
-        return maxB - maxA;
-    });
-
-    sortedMapping.forEach(link => {
+    // 1. Identify all potential matches across the whole text
+    const matches = [];
+    linkMapping.forEach(link => {
         link.keywords.forEach(keyword => {
             // Case insensitive, handling potential plural 's' or 'x'
-            const regex = new RegExp(`(\\b${keyword}[s|x]?\\b)`, 'gi');
-            // Escape single quotes for the onclick attribute
-            const escapedTarget = link.target.replace(/'/g, "\\'");
-
-            // Avoid re-linking already linked parts
-            // This is a simple protection to avoid nested <span>
-            if (!newText.includes(`handleSmartLink(this.textContent, '${escapedTarget}')`)) {
-                newText = newText.replace(regex, `<span class="smart-link" onclick="handleSmartLink(this.textContent, '${escapedTarget}')">$1</span>`);
+            // Use \\b to escape backslash in string-based regex
+            const regex = new RegExp('(\\b' + keyword + '[s|x]?\\b)', 'gi');
+            let match;
+            while ((match = regex.exec(text)) !== null) {
+                matches.push({
+                    start: match.index,
+                    end: match.index + match[0].length,
+                    text: match[0],
+                    target: link.target
+                });
             }
         });
     });
 
-    return newText;
+    if (matches.length === 0) return text;
+
+    // 2. Filter matches to avoid overlaps (favoring longer ones)
+    // Sort by length (descending) then by start position
+    matches.sort((a, b) => (b.end - b.start) - (a.end - a.start) || a.start - b.start);
+
+    const selectedMatches = [];
+    const usedIndices = new Array(text.length).fill(false);
+
+    for (const match of matches) {
+        let overlap = false;
+        for (let i = match.start; i < match.end; i++) {
+            if (usedIndices[i]) {
+                overlap = true;
+                break;
+            }
+        }
+
+        if (!overlap) {
+            // 3. CHECK FOR TAGS: Ensure the match is not inside a <...> tag
+            const textBefore = text.slice(0, match.start);
+            const lastOpen = textBefore.lastIndexOf('<');
+            const lastClose = textBefore.lastIndexOf('>');
+
+            if (lastOpen <= lastClose) {
+                selectedMatches.push(match);
+                for (let i = match.start; i < match.end; i++) {
+                    usedIndices[i] = true;
+                }
+            }
+        }
+    }
+
+    // 4. Sort selected matches by start position for reconstruction
+    selectedMatches.sort((a, b) => a.start - b.start);
+
+    // 5. Build result string from fragments
+    let result = '';
+    let lastIndex = 0;
+
+    selectedMatches.forEach(match => {
+        result += text.slice(lastIndex, match.start);
+        const escapedTarget = match.target.replace(/'/g, "\\'");
+        result += `<span class="smart-link" onclick="handleSmartLink(this.textContent, '${escapedTarget}')">${match.text}</span>`;
+        lastIndex = match.end;
+    });
+
+    result += text.slice(lastIndex);
+    return result;
 }
 
 function handleSmartLink(originalText, targetName) {
     if (!targetName) return;
     const target = targetName.trim().toLowerCase();
 
+    // Normalize spaces and special characters for matching
+    const normalizedTarget = target.replace(/\s+/g, ' ');
+
     // Strategy: Find the target anywhere in studyData
     let foundItem = null;
 
     for (const cat of categories) {
         if (studyData[cat]) {
-            // Priority 1: Exact Match (ignoring case)
-            foundItem = studyData[cat].find(item => item.title.toLowerCase().trim() === target);
+            // Priority 1: Exact Match (ignoring case/spaces)
+            foundItem = studyData[cat].find(item => {
+                const title = item.title.toLowerCase().trim().replace(/\s+/g, ' ');
+                return title === normalizedTarget;
+            });
 
             // Priority 2: Title includes target
             if (!foundItem) {
-                foundItem = studyData[cat].find(item => item.title.toLowerCase().includes(target));
+                foundItem = studyData[cat].find(item => {
+                    const title = item.title.toLowerCase().replace(/\s+/g, ' ');
+                    return title.includes(normalizedTarget);
+                });
             }
 
-            // Priority 3: Target includes title (for cases like link target "AVC" and item title "AVC (Accident...)")
+            // Priority 3: Target includes title
             if (!foundItem) {
-                foundItem = studyData[cat].find(item => target.includes(item.title.toLowerCase().trim()));
+                foundItem = studyData[cat].find(item => {
+                    const title = item.title.toLowerCase().trim().replace(/\s+/g, ' ');
+                    return normalizedTarget.includes(title);
+                });
             }
 
             if (foundItem) break;
@@ -453,6 +557,11 @@ function handleSmartLink(originalText, targetName) {
     }
 
     if (foundItem) {
+        // Scroll to top if already open
+        if (currentModalItem && currentModalItem.id === foundItem.id) {
+            const modalBody = document.getElementById('modal-body');
+            if (modalBody) modalBody.parentElement.scrollTo({ top: 0, behavior: 'smooth' });
+        }
         setTimeout(() => openModal(foundItem), 100);
         return;
     }
@@ -503,6 +612,7 @@ function openModal(item, isBack = false) {
     else if (item.category === 'interventions') labelClass = 'bg-intervention';
     else if (item.category === 'examens-paracliniques') labelClass = 'bg-para';
     else if (item.category === 'examens-cliniques') labelClass = 'bg-clinic';
+    else if (item.category === 'soins-de-plaies') labelClass = 'bg-wound';
 
     let contentHtml = '';
 
@@ -517,10 +627,25 @@ function openModal(item, isBack = false) {
         `;
     }
 
+    // Header with Interactive Badges
+    let badgesHtml = `<div class="card-category-label ${labelClass} clickable" onclick="navigateToCategory('${item.category}')">${formatCategoryName(item.category)}</div>`;
+
+    // Add System badge for pathologies
+    if (item.category === 'pathologies' && item.systeme) {
+        badgesHtml += `<div class="card-category-label bg-pathology clickable" onclick="navigateToSystem('${item.systeme.replace(/'/g, "\\'")}', 'pathologies')">Système : ${item.systeme}</div>`;
+    }
+
+    // Add Class badge for medications
+    if (item.category === 'medicaments' && item.details.classe) {
+        badgesHtml += `<div class="card-category-label bg-medicament clickable" onclick="navigateToMedicationClass('${item.details.classe.replace(/'/g, "\\'")}')">${item.details.classe}</div>`;
+    }
+
     contentHtml += `
         <div class="detail-header">
             <h2 class="detail-title">${item.title}</h2>
-            <div class="card-category-label ${labelClass}" style="margin:0">${formatCategoryName(item.category)}</div>
+            <div class="detail-header-badges">
+                ${badgesHtml}
+            </div>
         </div>
         <div class="detail-body">
     `;
@@ -653,6 +778,47 @@ function goBackInModal() {
     if (modalHistory.length > 0) {
         const previousItem = modalHistory.pop();
         openModal(previousItem, true);
+    }
+}
+
+// NAVIGATION HELPERS (Category/System/Class)
+function navigateToCategory(category) {
+    closeModal();
+    const searchInput = document.getElementById('search-input');
+    if (searchInput) searchInput.value = '';
+    loadCategory(category);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+function navigateToSystem(systemName, category) {
+    closeModal();
+    const searchInput = document.getElementById('search-input');
+    if (searchInput) searchInput.value = '';
+
+    // Ensure we are on the right category tab
+    currentCategory = category;
+    updateActiveTab(category);
+
+    // Render filtered by system
+    if (studyData[category]) {
+        renderPathologiesBySystem(systemName, studyData[category]);
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+}
+
+function navigateToMedicationClass(className) {
+    closeModal();
+    const searchInput = document.getElementById('search-input');
+    if (searchInput) searchInput.value = '';
+
+    // Ensure we are on the right category tab
+    currentCategory = 'medicaments';
+    updateActiveTab('medicaments');
+
+    // Render filtered by class
+    if (studyData['medicaments']) {
+        renderMedicationsByClass(className, studyData['medicaments']);
+        window.scrollTo({ top: 0, behavior: 'smooth' });
     }
 }
 

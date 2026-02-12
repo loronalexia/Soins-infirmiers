@@ -1,4 +1,4 @@
-[
+﻿[
     {
         "id": "p1",
         "title": "Insuffisance Cardiaque",
@@ -110,7 +110,7 @@
                 "Céphalées intenses (si hémorragique)"
             ],
             "traitements": [
-                "Thrombolyse (si < 4.5h)",
+                "Thrombolyse (si \u003c 4.5h)",
                 "Anticoagulants / Antiplaquettaires",
                 "Contrôle TA et Glycémie",
                 "Rééducation précoce"
@@ -133,8 +133,8 @@
             "definition": "Ischémie myocardique transitoire déclenchée par une augmentation de la demande en oxygène (effort, émotion).",
             "symptomes": [
                 "Douleur thoracique (serrement)",
-                "Irradiation bras gauche/machoire",
-                "Disparition au repos (< 15 min)",
+                "Irradiation bras gauche/mâchoire",
+                "Disparition au repos (\u003c 15 min)",
                 "Soulagée par Nitroglycérine"
             ],
             "traitements": [
@@ -161,7 +161,7 @@
             "definition": "Syndrome coronarien aigu sans nécrose myocardique (Troponines négatives) mais avec ischémie sévère.",
             "symptomes": [
                 "Douleur thoracique au repos",
-                "Durée > 20 min",
+                "Durée \u003e 20 min",
                 "Non soulagée par repos/Nitro",
                 "Angoisse"
             ],
@@ -189,7 +189,7 @@
             "definition": "Destruction du tissu myocardique (nécrose) par ischémie prolongée (obstruction coronaire).",
             "symptomes": [
                 "Douleur thoracique intense (étau)",
-                "Irradiations (bras, cou, machoire)",
+                "Irradiations (bras, cou, mâchoire)",
                 "Diaphorèse (sueurs froides)",
                 "Nausées / Vomissements"
             ],
@@ -295,7 +295,7 @@
         "id": "p11",
         "title": "Cirrhose",
         "category": "pathologies",
-        "systeme": "Gastro Intestinal",
+        "systeme": "Gastro-intestinal",
         "preview": "Stade avancé de fibrose hépatique avec désorganisation de l'architecture du foie.",
         "details": {
             "definition": "Maladie chronique du foie caractérisée par le remplacement du tissu hépatique sain par de la fibrose et des nodules de régénération.",
@@ -324,7 +324,7 @@
         "id": "p12",
         "title": "Ascite",
         "category": "pathologies",
-        "systeme": "Gastro Intestinal",
+        "systeme": "Gastro-intestinal",
         "preview": "Accumulation pathologique de liquide dans la cavité péritonéale (abdomen).",
         "details": {
             "definition": "Épanchement liquide intrapéritonéal, complication fréquente de la cirrhose (hypertension portale).",
@@ -335,7 +335,7 @@
                 "Matité à la percussion"
             ],
             "traitements": [
-                "Restriction sodée (< 2g/j)",
+                "Restriction sodée (\u003c 2g/j)",
                 "Diurétiques (Spironolactone + Furosémide)",
                 "Paracenthèse (Ponction d'ascite)",
                 "Restriction hydrique (si hyponatrémie)"
@@ -352,7 +352,7 @@
         "id": "p13",
         "title": "Pancréatite Aiguë",
         "category": "pathologies",
-        "systeme": "Gastro Intestinal",
+        "systeme": "Gastro-intestinal",
         "preview": "Inflammation aiguë du pancréas, souvent due à des calculs biliaires ou à l'alcool.",
         "details": {
             "definition": "Inflammation soudaine du pancréas pouvant aller de l'oedème léger à la nécrose grave.",
@@ -809,7 +809,7 @@
         "systeme": "Cardiovasculaire",
         "preview": "Élévation chronique de la pression artérielle dans les artères.",
         "details": {
-            "definition": "Pression artérielle systolique >= 140 mmHg et/ou diastolique >= 90 mmHg de façon permanente.",
+            "definition": "Pression artérielle systolique \u003e= 140 mmHg et/ou diastolique \u003e= 90 mmHg de façon permanente.",
             "symptomes": [
                 "Souvent asymptomatique (tueur silencieux)",
                 "Céphalées (nuque, matin)",
@@ -829,7 +829,7 @@
                 "Rétinopathie hypertensive"
             ],
             "urgence_hypertensive": [
-                "TA > 180/120 mmHg avec souffrance organe cible",
+                "TA \u003e 180/120 mmHg avec souffrance organe cible",
                 "Encéphalopathie, OAP, Douleur thoracique",
                 "Nécessite hospitalisation et traitement IV monitoré"
             ],
@@ -899,7 +899,7 @@
     },
     {
         "id": "p33",
-        "title": "IVC & Ulcères Veineux",
+        "title": "IVC \u0026 Ulcères Veineux",
         "category": "pathologies",
         "systeme": "Cardiovasculaire",
         "preview": "Mauvais retour veineux entraînant oedème et plaies chroniques.",
@@ -995,7 +995,7 @@
                 "Mélanome malin (plus agressif, risque métastatique élevé)"
             ],
             "symptomes": [
-                "Règle ABCDE (Asymétrie, Bords irréguliers, Couleur non uniforme, Diamètre > 6mm, Évolution)",
+                "Règle ABCDE (Asymétrie, Bords irréguliers, Couleur non uniforme, Diamètre \u003e 6mm, Évolution)",
                 "Nouvelle lésion cutanée qui ne guérit pas",
                 "Modification d'un grain de beauté existant",
                 "Lésion squameuse ou croûteuse persistante"
@@ -1054,7 +1054,7 @@
         "title": "Fracture sans déplacement",
         "category": "pathologies",
         "systeme": "Musculosquelettique",
-        "preview": "Rupture de la continuité osseuse où les fragments restent alignés.",
+        "preview": "Rupture de la continuité osseuse oÃ¹ les fragments restent alignés.",
         "details": {
             "definition": "Fracture simple sans déviation des segments osseux, nécessitant généralement une immobilisation seule.",
             "symptomes": [
@@ -1084,7 +1084,7 @@
         "systeme": "Musculosquelettique",
         "preview": "Rupture osseuse avec désalignement ou fragmentation des segments.",
         "details": {
-            "definition": "Fracture complexe où les os ne sont plus en contact anatomique ou sont broyés, nécessitant souvent une réduction.",
+            "definition": "Fracture complexe oÃ¹ les os ne sont plus en contact anatomique ou sont broyés, nécessitant souvent une réduction.",
             "symptomes": [
                 "Déformation visible du membre",
                 "Douleur atroce",
@@ -1155,7 +1155,7 @@
             "definition": "Usure progressive du cartilage articulaire entraînant une douleur mécanique et une raideur.",
             "symptomes": [
                 "Douleur à l'effort soulagée par le repos",
-                "Raideur matinale de courte durée (< 30 min)",
+                "Raideur matinale de courte durée (\u003c 30 min)",
                 "Diminution de l'amplitude articulaire",
                 "Boiterie à la marche"
             ],
@@ -1245,7 +1245,7 @@
             "definition": "Défaillance de la pompe cardiaque entraînant une baisse du débit cardiaque malgré une volémie adéquate.",
             "causes": "Infarctus du myocarde (principale), myocardite, arythmies sévères, insuffisance valvulaire aiguë.",
             "symptomes": [
-                "Hypotension (PAS < 90 mmHg)",
+                "Hypotension (PAS \u003c 90 mmHg)",
                 "Tachycardie",
                 "Tachypnée et crépitants (oedème pulmonaire)",
                 "Extrémités froides et cyanosées",
@@ -1277,7 +1277,7 @@
             ],
             "surveillance": [
                 "Fréquence cardiaque et tension artérielle",
-                "Débit urinaire (cible > 30 mL/h)",
+                "Débit urinaire (cible \u003e 30 mL/h)",
                 "Hémoglobine et électrolytes",
                 "Remplissage liquidien (Cristalloïdes, Sang)"
             ]
@@ -1580,6 +1580,717 @@
                 "Support parental et éducation nutritionnelle",
                 "Suivi multidisciplinaire (Pédiatre, Diététiste)",
                 "Traitement de la cause sous-jacente"
+            ]
+        }
+    },
+    {
+        "id": "p58",
+        "title": "Diabète de Type 1",
+        "category": "pathologies",
+        "systeme": "Endocrinien",
+        "preview": "Maladie chronique caractérisée par une absence totale de production d'insuline.",
+        "details": {
+            "definition": "Destruction auto-immune des cellules bêta du pancréas, entraînant une carence absolue en insuline.",
+            "symptomes": [
+                "Polyurie, Polydipsie, Polyphagie (Les 3 P)",
+                "Perte de poids inexpliquée",
+                "Fatigue intense",
+                "Risque élevé d'acidocétose"
+            ],
+            "traitements": [
+                "Insulinothérapie à vie (SC ou pompe)",
+                "Autosurveillance glycémique fréquente",
+                "Calcul des glucides",
+                "Activité physique planifiée"
+            ],
+            "surveillance": [
+                "Glycémie capillaire et HbA1c",
+                "Signes d'hypoglycémie/hyperglycémie",
+                "État des sites d'injection (Lipodystrophie)"
+            ]
+        }
+    },
+    {
+        "id": "p59",
+        "title": "Hypoglycémie (Complication Diabète)",
+        "category": "pathologies",
+        "systeme": "Endocrinien",
+        "preview": "Baisse anormale du taux de glucose dans le sang (\u003c 3,9 mmol/L).",
+        "details": {
+            "definition": "Urgence métabolique liée à un excès d'insuline, un manque de glucose ou un effort physique imprévu.",
+            "symptomes": [
+                "Tremblements, sudations, tachycardie (Adrénergiques)",
+                "Vision trouble, confusion, somnolence (Neuroglycopéniques)",
+                "Faim intense",
+                "Irritabilité"
+            ],
+            "traitement_regle_du_15": [
+                "Ingérer 15g de glucides simples (ex: 3-4 comprimés de glucose, 150ml jus)",
+                "Attendre 15 min et revérifier la glycémie",
+                "Si toujours \u003c 4 mmol/L, répéter",
+                "Si \u003e 4 mmol/L, prendre une collation avec protéines/glucides complexes"
+            ],
+            "danger": "Peut mener au coma ou aux convulsions si non traitée."
+        }
+    },
+    {
+        "id": "p60",
+        "title": "Acidocétose Diabétique (ACD)",
+        "category": "pathologies",
+        "systeme": "Endocrinien",
+        "preview": "Complication grave du Type 1 liée à un manque profond d'insuline.",
+        "details": {
+            "definition": "Carence en insuline entraînant une hyperglycémie sévère, une déshydratation et une production de corps cétoniques (acidose).",
+            "symptomes": [
+                "Respiration de Kussmaul (lente et profonde)",
+                "Haleine fruitée (acétosique)",
+                "Douleurs abdominales, nausées, vomissements",
+                "Polyurie massive puis déshydratation"
+            ],
+            "criteres_bio": "Glycémie \u003e 14 mmol/L, pH \u003c 7.30, présence de corps cétoniques.",
+            "traitements_urgence": [
+                "Réhydratation liquidienne massive (IV)",
+                "Insuline IV (Protocole)",
+                "Remplacement du Potassium (K+)",
+                "Surveillance étroite de la conscience"
+            ]
+        }
+    },
+    {
+        "id": "p61",
+        "title": "Syndrome Hyperglycémique Hyperosmolaire (SHH)",
+        "category": "pathologies",
+        "systeme": "Endocrinien",
+        "preview": "Complication aiguë grave, plus fréquente dans le Diabète de Type 2.",
+        "details": {
+            "definition": "Hyperglycémie extrême causant une déshydratation intracellulaire sévère sans cétose significative.",
+            "symptomes": [
+                "Glycémie très élevée (\u003e 34 mmol/L)",
+                "Signes de déshydratation sévère (muqueuses sèches, hypotension)",
+                "Troubles neurologiques (torpeur, coma)",
+                "Absence d'haleine fruitée"
+            ],
+            "surveillance": [
+                "Réhydratation IV prudente (risque d'oedème cérébral)",
+                "Surveillance électrolytique",
+                "Monitoring cardiaque"
+            ]
+        }
+    },
+    {
+        "id": "p62",
+        "title": "Syndrome Métabolique",
+        "category": "pathologies",
+        "systeme": "Multisystémique",
+        "preview": "Ensemble de facteurs de risque augmentant la probabilité de MCV et de Diabète.",
+        "details": {
+            "criteres_diagnostics": [
+                "Obésité abdominale (tour de taille)",
+                "Hypertension artérielle (\u003e 130/85)",
+                "Hyperglycémie à jeun",
+                "Triglycérides élevés / Cholestérol HDL bas"
+            ],
+            "risques": "Multiplie par 2 le risque de maladie cardiovasculaire et par 5 le risque de Diabète Type 2.",
+            "interventions": [
+                "Modification des habitudes de vie (Alimentation, Sport)",
+                "Gestion du poids",
+                "Traitement pharmacologique des facteurs individuels (Statines, Antihypertenseurs)"
+            ]
+        }
+    },
+    {
+        "id": "p63",
+        "title": "Obésité",
+        "category": "pathologies",
+        "systeme": "Multisystémique",
+        "preview": "Accumulation excessive de graisse corporelle nuisible pour la santé.",
+        "details": {
+            "definition": "Indice de Masse Corporelle (IMC) supérieur ou égal à 30 kg/m².",
+            "complications": [
+                "Diabète Type 2 et Syndrome métabolique",
+                "Apnée du sommeil",
+                "Maladies cardiovasculaires",
+                "Atteintes articulaires (Arthrose)"
+            ],
+            "soins_infirmiers": [
+                "Approche non stigmatisante",
+                "Éducation nutritionnelle",
+                "Évaluation de la mobilité",
+                "Prévention des atteintes cutanées (plis)"
+            ]
+        }
+    },
+    {
+        "id": "p64",
+        "title": "Hypothyroïdie",
+        "category": "pathologies",
+        "systeme": "Endocrinien",
+        "preview": "Diminution de la production d'hormones thyroïdiennes par la glande thyroïde.",
+        "details": {
+            "definition": "Ralentissement global du métabolisme lié à une insuffisance en T3/T4 (ex: Thyroïdite de Hashimoto).",
+            "symptomes": [
+                "Fatigue, somnolence, ralentissement psychomoteur",
+                "Frilosité",
+                "Prise de poids malgré un appétit diminué",
+                "Peau sèche et constipation"
+            ],
+            "traitements": [
+                "Hormonothérapie substitutive (Lévothyroxine/Levothroid)",
+                "Administration le matin à jeun (30-60 min avant repas)"
+            ],
+            "surveillance": [
+                "Taux de TSH",
+                "Signes de surdosage (tachycardie, insomnie)",
+                "Fonction cardiaque"
+            ]
+        }
+    },
+    {
+        "id": "p65",
+        "title": "Hyperthyroïdie",
+        "category": "pathologies",
+        "systeme": "Endocrinien",
+        "preview": "Production excessive d'hormones thyroïdiennes.",
+        "details": {
+            "definition": "Accélération du métabolisme de base (ex: Maladie de Graves-Basedow).",
+            "symptomes": [
+                "Perte de poids malgré une augmentation de l'appétit",
+                "Tachycardie, palpitations, tremblements",
+                "Thermophobie (intolérance à la chaleur)",
+                "Exophtalmie (parfois)"
+            ],
+            "traitements": [
+                "Antithyroïdiens de synthèse (Tapazole)",
+                "Bêta-bloquants (pour les symptômes cardiaques)",
+                "Iode radioactif",
+                "Chirurgie (Thyroïdectomie)"
+            ],
+            "surveillance": [
+                "Crise thyrotoxique (Urgence : fièvre, tachycardie extrême)",
+                "Poids et rythme cardiaque"
+            ]
+        }
+    },
+    {
+        "id": "p66",
+        "title": "Cancer (Généralités)",
+        "category": "pathologies",
+        "systeme": "Multisystémique",
+        "preview": "Processus de prolifération cellulaire incontrôlée pouvant toucher n'importe quel organe.",
+        "details": {
+            "definition": "Transformation maligne de cellules saines échappant aux mécanismes de régulation de l'organisme.",
+            "traitements": [
+                "Chirurgie (exérèse)",
+                "Chimiothérapie (Agents cytotoxiques)",
+                "Radiothérapie",
+                "Immunothérapie et Hormonothérapie"
+            ],
+            "surveillance_infirmiere": [
+                "Gestion de la douleur",
+                "Suivi nutritionnel et hydratation",
+                "Prévention des infections (Neutropénie)",
+                "Accompagnement psychologique"
+            ],
+            "effets_chimio": [
+                "Alopécie",
+                "Nausées et vomissements",
+                "Mucite (inflammation des muqueuses)",
+                "Fatigue extrême"
+            ]
+        }
+    },
+    {
+        "id": "p67",
+        "title": "Maladies Inflammatoires Chroniques de l'Intestin (MICI)",
+        "category": "pathologies",
+        "systeme": "Gastro-intestinal",
+        "preview": "Groupe de maladies caractérisées par une inflammation chronique de la paroi digestive (Crohn et Colite ulcéreuse).",
+        "details": {
+            "definition": "Inflammation chronique médiée par le système immunitaire.",
+            "crohn": [
+                "Atteinte possible de tout le tube digestif (bouche à l'anus)",
+                "Lésions segmentaires (en zones saines)",
+                "Toutes les couches de la paroi (transmurale)",
+                "Risque de fistules et d'abcès"
+            ],
+            "colite_ulcereuse": [
+                "Atteinte limitée au côlon et au rectum",
+                "Lésions continues",
+                "Limitée à la muqueuse intestinale",
+                "Diarrhée sanglante fréquente"
+            ],
+            "complications": [
+                "Malnutrition et anémie",
+                "Obstruction intestinale",
+                "Perforation et péritonite"
+            ],
+            "surveillance": [
+                "Nombre et aspect des selles",
+                "Bilan ionique et hydratation",
+                "Poids et état nutritionnel"
+            ]
+        }
+    },
+    {
+        "id": "p68",
+        "title": "Occlusion Intestinale",
+        "category": "pathologies",
+        "systeme": "Gastro-intestinal",
+        "preview": "Arrêt partiel ou complet du passage des matières et des gaz dans l'intestin.",
+        "details": {
+            "types": [
+                "Mécanique (Adhérences, tumeurs, hernies)",
+                "Paralytique (Iléus : arrêt du péristaltisme post-chirurgie)"
+            ],
+            "symptomes": [
+                "Douleurs abdominales crampiformes",
+                "Vomissements (fécaloïdes si occlusion basse)",
+                "Distension abdominale",
+                "Arrêt des gaz et des matières"
+            ],
+            "surveillance_infirmiere": [
+                "Auscultation des bruits intestinaux (absents ou métalliques)",
+                "Mesure du tour de taille",
+                "Bilan entrées/sorties rigoureux",
+                "Surveillance de la sonde nasogastrique (si présente)"
+            ],
+            "traitements": [
+                "Mise au repos digestif (NPO)",
+                "Décompression par sonde nasogastrique",
+                "Chirurgie si cause mécanique"
+            ]
+        }
+    },
+    {
+        "id": "p69",
+        "title": "Cancer Colorectal",
+        "category": "pathologies",
+        "systeme": "Gastro-intestinal",
+        "preview": "Tumeur maligne se développant dans le côlon ou le rectum.",
+        "details": {
+            "facteurs_de_risque": [
+                "Ã‚ge (\u003e 50 ans)",
+                "Antécédents familiaux de polypes ou cancer",
+                "MICI (Crohn ou Colite)",
+                "Régime riche en graisses et pauvre en fibres"
+            ],
+            "symptomes": [
+                "Changement des habitudes de défécation (alternance diarrhée/constipation)",
+                "Sang dans les selles (Méléna ou rectorragie)",
+                "Douleurs abdominales vagues",
+                "Anémie inexpliquée"
+            ],
+            "depistage": "Recherche de sang occulte dans les selles (RSOS) tous les 2 ans.",
+            "traitements": [
+                "Résection chirurgicale",
+                "Chimiothérapie et Radiothérapie",
+                "Création d'une stomie (parfois temporaire)"
+            ]
+        }
+    },
+    {
+        "id": "p70",
+        "title": "Cholécystite",
+        "category": "pathologies",
+        "systeme": "Gastro-intestinal",
+        "preview": "Inflammation aiguë ou chronique de la vésicule biliaire, souvent liée à des calculs.",
+        "details": {
+            "symptomes": [
+                "Douleur vive à l'hypocondre droit irradiant vers l'épaule droite",
+                "Nausées et vomissements",
+                "Fièvre et frissons",
+                "Signe de Murphy positif (douleur à l'inspiration lors de la palpation sous le foie)"
+            ],
+            "diagnostic": "Échographie abdominale (calculs, paroi épaissie).",
+            "traitements": [
+                "NPO et hydratation IV",
+                "Antibiotiques et analgésiques",
+                "Cholécystectomie (ablation de la vésicule)"
+            ]
+        }
+    },
+    {
+        "id": "p71",
+        "title": "Péritonite",
+        "category": "pathologies",
+        "systeme": "Gastro-intestinal",
+        "preview": "Inflammation sévère du péritoine, constituant une urgence chirurgicale.",
+        "details": {
+            "causes": "Perforation d'organe (Appendicite, Ulcère, MICI), traumatisme ou infection.",
+            "symptomes": [
+                "Douleur abdominale généralisée et intense",
+                "Ventre de bois (rigidité musculaire involontaire)",
+                "Vomissements et fièvre élevée",
+                "Signes de choc (tachycardie, hypotension)"
+            ],
+            "surveillance": [
+                "Signes vitaux (détection choc septique)",
+                "État de conscience",
+                "Préparation pré-opératoire immédiate"
+            ],
+            "danger": "Décès par choc septique en l'absence de traitement rapide."
+        }
+    },
+    {
+        "id": "p72",
+        "title": "Infection Urinaire",
+        "category": "pathologies",
+        "systeme": "Urinaire",
+        "preview": "Infection du système urinaire, allant de la cystite simple à la pyélonéphrite grave.",
+        "details": {
+            "types": [
+                "Cystite: Infection de la vessie (bas appareil)",
+                "Pyélonéphrite: Infection des reins (haut appareil - URGENCE)"
+            ],
+            "symptomes": [
+                "Brûlures mictionnelles (dysurie)",
+                "Envies fréquentes et urgentes (pollakiurie)",
+                "Douleur dorsale ou flanc (si pyélonéphrite)",
+                "Fièvre et frissons"
+            ],
+            "diagnostic": [
+                "Bandelette urinaire (Leucocytes +, Nitrites +)",
+                "DCA (Culture d'urine)",
+                "Échographie (si récurrent ou grave)"
+            ],
+            "traitements": [
+                "Antibiothérapie",
+                "Augmenter l'apport hydrique",
+                "Analgésiques / Phénazopyridine"
+            ]
+        }
+    },
+    {
+        "id": "p73",
+        "title": "Insuffisance Rénale Aiguë (IRA)",
+        "category": "pathologies",
+        "systeme": "Urinaire",
+        "preview": "Baisse brutale et réversible de la fonction rénale.",
+        "details": {
+            "causes": [
+                "Pré-rénale: Hypovolémie, choc, déshydratation",
+                "Rénale: Nécrose tubulaire, toxiques, infections",
+                "Post-rénale: Obstruction (calculs, prostate)"
+            ],
+            "symptomes": [
+                "Oligurie (baisse de la diurèse)",
+                "Oedèmes",
+                "Confusion (accumulation de toxines)"
+            ],
+            "surveillance": [
+                "Bilan In/Out strict",
+                "Créatinine et Urée sanguine",
+                "Électrolytes (risque hyperkaliémie)",
+                "Poids quotidien"
+            ]
+        }
+    },
+    {
+        "id": "p74",
+        "title": "Insuffisance Rénale Chronique (IRC)",
+        "category": "pathologies",
+        "systeme": "Urinaire",
+        "preview": "Perte progressive et irréversible de la fonction rénale.",
+        "details": {
+            "causes": "Souvent complication du Diabète ou de l'HTA.",
+            "stades": "Basés sur le Débit de Filtration Glomérulaire (DFG).",
+            "complications": [
+                "Anémie (manque d'érythropoïétine)",
+                "Hyperkaliémie (risque cardiaque)",
+                "Surcharge volémique (OAP)",
+                "Ostéodystrophie rénale (trouble Ca2+/PO4)"
+            ],
+            "traitements": [
+                "Régime pauvre en K+ et en protéines",
+                "Contrôle TA et Glycémie",
+                "Chélateurs de phosphate",
+                "Hémodialyse ou transplantation (stade terminal)"
+            ]
+        }
+    },
+    {
+        "id": "p75",
+        "title": "Incontinence Urinaire",
+        "category": "pathologies",
+        "systeme": "Urinaire",
+        "preview": "Perte involontaire d'urine affectant la qualité de vie.",
+        "details": {
+            "types": [
+                "Effort: Fuite lors de toux/rire/exercice",
+                "Urgence: Envie pressante irrépressible",
+                "Trop-plein (Regorgement): Vidange incomplète (vessie pleine)",
+                "Fonctionnelle: Difficulté à atteindre les toilettes"
+            ],
+            "interventions": [
+                "Exercices de Kegel (renforcement plancher pelvien)",
+                "Horaire de miction programmé",
+                "Éviter les irritants (caféine, alcool)",
+                "Gestion cutanée (prévention macération)"
+            ]
+        }
+    },
+    {
+        "id": "p76",
+        "title": "ITSS (Infections Transmissibles Sexuellement et par le Sang)",
+        "category": "pathologies",
+        "systeme": "Reproducteur",
+        "preview": "Infections transmises principalement par contact sexuel ou sanguin.",
+        "details": {
+            "généralités": "Inclut la Chlamydia, Gonorrhée, Syphilis, VPH, Herpès génital, VIH et Hépatites B/C.",
+            "symptomes": [
+                "Écoulements anormaux (pertes vaginales, urétrales)",
+                "Lésions cutanées (ulcères, verrues, vésicules)",
+                "Douleurs pelviennes",
+                "Asymptomatique (très fréquent)"
+            ],
+            "dépistage": [
+                "Prélèvements locaux (écouvillon)",
+                "Analyses d'urine",
+                "Prélèvements sanguins (sérologies)"
+            ],
+            "prévention": [
+                "Port du préservatif",
+                "Vaccination (VPH, Hépatite B)",
+                "Dépistage régulier et traitement des partenaires"
+            ]
+        }
+    },
+    {
+        "id": "p77",
+        "title": "Troubles Bénins (Féminin)",
+        "category": "pathologies",
+        "systeme": "Reproducteur",
+        "preview": "Affections non cancéreuses du système reproducteur féminin.",
+        "details": {
+            "endométriose": "Présence de tissu utérin hors de l'utérus entraînant douleurs et infertilité.",
+            "fibromes": "Tumeurs musculaires bénignes de l'utérus.",
+            "kystes": "Sacs remplis de liquide sur ou dans les ovaires.",
+            "symptomes": [
+                "Douleurs pelviennes chroniques",
+                "Dysménorrhée intense (règles douloureuses)",
+                "Saignements irréguliers",
+                "Dyspareunie (douleur lors des rapports)"
+            ],
+            "traitements": [
+                "Contraceptifs hormonaux",
+                "Analgésiques (AINS)",
+                "Chirurgie conservatrice ou radicale"
+            ]
+        }
+    },
+    {
+        "id": "p78",
+        "title": "Cancer du Col de l'Utérus",
+        "category": "pathologies",
+        "systeme": "Reproducteur",
+        "preview": "Cancer lié principalement à une infection persistante au VPH.",
+        "details": {
+            "causes": "Virus du Papillome Humain (VPH) à haut risque.",
+            "dépistage": "Test Pap (cytologie vaginale) ou test VPH.",
+            "symptomes": [
+                "Souvent aucun au début",
+                "Saignements après les rapports",
+                "Pertes vaginales inhabituelles"
+            ],
+            "prévention": [
+                "Vaccination VPH",
+                "Suivi régulier (dépistage)"
+            ]
+        }
+    },
+    {
+        "id": "p79",
+        "title": "Cancer de l'Utérus (Endomètre)",
+        "category": "pathologies",
+        "systeme": "Reproducteur",
+        "preview": "Cancer de la muqueuse tapissant l'intérieur de l'utérus.",
+        "details": {
+            "facteurs_risque": "Obésité, exposition prolongée aux oestrogènes.",
+            "symptomes": "Saignements post-ménopausiques (Signe d'alerte majeur).",
+            "diagnostic": "Biopsie de l'endomètre, échographie pelvienne.",
+            "traitements": [
+                "Hystérectomie",
+                "Radiothérapie",
+                "Hormonothérapie"
+            ]
+        }
+    },
+    {
+        "id": "p80",
+        "title": "Cancer de l'Ovaire",
+        "category": "pathologies",
+        "systeme": "Reproducteur",
+        "preview": "Un des cancers gynécologiques les plus graves car souvent diagnostiqué tardivement.",
+        "details": {
+            "symptomes": [
+                "Vagues ballonnements abdominaux",
+                "Sensation de satiété précoce",
+                "Augmentation du volume abdominal",
+                "Urgence mictionnelle"
+            ],
+            "facteurs_risque": "Génétique (BRCA1/BRCA2), nulliparité.",
+            "traitements": [
+                "Chirurgie de cytoréduction",
+                "Chimiothérapie intensive"
+            ]
+        }
+    },
+    {
+        "id": "p81",
+        "title": "Cancer du Sein",
+        "category": "pathologies",
+        "systeme": "Reproducteur",
+        "preview": "Cancer le plus fréquent chez la femme.",
+        "details": {
+            "dépistage": "Mammographie de dépistage, auto-examen des seins.",
+            "symptomes": [
+                "Masse dure et indolore",
+                "Modification de la forme du sein",
+                "Écoulement mamelonnaire",
+                "Peau d'orange"
+            ],
+            "traitements": [
+                "Tumorectomie ou Mastectomie",
+                "Radiothérapie / Chimiothérapie",
+                "Hormonothérapie (si récepteurs positifs)"
+            ]
+        }
+    },
+    {
+        "id": "p82",
+        "title": "Hyperplasie Bénigne de la Prostate (HBP)",
+        "category": "pathologies",
+        "systeme": "Reproducteur",
+        "preview": "Augmentation non cancéreuse du volume de la prostate liée à l'âge.",
+        "details": {
+            "symptomes": [
+                "Jet urinaire faible ou saccadé",
+                "Difficulté à débuter la miction",
+                "Nicturie (lever la nuit)",
+                "Impériosité mictionnelle"
+            ],
+            "complications": "Rétention urinaire aiguë, calculs urinaires.",
+            "traitements": [
+                "Alpha-bloquants",
+                "Inhibiteurs de la 5-alpha-réductase",
+                "Résection transurétrale (TURP)"
+            ]
+        }
+    },
+    {
+        "id": "p83",
+        "title": "Cancer de la Prostate",
+        "category": "pathologies",
+        "systeme": "Reproducteur",
+        "preview": "Cancer fréquent chez l'homme, souvent à évolution lente.",
+        "details": {
+            "dépistage": "Toucher rectal (TR) et dosage de l'APS (Antigène Prostatique Spécifique).",
+            "symptomes": [
+                "Peuvent être identiques à l'HBP",
+                "Douleurs osseuses (si métastases)"
+            ],
+            "traitements": [
+                "Surveillance active",
+                "Prostatectomie radicale",
+                "Curiethérapie / Radiothérapie",
+                "Hormonothérapie (privation ischémique)"
+            ]
+        }
+    },
+    {
+        "id": "p84",
+        "title": "Chlamydia",
+        "category": "pathologies",
+        "systeme": "Reproducteur",
+        "preview": "Infection bactérienne la plus fréquente, souvent asymptomatique.",
+        "details": {
+            "definition": "Causée par Chlamydia trachomatis.",
+            "symptomes": [
+                "Pertes vaginales ou urétrales jaunâtres",
+                "Dysurie (brûlure à la miction)",
+                "Douleurs pelviennes ou testiculaires"
+            ],
+            "complications": [
+                "Salpingite (PID)",
+                "Infertilité",
+                "Grossesse ectopique"
+            ],
+            "traitement": "Antibiothérapie (Azithromycine ou Doxycycline)."
+        }
+    },
+    {
+        "id": "p85",
+        "title": "Gonorrhée",
+        "category": "pathologies",
+        "systeme": "Reproducteur",
+        "preview": "Infection bactérienne pouvant affecter les organes génitaux, le rectum et la gorge.",
+        "details": {
+            "definition": "Causée par Neisseria gonorrhoeae.",
+            "symptomes": [
+                "Écoulement purulent (jaunâtre/verdâtre)",
+                "Brûlures mictionnelles intenses",
+                "Douleur et oedème testiculaire"
+            ],
+            "complications": [
+                "Maladie inflammatoire pelvienne",
+                "Épididymite",
+                "Infection disséminée (articulations)"
+            ],
+            "traitement": "Antibiothérapie (Ceftriaxone IM combinée à l'Azithromycine)."
+        }
+    },
+    {
+        "id": "p86",
+        "title": "Syphilis",
+        "category": "pathologies",
+        "systeme": "Reproducteur",
+        "preview": "Infection bactérienne évoluant en plusieurs stades s'il n'est pas traité.",
+        "details": {
+            "definition": "Causée par Treponema pallidum.",
+            "stades": [
+                "Primaire: Chancre (ulcère indolore au site d'infection)",
+                "Secondaire: Éruptions cutanées (mains/pieds), fièvre, fatigue",
+                "Tertiaire: Dommages irréparables au cerveau, coeur et nerfs"
+            ],
+            "traitement": "Pénicilline G (Benzathine) par voie intramusculaire."
+        }
+    },
+    {
+        "id": "p87",
+        "title": "VPH (Virus du Papillome Humain)",
+        "category": "pathologies",
+        "systeme": "Reproducteur",
+        "preview": "Virus responsable des verrues génitales et de plusieurs types de cancers.",
+        "details": {
+            "types": "Souches à bas risque (verrues/condylomes) et à haut risque (cancer du col, anus, gorge).",
+            "prevention": [
+                "Vaccination (Gardasil 9)",
+                "Dépistage régulier (test Pap / test VPH)"
+            ],
+            "traitements_lésions": [
+                "Cryothérapie (azote liquide)",
+                "Laser ou excision chirurgicale",
+                "Crèmes immunomodulatrices"
+            ]
+        }
+    },
+    {
+        "id": "p88",
+        "title": "Herpès Génital",
+        "category": "pathologies",
+        "systeme": "Reproducteur",
+        "preview": "Infection virale chronique caractérisée par des poussées récurrentes de vésicules.",
+        "details": {
+            "causes": "Virus Herpès Simplex (HSV-1 ou HSV-2).",
+            "symptomes": [
+                "Vésicules douloureuses qui éclatent en ulcères",
+                "Démangeaisons et picotements avant la poussée",
+                "Symptômes grippaux lors de la primo-infection"
+            ],
+            "gestion": [
+                "Traitement antiviral (Acyclovir, Valacyclovir)",
+                "Hygiène locale pour éviter la surinfection",
+                "Note: Le virus reste latent à vie dans les ganglions"
             ]
         }
     }
