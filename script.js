@@ -24,7 +24,12 @@ async function init() {
 async function preloadAllData() {
     contentArea.innerHTML = '<div class="loading">Chargement des données...</div>';
     try {
-        const promises = categories.map(cat => fetch(`${cat}.json`).then(res => {
+        // Categories for main navigation
+        const mainCategories = ['pathologies', 'medicaments', 'examens-paracliniques', 'examens-cliniques'];
+        // All files to load (including invisible ones like sources)
+        const filesToLoad = [...mainCategories, 'sources'];
+
+        const promises = filesToLoad.map(cat => fetch(`${cat}.json`).then(res => {
             if (!res.ok) throw new Error(`Erreur chargement ${cat}`);
             return res.json().then(data => ({ category: cat, data }));
         }));
@@ -250,7 +255,9 @@ const linkMapping = [
     { keywords: ['bloqueur des canaux calciques', 'inhibiteur calcique'], target: 'Antihypertenseurs' },
     { keywords: ['aspirine', 'aas'], target: 'Aspirine' },
     { keywords: ['anticoagulant'], target: 'Anticoagulant' },
-    { keywords: ['statine'], target: 'Antihypertenseurs' }
+    { keywords: ['statine'], target: 'Antihypertenseurs' },
+    { keywords: ['diabète', 'diabete', 'antidiabétique', 'antidiabetique'], target: 'Antidiabétiques' },
+    { keywords: ['insuline'], target: 'Antidiabétiques' }
 ];
 
 function formatSmartLinks(text) {
@@ -471,23 +478,11 @@ function setupEventListeners() {
 }
 
 function showSources() {
-    const sourcesData = {
-        title: "Sources & Références",
-        category: "recherche",
-        details: {
-            "Ouvrages de référence": [
-                "Brunner & Suddarth, 'Soins infirmiers en médecine et chirurgie'",
-                "P. Lewis, 'Soins infirmiers : Pratique et théorie'",
-                "Vidals et guides pharmacologiques officiels"
-            ],
-            "Ressources Académiques": [
-                "Protocoles cliniques des centres hospitaliers universitaires",
-                "Cours et modules de formation en soins infirmiers (IFSI / Cégep)",
-                "OIIQ / Ordres professionnels de santé"
-            ],
-            "Note sur le plagiat": "Cette plateforme est un outil de révision personnel. Les contenus sont synthétisés à partir de sources académiques et cliniques reconnues pour garantir l'exactitude des informations tout en respectant la propriété intellectuelle."
-        }
-    };
+    const sourcesData = studyData['sources'];
+    if (!sourcesData) {
+        console.error('Sources non chargées');
+        return;
+    }
     openModal(sourcesData);
 }
 

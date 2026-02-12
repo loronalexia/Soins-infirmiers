@@ -266,5 +266,99 @@
                 "Apparition de vertiges"
             ]
         }
+    },
+    {
+        "id": "m12",
+        "title": "Metformine (Glucophage)",
+        "category": "medicaments",
+        "preview": "Antidiabétique oral de la famille des biguanides (première intention Type 2).",
+        "details": {
+            "classe": "Antidiabétiques",
+            "sous_classe": "Antidiabétiques Oraux",
+            "indications": [
+                "Diabète de type 2 (surtout en cas de surcharge pondérale)"
+            ],
+            "effets_secondaires": [
+                "Troubles digestifs (nausées, diarrhées)",
+                "Goût métallique",
+                "Acidose lactique (rare mais grave)"
+            ],
+            "surveillance": [
+                "Fonction rénale (Créatinine)",
+                "Glycémie à jeun et HbA1c",
+                "Prendre en fin de repas pour limiter les troubles digestifs",
+                "Arrêt 48h avant/après examen avec produit de contraste iodé"
+            ]
+        }
+    },
+    {
+        "id": "m13",
+        "title": "Gliclazide (Diamicron)",
+        "category": "medicaments",
+        "preview": "Sulfonylurée favorisant la sécrétion d'insuline par le pancréas.",
+        "details": {
+            "classe": "Antidiabétiques",
+            "sous_classe": "Antidiabétiques Oraux",
+            "indications": [
+                "Diabète de type 2 quand le régime seul ne suffit pas"
+            ],
+            "effets_secondaires": [
+                "Hypoglycémie (Risque majeur)",
+                "Prise de poids",
+                "Réactions cutanées"
+            ],
+            "surveillance": [
+                "Signes d'hypoglycémie (sueurs, tremblements, faim)",
+                "Glycémie capillaire régulière",
+                "Prendre avant un repas"
+            ]
+        }
+    },
+    {
+        "id": "m14",
+        "title": "Insuline Lantus / Toujeo",
+        "category": "medicaments",
+        "preview": "Insuline basale (action longue) pour un contrôle glycémique continu.",
+        "details": {
+            "classe": "Antidiabétiques",
+            "sous_classe": "Insulines",
+            "indications": [
+                "Diabète de type 1",
+                "Diabète de type 2 insulinorequérant"
+            ],
+            "effets_secondaires": [
+                "Hypoglycémie",
+                "Lipodystrophies au point d'injection",
+                "Prise de poids"
+            ],
+            "surveillance": [
+                "Glycémies capillaires",
+                "Technique d'injection et rotation des sites",
+                "Conservation au frigo (avant ouverture)"
+            ]
+        }
+    },
+    {
+        "id": "m15",
+        "title": "Insuline Novorapid / Humalog",
+        "category": "medicaments",
+        "preview": "Insuline d'action ultra-rapide pour couvrir les pics glycémiques des repas.",
+        "details": {
+            "classe": "Antidiabétiques",
+            "sous_classe": "Insulines",
+            "indications": [
+                "Contrôle de la glycémie prandiale (repas)",
+                "Correction rapide d'une hyperglycémie"
+            ],
+            "effets_secondaires": [
+                "Hypoglycémie rapide",
+                "Lipodystrophies"
+            ],
+            "surveillance": [
+                "Glycémie avant et 2h après le repas",
+                "Administration juste avant ou juste après le repas",
+                "Rotation rigoureuse des sites d'injection"
+            ]
+        }
     }
 ]
