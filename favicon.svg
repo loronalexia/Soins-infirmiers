@@ -1,15 +1,18 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none">
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" fill="none">
   <defs>
-    <linearGradient id="ecg-grad" x1="0" y1="0" x2="32" y2="32" gradientUnits="userSpaceOnUse">
+    <linearGradient id="ecg-grad-hd" x1="0" y1="0" x2="512" y2="512" gradientUnits="userSpaceOnUse">
       <stop offset="0%" stop-color="#D65D7A"/>
       <stop offset="100%" stop-color="#4A2B4D"/>
     </linearGradient>
   </defs>
-  <circle cx="16" cy="16" r="16" fill="url(#ecg-grad)"/>
   
-  <!-- Minimally Fine ECG Line -->
-  <path d="M3 16h5.5l1.5-4 2 10 3-17 3 11 1.5 0h7.5" stroke="white" stroke-width="1.0" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- High definition background circle -->
+  <circle cx="256" cy="256" r="256" fill="url(#ecg-grad-hd)"/>
   
-  <!-- Extremely subtle pulse glow effect -->
-  <path d="M3 16h5.5l1.5-4 2 10 3-17 3 11 1.5 0h7.5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" opacity="0.1"/>
+  <!-- Ultra-fine ECG Line scaled for 512px -->
+  <path d="M48 256h88l24-64 32 160 48-280 48 180 24 0h100" stroke="white" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- Subtle glow -->
+  <path d="M48 256h88l24-64 32 160 48-280 48 180 24 0h100" stroke="white" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" opacity="0.15"/>
 </svg>
