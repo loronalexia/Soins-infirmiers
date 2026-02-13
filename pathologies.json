@@ -50,7 +50,7 @@
             ],
             "illustration_coeur": {
                 "type": "image",
-                "url": "https://media.licdn.com/dms/image/v2/D4E22AQG-DqaZkas88g/feedshare-shrink_800/B4EZcxhBVOHQAg-/0/1748882441782?e=2147483647&v=beta&t=l94coEVA009iyj3HwFYJjvF2PNGFSjO-xL9HbSlohnc",
+                "url": "./inscardiaque.jpg",
                 "title": "Schéma de l'Insuffisance Cardiaque"
             },
             "surveillance": [
@@ -314,7 +314,8 @@
             ],
             "examens_diagnostiques": [
                 "ECG (Élévation ST)",
-                "Troponines / CK-MB",
+                "Troponines",
+                "CK-MB",
                 "Coronarographie d'urgence"
             ],
             "traitements": [
@@ -326,7 +327,8 @@
             ],
             "surveillance": [
                 "ECG (segment ST)",
-                "Troponines / CK-MB",
+                "Troponines",
+                "CK-MB",
                 "Arythmies cardiaques",
                 "Signes d'insuffisance cardiaque"
             ],
