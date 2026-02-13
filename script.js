@@ -20,8 +20,8 @@ let referringItem = null; // Track item that triggered a cross-view link
 // Global Constants
 async function init() {
     await preloadAllData();
-    // Start with default category - rendering from cache
-    loadCategory(currentCategory);
+    // Start with Home view by default
+    loadCategory('home');
     setupEventListeners();
 }
 
@@ -31,8 +31,8 @@ async function preloadAllData() {
     try {
         // Categories for main navigation
         const mainCategories = ['pathologies', 'medicaments', 'interventions', 'examens-paracliniques', 'examens-cliniques', 'soins-de-plaies'];
-        // All files to load (including invisible ones like sources)
-        const filesToLoad = [...mainCategories, 'sources'];
+        // All files to load (including invisible ones like sources and home)
+        const filesToLoad = [...mainCategories, 'sources', 'home'];
 
         const promises = filesToLoad.map(cat => fetch(`${cat}.json`).then(res => {
             if (!res.ok) throw new Error(`Erreur chargement ${cat}`);
@@ -66,6 +66,15 @@ function loadCategory(category) {
     // Update active tab UI
     updateActiveTab(category);
 
+    // If home, render home and set landing state
+    if (category === 'home') {
+        document.body.classList.add('is-home');
+        renderHome();
+        return;
+    } else {
+        document.body.classList.remove('is-home');
+    }
+
     // Render from cache
     if (studyData[category]) {
         renderContent(category, studyData[category]);
@@ -91,6 +100,62 @@ function updateActiveTab(category) {
             btn.classList.remove('active');
         }
     });
+}
+
+// Render Home view
+function renderHome() {
+    const data = studyData.home;
+    if (!data) return;
+
+    let modulesHtml = '';
+    data.modules.forEach(module => {
+        let iconSvg = '';
+        // Map icon names to refined SVG paths
+        switch (module.icon) {
+            case 'heart':
+                iconSvg = `<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/><path d="M12 5 9.04 7.96a2.17 2.17 0 0 0 0 3.08v0c.85.85 2.23.85 3.08 0l2.92-2.92"/></svg>`;
+                break;
+            case 'pill':
+                iconSvg = `<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m10.5 20.5 10-10a4.95 4.95 0 1 0-7-7l-10 10a4.95 4.95 0 1 0 7 7Z"/><path d="m8.5 8.5 7 7"/><path d="M4.5 13.5l3.5 3.5"/><path d="M16 5l3.5 3.5"/></svg>`;
+                break;
+            case 'microscope':
+                iconSvg = `<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 18h8"/><path d="M3 22h18"/><path d="M14 22a7 7 0 1 0 0-14h-1"/><path d="M9 14h2"/><path d="M9 12a2 2 0 0 1-2-2V6h6v4a2 2 0 0 1-2 2Z"/><path d="M12 6V3a1 1 0 0 0-1-1H9a1 1 0 0 0-1 1v3"/></svg>`;
+                break;
+            case 'stethoscope':
+                iconSvg = `<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 2v2"/><path d="M5 2v2"/><path d="M5 3H4a2 2 0 0 0-2 2v4a6 6 0 0 0 12 0V5a2 2 0 0 0-2-2h-1"/><path d="M8 15a6 6 0 0 0 12 0v-3"/><circle cx="20" cy="10" r="2"/></svg>`;
+                break;
+            case 'bandage':
+                iconSvg = `<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 5h4"/><path d="M2 10v4"/><path d="M22 10v4"/><path d="M10 19h4"/><rect x="12" y="2" width="0.1" height="20"/><rect x="2" y="12" width="20" height="0.1"/><rect x="7" y="7" width="10" height="10" rx="2"/></svg>`;
+                break;
+            case 'syringe':
+                iconSvg = `<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m18 2 4 4"/><path d="m17 7 3-3"/><path d="M19 9 8.7 19.3c-1 1-2.5 1-3.4 0l-.6-.6c-1-1-1-2.5 0-3.4L15 5"/><path d="m9 11 4 4"/><path d="m5 19-3 3"/><path d="m14 4 6 6"/></svg>`;
+                break;
+            default:
+                iconSvg = '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>';
+        }
+
+        modulesHtml += `
+            <div class="module-card" onclick="loadCategory('${module.id}')">
+                <div class="module-icon" style="background-color: ${module.color};">
+                    ${iconSvg}
+                </div>
+                <h3>${module.title}</h3>
+                <p>${module.description}</p>
+                <div class="module-arrow">Explorer <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></div>
+            </div>
+        `;
+    });
+
+    contentArea.innerHTML = `
+        <div class="home-hero">
+            <h2>${data.hero.title}</h2>
+            <p>${data.hero.subtitle}</p>
+            
+            <div class="home-modules-grid">
+                ${modulesHtml}
+            </div>
+        </div>
+    `;
 }
 
 // Render Content
@@ -281,7 +346,7 @@ function formatKey(key) {
 
     // Custom mappings
     const mappings = {
-        'symptomes': 'Manifestations Cliniques',
+        'manifestations_cliniques': 'Manifestations Cliniques',
         'examens_diagnostiques': 'Examens diagnostiques',
         'types_avc': 'Types d\'AVC',
         'img': 'Image'
@@ -687,7 +752,7 @@ function openModal(item, isBack = false) {
 
     // Dynamically generate details based on keys
     // Define preferred order of sections
-    const keyOrder = ['definition', 'symptomes', 'examens_diagnostiques', 'traitements', 'surveillance'];
+    const keyOrder = ['definition', 'types', 'types_avc', 'types_ic', 'manifestations_cliniques', 'examens_diagnostiques', 'traitements', 'surveillance', 'complications'];
 
     // Get all keys from the item
     const itemKeys = Object.keys(item.details);
@@ -738,6 +803,30 @@ function openModal(item, isBack = false) {
                     contentHtml += `<ul style="margin-top: 0.5rem;">`;
                     typeData.sous_types.forEach(subType => {
                         contentHtml += `<li>${formatSmartLinks(subType)}</li>`;
+                    });
+                    contentHtml += `</ul>`;
+                }
+                contentHtml += `</div>`;
+            }
+        }
+        // Special handling for Heart Failure types (Left vs Right)
+        else if (key === 'types_ic' && typeof value === 'object' && !Array.isArray(value)) {
+            for (const typeKey in value) {
+                const typeData = value[typeKey];
+                // typeKey is likely "gauche" or "droite"
+                const typeName = typeKey.charAt(0).toUpperCase() + typeKey.slice(1);
+
+                contentHtml += `<div style="margin-bottom: 1.5rem;">`;
+                contentHtml += `<strong style="color: var(--accent-color); font-size: 1.05em;">Insuffisance Cardiaque ${typeName}</strong>`;
+
+                if (typeData.description) {
+                    contentHtml += `<p style="margin: 0.5rem 0;">${formatSmartLinks(typeData.description)}</p>`;
+                }
+
+                if (typeData.symptomes && Array.isArray(typeData.symptomes)) {
+                    contentHtml += `<ul style="margin-top: 0.5rem;">`;
+                    typeData.symptomes.forEach(symptome => {
+                        contentHtml += `<li>${formatSmartLinks(symptome)}</li>`;
                     });
                     contentHtml += `</ul>`;
                 }

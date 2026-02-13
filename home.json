@@ -1,0 +1,50 @@
+{
+    "hero": {
+        "title": "Bienvenue !",
+        "subtitle": "Tu peux trouver tout ce dont tu as besoin ici!"
+    },
+    "modules": [
+        {
+            "id": "pathologies",
+            "title": "Systèmes",
+            "description": "Pathologies classées par systèmes",
+            "icon": "heart",
+            "color": "var(--primary-color)"
+        },
+        {
+            "id": "medicaments",
+            "title": "Médicaments",
+            "description": "Classes thérapeutiques, mécanismes d'action et surveillances infirmières.",
+            "icon": "pill",
+            "color": "#6A4C93"
+        },
+        {
+            "id": "examens-paracliniques",
+            "title": "Ex. Paracliniques",
+            "description": "Analyses de sang, imagerie et tests diagnostiques essentiels.",
+            "icon": "microscope",
+            "color": "#E07A5F"
+        },
+        {
+            "id": "examens-cliniques",
+            "title": "Ex. Cliniques",
+            "description": "Échelles d'évaluation (Glasgow, PQRST, MMSE) et techniques d'examen physique.",
+            "icon": "stethoscope",
+            "color": "#8D6E63"
+        },
+        {
+            "id": "soins-de-plaies",
+            "title": "Soins de plaies",
+            "description": "Types de pansements et cicatrisation.",
+            "icon": "bandage",
+            "color": "#2E7D32"
+        },
+        {
+            "id": "interventions",
+            "title": "Interventions",
+            "description": "Chirurgies et procédures courantes, surveillances post-opératoires.",
+            "icon": "syringe",
+            "color": "#227093"
+        }
+    ]
+}

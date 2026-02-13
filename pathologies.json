@@ -7,26 +7,50 @@
         "preview": "Incapacité du coeur à effectuer ses fonctions de pompage (dysfonction systole) et de remplissage (dysfonction diastole).",
         "details": {
             "definition": "Incapacité du coeur à effectuer ses fonctions de pompage (dysfonction systole) et de remplissage (dysfonction diastole).",
-            "symptomes": [
+            "types_ic": {
+                "gauche": {
+                    "description": "Le ventricule gauche ne peut pas vider ou se remplir correctement, entraînant une accumulation de sang dans les poumons.",
+                    "symptomes": [
+                        "Dyspnée paroxystique nocturne (DPN)",
+                        "Orthopnée (difficulté à respirer couché)",
+                        "Toux / Râles crépitants",
+                        "Agitation / Confusion"
+                    ]
+                },
+                "droite": {
+                    "description": "Le ventricule droit ne peut pas vider correctement, entraînant une accumulation de sang dans le système veineux (le corps).",
+                    "symptomes": [
+                        "Distension des veines jugulaires (DVJ)",
+                        "Oedèmes des membres inférieurs",
+                        "Ascite / Hépatomégalie",
+                        "Prise de poids rapide"
+                    ]
+                }
+            },
+            "manifestations_cliniques": [
                 "Essoufflement (dyspnée)",
                 "Fatigue",
                 "Oedèmes des membres inférieurs",
                 "Tachycardie"
             ],
             "examens_diagnostiques": [
-                "Échocardiographie",
+                "Échocardiographie, ECG, Radiographie pulmonaire",
                 "Dosage BNP / NT-proBNP",
-                "Radiographie pulmonaire"
+                "enzymes hépatiques",
+                "bilan rénal",
+                "bilan thyroïdien"
             ],
             "traitements": [
                 "Diurétiques",
                 "Bêta-bloquants",
-                "IEC",
-                "Règles hygiéno-diététiques (sel, eau)"
+                "IECA, ARA",
+                "Inotropes positifs",
+                "combinaison de vasodilatateurs",
+                "Diète hyposodée"
             ],
             "illustration_coeur": {
                 "type": "image",
-                "url": "https://placehold.co/600x300/FFE5EC/D65D7A?text=Insuffisance+Cardiaque",
+                "url": "https://media.licdn.com/dms/image/v2/D4E22AQG-DqaZkas88g/feedshare-shrink_800/B4EZcxhBVOHQAg-/0/1748882441782?e=2147483647&v=beta&t=l94coEVA009iyj3HwFYJjvF2PNGFSjO-xL9HbSlohnc",
                 "title": "Schéma de l'Insuffisance Cardiaque"
             },
             "surveillance": [
@@ -34,6 +58,11 @@
                 "Tension artérielle",
                 "Fréquence cardiaque",
                 "Oedèmes"
+            ],
+            "complications": [
+                "OAP (Oedème Aigu du Poumon)",
+                "Choc cardiogénique",
+                "Insuffisance rénale aiguë"
             ]
         }
     },
@@ -45,7 +74,7 @@
         "preview": "Maladie chronique caractérisée par une hyperglycémie liée à une insulinorésistance.",
         "details": {
             "definition": "Trouble métabolique caractérisé par une hyperglycémie chronique résultant d'une résistance à l'insuline et/ou d'un défaut de sécrétion.",
-            "symptomes": [
+            "manifestations_cliniques": [
                 "Polyurie",
                 "Polydipsie",
                 "Fatigue",
@@ -68,6 +97,12 @@
                 "HbA1c",
                 "Poids",
                 "Pied diabétique"
+            ],
+            "complications": [
+                "Neuropathie périphérique",
+                "Rétinopathie (Cécité)",
+                "Néphropathie (Insuffisance rénale)",
+                "MCAS et AVC"
             ]
         }
     },
@@ -79,7 +114,7 @@
         "preview": "Infection aiguë du parenchyme pulmonaire, le plus souvent d'origine bactérienne.",
         "details": {
             "definition": "Infection des poumons (alvéoles) provoquée par une bactérie, un virus ou un champignon.",
-            "symptomes": [
+            "manifestations_cliniques": [
                 "Toux productive",
                 "Fièvre élevée",
                 "Douleur thoracique",
@@ -101,6 +136,11 @@
                 "Fréquence respiratoire",
                 "Température",
                 "Expectoration"
+            ],
+            "complications": [
+                "Insuffisance respiratoire aiguë",
+                "Choc septique",
+                "Épanchement pleural"
             ]
         },
         "images": [
@@ -136,7 +176,7 @@
                     ]
                 }
             },
-            "symptomes": [
+            "manifestations_cliniques": [
                 "Hémiplégie / Hémiparésie",
                 "Troubles du langage (Aphasie)",
                 "Troubles visuels",
@@ -158,6 +198,11 @@
                 "Signes vitaux (TA, pls, sat)",
                 "Glycémie",
                 "Déglutition"
+            ],
+            "complications": [
+                "Récidive d'AVC",
+                "Pneumonie d'aspiration",
+                "TVP et Embolie pulmonaire"
             ]
         }
     },
@@ -168,29 +213,43 @@
         "systeme": "Cardiovasculaire",
         "preview": "Douleur thoracique prévisible survenant à l'effort et soulagée par le repos ou la nitroglycérine.",
         "details": {
-            "definition": "Ischémie myocardique transitoire déclenchée par une augmentation de la demande en oxygène (effort, émotion).",
-            "symptomes": [
+            "definition": "Dlr ischémique myocardique stable qui a toujours le même schéma d'apparition, déclenchée par l'effort ou le stress, durant moins de 15 minutes et soulagée par le repos ou la nitroglycérine. Causé principalement par l'athérosclérose.",
+            "manifestations_cliniques": [
                 "Douleur thoracique (serrement)",
                 "Irradiation bras gauche/mâchoire",
                 "Disparition au repos (\u003c 15 min)",
-                "Soulagée par Nitroglycérine"
+                "Soulagée par Nitroglycérine",
+                "Attention pour les femmes, les symptômes peuvent être différents, fatigue, nausées, essoufflement. Ne pas donner d'Ativan",
+                "Diabétiques peuvent ne pas ressentir symptômes",
+                "Les aînés : dyspnée, confusion, syncope"
             ],
             "examens_diagnostiques": [
                 "ECG de repos",
                 "Épreuve d'effort (tapis)",
-                "Coronarographie (si indiqué)"
+                "Coronarographie (si indiqué)",
+                "Profil lipidique",
+                "Glycémie à jeun",
+                "Profil cardiaque",
+                "PCR"
             ],
             "traitements": [
                 "Modification habitudes de vie",
-                "Antiplaquettaires (AAS)",
+                "Antiplaquettaires (AAS, Plavix)",
                 "Hypolipidémiants (Statines)",
-                "Nitroglycérine PRN"
+                "Nitroglycérine PRN",
+                "Bêta-bloquants",
+                "IECA",
+                "Inhibiteurs calciques"
             ],
             "surveillance": [
                 "Fréquence des crises",
                 "Tolérance à l'effort",
                 "Tension artérielle",
                 "Fréquence cardiaque"
+            ],
+            "complications": [
+                "Infarctus du myocarde",
+                "Troubles du rythme"
             ]
         }
     },
@@ -199,19 +258,26 @@
         "title": "Angine Instable",
         "category": "pathologies",
         "systeme": "Cardiovasculaire",
-        "preview": "Douleur thoracique imprévisible, survenant au repos ou s'aggravant, risque d'infarctus imminent.",
+        "preview": "Syndrome coronarien aigu",
         "details": {
-            "definition": "Syndrome coronarien aigu sans nécrose myocardique (Troponines négatives) mais avec ischémie sévère.",
-            "symptomes": [
+            "definition": "Ischémie myocardique causée par la rupture d'une plaque d'athérome + agrégation plaquettaire généralement non occlusive mais évolue vite",
+            "types": [
+                "NSTEMI (Non-ST Elevation MI) : nécrose myocardique partielle sous-endocardique : rupture de plaque d'athérome + formation d'un thrombus",
+                "STEMI (ST Elevation MI) : nécrose myocardique complète. Si transmurale, présence d'onde Q sur l'ECG"
+            ],
+            "manifestations_cliniques": [
                 "Douleur thoracique au repos",
                 "Durée \u003e 20 min",
                 "Non soulagée par repos/Nitro",
-                "Angoisse"
+                "Angoisse, sueurs, nausées, sensation de mort imminente",
+                "IM peut être silencieux chez les diabétiques, mais changements hémodynamiques et ECG peuvent être présents",
+                "Dyspnée, tachypnée = urgence vitale"
             ],
             "examens_diagnostiques": [
                 "ECG en série",
                 "Dosage des Troponines",
-                "Coronarographie"
+                "Coronarographie",
+                "RX Thorax"
             ],
             "traitements": [
                 "Hospitalisation",
@@ -220,10 +286,15 @@
                 "Antiplaquettaires / Anticoagulants"
             ],
             "surveillance": [
-                "ECG en série",
-                "Troponines",
+                "Télémétrie",
+                "Troponines, CK-MB",
                 "Signes vitaux",
                 "Douleur (PQRST)"
+            ],
+            "complications": [
+                "Infarctus du myocarde",
+                "Choc cardiogénique",
+                "Arythmies ventriculaires"
             ]
         }
     },
@@ -235,7 +306,7 @@
         "preview": "Nécrose d'une partie du muscle cardiaque due à une obstruction complète d'une artère coronaire.",
         "details": {
             "definition": "Destruction du tissu myocardique (nécrose) par ischémie prolongée (obstruction coronaire).",
-            "symptomes": [
+            "manifestations_cliniques": [
                 "Douleur thoracique intense (étau)",
                 "Irradiations (bras, cou, mâchoire)",
                 "Diaphorèse (sueurs froides)",
@@ -249,14 +320,21 @@
             "traitements": [
                 "MONA (Morphine, Oxygène, Nitroglycérine, Aspirine)",
                 "Thrombolyse ou Angioplastie (PCI)",
-                "Bêta-bloquants",
-                "IEC"
+                "Bêta-bloquants pour diminuer la post-charge",
+                "Vasodilatateurs pour dilater les coronaires",
+                "Antiagrégants plaquettaires / Anticoagulants"
             ],
             "surveillance": [
                 "ECG (segment ST)",
                 "Troponines / CK-MB",
                 "Arythmies cardiaques",
                 "Signes d'insuffisance cardiaque"
+            ],
+            "complications": [
+                "Choc cardiogénique",
+                "Rupture cardiaque",
+                "Arythmies fatales (FV/TV)",
+                "Insuffisance cardiaque"
             ]
         }
     },
@@ -268,7 +346,7 @@
         "preview": "Maladie Coronarienne Athérosclérotique : rétrécissement des artères du coeur par l'athérosclérose.",
         "details": {
             "definition": "Accumulation de plaques d'athérome (lipides, fibrose) dans les artères coronaires réduisant le flux sanguin.",
-            "symptomes": [
+            "manifestations_cliniques": [
                 "Souvent asymptomatique initialement",
                 "Angine à l'effort",
                 "Essoufflement",
@@ -290,6 +368,11 @@
                 "Tension artérielle",
                 "Poids / IMC",
                 "Tabagisme"
+            ],
+            "complications": [
+                "Infarctus du myocarde",
+                "Insuffisance cardiaque",
+                "Mort subite cardiaque"
             ]
         }
     },
@@ -301,7 +384,7 @@
         "preview": "Trouble du rythme cardiaque caractérisé par des battements irréguliers et souvent rapides des oreillettes.",
         "details": {
             "definition": "Arythmie supraventriculaire caractérisée par une activité électrique auriculaire désorganisée et rapide.",
-            "symptomes": [
+            "manifestations_cliniques": [
                 "Palpitations",
                 "Fatigue",
                 "Étourdissements",
@@ -323,6 +406,11 @@
                 "Signes d'AVC",
                 "INR (si Coumadin)",
                 "Tolérance hémodynamique"
+            ],
+            "complications": [
+                "AVC embolique",
+                "Insuffisance cardiaque",
+                "Choc cardiogénique"
             ]
         }
     },
@@ -334,7 +422,7 @@
         "preview": "Maladie Pulmonaire Obstructive Chronique : obstruction progressive et irréversible des voies aériennes.",
         "details": {
             "definition": "Affection caractérisée par une obstruction bronchique non complètement réversible (Bronchite chronique + Emphysème).",
-            "symptomes": [
+            "manifestations_cliniques": [
                 "Dyspnée à l'effort puis au repos",
                 "Toux chronique productive",
                 "Expectoration matinale",
@@ -356,6 +444,11 @@
                 "Fréquence respiratoire",
                 "Utilisation muscles accessoires",
                 "Coloration / Quantité expectorations"
+            ],
+            "complications": [
+                "Insuffisance respiratoire aiguë",
+                "Coeur pulmonaire (Insuffisance ventriculaire droite)",
+                "Pneumothorax"
             ]
         }
     },
@@ -367,7 +460,7 @@
         "preview": "Stade avancé de fibrose hépatique avec désorganisation de l'architecture du foie.",
         "details": {
             "definition": "Maladie chronique du foie caractérisée par le remplacement du tissu hépatique sain par de la fibrose et des nodules de régénération.",
-            "symptomes": [
+            "manifestations_cliniques": [
                 "Fatigue",
                 "Ictère (jaunisse)",
                 "Ascite / Oedèmes",
@@ -390,6 +483,12 @@
                 "État de conscience",
                 "Bilan hépatique / Coagulation",
                 "Selles (Varices oesophagiennes - méléna)"
+            ],
+            "complications": [
+                "Hémorragie digestive (Rupture de varices)",
+                "Encéphalopathie hépatique",
+                "Carcinome hépatocellulaire",
+                "Syndrome hépato-rénal"
             ]
         }
     },
@@ -401,7 +500,7 @@
         "preview": "Accumulation pathologique de liquide dans la cavité péritonéale (abdomen).",
         "details": {
             "definition": "Épanchement liquide intrapéritonéal, complication fréquente de la cirrhose (hypertension portale).",
-            "symptomes": [
+            "manifestations_cliniques": [
                 "Distension abdominale",
                 "Prise de poids rapide",
                 "Dyspnée (gêne diaphragmatique)",
@@ -422,6 +521,11 @@
                 "Périmètre abdominal",
                 "Fonction rénale (Créatinine)",
                 "Électrolytes (Na+, K+)"
+            ],
+            "complications": [
+                "Péritonite bactérienne spontanée",
+                "Syndrome hépato-rénal",
+                "Détresse respiratoire (compression)"
             ]
         }
     },
@@ -433,7 +537,7 @@
         "preview": "Inflammation aiguë du pancréas, souvent due à des calculs biliaires ou à l'alcool.",
         "details": {
             "definition": "Inflammation soudaine du pancréas pouvant aller de l'oedème léger à la nécrose grave.",
-            "symptomes": [
+            "manifestations_cliniques": [
                 "Douleur épigastrique intense transfixiante (en barre)",
                 "Nausées / Vomissements",
                 "Fièvre",
@@ -455,6 +559,12 @@
                 "Bilan électrolytique et pancréatique (Lipase)",
                 "Signes de choc / Sepsis",
                 "Glycémie"
+            ],
+            "complications": [
+                "Choc hypovolémique/septique",
+                "Pseudokyste pancréatique",
+                "Diabète secondaire",
+                "SDRA (Détresse respiratoire)"
             ]
         }
     },
@@ -466,7 +576,7 @@
         "preview": "Lésion cérébrale causée par une force externe, entraînant une altération de l'état de conscience.",
         "details": {
             "definition": "Blessure physique du tissu cérébral résultant d'un choc à la tête (accidents, chutes).",
-            "symptomes": [
+            "manifestations_cliniques": [
                 "Altération de la conscience",
                 "Céphalées / Vomissements",
                 "Confusion / Perte de mémoire",
@@ -488,6 +598,12 @@
                 "Réflexes pupillaires",
                 "Signes vitaux",
                 "Signes de pression intracrânienne"
+            ],
+            "complications": [
+                "Hématome intracrânien (HED/HSD)",
+                "Hypertension intracrânienne (HTIC)",
+                "Engagement cérébral",
+                "Épilepsie post-traumatique"
             ]
         }
     },
@@ -499,7 +615,7 @@
         "preview": "Maladie neurodégénérative progressive entraînant une perte de mémoire et d'autonomie.",
         "details": {
             "definition": "Forme de démence la plus courante caractérisée par une perte neuronale progressive et irréversible.",
-            "symptomes": [
+            "manifestations_cliniques": [
                 "Perte de mémoire à court terme",
                 "Désorientation (temps/espace)",
                 "Troubles du langage (Aphasie)",
@@ -522,6 +638,11 @@
                 "Sécurité / Risque d'errance",
                 "État cutané et hygiène"
             ],
+            "complications": [
+                "Chutes et fractures",
+                "Malnutrition et déshydratation",
+                "Infections (Pneumonie, Urinaire)"
+            ],
             "liens": [
                 {
                     "titre": "Guide INESSS : Échelle MMSE",
@@ -538,7 +659,7 @@
         "preview": "État confusionnel aigu, transitoire et fluctuant, souvent réversible.",
         "details": {
             "definition": "Dysfonction cérébrale aiguë se développant rapidement, caractérisée par une inattention.",
-            "symptomes": [
+            "manifestations_cliniques": [
                 "Désorientation fluctuante",
                 "Troubles de l'attention",
                 "Hallucinations / Agitation",
@@ -560,6 +681,11 @@
                 "Élimination (globe/fécalome)",
                 "Niveau de sédation / douleur",
                 "Hydratation"
+            ],
+            "complications": [
+                "Chutes",
+                "Déclin fonctionnel permanent",
+                "Augmentation de la mortalité"
             ]
         }
     },
@@ -571,7 +697,7 @@
         "preview": "Maladie neurodégénérative affectant le mouvement par manque de dopamine.",
         "details": {
             "definition": "Dégénérescence des neurones dopaminergiques entraînant un déficit moteur progressif.",
-            "symptomes": [
+            "manifestations_cliniques": [
                 "Tremblement de repos",
                 "Bradykinésie (lenteur)",
                 "Rigidité musculaire",
@@ -593,6 +719,12 @@
                 "Risque de chutes",
                 "Troubles de la déglutition",
                 "Hypotension orthostatique"
+            ],
+            "complications": [
+                "Démence parkinsonienne",
+                "Dépression / Anxiété",
+                "Pneumonie d'aspiration (Dysphagie)",
+                "Complications liées aux chutes"
             ]
         }
     },
@@ -604,7 +736,7 @@
         "preview": "Maladie auto-immune inflammatoire démyélinisante du système nerveux central.",
         "details": {
             "definition": "Atteinte de la myéline entraînant des plaques de sclérose et des troubles neurologiques variés.",
-            "symptomes": [
+            "manifestations_cliniques": [
                 "Fatigue intense",
                 "Troubles moteurs et sensoriels",
                 "Troubles visuels (névrite optique)",
@@ -626,6 +758,12 @@
                 "Vessie et transit",
                 "État psychologique",
                 "Fatigue et tolérance à l'effort"
+            ],
+            "complications": [
+                "Handicap moteur sévère",
+                "Infections urinaires récurrentes",
+                "Dépression",
+                "Plaies de pression"
             ]
         }
     },
@@ -637,7 +775,7 @@
         "preview": "Dégénérescence des motoneurones entraînant une paralysie musculaire progressive.",
         "details": {
             "definition": "Maladie de Charcot affectant les muscles volontaires, sans toucher les fonctions sensorielles.",
-            "symptomes": [
+            "manifestations_cliniques": [
                 "Faiblesse musculaire / Crampes",
                 "Amyotrophie / Fasciculations",
                 "Troubles de la déglutition",
@@ -659,6 +797,11 @@
                 "Déglutition / État nutritionnel",
                 "Communication",
                 "Autonomie et aides techniques"
+            ],
+            "complications": [
+                "Insuffisance respiratoire (Cause de décès)",
+                "Pneumonie d'aspiration",
+                "Dénutrition sévère"
             ]
         }
     },
@@ -670,7 +813,7 @@
         "preview": "Inflammation des membranes entourant le cerveau et la moelle épinière.",
         "details": {
             "definition": "Infection (bactérienne ou virale) des méninges nécessitant une prise en charge rapide.",
-            "symptomes": [
+            "manifestations_cliniques": [
                 "Forte fièvre / Céphalées",
                 "Raideur de nuque",
                 "Photophobie",
@@ -692,6 +835,12 @@
                 "Température / Signes vitaux",
                 "Purpura (signe de gravité)",
                 "Position de confort (obscurité)"
+            ],
+            "complications": [
+                "Surdité (Séquelle fréquente)",
+                "Dommages cérébraux / Retard mental",
+                "Choc septique",
+                "Hydrocéphalie"
             ]
         }
     },
@@ -703,7 +852,7 @@
         "preview": "Maladie oculaire caractérisée par une destruction progressive du nerf optique.",
         "details": {
             "definition": "Atteinte du nerf optique souvent liée à une pression intraoculaire (PIO) trop élevée, menant à une perte du champ visuel.",
-            "symptomes": [
+            "manifestations_cliniques": [
                 "Perte de vision périphérique",
                 "Vision tubulaire (stade avancé)",
                 "Céphalées / Douleur oculaire (si aigu)",
@@ -725,6 +874,10 @@
                 "Champ visuel",
                 "Adhésion au traitement (observance)",
                 "Sécurité et autonomie visuelle"
+            ],
+            "complications": [
+                "Cécité irréversible (si non traité)",
+                "Baisse significative de la qualité de vie"
             ]
         }
     },
@@ -736,7 +889,7 @@
         "preview": "Opacification progressive du cristallin entraînant une baisse de la vision.",
         "details": {
             "definition": "Perte de transparence du cristallin liée au vieillissement, au diabète ou à des traumatismes.",
-            "symptomes": [
+            "manifestations_cliniques": [
                 "Vision floue ou voilée",
                 "Éblouissement à la lumière",
                 "Altération des couleurs",
@@ -758,6 +911,11 @@
                 "Évaluation pré/post opératoire",
                 "Instillation des collyres post-op",
                 "Signes d'infection ou douleur post-op"
+            ],
+            "complications": [
+                "Cécité (si hypermature, rare)",
+                "Glaucome secondaire",
+                "Complications chirurgicales (infection)"
             ]
         }
     },
@@ -769,7 +927,7 @@
         "preview": "Perte auditive progressive liée à l'âge, affectant surtout les sons aigus.",
         "details": {
             "definition": "Dégénérescence des cellules ciliées de l'oreille interne due au vieillissement biologique.",
-            "symptomes": [
+            "manifestations_cliniques": [
                 "Difficulté à suivre une conversation",
                 "Incompréhension en milieu bruyant",
                 "Augmentation du volume (TV/Radio)",
@@ -791,6 +949,11 @@
                 "Bilan ORL annuel",
                 "Entretien des prothèses auditives",
                 "Déclin cognitif associé"
+            ],
+            "complications": [
+                "Isolement social",
+                "Dépression",
+                "Risque accru de démence"
             ]
         }
     },
@@ -802,7 +965,7 @@
         "preview": "Inflammation ou infection de l'oreille, moyenne ou externe.",
         "details": {
             "definition": "Atteinte inflammatoire du conduit auditif (externe) ou de la caisse du tympan (moyenne).",
-            "symptomes": [
+            "manifestations_cliniques": [
                 "Douleur intense (otalgie)",
                 "Fièvre (si moyenne aiguë)",
                 "Diminution de l'audition",
@@ -823,6 +986,12 @@
                 "État du tympan (si otoscopie)",
                 "Signes de complications (mastoïdite)",
                 "Audition résiduelle"
+            ],
+            "complications": [
+                "Perforation tympanique",
+                "Mastoïdite",
+                "Perte auditive permanente",
+                "Méningite (rare)"
             ]
         }
     },
@@ -834,7 +1003,7 @@
         "preview": "Tumeur maligne du parenchyme pulmonaire ou des bronches.",
         "details": {
             "definition": "Prolifération anarchique de cellules malignes dans les poumons, souvent liée au tabagisme.",
-            "symptomes": [
+            "manifestations_cliniques": [
                 "Toux persistante ou changeante",
                 "Hémoptysie (crachats de sang)",
                 "Douleur thoracique",
@@ -856,6 +1025,11 @@
                 "Apparition de douleur (EVA)",
                 "État nutritionnel",
                 "Effets secondaires de la chimio/radio"
+            ],
+            "complications": [
+                "Métastases (cerveau, os, foie)",
+                "Épanchement pleural malin",
+                "Syndrome de la veine cave supérieure"
             ]
         }
     },
@@ -867,7 +1041,7 @@
         "preview": "Urgence vitale : passage de liquide dans les alvéoles pulmonaires.",
         "details": {
             "definition": "Accumulation brutale de liquide dans les poumons, souvent due à une insuffisance cardiaque gauche aiguë.",
-            "symptomes": [
+            "manifestations_cliniques": [
                 "Détresse respiratoire intense (orthopnée)",
                 "Râles crépitants à l'auscultation",
                 "Expectoration mousseuse et rosée",
@@ -889,6 +1063,11 @@
                 "Tension artérielle et fréquence cardiaque",
                 "Diurèse (efficacité des diurétiques)",
                 "État de conscience"
+            ],
+            "complications": [
+                "Arrêt respiratoire",
+                "Choc cardiogénique",
+                "Insuffisance rénale"
             ]
         }
     },
@@ -900,7 +1079,7 @@
         "preview": "Inflammation chronique des voies respiratoires avec épisodes de bronchospasme.",
         "details": {
             "definition": "Hyperréactivité bronchique entraînant une obstruction réversible des voies aériennes.",
-            "symptomes": [
+            "manifestations_cliniques": [
                 "Sifflements respiratoires (sibilances)",
                 "Toux sèche (souvent nocturne)",
                 "Oppression thoracique",
@@ -922,6 +1101,11 @@
                 "Fréquence des crises",
                 "Débit de pointe (Peak Flow)",
                 "Signes de détresse (asthme aigu grave)"
+            ],
+            "complications": [
+                "État de mal asthmatique (Urgence)",
+                "Insuffisance respiratoire aiguë",
+                "Pneumothorax"
             ]
         }
     },
@@ -933,7 +1117,7 @@
         "preview": "Infection virale des petites bronches chez le nourrisson de moins de 2 ans.",
         "details": {
             "definition": "Inflammation aiguë des bronchioles, le plus souvent due au virus respiratoire syncytial (VRS).",
-            "symptomes": [
+            "manifestations_cliniques": [
                 "Toux et encombrement nasal",
                 "Polypnée (respiration rapide)",
                 "Tirage (utilisation muscles accessoires)",
@@ -955,6 +1139,12 @@
                 "Saturation O2",
                 "Prise alimentaire et hydratation",
                 "Thermorégulation"
+            ],
+            "complications": [
+                "Détresse respiratoire sévère",
+                "Déshydratation",
+                "Surinfection bactérienne (Otite, Pneumonie)",
+                "Apnée (surtout chez prématurés)"
             ]
         }
     },
@@ -966,7 +1156,7 @@
         "preview": "Élévation chronique de la pression artérielle dans les artères.",
         "details": {
             "definition": "Pression artérielle systolique \u003e= 140 mmHg et/ou diastolique \u003e= 90 mmHg de façon permanente.",
-            "symptomes": [
+            "manifestations_cliniques": [
                 "Souvent asymptomatique (tueur silencieux)",
                 "Céphalées (nuque, matin)",
                 "Vertiges / Acouphènes",
@@ -1017,11 +1207,12 @@
         "preview": "Diminution du flux sanguin vers le muscle cardiaque due à l'athérosclérose.",
         "details": {
             "definition": "Atteinte des artères coronaires par des plaques d'athérome, pouvant mener à l'angine de poitrine ou l'Infarctus.",
-            "symptomes": [
-                "Douleur thoracique à l'effort (Angine)",
+            "manifestations_cliniques": [
+                "DRS",
                 "Essoufflement",
-                "Fatigue inexpliquée",
-                "Parfois asymptomatique (Diabétiques)"
+                "Dlr à la mâchoire, au dos et aux épaules",
+                "Dlr irradiant dans le bras gauche",
+                "Serrement"
             ],
             "examens_diagnostiques": [
                 "Bilan lipidique",
@@ -1030,15 +1221,19 @@
             ],
             "traitements": [
                 "Antiplaquettaires (Aspirine)",
-                "Statines (Antihyperlipidémiants)",
-                "Bêta-bloquants / Nitrates",
+                "Statines (Hypolipidémiants)",
                 "Angioplastie ou Pontage (si sténose sévère)"
             ],
             "surveillance": [
                 "Récurrence des douleurs thoraciques (EVA)",
                 "Tolérance à l'effort",
                 "ECG d'effort ou de repos",
-                "Facteurs de risque (Tabac, Cholestérol)"
+                "Facteurs de risque (Tabac, Cholestérol, sédentarité, anémie pernicieuse, HTA, diabète, obésité)"
+            ],
+            "complications": [
+                "Infarctus du myocarde",
+                "Insuffisance cardiaque",
+                "Mort subite"
             ]
         }
     },
@@ -1050,7 +1245,7 @@
         "preview": "Rétrécissement des artères des membres inférieurs réduisant l'apport en oxygène.",
         "details": {
             "definition": "Athérosclérose des artères des jambes entraînant une ischémie chronique.",
-            "symptomes": [
+            "manifestations_cliniques": [
                 "Claudication intermittente (douleur à la marche)",
                 "Peau froide, pâle ou cyanosée",
                 "Diminution/absence des pouls pédieux",
@@ -1072,6 +1267,11 @@
                 "Présence des pouls périphériques",
                 "Intégrité cutanée (prévention d'ulcères)",
                 "Périmètre de marche"
+            ],
+            "complications": [
+                "Ulcère artériel (cicatrisation difficile)",
+                "Gangrène",
+                "Amputation"
             ]
         }
     },
@@ -1083,7 +1283,7 @@
         "preview": "Mauvais retour veineux entraînant oedème et plaies chroniques.",
         "details": {
             "definition": "Insuffisance Veineuse Chronique : reflux ou stagnation du sang dans les veines des jambes.",
-            "symptomes": [
+            "manifestations_cliniques": [
                 "Jambes lourdes et tendues",
                 "Oedème malléolaire (cheville) le soir",
                 "Dermatite ocre (peau brune/rouge)",
@@ -1103,6 +1303,11 @@
                 "Volume de l'oedème",
                 "Évolution de la plaie (taille, exsudat)",
                 "Douleur et signes de surinfection (érysipèle)"
+            ],
+            "complications": [
+                "Ulcère veineux chronique",
+                "Surinfection (Cellulite)",
+                "Thrombose veineuse profonde"
             ]
         }
     },
@@ -1114,7 +1319,7 @@
         "preview": "Dilatation permanente et tortueuse des veines superficielles.",
         "details": {
             "definition": "Vaisseaux sanguins dont les valvules ne sont plus étanches, provoquant un reflux.",
-            "symptomes": [
+            "manifestations_cliniques": [
                 "Cordon veineux visible et palpable",
                 "Douleurs ou crampes nocturnes",
                 "Démangeaisons (prurit)",
@@ -1134,6 +1339,11 @@
                 "Apparition de signes d'IVC",
                 "Risque de thrombose superficielle (phlébite)",
                 "Confort du patient"
+            ],
+            "complications": [
+                "Thrombose veineuse superficielle",
+                "Rupture de varice (Hémorragie)",
+                "Ulcère veineux"
             ]
         }
     },
@@ -1145,7 +1355,7 @@
         "preview": "Formation d'un caillot sanguin dans une veine profonde de la jambe.",
         "details": {
             "definition": "Phlébite profonde risquant de se détacher pour causer une embolie pulmonaire.",
-            "symptomes": [
+            "manifestations_cliniques": [
                 "Douleur unilatérale au mollet",
                 "Oedème du membre avec augmentation de la circonférence",
                 "Chaleur et rougeur locale",
@@ -1185,7 +1395,7 @@
                 "Carcinome spinocellulaire (risque de métastases)",
                 "Mélanome malin (plus agressif, risque métastatique élevé)"
             ],
-            "symptomes": [
+            "manifestations_cliniques": [
                 "Règle ABCDE (Asymétrie, Bords irréguliers, Couleur non uniforme, Diamètre \u003e 6mm, Évolution)",
                 "Nouvelle lésion cutanée qui ne guérit pas",
                 "Modification d'un grain de beauté existant",
@@ -1202,6 +1412,11 @@
                 "Protection solaire (FPS 30+, vêtements, éviter heures de pointe)",
                 "Surveillance de la cicatrisation post-exérèse",
                 "Dépistage des ganglions lymphatique (si mélanome)"
+            ],
+            "complications": [
+                "Métastases (ganglions, poumons, cerveau)",
+                "Récidive locale",
+                "Défiguration (si chirurgie étendue)"
             ]
         }
     },
@@ -1253,7 +1468,7 @@
         "preview": "Rupture de la continuité osseuse oÃ¹ les fragments restent alignés.",
         "details": {
             "definition": "Fracture simple sans déviation des segments osseux, nécessitant généralement une immobilisation seule.",
-            "symptomes": [
+            "manifestations_cliniques": [
                 "Douleur localisée vive",
                 "Oedème et ecchymose",
                 "Impuissance fonctionnelle partielle",
@@ -1274,6 +1489,11 @@
                 "Confort sous le plâtre (points de pression)",
                 "Évolution de la douleur",
                 "Radiographies de contrôle"
+            ],
+            "complications": [
+                "Déplacement secondaire",
+                "Syndrome douloureux régional complexe (SDRC)",
+                "Raideur articulaire"
             ]
         }
     },
@@ -1285,7 +1505,7 @@
         "preview": "Rupture osseuse avec désalignement ou fragmentation des segments.",
         "details": {
             "definition": "Fracture complexe oÃ¹ les os ne sont plus en contact anatomique ou sont broyés, nécessitant souvent une réduction.",
-            "symptomes": [
+            "manifestations_cliniques": [
                 "Déformation visible du membre",
                 "Douleur atroce",
                 "Oedème massif et rapide",
@@ -1324,7 +1544,7 @@
         "preview": "Fracture du col du fémur ou de la région trochantérienne, fréquente chez l'aîné.",
         "details": {
             "definition": "Lésion traumatique majeure affectant l'extrémité supérieure du fémur, souvent liée à l'ostéoporose et aux chutes.",
-            "symptomes": [
+            "manifestations_cliniques": [
                 "Membre inférieur raccourci et en rotation externe",
                 "Douleur à l'aine ou au genou",
                 "Incapacité de porter du poids",
@@ -1363,7 +1583,7 @@
         "preview": "Dégénérescence chronique du cartilage de l'articulation de la hanche.",
         "details": {
             "definition": "Usure progressive du cartilage articulaire entraînant une douleur mécanique et une raideur.",
-            "symptomes": [
+            "manifestations_cliniques": [
                 "Douleur à l'effort soulagée par le repos",
                 "Raideur matinale de courte durée (\u003c 30 min)",
                 "Diminution de l'amplitude articulaire",
@@ -1384,6 +1604,11 @@
                 "Périmètre de marche",
                 "Effets secondaires des AINS (gastrite, fonction rénale)",
                 "Besoin d'aide à la marche (canne)"
+            ],
+            "complications": [
+                "Perte d'autonomie",
+                "Chutes",
+                "Douleur chronique invalidante"
             ]
         }
     },
@@ -1395,7 +1620,7 @@
         "preview": "Usure du cartilage de l'articulation du genou, causant douleur et déformation.",
         "details": {
             "definition": "Pathologie dégénérative la plus fréquente au genou, touchant un ou plusieurs compartiments (fémoro-tibial, fémoro-patellaire).",
-            "symptomes": [
+            "manifestations_cliniques": [
                 "Douleur au genou (escaliers, marche prolongée)",
                 "Darthrose (gonflement articulaire par épanchement)",
                 "Déformation en varus (genoux arqués) ou valgus",
@@ -1417,6 +1642,11 @@
                 "Stabilité de l'articulation",
                 "Capacité à effectuer les activités quotidiennes",
                 "Signes d'inflammation aiguë"
+            ],
+            "complications": [
+                "Perte de mobilité",
+                "Kyste poplité (Baker)",
+                "Chutes et instabilité"
             ]
         }
     },
@@ -1481,7 +1711,7 @@
         "details": {
             "definition": "Défaillance de la pompe cardiaque entraînant une baisse du débit cardiaque malgré une volémie adéquate.",
             "causes": "Infarctus du myocarde (principale), myocardite, arythmies sévères, insuffisance valvulaire aiguë.",
-            "symptomes": [
+            "manifestations_cliniques": [
                 "Hypotension (PAS \u003c 90 mmHg)",
                 "Tachycardie",
                 "Tachypnée et crépitants (oedème pulmonaire)",
@@ -1498,6 +1728,11 @@
                 "Bilan In/Out strict",
                 "État de conscience",
                 "Signes de surcharge pulmonaire"
+            ],
+            "complications": [
+                "Défaillance multiviscérale (MODS)",
+                "Ischémie intestinale",
+                "Décès (mortalité élevée)"
             ]
         }
     },
@@ -1510,7 +1745,7 @@
         "details": {
             "definition": "Perte de plus de 15 à 20% du volume sanguin ou plasmatique.",
             "causes": "Hémorragie (trauma, GI), déshydratation sévère (vomissements, diarrhée), brûlures étendues.",
-            "symptomes": [
+            "manifestations_cliniques": [
                 "Tachycardie (signe précoce)",
                 "Hypotension (signe tardif)",
                 "Soif intense",
@@ -1527,6 +1762,11 @@
                 "Débit urinaire (cible \u003e 30 mL/h)",
                 "Hémoglobine et électrolytes",
                 "Remplissage liquidien (Cristalloïdes, Sang)"
+            ],
+            "complications": [
+                "Insuffisance rénale aiguë (NTA)",
+                "Coagulation Intravasculaire Disséminée (CID)",
+                "Arrêt cardiaque"
             ]
         }
     },
@@ -1539,7 +1779,7 @@
         "details": {
             "definition": "Réaction inflammatoire systémique démesurée à une infection, entraînant une vasodilatation massive.",
             "causes": "Infections bactériennes (poumons, urinaire, abdomen), fongiques ou virales.",
-            "symptomes": [
+            "manifestations_cliniques": [
                 "Fièvre ou hypothermie",
                 "Peau d'abord chaude (phase hyperdynamique) puis froide",
                 "Tachycardie et hypotension",
@@ -1556,6 +1796,11 @@
                 "Lactates sériques (reflet de l'hypoxie tissulaire)",
                 "Administration précoce d'antibiotiques",
                 "Support vasopresseur (ex: Noradrénaline)"
+            ],
+            "complications": [
+                "Syndrome de Détresse Respiratoire Aiguë (SDRA)",
+                "Défaillance multiviscérale (MODS)",
+                "CID"
             ]
         }
     },
@@ -1568,7 +1813,7 @@
         "details": {
             "definition": "Hypersensibilité immédiate médiée par les IgE provoquant une vasodilatation et un bronchospasme.",
             "causes": "Médicaments, piqûres d'insectes, aliments (noix, crustacés), latex.",
-            "symptomes": [
+            "manifestations_cliniques": [
                 "Urticaire et prurit",
                 "Angioedème (gonflement du visage/gorge)",
                 "Sifflements respiratoires (wheezing) et dyspnée",
@@ -1583,6 +1828,11 @@
                 "Administration urgente d'Épinéphrine (Adrénaline)",
                 "Position de Trendelenburg modifiée",
                 "Signes de réaction biphasique"
+            ],
+            "complications": [
+                "Arrêt cardio-respiratoire",
+                "Oedème laryngé (asphyxie)",
+                "Choc réfractaire"
             ]
         }
     },
@@ -1595,7 +1845,7 @@
         "details": {
             "definition": "Déséquilibre entre les systèmes nerveux sympathique et parasympathique.",
             "causes": "Lésion de la moelle épinière (au-dessus de T6), anesthésie rachidienne, traumatisme crânien.",
-            "symptomes": [
+            "manifestations_cliniques": [
                 "Hypotension",
                 "Bradycardie (unique aux chocs non compensés par le coeur)",
                 "Peau chaude et sèche (en dessous de la lésion)",
@@ -1611,6 +1861,11 @@
                 "Température corporelle (poïkilothermie)",
                 "Stabilisation rachidienne",
                 "Support vasopresseur (alpha-adrénergique)"
+            ],
+            "complications": [
+                "Thrombose veineuse profonde (stase)",
+                "Bradycardie sévère/Asystolie",
+                "Ulcères de stress"
             ]
         }
     },
@@ -1623,7 +1878,7 @@
         "details": {
             "definition": "Débit cardiaque abaissé à cause d'une obstruction mécanique.",
             "causes": "Embolie pulmonaire massive, tamponnade cardiaque, pneumothorax sous tension.",
-            "symptomes": [
+            "manifestations_cliniques": [
                 "Turgescence des veines jugulaires",
                 "Déviation de la trachée (si pneumothorax)",
                 "Bruits du coeur assourdis (si tamponnade)",
@@ -1638,6 +1893,11 @@
                 "Soulager la cause (Drainage, Péricardiocentèse, Thrombolyse)",
                 "SpO2 et monitoring cardiaque",
                 "Anxiété et douleur thoracique"
+            ],
+            "complications": [
+                "Arrêt cardiaque (si cause non levée)",
+                "Hypoxie sévère",
+                "Décès rapide"
             ]
         }
     },
@@ -1649,7 +1909,7 @@
         "preview": "Plaie chronique au niveau de la cheville causée par une insuffisance veineuse.",
         "details": {
             "definition": "Plaie résultant d'une hypertension veineuse persistante entraînant une fuite de liquide dans les tissus.",
-            "symptomes": [
+            "manifestations_cliniques": [
                 "Bords irréguliers et superficiels",
                 "Exsudat important",
                 "Peau périlésionnelle pigmentée (ocre)",
@@ -1663,6 +1923,11 @@
                 "Compression veineuse (Gold standard)",
                 "Détérsion et pansements absorbants",
                 "Mobilisation et surélévation des membres"
+            ],
+            "complications": [
+                "Infection locale (Cellulite)",
+                "Dermatite de contact (produits)",
+                "Ankylose de la cheville"
             ],
             "liens": [
                 {
@@ -1680,7 +1945,7 @@
         "preview": "Plaie causée par une ischémie (manque d'oxygène), souvent douloureuse et située aux pieds.",
         "details": {
             "definition": "Plaie résultant d'une mauvaise circulation artérielle.",
-            "symptomes": [
+            "manifestations_cliniques": [
                 "Bords réguliers 'emporte-pièce'",
                 "Fond atone ou nécrotique",
                 "Très douloureux (surtout la nuit)",
@@ -1695,6 +1960,11 @@
                 "Revascularisation (chirurgie)",
                 "Protection locale (pas de compression !)",
                 "Contrôle des facteurs de risque (tabac, diabète)"
+            ],
+            "complications": [
+                "Gangrène gazeuse ou sèche",
+                "Amputation du membre",
+                "Sepsis"
             ],
             "liens": [
                 {
@@ -1712,7 +1982,7 @@
         "preview": "Obstruction des artères des membres inférieurs par l'athérosclérose.",
         "details": {
             "definition": "Sténose ou occlusion des artères irriguant les jambes.",
-            "symptomes": [
+            "manifestations_cliniques": [
                 "Claudication intermittente (douleur à la marche)",
                 "Douleur de repos (stade avancé)",
                 "Diminution ou absence des pouls pédieux",
@@ -1727,6 +1997,11 @@
                 "Indice de pression cheville-bras (IPCB)",
                 "État cutané des pieds",
                 "Capacité de marche"
+            ],
+            "complications": [
+                "Ischémie critique chronique",
+                "Ulcère artériel non cicatrisé",
+                "Amputation"
             ],
             "liens": [
                 {
@@ -1745,7 +2020,7 @@
         "details": {
             "definition": "Infection qui apparaît au cours ou à la suite d'une hospitalisation et qui n'était ni présente, ni en incubation à l'admission.",
             "causes": "Bactéries multi-résistantes (SARM, ERV, C. Difficile), dispositifs invasifs (sondes, cathéters).",
-            "symptomes": [
+            "manifestations_cliniques": [
                 "Fièvre inexpliquée",
                 "Signes inflammatoires au site d'un dispositif",
                 "Diarrhée profuse (si C. Difficile)",
@@ -1761,6 +2036,11 @@
                 "Précautions additionnelles (contact, gouttelettes, lien aérien)",
                 "Surveillance des sites invasifs",
                 "Nettoyage de l'environnement"
+            ],
+            "complications": [
+                "Sepsis sévère",
+                "Résistance aux antibiotiques (BMR)",
+                "Prolongation du séjour / Décès"
             ]
         }
     },
@@ -1772,7 +2052,7 @@
         "preview": "Pathologies causées par des agents pathogènes (bactéries, virus, parasites, champignons).",
         "details": {
             "definition": "Ensemble des signes cliniques résultant de l'invasion et de la multiplication d'un agent pathogène dans l'organisme.",
-            "symptomes": [
+            "manifestations_cliniques": [
                 "Fièvre / Frissons",
                 "Asthénie (Fatigue intense)",
                 "Sudations",
@@ -1794,6 +2074,11 @@
                 "Bilan sanguin (Leucocytes, CRP)",
                 "Hydratation et élimination",
                 "Signes de choc (Sepsis)"
+            ],
+            "complications": [
+                "Choc septique",
+                "Déshydratation sévère",
+                "Abcès métastatiques"
             ]
         }
     },
@@ -1825,6 +2110,11 @@
                 "Charge virale et taux de CD4",
                 "Prévention des infections opportunistes",
                 "Support psychologique et social"
+            ],
+            "complications": [
+                "Syndrome d'Immunodéficience Acquise (SIDA)",
+                "Cancers (Kaposi, Lymphome)",
+                "Infections opportunistes (Pneumocystose, Toxoplasmose)"
             ]
         }
     },
@@ -1836,7 +2126,7 @@
         "preview": "Maladie génétique affectant les sécrétions de plusieurs organes (poumons, pancréas).",
         "details": {
             "definition": "Mutation du gène CFTR entraînant une production de mucus anormalement épais et visqueux.",
-            "symptomes": [
+            "manifestations_cliniques": [
                 "Toux",
                 "Infections respiratoires récurrentes",
                 "Malabsorption des graisses",
@@ -1858,6 +2148,12 @@
                 "État nutritionnel et courbe de poids",
                 "Apport en sel et hydratation",
                 "Contrôle des infections (Ségrégation des patients)"
+            ],
+            "complications": [
+                "Insuffisance respiratoire chronique terminale",
+                "Diabète associé à la FK",
+                "Cirrhose biliaire",
+                "Infertilité (hommes)"
             ]
         }
     },
@@ -1885,6 +2181,11 @@
                 "Support parental et éducation nutritionnelle",
                 "Suivi multidisciplinaire (Pédiatre, Diététiste)",
                 "Traitement de la cause sous-jacente"
+            ],
+            "complications": [
+                "Retard pubertaire",
+                "Problèmes psychosociaux (estime de soi)",
+                "Ostéoporose précoce"
             ]
         }
     },
@@ -1896,7 +2197,7 @@
         "preview": "Maladie chronique caractérisée par une absence totale de production d'insuline.",
         "details": {
             "definition": "Destruction auto-immune des cellules bêta du pancréas, entraînant une carence absolue en insuline.",
-            "symptomes": [
+            "manifestations_cliniques": [
                 "Polyurie, Polydipsie, Polyphagie (Les 3 P)",
                 "Perte de poids inexpliquée",
                 "Fatigue intense",
@@ -1917,6 +2218,12 @@
                 "Glycémie capillaire et HbA1c",
                 "Signes d'hypoglycémie/hyperglycémie",
                 "État des sites d'injection (Lipodystrophie)"
+            ],
+            "complications": [
+                "Acidocétose diabétique",
+                "Rétinopathie / Néphropathie",
+                "Neuropathie périphérique",
+                "Hypoglycémie sévère"
             ]
         }
     },
@@ -1928,7 +2235,7 @@
         "preview": "Baisse anormale du taux de glucose dans le sang (\u003c 3,9 mmol/L).",
         "details": {
             "definition": "Urgence métabolique liée à un excès d'insuline, un manque de glucose ou un effort physique imprévu.",
-            "symptomes": [
+            "manifestations_cliniques": [
                 "Tremblements, sudations, tachycardie (Adrénergiques)",
                 "Vision trouble, confusion, somnolence (Neuroglycopéniques)",
                 "Faim intense",
@@ -1943,7 +2250,12 @@
                 "Si toujours \u003c 4 mmol/L, répéter",
                 "Si \u003e 4 mmol/L, prendre une collation avec protéines/glucides complexes"
             ],
-            "danger": "Peut mener au coma ou aux convulsions si non traitée."
+            "danger": "Peut mener au coma ou aux convulsions si non traitée.",
+            "complications": [
+                "Coma hypoglycémique",
+                "Convulsions",
+                "Dommages cérébraux (si prolongé)"
+            ]
         }
     },
     {
@@ -1954,7 +2266,7 @@
         "preview": "Complication grave du Type 1 liée à un manque profond d'insuline.",
         "details": {
             "definition": "Carence en insuline entraînant une hyperglycémie sévère, une déshydratation et une production de corps cétoniques (acidose).",
-            "symptomes": [
+            "manifestations_cliniques": [
                 "Respiration de Kussmaul (lente et profonde)",
                 "Haleine fruitée (acétosique)",
                 "Douleurs abdominales, nausées, vomissements",
@@ -1971,6 +2283,11 @@
                 "Insuline IV (Protocole)",
                 "Remplacement du Potassium (K+)",
                 "Surveillance étroite de la conscience"
+            ],
+            "complications": [
+                "Oedème cérébral (surtout enfants)",
+                "Arythmies cardiaques (Dyskaliémie)",
+                "Choc hypovolémique"
             ]
         }
     },
@@ -1982,7 +2299,7 @@
         "preview": "Complication aiguë grave, plus fréquente dans le Diabète de Type 2.",
         "details": {
             "definition": "Hyperglycémie extrême causant une déshydratation intracellulaire sévère sans cétose significative.",
-            "symptomes": [
+            "manifestations_cliniques": [
                 "Glycémie très élevée (\u003e 34 mmol/L)",
                 "Signes de déshydratation sévère (muqueuses sèches, hypotension)",
                 "Troubles neurologiques (torpeur, coma)",
@@ -1997,6 +2314,11 @@
                 "Réhydratation IV prudente (risque d'oedème cérébral)",
                 "Surveillance électrolytique",
                 "Monitoring cardiaque"
+            ],
+            "complications": [
+                "Thrombose vasculaire (hyperviscosité)",
+                "Défaillance multiviscérale",
+                "Rhabdomyolyse"
             ]
         }
     },
@@ -2024,6 +2346,12 @@
                 "Modification des habitudes de vie (Alimentation, Sport)",
                 "Gestion du poids",
                 "Traitement pharmacologique des facteurs individuels (Statines, Antihypertenseurs)"
+            ],
+            "complications": [
+                "Diabète de Type 2",
+                "Maladie coronarienne (Infarctus)",
+                "AVC",
+                "Stéatose hépatique (Foie gras)"
             ]
         }
     },
@@ -2062,7 +2390,7 @@
         "preview": "Diminution de la production d'hormones thyroïdiennes par la glande thyroïde.",
         "details": {
             "definition": "Ralentissement global du métabolisme lié à une insuffisance en T3/T4 (ex: Thyroïdite de Hashimoto).",
-            "symptomes": [
+            "manifestations_cliniques": [
                 "Fatigue, somnolence, ralentissement psychomoteur",
                 "Frilosité",
                 "Prise de poids malgré un appétit diminué",
@@ -2081,6 +2409,11 @@
                 "Taux de TSH",
                 "Signes de surdosage (tachycardie, insomnie)",
                 "Fonction cardiaque"
+            ],
+            "complications": [
+                "Coma myxoedémateux (urgence vitale)",
+                "Épanchement péricardique/pleural",
+                "Insuffisance cardiaque"
             ]
         }
     },
@@ -2092,7 +2425,7 @@
         "preview": "Production excessive d'hormones thyroïdiennes.",
         "details": {
             "definition": "Accélération du métabolisme de base (ex: Maladie de Graves-Basedow).",
-            "symptomes": [
+            "manifestations_cliniques": [
                 "Perte de poids malgré une augmentation de l'appétit",
                 "Tachycardie, palpitations, tremblements",
                 "Thermophobie (intolérance à la chaleur)",
@@ -2112,6 +2445,12 @@
             "surveillance": [
                 "Crise thyrotoxique (Urgence : fièvre, tachycardie extrême)",
                 "Poids et rythme cardiaque"
+            ],
+            "complications": [
+                "Crise thyrotoxique",
+                "Fibrillation auriculaire",
+                "Ostéoporose",
+                "Insuffisance cardiaque"
             ]
         }
     },
@@ -2163,7 +2502,7 @@
                 "Mécanique (Adhérences, tumeurs, hernies)",
                 "Paralytique (Iléus : arrêt du péristaltisme post-chirurgie)"
             ],
-            "symptomes": [
+            "manifestations_cliniques": [
                 "Douleurs abdominales crampiformes",
                 "Vomissements (fécaloïdes si occlusion basse)",
                 "Distension abdominale",
@@ -2184,6 +2523,12 @@
                 "Mise au repos digestif (NPO)",
                 "Décompression par sonde nasogastrique",
                 "Chirurgie si cause mécanique"
+            ],
+            "complications": [
+                "Perforation intestinale",
+                "Péritonite",
+                "Choc hypovolémique/septique",
+                "Nécrose intestinale"
             ]
         }
     },
@@ -2200,7 +2545,7 @@
                 "MICI (Crohn ou Colite)",
                 "Régime riche en graisses et pauvre en fibres"
             ],
-            "symptomes": [
+            "manifestations_cliniques": [
                 "Changement des habitudes de défécation (alternance diarrhée/constipation)",
                 "Sang dans les selles (Méléna ou rectorragie)",
                 "Douleurs abdominales vagues",
@@ -2226,7 +2571,7 @@
         "systeme": "Gastro-intestinal",
         "preview": "Inflammation aiguë ou chronique de la vésicule biliaire, souvent liée à des calculs.",
         "details": {
-            "symptomes": [
+            "manifestations_cliniques": [
                 "Douleur vive à l'hypocondre droit irradiant vers l'épaule droite",
                 "Nausées et vomissements",
                 "Fièvre et frissons",
@@ -2242,6 +2587,11 @@
                 "NPO et hydratation IV",
                 "Antibiotiques et analgésiques",
                 "Cholécystectomie (ablation de la vésicule)"
+            ],
+            "complications": [
+                "Perforation de la vésicule",
+                "Péritonite biliaire",
+                "Pancréatite aiguë"
             ]
         }
     },
@@ -2253,7 +2603,7 @@
         "preview": "Inflammation sévère du péritoine, constituant une urgence chirurgicale.",
         "details": {
             "causes": "Perforation d'organe (Appendicite, Ulcère, MICI), traumatisme ou infection.",
-            "symptomes": [
+            "manifestations_cliniques": [
                 "Douleur abdominale généralisée et intense",
                 "Ventre de bois (rigidité musculaire involontaire)",
                 "Vomissements et fièvre élevée",
@@ -2269,7 +2619,12 @@
                 "État de conscience",
                 "Préparation pré-opératoire immédiate"
             ],
-            "danger": "Décès par choc septique en l'absence de traitement rapide."
+            "danger": "Décès par choc septique en l'absence de traitement rapide.",
+            "complications": [
+                "Choc septique",
+                "Abcès intra-abdominaux",
+                "Adhérences intestinales (post-op)"
+            ]
         }
     },
     {
@@ -2283,7 +2638,7 @@
                 "Cystite: Infection de la vessie (bas appareil)",
                 "Pyélonéphrite: Infection des reins (haut appareil - URGENCE)"
             ],
-            "symptomes": [
+            "manifestations_cliniques": [
                 "Brûlures mictionnelles (dysurie)",
                 "Envies fréquentes et urgentes (pollakiurie)",
                 "Douleur dorsale ou flanc (si pyélonéphrite)",
@@ -2303,6 +2658,11 @@
                 "Antibiothérapie",
                 "Augmenter l'apport hydrique",
                 "Analgésiques / Phénazopyridine"
+            ],
+            "complications": [
+                "Pyélonéphrite aiguë",
+                "Urosepsis (Sepsis)",
+                "Insuffisance rénale"
             ]
         }
     },
@@ -2318,7 +2678,7 @@
                 "Rénale: Nécrose tubulaire, toxiques, infections",
                 "Post-rénale: Obstruction (calculs, prostate)"
             ],
-            "symptomes": [
+            "manifestations_cliniques": [
                 "Oligurie (baisse de la diurèse)",
                 "Oedèmes",
                 "Confusion (accumulation de toxines)"
@@ -2333,6 +2693,11 @@
                 "Créatinine et Urée sanguine",
                 "Électrolytes (risque hyperkaliémie)",
                 "Poids quotidien"
+            ],
+            "complications": [
+                "Hyperkaliémie (Arythmies)",
+                "OAP (Surcharge)",
+                "Acidose métabolique"
             ]
         }
     },
@@ -2387,6 +2752,11 @@
                 "Horaire de miction programmé",
                 "Éviter les irritants (caféine, alcool)",
                 "Gestion cutanée (prévention macération)"
+            ],
+            "complications": [
+                "Dermatite associée à l'incontinence (DAI)",
+                "Infections urinaires récurrentes",
+                "Isolement social / Dépression"
             ]
         }
     },
@@ -2398,7 +2768,7 @@
         "preview": "Infections transmises principalement par contact sexuel ou sanguin.",
         "details": {
             "généralités": "Inclut la Chlamydia, Gonorrhée, Syphilis, VPH, Herpès génital, VIH et Hépatites B/C.",
-            "symptomes": [
+            "manifestations_cliniques": [
                 "Écoulements anormaux (pertes vaginales, urétrales)",
                 "Lésions cutanées (ulcères, verrues, vésicules)",
                 "Douleurs pelviennes",
@@ -2418,6 +2788,11 @@
                 "Port du préservatif",
                 "Vaccination (VPH, Hépatite B)",
                 "Dépistage régulier et traitement des partenaires"
+            ],
+            "complications": [
+                "Infertilité (PID)",
+                "Douleurs pelviennes chroniques",
+                "Transmission congénitale"
             ]
         }
     },
@@ -2431,7 +2806,7 @@
             "endométriose": "Présence de tissu utérin hors de l'utérus entraînant douleurs et infertilité.",
             "fibromes": "Tumeurs musculaires bénignes de l'utérus.",
             "kystes": "Sacs remplis de liquide sur ou dans les ovaires.",
-            "symptomes": [
+            "manifestations_cliniques": [
                 "Douleurs pelviennes chroniques",
                 "Dysménorrhée intense (règles douloureuses)",
                 "Saignements irréguliers",
@@ -2446,6 +2821,11 @@
                 "Contraceptifs hormonaux",
                 "Analgésiques (AINS)",
                 "Chirurgie conservatrice ou radicale"
+            ],
+            "complications": [
+                "Anémie (Hémorragies)",
+                "Torsion d'annexe (Kyste)",
+                "Infertilité (Endométriose)"
             ]
         }
     },
@@ -2458,7 +2838,7 @@
         "details": {
             "causes": "Virus du Papillome Humain (VPH) à haut risque.",
             "dépistage": "Test Pap (cytologie vaginale) ou test VPH.",
-            "symptomes": [
+            "manifestations_cliniques": [
                 "Souvent aucun au début",
                 "Saignements après les rapports",
                 "Pertes vaginales inhabituelles"
@@ -2471,6 +2851,11 @@
             "prévention": [
                 "Vaccination VPH",
                 "Suivi régulier (dépistage)"
+            ],
+            "complications": [
+                "Métastases (Vessie, Rectum, Poumons)",
+                "Insuffisance rénale (Obstruction urétérale)",
+                "Fistules"
             ]
         }
     },
@@ -2482,7 +2867,7 @@
         "preview": "Cancer de la muqueuse tapissant l'intérieur de l'utérus.",
         "details": {
             "facteurs_risque": "Obésité, exposition prolongée aux oestrogènes.",
-            "symptomes": "Saignements post-ménopausiques (Signe d'alerte majeur).",
+            "manifestations_cliniques": "Saignements post-ménopausiques (Signe d'alerte majeur).",
             "examens_diagnostiques": [
                 "Biopsie de l'endomètre",
                 "Échographie transvaginale",
@@ -2493,6 +2878,11 @@
                 "Hystérectomie",
                 "Radiothérapie",
                 "Hormonothérapie"
+            ],
+            "complications": [
+                "Métastases (Poumons, Foie)",
+                "Lymphoedème (si curage ganglionnaire)",
+                "Récidive pelvienne"
             ]
         }
     },
@@ -2503,7 +2893,7 @@
         "systeme": "Reproducteur",
         "preview": "Un des cancers gynécologiques les plus graves car souvent diagnostiqué tardivement.",
         "details": {
-            "symptomes": [
+            "manifestations_cliniques": [
                 "Vagues ballonnements abdominaux",
                 "Sensation de satiété précoce",
                 "Augmentation du volume abdominal",
@@ -2518,6 +2908,11 @@
             "traitements": [
                 "Chirurgie de cytoréduction",
                 "Chimiothérapie intensive"
+            ],
+            "complications": [
+                "Ascite néoplasique",
+                "Occlusion intestinale (Carcinose)",
+                "Épanchement pleural"
             ]
         }
     },
@@ -2529,7 +2924,7 @@
         "preview": "Cancer le plus fréquent chez la femme.",
         "details": {
             "dépistage": "Mammographie de dépistage, auto-examen des seins.",
-            "symptomes": [
+            "manifestations_cliniques": [
                 "Masse dure et indolore",
                 "Modification de la forme du sein",
                 "Écoulement mamelonnaire",
@@ -2544,6 +2939,11 @@
                 "Tumorectomie ou Mastectomie",
                 "Radiothérapie / Chimiothérapie",
                 "Hormonothérapie (si récepteurs positifs)"
+            ],
+            "complications": [
+                "Lymphoedème du bras",
+                "Métastases (Os, Poumons, Foie, Cerveau)",
+                "Douleur chronique post-mastectomie"
             ]
         }
     },
@@ -2554,7 +2954,7 @@
         "systeme": "Reproducteur",
         "preview": "Augmentation non cancéreuse du volume de la prostate liée à l'âge.",
         "details": {
-            "symptomes": [
+            "manifestations_cliniques": [
                 "Jet urinaire faible ou saccadé",
                 "Difficulté à débuter la miction",
                 "Nicturie (lever la nuit)",
@@ -2581,7 +2981,7 @@
         "preview": "Cancer fréquent chez l'homme, souvent à évolution lente.",
         "details": {
             "dépistage": "Toucher rectal (TR) et dosage de l'APS (Antigène Prostatique Spécifique).",
-            "symptomes": [
+            "manifestations_cliniques": [
                 "Peuvent être identiques à l'HBP",
                 "Douleurs osseuses (si métastases)"
             ],
@@ -2595,6 +2995,11 @@
                 "Prostatectomie radicale",
                 "Curiethérapie / Radiothérapie",
                 "Hormonothérapie (privation ischémique)"
+            ],
+            "complications": [
+                "Métastases osseuses (Douleurs)",
+                "Incontinence urinaire (post-op)",
+                "Dysfonction érectile"
             ]
         }
     },
@@ -2606,7 +3011,7 @@
         "preview": "Infection bactérienne la plus fréquente, souvent asymptomatique.",
         "details": {
             "definition": "Causée par Chlamydia trachomatis.",
-            "symptomes": [
+            "manifestations_cliniques": [
                 "Pertes vaginales ou urétrales jaunâtres",
                 "Dysurie (brûlure à la miction)",
                 "Douleurs pelviennes ou testiculaires"
@@ -2631,7 +3036,7 @@
         "preview": "Infection bactérienne pouvant affecter les organes génitaux, le rectum et la gorge.",
         "details": {
             "definition": "Causée par Neisseria gonorrhoeae.",
-            "symptomes": [
+            "manifestations_cliniques": [
                 "Écoulement purulent (jaunâtre/verdâtre)",
                 "Brûlures mictionnelles intenses",
                 "Douleur et oedème testiculaire"
@@ -2665,7 +3070,12 @@
                 "VDRL / RPR (Dépistage)",
                 "TP-PA / FTA-ABS (Confirmation)"
             ],
-            "traitement": "Pénicilline G (Benzathine) par voie intramusculaire."
+            "traitement": "Pénicilline G (Benzathine) par voie intramusculaire.",
+            "complications": [
+                "Neurosyphilis",
+                "Syphilis cardiovasculaire",
+                "Gommes syphilitiques"
+            ]
         }
     },
     {
@@ -2689,6 +3099,11 @@
                 "Cryothérapie (azote liquide)",
                 "Laser ou excision chirurgicale",
                 "Crèmes immunomodulatrices"
+            ],
+            "complications": [
+                "Cancers (Col, Anus, Gorge)",
+                "Verrues récurrentes",
+                "Détresse psychologique"
             ]
         }
     },
@@ -2700,7 +3115,7 @@
         "preview": "Infection virale chronique caractérisée par des poussées récurrentes de vésicules.",
         "details": {
             "causes": "Virus Herpès Simplex (HSV-1 ou HSV-2).",
-            "symptomes": [
+            "manifestations_cliniques": [
                 "Vésicules douloureuses qui éclatent en ulcères",
                 "Démangeaisons et picotements avant la poussée",
                 "Symptômes grippaux lors de la primo-infection"
@@ -2714,6 +3129,11 @@
                 "Traitement antiviral (Acyclovir, Valacyclovir)",
                 "Hygiène locale pour éviter la surinfection",
                 "Note: Le virus reste latent à vie dans les ganglions"
+            ],
+            "complications": [
+                "Méningite aseptique (rare)",
+                "Surinfection bactérienne des lésions",
+                "Transmission néonatale (grave)"
             ]
         }
     }
