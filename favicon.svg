@@ -10,9 +10,9 @@
   <!-- Square background filling the entire viewport to avoid white corners -->
   <rect width="512" height="512" fill="url(#ecg-grad-full)"/>
   
-  <!-- ECG Line centered and refined -->
-  <path d="M60 256h80l20-60 30 150 40-270 40 170 30 10h152" stroke="white" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- High Definition ECG Line - Thicker for visibility in browser tabs -->
+  <path d="M60 256h80l20-60 30 150 40-270 40 170 30 10h152" stroke="white" stroke-width="24" stroke-linecap="round" stroke-linejoin="round"/>
   
-  <!-- Subtle pulse glow -->
-  <path d="M60 256h80l20-60 30 150 40-270 40 170 30 10h152" stroke="white" stroke-width="20" stroke-linecap="round" stroke-linejoin="round" opacity="0.15"/>
+  <!-- Subtle pulse glow (thicker) -->
+  <path d="M60 256h80l20-60 30 150 40-270 40 170 30 10h152" stroke="white" stroke-width="32" stroke-linecap="round" stroke-linejoin="round" opacity="0.15"/>
 </svg>

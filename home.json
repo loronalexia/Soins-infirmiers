@@ -45,6 +45,20 @@
             "description": "Chirurgies et procédures courantes, surveillances post-opératoires.",
             "icon": "syringe",
             "color": "#227093"
+        },
+        {
+            "id": "gazometrie",
+            "title": "Gazométrie",
+            "description": "Analyseur de gaz sanguins artériels (GSA) et interprétation des désordres acido-basiques.",
+            "icon": "activity",
+            "color": "#D65D7A"
+        },
+        {
+            "id": "perinatalite-pediatrie",
+            "title": "Périnat. & Pédia.",
+            "description": "Grossesse, accouchement, soins au nouveau-né et pédiatrie générale.",
+            "icon": "baby",
+            "color": "#1976D2"
         }
     ]
 }

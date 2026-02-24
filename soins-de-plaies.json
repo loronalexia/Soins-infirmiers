@@ -11,23 +11,24 @@
                 "Escarres de stade 1 et 2",
                 "Plaies sèches à modérément humides"
             ],
+            "produits_commerciaux": [
+                "Comfeel Plus Clear / Transparent",
+                "Cutinova Hydro",
+                "DuoDERM CGF / Extra-Mince / Signal",
+                "Pansement hydrocolloïde à l'alginate Kendall",
+                "Pansement hydrocolloïde Tegaderm (3M / Solventum)"
+            ],
             "frequence": "Tous les 3 à 7 jours (selon l'exsudat)",
             "precautions": [
                 "Ne pas utiliser sur des plaies infectées (milieu occlusif)",
                 "Odeur caractéristique au retrait (normale)",
                 "Risque de macération si exsudat trop important"
-            ],
-            "liens": [
-                {
-                    "titre": "INESSS : Soins de plaies (Evaluation)",
-                    "url": "https://www.iplusinteractif.com/cached/books/1778/2846/files?category=14289#:~:text=services%20sociaux%20(INESSS)-,Ch07%20%2D%20Soins%20de%20plaies%3A%20%C3%89valuation%2C%20prise%20en%20charge%20et%20usage%20optimal,traitements%20%2D%20Institut%20national%20d%E2%80%99excellence%20en%20sant%C3%A9%20et%20en%20services%20sociaux%20(INESSS),-Ch18%20%2D%20Approche%20palliative"
-                }
             ]
         }
     },
     {
         "id": "sp2",
-        "title": "Alginate",
+        "title": "Alginate de calcium",
         "category": "soins-de-plaies",
         "preview": "Pansement hautement absorbant dérivé d'algues, idéal pour les plaies très exsudatives ou hémorragiques.",
         "details": {
@@ -36,6 +37,18 @@
                 "Plaies très exsudatives (ex: ulcères, escarres cavitaires)",
                 "Plaies hémorragiques",
                 "Méchage de plaies profondes"
+            ],
+            "produits_commerciaux": [
+                "Algisite M",
+                "Algostéril",
+                "Biatain Alginate",
+                "CalciCare alginate de calcium (avec argent)",
+                "Curasorb",
+                "Kaltostat",
+                "Maxorb Extra (Post-Op Rope)",
+                "Melgisorb",
+                "Pansement d'alginate de calcium Covidien / Kendall",
+                "Tegaderm Alginate"
             ],
             "frequence": "Quotidien à tous les 2 jours",
             "precautions": [
@@ -47,7 +60,7 @@
     },
     {
         "id": "sp3",
-        "title": "Hydrofibre",
+        "title": "Fibre gélifiante",
         "category": "soins-de-plaies",
         "preview": "Fibres transformant l'exsudat en gel, offrant une capacité d'absorption supérieure aux alginates.",
         "details": {
@@ -56,6 +69,14 @@
                 "Ulcères de jambe",
                 "Escarres profondes",
                 "Plaies post-opératoires exsudatives"
+            ],
+            "produits_commerciaux": [
+                "Aquacel",
+                "Biatain Fiber",
+                "Biosorb",
+                "Durafiber",
+                "Exufiber",
+                "KerraCel (Solventum)"
             ],
             "frequence": "Jusqu'à 7 jours (selon saturation)",
             "precautions": [
@@ -66,7 +87,7 @@
     },
     {
         "id": "sp4",
-        "title": "Pansement à l'Argent",
+        "title": "Antimicrobien - Argent",
         "category": "soins-de-plaies",
         "preview": "Pansement antimicrobien libérant des ions argent pour réduire la charge bactérienne.",
         "details": {
@@ -74,6 +95,22 @@
             "indications": [
                 "Plaies infectées ou à haut risque d'infection",
                 "Plaies stagnantes avec biofilm suspecté"
+            ],
+            "produits_commerciaux": [
+                "Acticoat / Flex",
+                "Allevyn Ag non adhésif",
+                "Aquacel Ag / Ag+ extra",
+                "Aquacel Foam / Foam Pro",
+                "Biatain Ag / alginate Ag",
+                "CalciCare alginate Ag",
+                "Exufiber Ag",
+                "Melgisorb Ag",
+                "Mepilex Ag / Flex Ag / Transfer Ag",
+                "Optifoam Gentle Ag",
+                "Pansement hydrocellulaire antimicrobien Kendall",
+                "Silvercel",
+                "UrgoCell Ag",
+                "UrgoTul Ag"
             ],
             "frequence": "Tous les 1 à 3 jours",
             "precautions": [
@@ -94,6 +131,14 @@
                 "Plaies nécrotiques noires (escarres sèches)",
                 "Plaies fibrineuses sèches"
             ],
+            "produits_commerciaux": [
+                "Cutimed Gel",
+                "DuoDERM Hydroactive Gel",
+                "Intrasite Gel",
+                "Nu-Gel",
+                "Purilon Gel",
+                "Woun'Dres"
+            ],
             "frequence": "Tous les 1 à 3 jours",
             "precautions": [
                 "Protéger la peau périlésionnelle contre la macération",
@@ -103,7 +148,7 @@
     },
     {
         "id": "sp6",
-        "title": "Pansement Interface",
+        "title": "Pansement non adhérent imprégné",
         "category": "soins-de-plaies",
         "preview": "Filet non adhérent (souvent siliconé) permettant le passage de l'exsudat vers un pansement secondaire.",
         "details": {
@@ -112,6 +157,15 @@
                 "Brûlures superficielles",
                 "Déchirures cutanées (Skin tears)",
                 "Plaies fragiles en cours d'épithélialisation"
+            ],
+            "produits_commerciaux": [
+                "Adaptic / Touch",
+                "Bactigras (chlorhexidine 5%)",
+                "Jelonet",
+                "Mepitel / One",
+                "Shur-Conform",
+                "UrgoTul / Pansements interfaces UrgoTul",
+                "Kendall Curity"
             ],
             "frequence": "Peut rester plusieurs jours (changer uniquement le secondaire)",
             "precautions": [
@@ -122,7 +176,7 @@
     },
     {
         "id": "sp7",
-        "title": "Charbon Actif",
+        "title": "Pansement de charbon",
         "category": "soins-de-plaies",
         "preview": "Pansement conçu pour absorber les odeurs nauséabondes des plaies infectées ou cancéreuses.",
         "details": {
@@ -131,10 +185,471 @@
                 "Plaies malodorantes (ex: plaies tumorales, gangrène)",
                 "Plaies infectées"
             ],
+            "produits_commerciaux": [
+                "Actisorb Silver 220",
+                "CarboFlex"
+            ],
             "frequence": "Quotidien ou selon saturation",
             "precautions": [
                 "Ne pas découper le sachet de charbon (perte de poudre)",
                 "Souvent combiné à l'argent pour un effet complet"
+            ]
+        }
+    },
+    {
+        "id": "sp9",
+        "title": "Mousse hydrocellulaire",
+        "category": "soins-de-plaies",
+        "preview": "Pansement absorbant en mousse (bordée ou non), protégeant contre la pression et gérant l'exsudat.",
+        "details": {
+            "but": "Maintenir un milieu humide optimal et protéger mécaniquement la plaie.",
+            "indications": [
+                "Plaies modérément à fortement exsudatives",
+                "Prévention des escarres",
+                "Ulcères de pression"
+            ],
+            "produits_commerciaux": [
+                "Allevyn / Gentle",
+                "Aquacel Foam",
+                "Biatain / Silicone",
+                "CombiDERM ACD",
+                "CuraFoam (Kendall)",
+                "Cutimed Siltec",
+                "Mepilex / Border Flex / Border Flex Lite",
+                "Optifoam",
+                "Pansement en mousse Tegaderm (3M / Solventum)",
+                "Pansement mousse hydrocellulaire Kendall AMD",
+                "UrgoTul Absorb"
+            ],
+            "frequence": "Tous les 3 à 5 jours selon l'exsudat",
+            "precautions": [
+                "Ne pas découper les formes avec bordure siliconée (perte d'adhérence)",
+                "Vérifier régulièrement si la mousse est saturée"
+            ]
+        }
+    },
+    {
+        "id": "sp10",
+        "title": "Pellicule transparente",
+        "category": "soins-de-plaies",
+        "preview": "Film adhésif semi-perméable permettant de visualiser la plaie tout en la protégeant.",
+        "details": {
+            "but": "Servir de pansement secondaire ou protéger une peau à risque de friction.",
+            "indications": [
+                "Fixation de cathéters",
+                "Plaies superficielles sans exsudat",
+                "Protection contre la friction (talons)"
+            ],
+            "produits_commerciaux": [
+                "Bioclusive",
+                "Leukomed",
+                "Mepore Film",
+                "Opsite / Flexigrid",
+                "Tegaderm"
+            ],
+            "frequence": "Peut rester jusqu'à 7 jours",
+            "precautions": [
+                "Ne pas utiliser sur des plaies exsudatives (risque de macération massive)",
+                "Ne pas étirer lors de la pose (risque de phlyctènes)"
+            ]
+        }
+    },
+    {
+        "id": "sp11",
+        "title": "Protecteur cutané",
+        "category": "soins-de-plaies",
+        "preview": "Produits sous forme de crème, vaporisateur ou lingette protégeant la peau périlésionnelle.",
+        "details": {
+            "but": "Prévenir la macération et l'irritation due aux adhésifs ou aux liquides corporels.",
+            "indications": [
+                "Peau périlésionnelle exposée à l'exsudat",
+                "Incontinence (protection siège)",
+                "Protection sous les adhésifs"
+            ],
+            "produits_commerciaux": [
+                "Adapt",
+                "AllKare",
+                "Aloe Vesta",
+                "Baza Protect",
+                "Brava",
+                "Cavilon / Advanced",
+                "Critic-Aid Clear",
+                "Esenta",
+                "No-Sting Skin-Prep",
+                "Proshield Plus",
+                "Secura",
+                "Skin Prep",
+                "Sureprep No-Sting",
+                "Zincofax"
+            ],
+            "frequence": "À chaque changement de pansement ou selon protocole d'hygiène",
+            "precautions": [
+                "Laisser sécher complètement avant d'appliquer un adhésif",
+                "Éviter les crèmes à base de zinc sous les pansements adhésifs (empêchent l'adhérence)"
+            ]
+        }
+    },
+    {
+        "id": "sp12",
+        "title": "Antimicrobien - Iode",
+        "category": "soins-de-plaies",
+        "preview": "Pansement libérant de l'iode (souvent cadexomère d'iode) pour traiter l'infection et le biofilm.",
+        "details": {
+            "but": "Réduire la charge bactérienne et éliminer les tissus nécrotiques par absorption.",
+            "indications": [
+                "Plaies infectées chroniques",
+                "Ulcères de jambe avec biofilm",
+                "Plaies fibrineuses exsudatives"
+            ],
+            "produits_commerciaux": [
+                "Inadine",
+                "Iodosorb"
+            ],
+            "frequence": "Changer lorsque la couleur vire du brun au jaune/blanc (indication de l'épuisement de l'iode).",
+            "precautions": [
+                "Vérifier les allergies à l'iode",
+                "Ne pas utiliser chez les patients avec troubles thyroïdiens",
+                "Utilisation limitée dans le temps (risque de toxicité systémique si utilisé sur de grandes surfaces)"
+            ]
+        }
+    },
+    {
+        "id": "sp13",
+        "title": "Antimicrobien - Miel",
+        "category": "soins-de-plaies",
+        "preview": "Pansement à base de miel de Manuka de grade médical créant un milieu acide défavorable aux bactéries.",
+        "details": {
+            "but": "Favoriser la détersion autolytique et réduire les odeurs tout en traitant l'infection.",
+            "indications": [
+                "Plaies stagnantes",
+                "Plaies malodorantes",
+                "Nécrose humide et fibrine"
+            ],
+            "produits_commerciaux": [
+                "Activon",
+                "Medihoney"
+            ],
+            "frequence": "Tous les 1 à 3 jours",
+            "precautions": [
+                "Sensations de brûlure ou picotements possibles lors de l'application (dues à l'osmolarité élevée)",
+                "Protéger les berges car le miel peut couler et macérer la peau saine"
+            ]
+        }
+    },
+    {
+        "id": "sp14",
+        "title": "Antimicrobien - PHMB",
+        "category": "soins-de-plaies",
+        "preview": "Pansement imprégné de polyhexaméthylène biguanide (PHMB), un antiseptique à large spectre.",
+        "details": {
+            "but": "Prévenir la colonisation bactérienne et gérer l'infection.",
+            "indications": [
+                "Plaies à risque d'infection",
+                "Méchage de cavités",
+                "Protection de sites d'insertion (drains, cathéters)"
+            ],
+            "produits_commerciaux": [
+                "Covidien Kendall / Kerlix AMD",
+                "Compresse gaze antimicrobienne Kerlix AMD",
+                "Curity AMD (mèche ou compresse)",
+                "Pansement mousse hydrocellulaire Kendall AMD"
+            ],
+            "frequence": "Selon l'exsudat (jusqu'à 3 jours)",
+            "precautions": [
+                "Vérifier la compatibilité avec d'autres produits (certains agents inactivent le PHMB)"
+            ]
+        }
+    },
+    {
+        "id": "sp15",
+        "title": "Antimicrobien - Bleu méthylène et violet de gentiane",
+        "category": "soins-de-plaies",
+        "preview": "Pansement mousse imprégné de colorants organiques aux propriétés antimicrobiennes puissantes.",
+        "details": {
+            "but": "Réduire la charge bactérienne et inhiber le biofilm par action capillaire.",
+            "indications": [
+                "Plaies infectées",
+                "Biofilm persistant",
+                "Plaies stagnantes"
+            ],
+            "produits_commerciaux": [
+                "Hydrofera Blue Classic / Ready / Border",
+                "Hydrofera Blue Transfer / drainage abondant"
+            ],
+            "frequence": "Tous les 1 à 3 jours (doit être hydraté avec du NaCl ou de l'eau stérile si type 'Classic')",
+            "precautions": [
+                "Peut tacher la peau et les vêtements de façon persistante"
+            ]
+        }
+    },
+    {
+        "id": "sp16",
+        "title": "Antimicrobien - Dérivé d'acide gras",
+        "category": "soins-de-plaies",
+        "preview": "Pansement captant physiquement les bactéries par interaction hydrophobe sans libérer d'agent chimique.",
+        "details": {
+            "but": "Réduire la charge bactérienne sans risque de toxicité ou de résistance.",
+            "indications": [
+                "Plaies infectées ou colonisées",
+                "Plaies exsudatives chroniques"
+            ],
+            "produits_commerciaux": [
+                "Cutimed Sorbact"
+            ],
+            "frequence": "Tous les 1 à 3 jours",
+            "precautions": [
+                "Doit être en contact direct avec le lit de la plaie pour être efficace"
+            ]
+        }
+    },
+    {
+        "id": "sp17",
+        "title": "Pansement absorbant à bordure adhésive",
+        "category": "soins-de-plaies",
+        "preview": "Pansement 'tout-en-un' avec une compresse centrale absorbante et une bordure adhésive.",
+        "details": {
+            "but": "Protéger la plaie et absorber les exsudats légers à modérés dans un format pratique.",
+            "indications": [
+                "Plaies post-opératoires",
+                "Lacérations mineures",
+                "Protection de sites d'insertion"
+            ],
+            "produits_commerciaux": [
+                "Alldress",
+                "DuDress",
+                "Leukomed",
+                "Mepore / Pro",
+                "Primapore",
+                "Telfa Plus"
+            ],
+            "frequence": "Selon la saturation de la compresse",
+            "precautions": [
+                "Vérifier les allergies aux adhésifs (acrylique ou latex si ancien)",
+                "Ne pas utiliser sur des plaies très exsudatives (risque de décollement précoce)"
+            ]
+        }
+    },
+    {
+        "id": "sp18",
+        "title": "Pansement de coussinet absorbant (Superabsorbant)",
+        "category": "soins-de-plaies",
+        "preview": "Coussinet multicouche hautement absorbant conçu pour gérer des volumes massifs d'exsudat.",
+        "details": {
+            "but": "Empêcher la macération en capturant l'exsudat au cœur du pansement.",
+            "indications": [
+                "Ulcères de jambe très exsudatifs",
+                "Plaies cancéreuses avec drainage important",
+                "Utilisation sous compression veineuse"
+            ],
+            "produits_commerciaux": [
+                "ConvaMax",
+                "Cutimed Sorbion",
+                "KerraMaxCare",
+                "Mesorb",
+                "Mextra Superabsorbant",
+                "Exu-dry"
+            ],
+            "frequence": "Quotidienne à tous les 2-3 jours (selon saturation)",
+            "precautions": [
+                "N'est pas adhésif (nécessite une fixation ou un bandage)",
+                "Respecter le sens de pose (souvent une face bleue vers l'extérieur)"
+            ]
+        }
+    },
+    {
+        "id": "sp19",
+        "title": "Pansement absorbant d'acrylique",
+        "category": "soins-de-plaies",
+        "preview": "Pansement transparent capable d'absorber l'exsudat sans opacité, permettant de voir la plaie.",
+        "details": {
+            "but": "Permettre la surveillance de la plaie sans changer le pansement.",
+            "indications": [
+                "Plaies peu exsudatives",
+                "Protection des berges",
+                "Déchirures cutanées (Skin tears)"
+            ],
+            "produits_commerciaux": [
+                "Pansement absorbant en acrylique transparent Tegaderm"
+            ],
+            "frequence": "Jusqu'à 7 jours",
+            "precautions": [
+                "Capacité d'absorption limitée comparativement aux mousses"
+            ]
+        }
+    },
+    {
+        "id": "sp20",
+        "title": "Pansement hydroconductif",
+        "category": "soins-de-plaies",
+        "preview": "Utilise l'action capillaire pour attirer l'exsudat, les débris et les bactéries vers le haut.",
+        "details": {
+            "but": "Nettoyage du lit de la plaie par drainage vertical.",
+            "indications": [
+                "Plaies cavitaires",
+                "Plaies avec fibrine ou débris",
+                "Saignements légers"
+            ],
+            "produits_commerciaux": [
+                "Drawtex"
+            ],
+            "frequence": "Quotidien à tous les 2 jours",
+            "precautions": [
+                "Peut nécessiter plusieurs couches pour augmenter l'absorption"
+            ]
+        }
+    },
+    {
+        "id": "sp21",
+        "title": "Pansement hypertonique",
+        "category": "soins-de-plaies",
+        "preview": "Pansement imprégné de sel (NaCl) à haute concentration.",
+        "details": {
+            "but": "Favoriser la détersion par effet osmotique (attire les liquides et les débris).",
+            "indications": [
+                "Plaies avec œdème localisé",
+                "Nécrose humide ou fibrine tenace",
+                "Plaies infectées"
+            ],
+            "produits_commerciaux": [
+                "Mesalt",
+                "Curity Sodium"
+            ],
+            "frequence": "Quotidien (pour maintenir l'effet osmotique)",
+            "precautions": [
+                "Protéger impérativement la peau périlésionnelle avec une pâte de zinc ou un film protecteur (risque d'irritation sévère par le sel)",
+                "Ne pas utiliser sur des plaies bourgeonnantes propres (risque de dessèchement)"
+            ]
+        }
+    },
+    {
+        "id": "sp22",
+        "title": "Pansement non adhérent non imprégné",
+        "category": "soins-de-plaies",
+        "preview": "Compresse à faible adhérence (type 'Telfa') pour les plaies fragiles.",
+        "details": {
+            "but": "Éviter de traumatiser le tissu au retrait tout en couvrant la plaie.",
+            "indications": [
+                "Plaies peu exsudatives ou sèches",
+                "Sites de prélèvements cutanés",
+                "Déchirures cutanées"
+            ],
+            "produits_commerciaux": [
+                "Leukomed",
+                "Melolite",
+                "Tegaderm Contact",
+                "Telfa"
+            ]
+        }
+    },
+    {
+        "id": "sp23",
+        "title": "Pansement postopératoire",
+        "category": "soins-de-plaies",
+        "preview": "Pansement conçu spécifiquement pour les incisions chirurgicales, souvent flexible et imperméable.",
+        "details": {
+            "but": "Assurer une barrière stérile tout en permettant la mobilité du patient.",
+            "indications": [
+                "Suites de chirurgies majeures",
+                "Fixation d'orthopédie"
+            ],
+            "produits_commerciaux": [
+                "Aquacel Surgical",
+                "Mepilex Border Post-Op",
+                "OpSite Post-Op / Visible",
+                "Tegaderm Pad"
+            ]
+        }
+    },
+    {
+        "id": "sp24",
+        "title": "Pansement composé (multicouche)",
+        "category": "soins-de-plaies",
+        "preview": "Allie plusieurs technologies (Hydrofibre + Mousse) pour une gestion optimale.",
+        "details": {
+            "produits_commerciaux": [
+                "Aquacel Foam (adhésif et non adhésif)",
+                "Aquacel Foam Pro"
+            ]
+        }
+    },
+    {
+        "id": "sp25",
+        "title": "Agent de débridement enzymatique",
+        "category": "soins-de-plaies",
+        "preview": "Onguent contenant des enzymes (collagénase) pour digérer sélectivement les tissus nécrotiques.",
+        "details": {
+            "but": "Débridement chimique des plaies sans traumatiser le tissu sain.",
+            "indications": [
+                "Plaies avec nécrose sèche ou humide",
+                "Escarres de pression"
+            ],
+            "produits_commerciaux": [
+                "Santyl"
+            ],
+            "frequence": "Quotidienne",
+            "precautions": [
+                "Ne pas utiliser avec des produits à base d'argent ou d'iode (inactivent l'enzyme)",
+                "Protéger la peau saine avec une barrière cutanée"
+            ]
+        }
+    },
+    {
+        "id": "sp26",
+        "title": "Matrice à effet antiprotéase",
+        "category": "soins-de-plaies",
+        "preview": "Pansement constitué de collagène et de cellulose régénérée oxydée (ORC).",
+        "details": {
+            "but": "Inactiver les protéases en excès (MMP) qui empêchent la cicatrisation.",
+            "indications": [
+                "Plaies chroniques stagnantes",
+                "Ulcères diabétiques ou veineux récalcitrants"
+            ],
+            "produits_commerciaux": [
+                "Promogran",
+                "Promogran Prisma"
+            ],
+            "frequence": "Tous les 1 à 3 jours",
+            "precautions": [
+                "Doit être hydraté par l'exsudat ou du NaCl pour s'activer"
+            ]
+        }
+    },
+    {
+        "id": "sp27",
+        "title": "Matrice extracellulaire",
+        "category": "soins-de-plaies",
+        "preview": "Substitut dermique biologique favorisant la reconstruction tissulaire.",
+        "details": {
+            "but": "Fournir un échafaudage pour la migration des cellules et la repousse tissulaire.",
+            "indications": [
+                "Plaies complexes",
+                "Plaies traumatiques ou chirurgicales profondes"
+            ],
+            "produits_commerciaux": [
+                "Endoform Antimicrobial / Natural",
+                "Myriad Matrix",
+                "OASIS Wound Matrix"
+            ]
+        }
+    },
+    {
+        "id": "sp28",
+        "title": "Pâte hydrophile",
+        "category": "soins-de-plaies",
+        "preview": "Pâte protectrice et absorbante créant une barrière contre l'humidité.",
+        "details": {
+            "but": "Protéger la peau contre la macération sévère et favoriser la guérison des zones irritées.",
+            "indications": [
+                "Incontinence sévère (dermites)",
+                "Plaies superficielles suintantes",
+                "Fistules"
+            ],
+            "produits_commerciaux": [
+                "Triad"
+            ],
+            "frequence": "Chaque hygiène ou selon protocole",
+            "precautions": [
+                "Nettoyer délicatement sans frotter pour enlever les résidus"
             ]
         }
     },

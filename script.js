@@ -10,7 +10,7 @@ let currentCategory = 'pathologies';
 // Cache for loaded data
 // We will fill this object with keys corresponding to categories
 let studyData = {};
-const categories = ['pathologies', 'medicaments', 'examens-paracliniques', 'examens-cliniques', 'soins-de-plaies', 'interventions'];
+const categories = ['pathologies', 'medicaments', 'examens-paracliniques', 'examens-cliniques', 'soins-de-plaies', 'interventions', 'gazometrie', 'perinatalite-pediatrie'];
 
 // Modal Navigation History
 let currentModalItem = null;
@@ -30,7 +30,7 @@ async function preloadAllData() {
     contentArea.innerHTML = '<div class="loading">Chargement des données...</div>';
     try {
         // Categories for main navigation
-        const mainCategories = ['pathologies', 'medicaments', 'interventions', 'examens-paracliniques', 'examens-cliniques', 'soins-de-plaies'];
+        const mainCategories = ['pathologies', 'medicaments', 'interventions', 'examens-paracliniques', 'examens-cliniques', 'soins-de-plaies', 'perinatalite-pediatrie'];
         // All files to load (including invisible ones like sources and home)
         const filesToLoad = [...mainCategories, 'sources', 'home'];
 
@@ -70,6 +70,10 @@ function loadCategory(category) {
     if (category === 'home') {
         document.body.classList.add('is-home');
         renderHome();
+        return;
+    } else if (category === 'gazometrie') {
+        document.body.classList.remove('is-home');
+        renderGazometrie();
         return;
     } else {
         document.body.classList.remove('is-home');
@@ -129,6 +133,12 @@ function renderHome() {
                 break;
             case 'syringe':
                 iconSvg = `<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m18 2 4 4"/><path d="m17 7 3-3"/><path d="M19 9 8.7 19.3c-1 1-2.5 1-3.4 0l-.6-.6c-1-1-1-2.5 0-3.4L15 5"/><path d="m9 11 4 4"/><path d="m5 19-3 3"/><path d="m14 4 6 6"/></svg>`;
+                break;
+            case 'baby':
+                iconSvg = `<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12h.01"/><path d="M15 12h.01"/><path d="M10 16c.5.3 1.2.5 2 .5s1.5-.2 2-.5"/><path d="M19 6.3a9 9 0 0 1 1.8 3.9 2 2 0 0 1 0 3.6 9 9 0 0 1-17.6 0 2 2 0 0 1 0-3.6A9 9 0 0 1 12 3c2 0 3.5.7 4.9 2.1"/><path d="M12 3v2"/><path d="M14 8c.3-1 .8-1.5 1.5-2"/><path d="M16 12c.3-1 .8-1.5 1.5-2"/><path d="M12 21v1"/><path d="M12 22v0"/></svg>`;
+                break;
+            case 'activity':
+                iconSvg = `<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>`;
                 break;
             default:
                 iconSvg = '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>';
@@ -195,6 +205,7 @@ function renderContent(viewName, data) {
         else if (itemCat === 'examens-cliniques') labelClass = 'bg-clinic';
         else if (itemCat === 'soins-de-plaies') labelClass = 'bg-wound';
         else if (itemCat === 'interventions') labelClass = 'bg-intervention';
+        else if (itemCat === 'perinatalite-pediatrie') labelClass = 'bg-peri';
 
         const card = createCard(item, labelClass, itemCat);
         gridContainer.appendChild(card);
@@ -335,6 +346,7 @@ function formatCategoryName(slug) {
         'examens-cliniques': 'Ex. Cliniques',
         'soins-de-plaies': 'Soins de plaies',
         'interventions': 'Interventions',
+        'perinatalite-pediatrie': 'Périnatalité & Pédiatrie',
         'recherche': 'Résultat'
     };
     return names[slug] || slug;
@@ -518,7 +530,20 @@ const linkMapping = [
     { keywords: ['mastectomie', 'lymphoedème', 'drainage lymphatique'], target: 'Mastectomie Radicale Modifiée' },
     { keywords: ['tumorectomie'], target: 'Tumorectomie (Sein)' },
     { keywords: ['turp', 'résection prostate', 'irrigation vésicale'], target: 'Résection Transurétrale de la Prostate (TURP)' },
-    { keywords: ['prostatectomie'], target: 'Prostatectomie Radicale' }
+    { keywords: ['prostatectomie'], target: 'Prostatectomie Radicale' },
+
+    // Gazométrie / Acido-basique
+    { keywords: ['acidose respiratoire'], target: 'Acidose Respiratoire' },
+    { keywords: ['alcalose respiratoire'], target: 'Alcalose Respiratoire' },
+    { keywords: ['acidose métabolique', 'acidocétose'], target: 'Acidose Métabolique' },
+    { keywords: ['alcalose métabolique'], target: 'Alcalose Métabolique' },
+
+    // Périnatalité et Pédiatrie
+    { keywords: ['apgar'], target: 'Score d\'Apgar' },
+    { keywords: ['reflexe archaïque', 'morou', 'babinski'], target: 'Réflexes archaïques' },
+    { keywords: ['ictère', 'ictere', 'jaunisse'], target: 'Ictère néonatal' },
+    { keywords: ['allaitement', 'sein'], target: 'Allaitement maternel' },
+    { keywords: ['croissance', 'pediatrie', 'pédiatrie'], target: 'Constantes vitales pédiatriques' }
 ];
 
 function formatSmartLinks(text) {
@@ -713,6 +738,7 @@ function openModal(item, isBack = false) {
     else if (item.category === 'examens-paracliniques') labelClass = 'bg-para';
     else if (item.category === 'examens-cliniques') labelClass = 'bg-clinic';
     else if (item.category === 'soins-de-plaies') labelClass = 'bg-wound';
+    else if (item.category === 'perinatalite-pediatrie') labelClass = 'bg-peri';
 
     let contentHtml = '';
 
@@ -1058,6 +1084,235 @@ function showSources() {
 
 // Run
 document.addEventListener('DOMContentLoaded', init);
+
+// Blood Gas Analysis (Gazométrie) Functionality
+function renderGazometrie() {
+    contentArea.innerHTML = `
+        <div class="calculator-container">
+            <div class="calculator-header">
+                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="var(--primary-color)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-bottom: 1rem;"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
+                <h2>Analyseur de Gaz Sanguins</h2>
+                <p>Entrez les valeurs pour obtenir une interprétation du désordre acido-basique.</p>
+            </div>
+            
+            <div class="calculator-form">
+                <div class="form-group">
+                    <label for="ph-input">pH (Acidité)</label>
+                    <div class="input-with-unit">
+                        <input type="number" id="ph-input" step="0.01" placeholder="7.35 - 7.45">
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="paco2-input">PaCO2 (Pression Partielle CO2)</label>
+                    <div class="input-with-unit">
+                        <input type="number" id="paco2-input" step="1" placeholder="35 - 45">
+                        <span class="input-unit">mmHg</span>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="hco3-input">HCO3- (Bicarbonates)</label>
+                    <div class="input-with-unit">
+                        <input type="number" id="hco3-input" step="1" placeholder="22 - 26">
+                        <span class="input-unit">mmol/L</span>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="eb-input">EB / BE (Excès de base)</label>
+                    <div class="input-with-unit">
+                        <input type="number" id="eb-input" step="0.1" placeholder="-2 à +2">
+                        <span class="input-unit">mEq/L</span>
+                    </div>
+                </div>
+                
+                <button class="interpret-btn" onclick="interpretBloodGas()">Interpréter les résultats</button>
+            </div>
+            
+            <div id="gaz-results" class="results-area" style="display: none;">
+                <!-- Results will be injected here -->
+            </div>
+        </div>
+    `;
+}
+
+function interpretBloodGas() {
+    const ph = parseFloat(document.getElementById('ph-input').value);
+    const paco2 = parseFloat(document.getElementById('paco2-input').value);
+    const hco3 = parseFloat(document.getElementById('hco3-input').value);
+    const eb = parseFloat(document.getElementById('eb-input').value);
+    const resultsArea = document.getElementById('gaz-results');
+
+    if (isNaN(ph) || isNaN(paco2) || isNaN(hco3) || isNaN(eb)) {
+        alert("Veuillez entrer toutes les valeurs (pH, PaCO2, HCO3- et Excès de base).");
+        return;
+    }
+
+    resultsArea.style.display = 'block';
+
+    let state = ""; // Acidose, Alcalose, Normal
+    let type = "";  // Respiratoire, Métabolique
+    let compensation = "Absente";
+    let statusClass = "type-normal";
+    let explanation = "";
+
+    // Normals
+    const phMin = 7.35, phMax = 7.45;
+    const paco2Min = 35, paco2Max = 45;
+    const hco3Min = 22, hco3Max = 26;
+    const ebMin = -2, ebMax = 2;
+
+    // 1. Determine primary state
+    if (ph < phMin) {
+        state = "Acidose";
+        statusClass = "type-acidosis";
+    } else if (ph > phMax) {
+        state = "Alcalose";
+        statusClass = "type-alkalosis";
+    } else {
+        state = "Normal";
+        statusClass = "type-normal";
+    }
+
+    // 2. Determine cause and compensation
+    if (state !== "Normal") {
+        const isRespCause = (state === "Acidose" && paco2 > paco2Max) || (state === "Alcalose" && paco2 < paco2Min);
+        const isMetaCause = (state === "Acidose" && (hco3 < hco3Min || eb < ebMin)) || (state === "Alcalose" && (hco3 > hco3Max || eb > ebMax));
+
+        if (isRespCause) {
+            type = "Respiratoire";
+            // Check for metabolic compensation
+            if (state === "Acidose") {
+                if (hco3 > hco3Max || eb > ebMax) compensation = "Partielle";
+            } else {
+                if (hco3 < hco3Min || eb < ebMin) compensation = "Partielle";
+            }
+        } else if (isMetaCause) {
+            type = "Métabolique";
+            // Check for respiratory compensation
+            if (state === "Acidose") {
+                if (paco2 < paco2Min) compensation = "Partielle";
+            } else {
+                if (paco2 > paco2Max) compensation = "Partielle";
+            }
+        } else {
+            // Mixed or complex
+            type = "Inconnu (Désordre mixte possible)";
+        }
+    } else {
+        // pH is normal, but check if there's full compensation
+        const isRespAcid = paco2 > paco2Max && (hco3 > hco3Max || eb > ebMax);
+        const isMetaAcid = (hco3 < hco3Min || eb < ebMin) && paco2 < paco2Min;
+        const isRespAlk = paco2 < paco2Min && (hco3 < hco3Min || eb < ebMin);
+        const isMetaAlk = (hco3 > hco3Max || eb > ebMax) && paco2 > paco2Max;
+
+        if (isRespAcid || isMetaAcid || isRespAlk || isMetaAlk) {
+            compensation = "Complète";
+            if (ph < 7.40) {
+                state = "Acidose";
+                statusClass = "type-acidosis";
+                type = isRespAcid ? "Respiratoire" : "Métabolique";
+            } else if (ph > 7.40) {
+                state = "Alcalose";
+                statusClass = "type-alkalosis";
+                type = isRespAlk ? "Respiratoire" : "Métabolique";
+            } else {
+                state = "Normal (Équilibré)";
+                type = "Aucun";
+                compensation = "N/A";
+            }
+        } else {
+            type = "Aucun";
+            compensation = "N/A";
+            explanation = "Toutes les valeurs sont dans les limites de la normale.";
+        }
+    }
+
+    let clinicalInfo = {
+        description: "",
+        surveillance: []
+    };
+
+    if (state === "Acidose" && type === "Respiratoire") {
+        clinicalInfo.description = "Accumulation de CO2 due à une hypoventilation. Le corps retient trop de gaz carbonique.";
+        clinicalInfo.surveillance = ["Fréquence respiratoire", "État de conscience (narcose au CO2)", "Saturation O2"];
+    } else if (state === "Alcalose" && type === "Respiratoire") {
+        clinicalInfo.description = "Élimination excessive de CO2 due à une hyperventilation (anxiété, douleur, fièvre).";
+        clinicalInfo.surveillance = ["Signes de tétanie (picotements)", "Rythme respiratoire", "Niveau d'anxiété"];
+    } else if (state === "Acidose" && type === "Métabolique") {
+        clinicalInfo.description = "Excès d'acides ou perte de bicarbonates (insuffisance rénale, acidocétose, diarrhées).";
+        clinicalInfo.surveillance = ["Respiration de Kussmaul", "Électrolytes (Potassium)", "Hydratation"];
+    } else if (state === "Alcalose" && type === "Métabolique") {
+        clinicalInfo.description = "Perte d'acides (vomissements, succion gastrique) ou gain de bicarbonates.";
+        clinicalInfo.surveillance = ["Signes d'hypokaliémie", "Amplitude respiratoire", "Réflexes musculaires"];
+    }
+
+    if (!explanation) {
+        explanation = `Le patient présente une <strong class="smart-link" onclick="handleSmartLink(this.textContent, '${state} ${type}')">${state} ${type.toLowerCase()}</strong> avec une compensation <strong>${compensation.toLowerCase()}</strong>.`;
+    }
+
+    let surveillanceHtml = "";
+    if (clinicalInfo.surveillance.length > 0) {
+        surveillanceHtml = `
+            <div style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid rgba(0,0,0,0.05);">
+                <strong style="color: var(--primary-color); font-size: 0.9rem;">À surveiller :</strong>
+                <ul style="margin: 0.5rem 0 0 1.2rem; font-size: 0.9rem; color: var(--text-color);">
+                    ${clinicalInfo.surveillance.map(s => `<li>${s}</li>`).join('')}
+                </ul>
+            </div>
+        `;
+    }
+
+    resultsArea.innerHTML = `
+        <div class="result-card">
+            <div class="result-type ${statusClass}">${state} ${type}</div>
+            <div class="result-main">${state} ${type !== "Aucun" ? type : ""}</div>
+            <p class="result-explanation">${explanation}</p>
+            ${clinicalInfo.description ? `<p style="font-size: 0.95rem; margin-top: 0.5rem; color: var(--text-muted);">${clinicalInfo.description}</p>` : ''}
+            
+            ${surveillanceHtml}
+
+            <div class="results-grid four-items">
+                <div class="result-item">
+                    <div class="result-label">pH</div>
+                    <div class="result-value">${ph.toFixed(2)}</div>
+                    <div class="result-status ${ph < phMin ? 'status-low' : (ph > phMax ? 'status-high' : 'status-normal')}">
+                        ${ph < phMin ? 'Bas' : (ph > phMax ? 'Élevé' : 'Normal')}
+                    </div>
+                </div>
+                <div class="result-item">
+                    <div class="result-label">PaCO2</div>
+                    <div class="result-value">${paco2}</div>
+                    <div class="result-status ${paco2 < paco2Min ? 'status-low' : (paco2 > paco2Max ? 'status-high' : 'status-normal')}">
+                        ${paco2 < paco2Min ? 'Bas' : (paco2 > paco2Max ? 'Élevé' : 'Normal')}
+                    </div>
+                </div>
+                <div class="result-item">
+                    <div class="result-label">HCO3-</div>
+                    <div class="result-value">${hco3}</div>
+                    <div class="result-status ${hco3 < hco3Min ? 'status-low' : (hco3 > hco3Max ? 'status-high' : 'status-normal')}">
+                        ${hco3 < hco3Min ? 'Bas' : (hco3 > hco3Max ? 'Élevé' : 'Normal')}
+                    </div>
+                </div>
+                <div class="result-item">
+                    <div class="result-label">Excès de base</div>
+                    <div class="result-value">${eb > 0 ? '+' : ''}${eb}</div>
+                    <div class="result-status ${eb < ebMin ? 'status-low' : (eb > ebMax ? 'status-high' : 'status-normal')}">
+                        ${eb < ebMin ? 'Bas' : (eb > ebMax ? 'Élevé' : 'Normal')}
+                    </div>
+                </div>
+            </div>
+            
+            <div style="margin-top: 1.5rem; font-size: 0.85rem; color: var(--text-muted); font-style: italic;">
+                Note : Compensation ${compensation}. L'Excès de Base (EB) aide à confirmer la composante métabolique. Cliquez sur l'interprétation pour voir la fiche complète.
+            </div>
+        </div>
+    `;
+
+    // Smooth scroll to results
+    resultsArea.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+}
 
 // Render Pathology Systems
 function renderPathologySystems(data) {

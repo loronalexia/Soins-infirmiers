@@ -1,0 +1,113 @@
+[
+    {
+        "id": "pp1",
+        "title": "Score d'Apgar",
+        "category": "perinatalite-pediatrie",
+        "preview": "Outil d'évaluation rapide de l'état de santé du nouveau-né à 1 et 5 minutes de vie.",
+        "details": {
+            "definition": "Évaluation basée sur 5 critères (Apparence, Pouls, Grimace, Activité, Respiration) notés de 0 à 2.",
+            "criteres": [
+                "A (Apparence) : Coloration de la peau (rose, acrocyanose ou bleu)",
+                "P (Pouls) : Fréquence cardiaque (absente, < 100 ou > 100 bpm)",
+                "G (Grimace) : Réactivité aux stimuli (nulle, grimace ou cri vigoureux)",
+                "A (Activité) : Tonus musculaire (flasque, flexion légère ou mouvements actifs)",
+                "R (Respiration) : Effort respiratoire (absent, lent/irrégulier ou cri vigoureux)"
+            ],
+            "interpretation": [
+                "7 à 10 : Nouveau-né en bonne santé, soins de routine.",
+                "4 à 6 : État moyennement déprimé, peut nécessiter une stimulation ou de l'oxygène.",
+                "0 à 3 : Détresse grave, nécessite une réanimation immédiate."
+            ],
+            "interventions": [
+                "Évaluer à 1 minute (tolérance à l'accouchement) et 5 minutes (adaptation extra-utérine).",
+                "Si score < 7 à 5 minutes, répéter l'évaluation toutes les 5 minutes jusqu'à 20 minutes."
+            ]
+        }
+    },
+    {
+        "id": "pp2",
+        "title": "Constantes vitales pédiatriques",
+        "category": "perinatalite-pediatrie",
+        "preview": "Normes des signes vitaux selon l'âge, du nouveau-né à l'adolescent.",
+        "details": {
+            "normes": [
+                "Nouveau-né (0-28 jours) : FC 100-160 | FR 30-60 | TA 60-90/20-60",
+                "Nourrisson (1-12 mois) : FC 100-150 | FR 25-35 | TA 80-100/50-65",
+                "Trottineur (1-3 ans) : FC 80-130 | FR 20-30 | TA 90-105/55-70",
+                "Préscolaire (3-5 ans) : FC 80-120 | FR 20-25 | TA 95-110/60-75",
+                "Scolaire (6-12 ans) : FC 70-110 | FR 18-22 | TA 100-120/60-80",
+                "Adolescent (13+) : FC 60-100 | FR 12-20 | TA 110-130/65-85"
+            ],
+            "particularites": [
+                "Prendre la fréquence respiratoire sur une minute complète (respiration périodique fréquente).",
+                "La fréquence cardiaque doit être prise à l'apex pendant une minute chez le nourrisson.",
+                "La tension artérielle se prend avec un brassard couvrant 40% de la circonférence du bras."
+            ]
+        }
+    },
+    {
+        "id": "pp3",
+        "title": "Réflexes archaïques",
+        "category": "perinatalite-pediatrie",
+        "preview": "Réponses motrices involontaires du nouveau-né témoignant d'un système nerveux intact.",
+        "details": {
+            "reflexes_principaux": [
+                "Réflexe de Moro (Sursaut) : Disparaît vers 4-6 mois.",
+                "Succion et Points cardinaux : Essentiels pour l'alimentation.",
+                "Agrippement palmaire et plantaire : Réactivité tactile.",
+                "Marche automatique : Disparaît vers 2 mois.",
+                "Babinski : Extension du gros orteil (normal jusqu'à 1-2 ans)."
+            ],
+            "signification_clinique": "Une absence de réflexes à la naissance ou leur persistance au-delà de l'âge normal peut indiquer une pathologie neurologique."
+        }
+    },
+    {
+        "id": "pp4",
+        "title": "Ictère néonatal (Jaunisse)",
+        "category": "perinatalite-pediatrie",
+        "preview": "Coloration jaune des téguments due à une hyperbilirubinémie, fréquente chez le nouveau-né.",
+        "details": {
+            "types": [
+                "Physiologique : Apparaît après 24h, pic vers J3-J5, résolution spontanée.",
+                "Pathologique : Apparaît avant 24h, bilirubine augmentant rapidement (> 85 µmol/L/jour).",
+                "Lié au lait maternel : Tardif (après J5), souvent bénin."
+            ],
+            "surveillance": [
+                "Échelle de Kramer (progression céphalo-caudale de la coloration).",
+                "Prélèvement de bilirubine transcutanée (Btc) ou sanguine.",
+                "Nombre de boires et élimination (selles/urines)."
+            ],
+            "interventions": [
+                "Encourager des boires fréquents (favorise l'élimination de la bilirubine).",
+                "Photothérapie (protection oculaire obligatoire, surveillance de l'hydratation et de la température)."
+            ],
+            "complication": "Kernictère (encéphalopathie bilirubinique) : Urgence neurologique grave."
+        }
+    },
+    {
+        "id": "pp5",
+        "title": "Allaitement maternel",
+        "category": "perinatalite-pediatrie",
+        "preview": "Standard d'or pour la nutrition du nourrisson pendant les 6 premiers mois.",
+        "details": {
+            "bienfaits": [
+                "Bébé : Anticorps, digestibilité optimale, réduction des infections.",
+                "Mère : Involution utérine plus rapide, réduction du risque de certains cancers."
+            ],
+            "signes_de_faim": [
+                "Mouvements de succion, mains à la bouche, agitation.",
+                "Les pleurs sont un signe TARDIF de faim."
+            ],
+            "evaluation_efficacite": [
+                "Déglutition audible.",
+                "Nouveau-né repu et détendu après la tétée.",
+                "Nombre de couches mouillées (6+ par jour après J5) et selles jaunes d'or."
+            ],
+            "difficultes_communes": [
+                "Crevasses (souvent dues à une mauvaise position).",
+                "Engorgement (soulager par la chaleur et l'expression).",
+                "Mastite (fièvre, zone rouge/chaude, nécessite souvent des antibiotiques)."
+            ]
+        }
+    }
+]

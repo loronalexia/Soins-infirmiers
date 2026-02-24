@@ -332,10 +332,10 @@ html {
     color: #227093;
 }
 
-/* Sage / Vert pour Soins de plaies */
-.bg-wound {
-    background-color: #E8F5E9;
-    color: #2E7D32;
+/* Rose / Rouge pour Périnatalité & Pédiatrie (Soft Baby Blue/Blue instead as requested) */
+.bg-peri {
+    background-color: #E3F2FD;
+    color: #1976D2;
 }
 
 .card-preview {
@@ -809,9 +809,215 @@ html {
 }
 
 .sources-link:hover {
-    opacity: 1;
+    text-decoration: underline;
+}
+
+/* Gazométrie / Calculator Styles */
+.calculator-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: white;
+    padding: 2.5rem;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    animation: fadeIn 0.6s ease-out;
+}
+
+.calculator-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.calculator-header h2 {
     color: var(--secondary-color);
-    text-decoration-style: solid;
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.calculator-header p {
+    color: var(--text-muted);
+}
+
+.calculator-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.form-group label {
+    font-weight: 700;
+    color: var(--secondary-color);
+    font-size: 0.95rem;
+}
+
+.input-with-unit {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.input-with-unit input {
+    width: 100%;
+    padding: 0.8rem 1rem;
+    border: 2px solid #FFF0F5;
+    border-radius: 12px;
+    font-size: 1.1rem;
+    font-family: inherit;
+    transition: var(--transition);
+}
+
+.input-with-unit input:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 4px rgba(214, 93, 122, 0.1);
+}
+
+.input-unit {
+    position: absolute;
+    right: 1rem;
+    color: var(--text-muted);
+    font-weight: 600;
+    font-size: 0.9rem;
+    pointer-events: none;
+}
+
+.interpret-btn {
+    margin-top: 1rem;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 1rem;
+    border-radius: 12px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: var(--transition);
+    box-shadow: 0 4px 6px rgba(214, 93, 122, 0.2);
+}
+
+.interpret-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(214, 93, 122, 0.3);
+    filter: brightness(1.05);
+}
+
+/* Results Display */
+.results-area {
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 2px dashed #FFF0F5;
+}
+
+.result-card {
+    background: #FFF5F7;
+    border-radius: 15px;
+    padding: 1.5rem;
+    border-left: 5px solid var(--primary-color);
+}
+
+.result-main {
+    font-size: 1.4rem;
+    font-weight: 800;
+    color: var(--secondary-color);
+    margin-bottom: 0.5rem;
+}
+
+.result-type {
+    display: inline-block;
+    padding: 0.3rem 0.8rem;
+    border-radius: 50px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.type-acidosis {
+    background: #fee2e2;
+    color: #991b1b;
+}
+
+.type-alkalosis {
+    background: #dcfce7;
+    color: #166534;
+}
+
+.type-normal {
+    background: #e0f2fe;
+    color: #075985;
+}
+
+.result-explanation {
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+.results-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.results-grid.four-items {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+@media (min-width: 600px) {
+    .results-grid.four-items {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.result-item {
+    text-align: center;
+    background: white;
+    padding: 1rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
+}
+
+.result-label {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+}
+
+.result-value {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--secondary-color);
+}
+
+.result-status {
+    font-size: 0.75rem;
+    font-weight: 700;
+    margin-top: 0.25rem;
+}
+
+.status-high {
+    color: #dc2626;
+}
+
+.status-low {
+    color: #2563eb;
+}
+
+.status-normal {
+    color: #166534;
+}
+
+@media (max-width: 480px) {
+    .results-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 /* Landing Page State */

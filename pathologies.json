@@ -3138,5 +3138,157 @@
                 "Transmission néonatale (grave)"
             ]
         }
+    },
+    {
+        "id": "p-acid-resp",
+        "title": "Acidose Respiratoire",
+        "category": "pathologies",
+        "systeme": "Respiratoire",
+        "preview": "Accumulation de CO2 (hypercapnie) entraînant une baisse du pH sanguin (\u003c 7,35).",
+        "details": {
+            "definition": "Baisse du pH sanguin due à une rétention de dioxyde de carbone (PaCO2 \u003e 45 mmHg) causée par une hypoventilation.",
+            "manifestations_cliniques": [
+                "Céphalées",
+                "Somnolence / Confusion (narcose au CO2)",
+                "Dyspnée",
+                "Tachycardie / Arythmies",
+                "Peau chaude et rouge (vasodilatation)"
+            ],
+            "examens_diagnostiques": [
+                "Gazométrie artérielle (pH \u003c 7,35, PaCO2 \u003e 45)",
+                "Radiographie pulmonaire",
+                "Fonction respiratoire"
+            ],
+            "traitements": [
+                "Améliorer la ventilation (VNI, Intubation)",
+                "Traiter la cause (Bronchodilatateurs, Antidotes)",
+                "Oxygénothérapie prudente (si MPOC)"
+            ],
+            "surveillance": [
+                "Fréquence et amplitude respiratoire",
+                "État de conscience",
+                "Saturation O2",
+                "Paramètres du ventilateur"
+            ],
+            "complications": [
+                "Coma",
+                "Arrêt respiratoire",
+                "Insuffisance cardiaque droite (si chronique)"
+            ]
+        }
+    },
+    {
+        "id": "p-alk-resp",
+        "title": "Alcalose Respiratoire",
+        "category": "pathologies",
+        "systeme": "Respiratoire",
+        "preview": "Perte excessive de CO2 (hypocapnie) entraînant une hausse du pH sanguin (\u003e 7,45).",
+        "details": {
+            "definition": "Hausse du pH sanguin due à une élimination excessive de CO2 (PaCO2 \u003c 35 mmHg) causée par une hyperventilation.",
+            "manifestations_cliniques": [
+                "Étourdissements / Vertiges",
+                "Paresthésies (picotements doigts/bouche)",
+                "Crampes musculaires / Tétanie",
+                "Confusion",
+                "Tachycardie"
+            ],
+            "examens_diagnostiques": [
+                "Gazométrie artérielle (pH \u003e 7,45, PaCO2 \u003c 35)",
+                "Ionogramme (rechercher hypocalcémie associée)"
+            ],
+            "traitements": [
+                "Traiter la cause (Anxiété, Douleur, Fièvre)",
+                "Respiration lente et profonde",
+                "Réinspiration de CO2 (sac en papier - discuté)"
+            ],
+            "surveillance": [
+                "Signes de tétanie (Trousseau / Chvostek)",
+                "Fréquence respiratoire",
+                "Équilibre électrolytique",
+                "Niveau d'anxiété"
+            ],
+            "complications": [
+                "Convulsions",
+                "Arythmies",
+                "Hypocalcémie"
+            ]
+        }
+    },
+    {
+        "id": "p-acid-meta",
+        "title": "Acidose Métabolique",
+        "category": "pathologies",
+        "systeme": "Multisystémique",
+        "preview": "Accumulation d'acides ou perte de bicarbonates entraînant une baisse du pH sanguin (\u003c 7,35).",
+        "details": {
+            "definition": "Baisse du pH sanguin due à un excès d'acides métaboliques ou une perte de HCO3- (Bicarbonates \u003c 22 mmol/L).",
+            "manifestations_cliniques": [
+                "Respiration de Kussmaul (profonde et rapide)",
+                "Nausées / Vomissements",
+                "Confusion / Léthargie",
+                "Hypotension",
+                "Douleurs abdominales"
+            ],
+            "examens_diagnostiques": [
+                "Gazométrie artérielle (pH \u003c 7,35, HCO3- \u003c 22)",
+                "Trou anionique",
+                "Glycémie / Lactates / Créatinine",
+                "Électrolytes (Potassium)"
+            ],
+            "traitements": [
+                "Traiter la cause (Insuline, Réhydratation, Dialyse)",
+                "Bicarbonates IV (cas sévères)",
+                "Correction du Potassium"
+            ],
+            "surveillance": [
+                "Rythme respiratoire (compensation)",
+                "Équilibre hydrique (In/Out)",
+                "Tension artérielle",
+                "Dosage potassium"
+            ],
+            "complications": [
+                "Choc",
+                "Arythmies létales (Hyperkaliémie)",
+                "Coma"
+            ]
+        }
+    },
+    {
+        "id": "p-alk-meta",
+        "title": "Alcalose Métabolique",
+        "category": "pathologies",
+        "systeme": "Multisystémique",
+        "preview": "Perte d'acides ou excès de bicarbonates entraînant une hausse du pH sanguin (\u003e 7,45).",
+        "details": {
+            "definition": "Hausse du pH sanguin due à une perte excessive d'acides ou un gain de HCO3- (Bicarbonates \u003e 26 mmol/L).",
+            "manifestations_cliniques": [
+                "Hypoventilation (compensation)",
+                "Confusion / Irritabilité",
+                "Crampes / Tremblements",
+                "Tachycardie",
+                "Arythmies"
+            ],
+            "examens_diagnostiques": [
+                "Gazométrie artérielle (pH \u003e 7,45, HCO3- \u003e 26)",
+                "Ionogramme (Potassium, Chlore)",
+                "pH urinaire"
+            ],
+            "traitements": [
+                "Traiter la cause (Arrêt diurétiques, Antiémétiques)",
+                "Chlorure de sodium IV (NaCl)",
+                "Suppléments de Potassium"
+            ],
+            "surveillance": [
+                "Fréquence respiratoire (risque hypoventilation)",
+                "Équilibre électrolytique (K+, Cl-)",
+                "Signes de faiblesse musculaire",
+                "Réflexes ostéotendineux"
+            ],
+            "complications": [
+                "Insuffisance respiratoire (si trop compensée)",
+                "Arythmies (Hypokaliémie)",
+                "Convulsions"
+            ]
+        }
     }
 ]
