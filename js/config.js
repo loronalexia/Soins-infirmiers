@@ -1,4 +1,4 @@
-export const categories = ['pathologies', 'medicaments', 'examens-paracliniques', 'examens-cliniques', 'soins-de-plaies', 'interventions', 'gazometrie', 'perinatalite-pediatrie'];
+export const categories = ['pathologies', 'medicaments', 'examens-paracliniques', 'examens-cliniques', 'soins-de-plaies', 'interventions', 'perinatalite-pediatrie'];
 
 export const keyOrder = [
     'definition', 'indications', 'mode_action', 'pharmacocinetique', 'pharmacodynamie',

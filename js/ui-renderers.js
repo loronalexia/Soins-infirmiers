@@ -1,7 +1,6 @@
 import { studyData } from './data-service.js';
 import { openModal } from './modal-controller.js';
 import { formatCategoryName, formatKey } from './utils.js';
-import { navigateToMedicationClass, navigateToSystem } from './navigation.js';
 
 const contentArea = document.getElementById('content-area');
 
@@ -76,6 +75,18 @@ export function createCard(item, labelClass, itemCat) {
 
 export function renderMedicationClasses(data) {
     contentArea.innerHTML = '';
+
+    // Breadcrumb / intro
+    const intro = document.createElement('div');
+    intro.className = 'med-intro';
+    intro.innerHTML = `
+        <div class="med-intro-header">
+            <h2>💊 Médicaments</h2>
+            <p>${data.length} médicaments en ${[...new Set(data.map(d => d.details.classe))].length} classes cliniques</p>
+        </div>
+    `;
+    contentArea.appendChild(intro);
+
     const grid = document.createElement('div');
     grid.className = 'grid-container';
 
@@ -83,15 +94,21 @@ export function renderMedicationClasses(data) {
     const classes = [...new Set(data.map(item => item.details.classe))].sort();
 
     classes.forEach(className => {
+        const medsInClass = data.filter(m => m.details.classe === className);
+        const subClasses = [...new Set(medsInClass.map(m => m.details.sous_classe).filter(Boolean))].sort();
+        const medCount = medsInClass.length;
+
         const classCard = document.createElement('div');
-        classCard.className = 'card class-card';
+        classCard.className = 'card class-card med-class-card';
         classCard.innerHTML = `
-            <span class="card-category-label bg-medicament">Classe Clinique</span>
+            <div class="med-class-badge">
+                <span class="card-category-label bg-medicament">Classe Clinique</span>
+                <span class="med-count-badge">${medCount} molécule${medCount > 1 ? 's' : ''}</span>
+            </div>
             <h3 class="card-title">${className}</h3>
-            <p class="card-preview">Explorer les molécules de cette classe.</p>
             <div class="card-cta">Voir les médicaments →</div>
         `;
-        classCard.onclick = () => navigateToMedicationClass(className);
+        classCard.onclick = () => window.navigateToMedicationClass(className);
         grid.appendChild(classCard);
     });
 
@@ -99,35 +116,54 @@ export function renderMedicationClasses(data) {
 }
 
 export function renderMedicationsByClass(className, allData) {
+    const meds = allData.filter(m => m.details.classe === className);
+    const subClasses = [...new Set(meds.map(m => m.details.sous_classe))].sort();
+
     contentArea.innerHTML = `
         <div class="class-view-header">
             <button class="back-button" id="back-to-classes">← Toutes les classes</button>
-            <h2>${className}</h2>
+            <div>
+                <h2>${className}</h2>
+                <p style="color: var(--text-muted); font-size:0.9rem; margin-top:0.25rem;">
+                    ${meds.length} médicament${meds.length > 1 ? 's' : ''}
+                    ${subClasses.filter(Boolean).length > 1 ? ' · ' + subClasses.filter(Boolean).length + ' sous-classes' : ''}
+                </p>
+            </div>
         </div>
     `;
 
-    const grid = document.createElement('div');
-    grid.className = 'grid-container';
-
-    const meds = allData.filter(m => m.details.classe === className);
-
-    // Grouping by sub-class for better UI inside the class
-    const subClasses = [...new Set(meds.map(m => m.details.sous_classe))].sort();
+    const container = document.createElement('div');
+    container.className = 'med-subclass-container';
 
     subClasses.forEach(sub => {
+        const section = document.createElement('div');
+        section.className = 'med-subclass-section';
+
         if (sub) {
-            const separator = document.createElement('div');
-            separator.className = 'sub-class-header';
-            separator.innerText = sub;
-            grid.appendChild(separator);
+            const subHeader = document.createElement('div');
+            subHeader.className = 'med-subclass-header';
+            subHeader.innerHTML = `
+                <div class="med-subclass-title">
+                    <span class="med-subclass-dot"></span>
+                    ${sub}
+                </div>
+                <span class="med-subclass-count">${meds.filter(m => m.details.sous_classe === sub).length} molécule${meds.filter(m => m.details.sous_classe === sub).length > 1 ? 's' : ''}</span>
+            `;
+            section.appendChild(subHeader);
         }
 
+        const subGrid = document.createElement('div');
+        subGrid.className = 'grid-container med-subclass-grid';
+
         meds.filter(m => m.details.sous_classe === sub).forEach(item => {
-            grid.appendChild(createCard(item, 'bg-medicament', 'Médicament'));
+            subGrid.appendChild(createCard(item, 'bg-medicament', 'Médicament'));
         });
+
+        section.appendChild(subGrid);
+        container.appendChild(section);
     });
 
-    contentArea.appendChild(grid);
+    contentArea.appendChild(container);
     document.getElementById('back-to-classes').onclick = () => renderMedicationClasses(allData);
 }
 
@@ -147,7 +183,7 @@ export function renderPathologySystems(data) {
             <p class="card-preview">Pathologies du système ${system.toLowerCase()}.</p>
             <div class="card-cta">Explorer →</div>
         `;
-        systemCard.onclick = () => navigateToSystem(system, 'pathologies');
+        systemCard.onclick = () => window.navigateToSystem(system, 'pathologies');
         grid.appendChild(systemCard);
     });
 

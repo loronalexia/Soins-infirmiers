@@ -1,6 +1,5 @@
 import { linkMapping } from './config.js';
 import { studyData } from './data-service.js';
-import { openModal } from './modal-controller.js';
 
 export function formatSmartLinks(text) {
     if (typeof text !== 'string') return text;
@@ -50,7 +49,7 @@ export function handleSmartLink(targetName) {
             );
 
             if (found) {
-                openModal(found);
+                window.openModal(found);
                 return;
             }
         }

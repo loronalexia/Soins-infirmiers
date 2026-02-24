@@ -15,6 +15,11 @@ export function loadCategory(category) {
         return;
     }
 
+    if (category === 'gazometrie') {
+        renderContent(category, null);
+        return;
+    }
+
     const data = studyData[category];
     if (data) {
         renderContent(category, data);
