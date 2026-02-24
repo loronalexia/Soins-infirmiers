@@ -117,7 +117,8 @@ export function renderMedicationClasses(data) {
 
 export function renderMedicationsByClass(className, allData) {
     const meds = allData.filter(m => m.details.classe === className);
-    const subClasses = [...new Set(meds.map(m => m.details.sous_classe))].sort();
+    const subClasses = [...new Set(meds.map(m => m.details.sous_classe).filter(Boolean))].sort();
+    const noSubClass = meds.filter(m => !m.details.sous_classe);
 
     contentArea.innerHTML = `
         <div class="class-view-header">
@@ -126,46 +127,76 @@ export function renderMedicationsByClass(className, allData) {
                 <h2>${className}</h2>
                 <p style="color: var(--text-muted); font-size:0.9rem; margin-top:0.25rem;">
                     ${meds.length} médicament${meds.length > 1 ? 's' : ''}
-                    ${subClasses.filter(Boolean).length > 1 ? ' · ' + subClasses.filter(Boolean).length + ' sous-classes' : ''}
+                    ${subClasses.length > 0 ? ' · ' + subClasses.length + ' sous-classes' : ''}
                 </p>
             </div>
         </div>
     `;
 
     const container = document.createElement('div');
-    container.className = 'med-subclass-container';
+    container.className = 'med-accordion';
 
-    subClasses.forEach(sub => {
-        const section = document.createElement('div');
-        section.className = 'med-subclass-section';
+    // Meds with no subclass shown directly first
+    if (noSubClass.length > 0) {
+        const grid = document.createElement('div');
+        grid.className = 'grid-container';
+        noSubClass.forEach(item => grid.appendChild(createCard(item, 'bg-medicament', 'Médicament')));
+        container.appendChild(grid);
+    }
 
-        if (sub) {
-            const subHeader = document.createElement('div');
-            subHeader.className = 'med-subclass-header';
-            subHeader.innerHTML = `
-                <div class="med-subclass-title">
-                    <span class="med-subclass-dot"></span>
-                    ${sub}
-                </div>
-                <span class="med-subclass-count">${meds.filter(m => m.details.sous_classe === sub).length} molécule${meds.filter(m => m.details.sous_classe === sub).length > 1 ? 's' : ''}</span>
-            `;
-            section.appendChild(subHeader);
-        }
+    // Each subclass = one accordion item
+    subClasses.forEach((sub, index) => {
+        const medsInSub = meds.filter(m => m.details.sous_classe === sub);
+        const accordionId = `acc-${index}`;
 
-        const subGrid = document.createElement('div');
-        subGrid.className = 'grid-container med-subclass-grid';
+        const item = document.createElement('div');
+        item.className = 'acc-item';
 
-        meds.filter(m => m.details.sous_classe === sub).forEach(item => {
-            subGrid.appendChild(createCard(item, 'bg-medicament', 'Médicament'));
-        });
+        // Header (clickable)
+        const header = document.createElement('button');
+        header.className = 'acc-header';
+        header.setAttribute('aria-expanded', 'false');
+        header.setAttribute('aria-controls', accordionId);
+        header.innerHTML = `
+            <div class="acc-title">
+                <span class="med-subclass-dot"></span>
+                ${sub}
+            </div>
+            <div style="display:flex; align-items:center; gap:0.75rem;">
+                <span class="med-count-badge">${medsInSub.length} molécule${medsInSub.length > 1 ? 's' : ''}</span>
+                <span class="acc-chevron">▾</span>
+            </div>
+        `;
 
-        section.appendChild(subGrid);
-        container.appendChild(section);
+        // Body (hidden by default)
+        const body = document.createElement('div');
+        body.className = 'acc-body';
+        body.id = accordionId;
+
+        const grid = document.createElement('div');
+        grid.className = 'grid-container';
+        grid.style.paddingTop = '1rem';
+        medsInSub.forEach(item2 => grid.appendChild(createCard(item2, 'bg-medicament', 'Médicament')));
+        body.appendChild(grid);
+
+        // Toggle logic
+        header.onclick = () => {
+            const isOpen = header.getAttribute('aria-expanded') === 'true';
+            header.setAttribute('aria-expanded', String(!isOpen));
+            body.classList.toggle('acc-open', !isOpen);
+            header.classList.toggle('acc-header--open', !isOpen);
+        };
+
+        item.appendChild(header);
+        item.appendChild(body);
+        container.appendChild(item);
     });
 
     contentArea.appendChild(container);
     document.getElementById('back-to-classes').onclick = () => renderMedicationClasses(allData);
 }
+
+
 
 export function renderPathologySystems(data) {
     contentArea.innerHTML = '';
