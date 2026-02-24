@@ -50,7 +50,7 @@
             ],
             "illustration_coeur": {
                 "type": "image",
-                "url": "./inscardiaque.jpg",
+                "url": "assets/inscardiaque.jpg",
                 "title": "Schéma de l'Insuffisance Cardiaque"
             },
             "surveillance": [
@@ -145,7 +145,7 @@
         },
         "images": [
             {
-                "url": "./pneumoniaxray.webp",
+                "url": "assets/pneumoniaxray.webp",
                 "title": "Pneumonie"
             }
         ]

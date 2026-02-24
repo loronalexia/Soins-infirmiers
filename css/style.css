@@ -479,6 +479,22 @@ html {
     gap: 8px;
 }
 
+.nursing-subsection {
+    margin-top: 1.5rem;
+    padding-left: 1.25rem;
+    border-left: 3px solid var(--accent-color);
+    margin-bottom: 1.5rem;
+}
+
+.nursing-subsection h4 {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--secondary-color);
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+}
+
 .detail-section p,
 .detail-section ul {
     color: var(--text-color);
