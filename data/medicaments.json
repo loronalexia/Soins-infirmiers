@@ -1298,5 +1298,520 @@
                 "verification_effet_therapeutique": "Atténuation de la douleur sans dépression respiratoire excessive."
             }
         }
+    },
+    {
+        "id": "c7",
+        "title": "Analgésiques opioïdes",
+        "category": "medicaments",
+        "is_class_sheet": true,
+        "preview": "Opioïdes agonistes et agonistes-antagonistes utilisés pour le soulagement de la douleur modérée à grave et comme adjuvants à l'anesthésie.",
+        "details": {
+            "classe": "Analgésiques opioïdes",
+            "molecules_list": "buprénorphine, buprénorphine-naloxone, codéine, fentanyl, hydrocodone, hydromorphone, mépéridine, méthadone, morphine, oxycodone, oxycodone-naloxone, sufentanil, tapentadol, tramadol, butorphanol, nalbuphine, pentazocine, tramadol-acétaminophene",
+            "indications": "Soulagement de la douleur modérée ou grave. Fentanyl et sufentanil : Médicaments d'appoint lors d'une anesthésie générale.",
+            "mode_action": "Liaison aux récepteurs opioïdes du SNC, modifiant la perception et la réaction à la douleur, avec une dépression généralisée du SNC.",
+            "contre_indications": "Hypersensibilité. Occlusion GI ou maladie entravant le transit (iléus). Abdomen aigu (appendicite, pancréatite). Douleurs légères. Asthme grave ou MPOC. Dépression respiratoire aiguë. Alcoolisme aigu. Troubles convulsifs. Pression intracrânienne accrue.",
+            "precautions": "Usage concomitant de dépresseurs du SNC/Alcool. Maladies pulmonaires (risque de dépression respiratoire). Hypotension/Hypovolémie. Insuffisance rénale ou hépatique grave (réduire dose). Antécédents de toxicomanie. Hyperplasie de la prostate.",
+            "interactions": "IMAO (usage dans les 14 jours). Dépression additive avec alcool, antihistaminiques, benzodiazépines et autres dépresseurs SNC. Risque de syndrome sérotoninergique avec ISRS/tryptophanes. Opioïdes agonistes-antagonistes peuvent déclencher un sevrage si dépendance physique.",
+            "soins_infirmiers": {
+                "evaluation": [
+                    "Évaluer le type, le siège et l'intensité de la douleur (avant et au pic).",
+                    "Mesurer TA, pouls et FR avant le traitement et à intervalles réguliers.",
+                    "Si FR < 10/min : évaluer le degré de sédation et stimuler physiquement.",
+                    "Surveiller les habitudes d'élimination fécale (prévention constipation/laxatifs).",
+                    "Surveiller le bilan I/E (déceler rétention urinaire).",
+                    "Évaluer le risque de dépendance, d'abus ou de mésusage."
+                ],
+                "constats": [
+                    "Douleur aiguë ; Trouble de la perception visuelle/auditive.",
+                    "Risque d'accident (sédation/étourdissements).",
+                    "Connaissances insuffisantes sur le traitement médicamenteux."
+                ],
+                "interventions": [
+                    "Ne pas confondre Morphine, Hydromorphone et Mépéridine (erreurs fatales).",
+                    "Administrer avant que la douleur ne devienne intense.",
+                    "Peut être associé aux non-opioïdes pour effet additif.",
+                    "Antidote : Naloxone (Narcan) en cas de dépression respiratoire grave.",
+                    "Interrompre graduellement après usage prolongé (prévenir sevrage)."
+                ],
+                "enseignement": [
+                    "Expliquer l'administration sur demande. Respecter rigoureusement la posologie.",
+                    "Prudence pour la conduite et les déplacements (somnolence/étourdissements).",
+                    "Changer de position lentement (hypotension orthostatique).",
+                    "Éviter alcool et autres dépresseurs du SNC.",
+                    "Prévenir la constipation (fibres, liquides). Exercices respiratoires (toux/atélectasie).",
+                    "Mise au rebut sécuritaire via pharmacie (ne pas jeter aux ordures)."
+                ],
+                "verification": "Diminution de l'intensité de la douleur sans modification importante de l'état de conscience ou respiratoire."
+            }
+        }
+    },
+    {
+        "id": "c7_m1",
+        "title": "Buprénorphine",
+        "category": "medicaments",
+        "details": {
+            "classe": "Analgésiques opioïdes",
+            "sous_classe": "Analgésique opioïde (agoniste partiel-antagoniste)",
+            "indications": "Traitement des douleurs persistantes d'intensité modérée chez les adultes nécessitant une analgésie opioïde continue de longue durée.",
+            "mode_action": "Liaison aux récepteurs opioïdes du SNC (agoniste partiel μ / antagoniste κ). Dépression du SNC. Effet : Diminution de l'intensité de la douleur chronique.",
+            "pharmacocinetique": "Absorption : 15% (transdermique) ; libération continue (débit constant) pendant 7 jours. Distribution : Traverse placenta/lait ; large volume de distribution. Liaison : 96%. Métabolisme : Hépatique (CYP3A4) ; métabolites actifs. Excrétion : Rénale (30%), fèces (70%). Demi-vie : 10-24h (après retrait).",
+            "pharmacodynamie": "Timbre transdermique : Début 17h (analgésie associée) ; concentrations stationnaires en 3 jours ; Durée 7 jours.",
+            "contre_indications": "Hypersensibilité à la buprénorphine ou adhésifs. Douleur aiguë ou préopératoire. Asthme grave ou MPOC. Dépression respiratoire marquée. Iléus. Abdomen aigu. Alcoolisme grave. Traumatisme crânien / Hypertension intracrânienne. IMAO (14j). Myasthénie grave. Insuffisance hépatique grave. Grossesse et allaitement.",
+            "precautions_mises_en_garde": "Patients < 40 kg. Inhibiteurs du CYP3A4. Risque de sevrage si dépendance physique à d'autres opioïdes. Choc circulatoire. Sources de chaleur externe (augmente la libération). Gériatrie (sensibilité accrue).",
+            "reactions_indesirables_effets_secondaires": "SNC : confusion, somnolence, vertiges, céphalées, hallucinations. Resp : apnée, dépression respiratoire. CV : hypotension. GI : constipation, xérostomie, nausées. GU : rétention urinaire. Tég : sueurs, prurit, érythème. Local : réaction au site du timbre. Divers : dépendance, tolérance.",
+            "interaction": "IMAO (contre-indiqué). Dépresseurs du SNC/Alcool : effet additif. Inhibiteurs CYP3A4 (Kétoconazole, Clarithromycine) : augmente les taux. Inducteurs CYP3A4 (Rifampine, Millepertuis) : diminue l'effet. Jus de pamplemousse : augmente les taux. Warfarine : augmente l'effet.",
+            "voies_administration_posologie": "Transdermique (adultes) : 1 timbre de 5-20 mcg/h, 1 fois par semaine (7 jours). Dose initiale : 5 mcg/h (naïf) ou 5-10 mcg/h (si switch). Ajustement lent (attendre 3-7 jours). Dose max : 20 mcg/h.",
+            "presentation": "BuTrans. Timbre transdermique (5, 10, 15, 20 mcg/h).",
+            "soins_infirmiers": {
+                "evaluation_situation": "Évaluer douleur (avant, 24h après, puis régulier). Surveiller SV (FR, pouls, TA) et état de conscience. Surveiller le patient 24h après retrait si effets indésirables graves. Dépister constipation et rétention urinaire. Évaluer risque de dépendance/mésusage.",
+                "constats_evaluation": "Douleur ; Risque d'accident ; Connaissances insuffisantes.",
+                "interventions_infirmieres": "Alerte : Surdose accidentelle. NE PAS MÂCHER/AVALER (mortel). Utiliser analgésiques de secours (AINS/acétaminophène) ; éviter fentanyl. Appliquer sur peau saine, plane et non irradiée (torse, flanc, bras). Nettoyer à l'eau seule. Presser 30 sec. Changer de site (attendre 3 sem avant réutilisation).",
+                "enseignement_patient_proches": "Respecter rigoureusement la posologie. Ne pas arrêter brusquement (sevrage). Mise au rebut sécuritaire : plier, rapporter en pharmacie (mortel pour enfants/animaux). Éviter sources de chaleur directes. Prudence conduite (somnolence). Signaler irritations cutanées.",
+                "verification_effet_therapeutique": "Diminution de la douleur sans modification importante de l'état de conscience, respiratoire ou de la TA."
+            }
+        }
+    },
+    {
+        "id": "c7_m2",
+        "title": "Buprénorphine-naloxone",
+        "category": "medicaments",
+        "details": {
+            "classe": "Analgésiques opioïdes",
+            "sous_classe": "Agoniste-antagoniste opioïde - antagoniste opioïde",
+            "indications": "Traitement substitutif de la dépendance aux opioïdes dans le cadre d'un programme global (médical, social, psychologique). La naloxone décourage l'usage inapproprié par voie IV/intranasale.",
+            "mode_action": "Buprénorphine : agoniste partiel μ / antagoniste κ. Naloxone : antagoniste μ (décourage l'injection car provoque un sevrage brutal par voie IV). Effet : Suppression des symptômes de sevrage.",
+            "pharmacocinetique": "Absorption : Buprénorphine (15%), Naloxone (3%) sublingual. Distribution : Traverse placenta/lait. Liaison : 96%. Métabolisme/Excrétion : Hépatique (CYP3A4, UGT) ; rénale (30%) et fécale (70%). Demi-vie : 24-42 h.",
+            "pharmacodynamie": "SL : Début inconnu ; Pic 100 min ; Durée 24 h.",
+            "contre_indications": "Hypersensibilité. Jamais pris d'opioïdes auparavant (non recommandé). Insuffisance respiratoire. Alcoolisme grave ou delirium tremens. Insuffisance hépatique aiguë.",
+            "precautions_mises_en_garde": "Sevrage induit si administré trop tôt après usage d'agonistes. Benzodiazépines (risque mortel). MPOC/Asthme. Insuffisance hépatique/rénale grave. Allaitement (surveiller somnolence du nourrisson). Enfants < 18 ans.",
+            "reactions_indesirables_effets_secondaires": "SNC : symptômes de sevrage, somnolence, insomnie, convulsions, agitation. Resp : apnée, dépression respiratoire. CV : hypotension orthostatique, œdème. GI : toxicité hépatique aiguë (si IV), constipation, nausées. Loc : arthralgies, myalgies. Divers : dépendance.",
+            "interaction": "IMAO (à éviter). Benzodiazépines (risque de décès). Naltrexone (sevrage intense). Inhibiteurs CYP3A4 (Kétoconazole, etc.) : augmente les taux. Inducteurs CYP3A4 (Rifampine, Millepertuis) : diminue l'effet. Jus de pamplemousse : augmente les taux. Warfarine : augmente l'effet.",
+            "voies_administration_posologie": "SL (adultes) : Induction Jour 1 : 8-12 mg (commencer par 4 mg). Stabilisation : Max 24 mg/jour (1 fois/jour, 1 jour sur 2, ou 3x/semaine). Dose sublinguale maintenue jusqu'à dissolution complète (2-10 min).",
+            "presentation": "Suboxone. Comprimés sublinguaux (2/0,5 mg ; 8/2 mg).",
+            "soins_infirmiers": {
+                "evaluation_situation": "Dépister signes de sevrage (COWS ≥ 13). Évaluer le type d'opioïde antérieur et délai de prise. Surveiller SV, FR et état de conscience. Suivre fonction hépatique (ALT/AST, amylase/lipase) avant et pendant le traitement.",
+                "constats_evaluation": "Risque d'accident ; Connaissances insuffisantes ; Non-observance possible.",
+                "interventions_infirmieres": "Supervision quotidienne de l'administration sublinguale jusqu'à stabilité. Ne pas manger/boire avant dissolution complète (2-10 min). Sevrage graduel conseillé en fin de traitement. Antidote : Naloxone (peut être inefficace ou nécessiter de fortes doses).",
+                "enseignement_patient_proches": "Respecter rigoureusement la posologie (ne pas donner à autrui). Risque MORTEL si associé aux benzodiazépines ou alcool. Allaitement : surveiller somnolence/respiration du nourrisson. Mise au rebut sécuritaire obligatoire (pharmacie). Signaler : ictère, fatigue extrême, urines foncées.",
+                "verification_effet_therapeutique": "Prévention des symptômes de sevrage lors des cures de désintoxication."
+            }
+        }
+    },
+    {
+        "id": "c7_m3",
+        "title": "Codéine",
+        "category": "medicaments",
+        "details": {
+            "classe": "Analgésiques opioïdes",
+            "sous_classe": "Antitussif / Analgésique opioïde (agoniste)",
+            "indications": "Douleur légère ou modérée. Toux réfractaire. Codeine Contin : douleur durable. Usage non approuvé : diarrhée.",
+            "mode_action": "Liaison aux récepteurs opioïdes du SNC. Modification de la perception de la douleur, réduction du réflexe de la toux et diminution de la motilité GI.",
+            "pharmacocinetique": "Absorption : 50% (PO), 100% (IM). Distribution : Tout l'organisme (placenta/lait). Métabolisme : Hépatique (CYP2D6) ; 10% transformé en morphine. Note : Importance du phénotype (métaboliseurs lents vs ultrarapides). Excrétion : Rénale (90%). Demi-vie : 2,5-4h.",
+            "pharmacodynamie": "PO : Début 30-45 min, Pic 1-2h, Durée 4h. PO-LC (Contin) : Début 1h, Durée 12h. IM/SC : Début 10-30 min, Durée 4h.",
+            "contre_indications": "Hypersensibilité. Occlusion GI/Iléus. Abdomen aigu. Asthme grave / MPOC. Dépression respiratoire aiguë. IMAO (14j). Allaitement et enfants < 12 ans (risques respiratoires graves).",
+            "precautions_mises_en_garde": "Insuffisance rénale (réduire dose) ou hépatique. Choc circulatoire. Maladies inflammatoires de l'intestin. Épilepsie. Antécédents de toxicomanie. Gériatrie (sédation/constipation). Métabolisme ultrarapide (risque mortel chez le nourrisson allaité).",
+            "reactions_indesirables_effets_secondaires": "SNC : sédation, confusion, rêves bizarres. ORLO : myosis, vision trouble. Resp : dépression respiratoire. CV : hypotension, bradycardie. GI : constipation (fréquente), nausées. End : baisse hormones sexuelles (long cours). Tég : rash, sueurs. Divers : dépendance.",
+            "interaction": "IMAO (contre-indiqué). Dépresseurs SNC/Alcool : effet additif. Inhibiteurs CYP2D6 (Fluoxétine, Paroxétine) : diminue l'effet. Opioïdes agonistes-antagonistes : diminue l'analgésie. Sérotoninergiques (ISRS/Tramadol) : risque de syndrome sérotoninergique.",
+            "voies_administration_posologie": "PO (adultes) : Analgésie 15-60 mg q 3-6h prn ; Toux 10-20 mg q 4-6h (max 120 mg/j). Codeine Contin : 50-300 mg q 12h. IM/SC : 15-60 mg q 4-6h. Insuffisance rénale : ClCr 10-50 (75% dose), ClCr < 10 (50% dose).",
+            "presentation": "Codéine Contin, PMS-Codéine. Comprimés (15, 30 mg), LC (50, 100, 150, 200 mg), Solution orale et injectable.",
+            "soins_infirmiers": {
+                "evaluation_situation": "Évaluer douleur (type, siège, intensité) avant et 30-60 min après (pic). Pour la toux : noter fréquence/nature et ausculter. Surveiller SV (FR, pouls, TA) et état de conscience. Gériatrie/Pédiatrie : surveillance accrue (sensibilité). Dépister constipation (prévention laxative).",
+                "constats_evaluation": "Douleur aiguë ; Risque d'accident ; Trouble de la perception visuelle/auditive.",
+                "interventions_infirmieres": "Alerte : Erreurs de calcul fréquentes chez l'enfant. Administrer avec aliments/lait (irritation GI). Codeine Contin : AVALER TEL QUEL (sauf 50mg fractionnable) ; ne pas associer au fentanyl. Interrompre graduellement après usage prolongé.",
+                "enseignement_patient_proches": "Respecter la posologie (ne pas doubler). Prudence conduite (somnolence). Allaitement : savoir reconnaître signes de toxicité du nouveau-né (somnolence, difficulté à téter/respirer). Changer de position lentement. Exercices respiratoires (atélectasie). Mise au rebut sécuritaire obligatoire (pharmacie).",
+                "verification_effet_therapeutique": "Atténuation de la douleur, suppression de la toux ou maîtrise de la diarrhée sans dépression respiratoire excessive."
+            }
+        }
+    },
+    {
+        "id": "c7_m4",
+        "title": "Fentanyl (voie buccale/transmuqueuse)",
+        "category": "medicaments",
+        "details": {
+            "classe": "Analgésiques opioïdes",
+            "sous_classe": "Analgésique opioïde (agoniste)",
+            "indications": "Accès douloureux paroxystiques chez les patients atteints de cancer tolérant déjà une analgésie opioïde continue (≥ 60 mg morphine/jour).",
+            "mode_action": "Liaison aux récepteurs opioïdes du SNC. Dépression du SNC. Effet : Diminution de l'intensité des accès paroxystiques.",
+            "pharmacocinetique": "Absorption : 54% (Abstral - SL), 65% (Fentora - Gingivo-SL). Distribution : Traverse placenta/lait. Métabolisme : Hépatique (CYP3A4). Excrétion : Rénale (75% métabolites). Demi-vie : 3-13 h.",
+            "pharmacodynamie": "Voie buccale (Abstral/Fentora) : Début 5-15 min ; Pic 30-60 min ; Durée plusieurs heures.",
+            "contre_indications": "Hypersensibilité. Patients NON TOLÉRANTS aux opioïdes (risque de décès). Douleur aiguë/dentaire/migraine. Occlusion GI. IMAO (14j). Allaitement (attendre 5j après dose avant reprise).",
+            "precautions_mises_en_garde": "Aphtes ou mucosite (augmente l'exposition). MPOC/Asthme. Choc circulatoire. Insuffisance hépatique/rénale. Gériatrie (> 65 ans). Grossesse (cat C/D). Risque d'abus/dépendance.",
+            "reactions_indesirables_effets_secondaires": "SNC : vertiges, sédation, confusion, hallucinations. Resp : dépression respiratoire, dyspnée. CV : hypotension, bradycardie. GI : constipation, nausées, réactions buccales localisées (ulcères, paresthésie). Divers : dépendance.",
+            "interaction": "IMAO (à éviter). Dépresseurs SNC/Alcool : effet additif. Inhibiteurs CYP3A4 (Ritonavir, Kétoconazole) : augmente considérablement les taux. Inducteurs CYP3A4 (Rifampine, Millepertuis) : diminue l'effet. Jus de pamplemousse : augmente les taux.",
+            "voies_administration_posologie": "Toujours débuter à 100 mcg (peu importe la dose de base). Titration par 100 mcg jusqu'à soulagement (max 800 mcg). Espacement : 2h (Abstral) ou 4h (Fentora). Max 4 accès par jour.",
+            "presentation": "Abstral (SL), Fentora (Effervescent gingival-SL). Comprimés de 100 à 800 mcg.",
+            "soins_infirmiers": {
+                "evaluation_situation": "Évaluer douleur avant et 15-30 min après administration. Surveiller SV et FR (si < 10 : évaluer sédation). Vérifier l'état de la muqueuse buccale (aphtes, saignements). Dépister anémie ou neutropénie (tests labo).",
+                "constats_evaluation": "Douleur aiguë ; Risque d'accident ; Lésion de la muqueuse buccale.",
+                "interventions_infirmieres": "Alerte : Mortel pour l'enfant. NE PAS INTERCHANGER Abstral/Fentora. Abstral : sous la langue. Fentora : entre gencive et joue. NE PAS MÂCHER/SUCER/AVALER. Utiliser médicament de secours si non soulagé après 30 min.",
+                "enseignement_patient_proches": "Respecter rigoureusement la posologie. Ouvrir la plaquette juste avant l'usage. Éviter jus de pamplemousse. Mise au rebut sécuritaire obligatoire (pharmacie). Signaler aphtes ou effets sédatifs excessifs.",
+                "verification_effet_therapeutique": "Diminution de la gravité et de l'intensité des accès douloureux paroxystiques."
+            }
+        }
+    },
+    {
+        "id": "c7_m5",
+        "title": "Hydrocodone",
+        "category": "medicaments",
+        "details": {
+            "classe": "Analgésiques opioïdes",
+            "sous_classe": "Antitussif / Analgésique opioïde",
+            "indications": "Antitussif (Hycodan). Usage non approuvé : traitement de la douleur modérée ou intense.",
+            "mode_action": "Suppression du réflexe de la toux par action centrale directe. Liaison aux récepteurs opioïdes μ du SNC (modification de la perception de la douleur).",
+            "pharmacocinetique": "Absorption : Bonne (PO). Distribution : Large volume de distribution. Liaison : 36%. Métabolisme : Hépatique (CYP3A4, CYP2D6) ; métabolites actifs. Excrétion : Rénale (50-60% métabolites). Demi-vie : 3,8 h.",
+            "pharmacodynamie": "PO : Début 10-30 min, Pic 30-60 min, Durée 4-6 h.",
+            "contre_indications": "Hypersensibilité. Occlusion GI. Asthme grave ou MPOC. Dépression respiratoire aiguë. IMAO (14j). Grossesse, travail, accouchement. Enfants < 6 ans (risque mortel de dépression respiratoire).",
+            "precautions_mises_en_garde": "Maladies pulmonaires. Choc circulatoire. Insuffisance hépatique/rénale grave. Gériatrie (> 65 ans). Allaitement (seulement si bienfaits > risques). Risque d'abus/dépendance.",
+            "reactions_indesirables_effets_secondaires": "SNC : confusion, sédation, rêves bizarres, vertiges. Resp : dépression respiratoire. CV : hypotension, bradycardie. GI : constipation, nausées. GU : rétention urinaire. End : baisse hormones sexuelles (usage prolongé). Divers : dépendance.",
+            "interaction": "IMAO (contre-indiqué). Dépresseurs SNC/Alcool : effet additif. Inhibiteurs CYP3A4 (Ritonavir, etc.) : augmente les taux. Inducteurs CYP3A4 (Rifampine, etc.) : diminue l'effet. Sérotoninergiques : risque de syndrome sérotoninergique.",
+            "voies_administration_posologie": "PO (adultes) : 5 mg q 4h prn (Max 30 mg/j). Enfants 6-12 ans : 2,5 mg q 4h prn (Max 15 mg/j). Enfants > 12 ans : 5 mg q 4h prn (Max 30 mg/j).",
+            "presentation": "Hycodan. Comprimés (5 mg), Sirop (1 mg/mL). Souvent en association (antitussifs/décongestionnants).",
+            "soins_infirmiers": {
+                "evaluation_situation": "Surveiller FR, pouls, TA et état de conscience. Si FR < 10 : stimuler. Évaluer la toux et le murmure vésiculaire. Évaluer la douleur avant et 60 min après (pic). Dépister constipation (prévention laxative).",
+                "constats_evaluation": "Douleur aiguë ; Risque d'accident ; Trouble de la perception visuelle/auditive.",
+                "interventions_infirmieres": "Alerte : Surdose accidentelle. NE PAS CONFONDRE avec hydrocortisone ou oxycodone. Administrer avec aliments/lait. Évaluer besoin réel vs usage abusif. Interrompre graduellement après usage prolongé.",
+                "enseignement_patient_proches": "Respecter rigoureusement la posologie. Ne pas donner aux enfants < 6 ans. Prudence conduite (somnolence). Changer lentement de position. Exercices respiratoires (atélectasie). Mise au rebut sécuritaire obligatoire (pharmacie).",
+                "verification_effet_therapeutique": "Suppression de la toux et diminution de l'intensité de la douleur sans dépression respiratoire excessive."
+            }
+        }
+    },
+    {
+        "id": "c7_m6",
+        "title": "Hydromorphone",
+        "category": "medicaments",
+        "details": {
+            "classe": "Analgésiques opioïdes",
+            "sous_classe": "Analgésique opioïde (agoniste)",
+            "indications": "Douleur modérée ou intense. Préparation LC : soulagement de la douleur intense continue.",
+            "mode_action": "Liaison aux récepteurs opioïdes du SNC. Modification de la perception de la douleur et dépression généralisée du SNC.",
+            "pharmacocinetique": "Absorption : Bonne par toutes les voies (PO, IR, SC, IM). Les doses PO et parentérales ne sont pas équivalentes. Distribution : Tout l'organisme (placenta/lait). Métabolisme : Hépatique. Excrétion : Rénale. Demi-vie : 2-4 h.",
+            "pharmacodynamie": "PO : Début 30 min, Durée 4-5h. PO-LC (Contin) : Début 1h, Durée 12h. PO-LC (Jurnista) : Début 1h, Durée 24h. IV : Début 5-10 min, Pic 15-30 min, Durée 2-3h.",
+            "contre_indications": "Hypersensibilité (incluant bisulfites si présents). Occlusion GI/Iléus. Abdomen aigu. Asthme grave ou MPOC. Dépression respiratoire aiguë. IMAO (14j). Allaitement et grossesse.",
+            "precautions_mises_en_garde": "MPOC/Asthme. Choc circulatoire. Insuffisance rénale ou hépatique (réduire dose initiale). Gériatrie (> 65 ans). Risque d'abus/dépendance. Période préopératoire (arrêter LC 24-48h avant).",
+            "reactions_indesirables_effets_secondaires": "SNC : confusion, sédation, rêves bizarres, flottement. ORLO : myosis, vision trouble. Resp : dépression respiratoire. CV : hypotension, bradycardie. GI : constipation, nausées. GU : rétention urinaire. End : baisse hormones sexuelles (long cours). Divers : dépendance.",
+            "interaction": "IMAO (contre-indiqué). Dépresseurs SNC/Alcool : effet additif. Opioïdes agonistes-antagonistes : diminue l'analgésie. Sérotoninergiques : risque de syndrome sérotoninergique.",
+            "voies_administration_posologie": "PO (adultes) : Init. 2-4 mg q 4-6h. IV/IM/SC : Init. 1-2 mg q 4-6h. IV perfusion : 0,2-30 mg/h. IR : Init 3 mg q 6-8h. Insuffisance hépatique/rénale modérée (50% dose), grave (25% dose).",
+            "presentation": "Dilaudid, Hydromorph Contin, Jurnista. Comprimés (1, 2, 4, 8 mg), LC (3 à 30 mg), Solution orale et injectable (HP : jsq 100 mg/mL), Suppositoires.",
+            "soins_infirmiers": {
+                "evaluation_situation": "Évaluer douleur avant, 1h après (IM) et 5 min après (IV). Surveiller SV et état de conscience (FR < 10 : stimuler). Dépister constipation (laxatifs réguliers). Évaluer le risque de mésusage avant administration.",
+                "constats_evaluation": "Douleur aiguë/chronique ; Risque d'accident ; Altération de la perception visuelle/auditive.",
+                "interventions_infirmieres": "Alerte : NE PAS CONFONDRE avec mépéridine ou morphine. HP/XP : ne pas confondre avec concentrations normales. LC : AVALER TEL QUEL (Hydromorph Contin peut être saupoudré). IV directe : diluer dans 5 mL (NaCl 0,9%), administrer lentement (< 2 mg en 3-5 min).",
+                "enseignement_patient_proches": "Respecter la posologie. ACP : Interdire aux proches d'administrer les doses si le patient dort. LC : Prudence (mortel si mâché/écrasé). Changer lentement de position. Exercices respiratoires. Mise au rebut sécuritaire obligatoire.",
+                "verification_effet_therapeutique": "Diminution de l'intensité de la douleur sans modification importante de l'état de conscience ou respiratoire."
+            }
+        }
+    },
+    {
+        "id": "c7_m7",
+        "title": "Mépéridine (Péthidine)",
+        "category": "medicaments",
+        "details": {
+            "classe": "Analgésiques opioïdes",
+            "sous_classe": "Analgésique opioïde (agoniste)",
+            "indications": "Douleur modérée ou intense. Adjuvant à l'anesthésie. Analgésie pendant le travail. Sédation préopératoire. Ne pas utiliser pour la douleur chronique.",
+            "mode_action": "Liaison aux récepteurs opioïdes du SNC. Modification de la perception de la douleur et dépression généralisée du SNC.",
+            "pharmacocinetique": "Absorption : 40-60% (PO), bonne (IM). Distribution : Tout l'organisme (placenta/lait). Métabolisme : Hépatique (métabolite neurotoxique : normépéridine). Excrétion : Rénale. Demi-vie : 3-5h (Adulte), 15-30h (Normépéridine).",
+            "pharmacodynamie": "PO : Début 15 min, Durée 2-4h. IM/SC : Début 10-15 min, Durée 2-4h. IV : Immédiat, Durée 2-3h.",
+            "contre_indications": "Hypersensibilité (incluant bisulfites). Asthme grave ou MPOC. Dépression respiratoire aiguë. IMAO (14j - risque de réaction mortelle). Occlusion GI/Iléus. Troubles convulsifs. Traumatisme crânien.",
+            "precautions_mises_en_garde": "Choc circulatoire. Flutter auriculaire. Insuffisance rénale ou hépatique (réduire dose). Risque de toxicité (normépéridine) si > 600mg/j ou > 2 jours. Gériatrie (sensibilité accrue, risque de délire).",
+            "reactions_indesirables_effets_secondaires": "SNC : convulsions (normépéridine), confusion, sédation. Resp : dépression respiratoire. CV : hypotension, bradycardie. GI : constipation, nausées, iléus. GU : rétention urinaire. Divers : dépendance.",
+            "interaction": "IMAO (CONTRE-INDIQUÉ, mortel). Ritonavir : augmente la normépéridine. Phénytoïne : augmente le risque de toxicité. Chlorpromazine : augmente les réactions indésirables. Sérotoninergiques : syndrome sérotoninergique.",
+            "voies_administration_posologie": "PO/IM/SC/IV (adultes) : 50-150 mg q 3-4h prn (Max 600 mg/j). Travail : 50-100 mg IM q 1-3h. Réduire dose de 25-50% si phénothiazines associées. Gériatrie : réduire la posologie initiale.",
+            "presentation": "Demerol. Comprimés (50 mg), Solution pour injection (50, 75, 100 mg/mL).",
+            "soins_infirmiers": {
+                "evaluation_situation": "Évaluer douleur avant et 1h après (PO/SC/IM) ou 5 min (IV). Surveiller SV et état de conscience (FR < 10 : stimuler). Suivre signes de toxicité de la normépéridine (agitation, irritabilité, convulsions). Gériatrie : surveiller délire.",
+                "constats_evaluation": "Douleur aiguë ; Trouble de la perception visuelle/auditive ; Risque d'accident.",
+                "interventions_infirmieres": "Alerte : NE PAS CONFONDRE avec morphine ou hydromorphone. Administrer avec aliments (PO). IV directe : diluer à 10 mg/mL, administrer lentement (en 5 min). Éviter usage prolongé (> 2j) ou doses élevées.",
+                "enseignement_patient_proches": "Respecter la posologie (max 600mg/j). ACP : interdire aux proches d'administrer si patient dort (danger de mort). Prudence conduite (somnolence). Mise au rebut sécuritaire obligatoire (pharmacie).",
+                "verification_effet_therapeutique": "Diminution de l'intensité de la douleur sans modification importante de l'état de conscience ou respiratoire."
+            }
+        }
+    },
+    {
+        "id": "c7_m8",
+        "title": "Méthadone",
+        "category": "medicaments",
+        "details": {
+            "classe": "Analgésiques opioïdes",
+            "sous_classe": "Analgésique opioïde (agoniste / antagoniste NMDA)",
+            "indications": "Traitement d'entretien et désintoxication (dépendance aux opioïdes). Soulagement des douleurs intenses (soins palliatifs/chroniques).",
+            "mode_action": "Liaison aux récepteurs μ opioïdes. Antagoniste des récepteurs NMDA. Dépression généralisée du SNC.",
+            "pharmacocinetique": "Absorption : 36-100% (PO, très variable). Distribution : Tout l'organisme (placenta/lait). Métabolisme : Hépatique (CYP3A4, 2B6, 2C19). Excrétion : Rénale. Demi-vie : 8-59 h (très longue).",
+            "pharmacodynamie": "PO : Début 30-60 min, Pic 90-120 min, Durée 4-12h (24-48h si usage prolongé).",
+            "contre_indications": "Hypersensibilité. Diarrhée par empoisonnement ou colite pseudomembraneuse. Personnes naïves d'opioïdes. Asthme grave. IMAO (14j). Occlusion GI.",
+            "precautions_mises_en_garde": "Risque d'allongement de l'intervalle QT et torsades de pointes (si > 200 mg/j ou facteurs de risque). Insuffisance hépatique/rénale grave. Gériatrie (réduire dose). Grossesse (souvent plus sûr que le sevrage brutal). Allaitement (compatible si stabilisée).",
+            "reactions_indesirables_effets_secondaires": "SNC : confusion, sédation, hallucinations. CV : hypotension, bradycardie, ALLONGEMENT QT, arythmies. Resp : dépression respiratoire. GI : constipation, nausées. GU : rétention urinaire. Divers : sueurs, dépendance.",
+            "interaction": "IMAO (contre-indiqué). Médicaments allongeant le QT (neuroleptiques, macrolides). Inhibiteurs CYP3A4 (Kétoconazole, Fluconazole) : augmente les taux. Inducteurs CYP3A4 (Rifampine, Millepertuis) : déclenchement de sevrage. Sérotoninergiques : syndrome sérotoninergique.",
+            "voies_administration_posologie": "Désintoxication : Init 20-30 mg (Max 40 mg le 1er jour). Entretien : 40 à ≥ 120 mg/j. Analgésie : Init 1-5 mg q 4-8h (ajuster q 3-5 jours). Vigilance extrême lors du changement d'opioïde.",
+            "presentation": "Metadol, Methadose. Comprimés (1, 5, 10, 25 mg), Solution orale (1, 10 mg/mL).",
+            "soins_infirmiers": {
+                "evaluation_situation": "Évaluer douleur ou signes de sevrage. Surveiller SV et FR (pic respiratoire tardif). Obtenir ÉCG initial et suivi (QTc). Tests labo : amylase/lipase, tests de grossesse (résultats modifiables).",
+                "constats_evaluation": "Douleur aiguë ; Risque d'accident ; Trouble de la perception visuelle/auditive.",
+                "interventions_infirmieres": "Alerte : Mortel par surdosage accidentel. NE PAS CONFONDRE avec kétorolac ou méthylphénidate. Diluer solution orale (min 30 mL jus) pour prévenir détournement et irritation. Ne pas arrêter brusquement (sevrage).",
+                "enseignement_patient_proches": "Respecter la posologie (longue durée d'action = risque de cumul). Signaler palpitations/syncopes (QT). Éviter jus de pamplemousse. Mise au rebut sécuritaire obligatoire (pharmacie).",
+                "verification_effet_therapeutique": "Soulagement de la douleur ou prévention des symptômes de sevrage sans dépression respiratoire excessive."
+            }
+        }
+    },
+    {
+        "id": "c7_m9",
+        "title": "Morphine",
+        "category": "medicaments",
+        "details": {
+            "classe": "Analgésiques opioïdes",
+            "sous_classe": "Analgésique opioïde (agoniste)",
+            "indications": "Douleur modérée ou intense. Douleur associée à l'IM. Préparation LC : douleur chronique intense exigeant un traitement continu.",
+            "mode_action": "Liaison aux récepteurs μ opioïdes du SNC. Modification de la perception de la douleur et dépression généralisée du SNC.",
+            "pharmacocinetique": "Absorption : Variable (30-40% PO), plus prévisible par IR/SC/IM. Distribution : Tout l'organisme (placenta/lait). Métabolisme : Hépatique. Excrétion : Rénale. Demi-vie : 2-4h (Adulte).",
+            "pharmacodynamie": "PO : Début 30-60 min, Durée 4-5h. PO-LC : Début 1h, Durée 12-24h. IV : Rapide, Durée 4-5h. Épidurale/Intrathécale : Début rapide à 60 min, Durée jusqu'à 24h.",
+            "contre_indications": "Hypersensibilité (incluant tartrazine/bisulfites/alcool si présents). Occlusion GI/Iléus. Abdomen aigu. Asthme grave ou MPOC. Dépression respiratoire aiguë. IMAO (14j). Arythmies cardiaques. Allaitement et grossesse.",
+            "precautions_mises_en_garde": "MPOC/Asthme. Choc circulatoire. Insuffisance rénale ou hépatique grave (réduire dose). Antécédents d'épilepsie (seuil convulsif). Risque d'abus/dépendance. Péd : risque de syndrome de halètement si benzoate de sodium (nouveau-nés).",
+            "reactions_indesirables_effets_secondaires": "SNC : confusion, sédation, hallucinations, rêves bizarres. ORLO : myosis, vision trouble. Resp : dépression respiratoire. CV : hypotension, bradycardie. GI : constipation, nausées. GU : rétention urinaire. Tég : prurit, rougeurs. Divers : dépendance.",
+            "interaction": "IMAO (contre-indiqué). Dépresseurs SNC/Alcool : effet additif. Opioïdes agonistes-antagonistes : diminue l'analgésie. Sérotoninergiques : syndrome sérotoninergique. Warfarine : peut intensifier l'effet (surveiller RNI).",
+            "voies_administration_posologie": "PO/IR (adultes ≥ 50kg) : 5-10 mg q 4h. IM/IV/SC (adultes ≥ 50kg) : 2,5-5 mg q 3-4h. Perfusion IV/SC : 0,8-10 mg/h. Épidurale : 5 mg/j. Intrathécale : 0,2-1 mg/j. Réduire dose de 50% si insuffisance grave.",
+            "presentation": "Doloral, Kadian, M-Eslon, MS Contin, Statex. Multiples formes (comprimés, LC, sirops, suppositoires, injectables HP).",
+            "soins_infirmiers": {
+                "evaluation_situation": "Évaluer douleur avant et au pic (PO/SC/IM : 1h ; IV : 20 min). Surveiller SV et FR (FR < 10 : évaluer sédation). Dépister constipation systématiquement. Évaluer risque de mésusage avant administration.",
+                "constats_evaluation": "Douleur aiguë/chronique ; Risque d'accident ; Altération de la perception visuelle/auditive ; Connaissances insuffisantes.",
+                "interventions_infirmieres": "Alerte : NE PAS CONFONDRE avec hydromorphone ou mépéridine. HP : vigilance sur les concentrations élevées. LC : Ne pas écraser/mâcher (danger toxique). Kadian/M-Eslon : granules saupoudrables sur compote. IV directe : diluer dans 5 mL (NaCl 0,9%), administrer en 4-5 min.",
+                "enseignement_patient_proches": "Respecter la posologie (ne pas augmenter sans avis). ACP : Interdire aux proches d'activer la pompe si le patient dort. Signaler étourdissements/somnolence. Exercices respiratoires. Mise au rebut sécuritaire.",
+                "verification_effet_therapeutique": "Diminution de la gravité de la douleur sans dépression respiratoire excessive."
+            }
+        }
+    },
+    {
+        "id": "c7_m10",
+        "title": "Oxycodone",
+        "category": "medicaments",
+        "details": {
+            "classe": "Analgésiques opioïdes",
+            "sous_classe": "Analgésique opioïde (agoniste)",
+            "indications": "Douleur modérée ou intense. Préparations LC : douleur exigeant un traitement opioïde prolongé.",
+            "mode_action": "Liaison aux récepteurs opioïdes du SNC. Modification de la perception de la douleur et dépression généralisée du SNC.",
+            "pharmacocinetique": "Absorption : Bonne (PO, IR). Distribution : Tout l'organisme (placenta/lait). Métabolisme : Hépatique (CYP2D6, CYP3A4). Excrétion : Rénale. Demi-vie : 2-4 h.",
+            "pharmacodynamie": "PO : Début 10-15 min, Pic 60-90 min, Durée 3-6 h. PO-LC : Début 1h, Pic 3h, Durée 12 h.",
+            "contre_indications": "Hypersensibilité. Occlusion GI/Iléus. Abdomen aigu. Asthme grave ou MPOC. Dépression respiratoire aiguë. IMAO (14j). Allaitement et grossesse.",
+            "precautions_mises_en_garde": "Choc circulatoire. Insuffisance rénale ou hépatique (réduire dose). MPOC/Asthme. Risque d'abus/dépendance. Gériatrie (> 65 ans). OxyNEO : prudence si troubles gastriques/œsophagiens.",
+            "reactions_indesirables_effets_secondaires": "SNC : confusion, sédation, hallucinations, rêves bizarres. ORLO : myosis, vision trouble. Resp : dépression respiratoire. CV : hypotension orthostatique. GI : constipation, xérostomie, nausées. Divers : dépendance.",
+            "interaction": "IMAO (à éviter). Dépresseurs SNC/Alcool : effet additif. Inhibiteurs CYP2D6/3A4 (Fluoxétine, Ritonavir) : augmente les taux. Inducteurs CYP3A4 (Rifampine, Phénytoïne) : diminue l'effet. Jus de pamplemousse : augmente les taux.",
+            "voies_administration_posologie": "PO (adultes) : Init. 5-10 mg q 4-6h prn. LC (OxyNEO) : diviser la dose totale en 2 (q 12h). IR : 10-20 mg 3-4 fois/j. Insuffisance hépatique/rénale : 30-50% de la dose initiale.",
+            "presentation": "Oxy IR, OxyNEO, Supeudol. Comprimés (5 à 80 mg), LC, Suppositoires.",
+            "soins_infirmiers": {
+                "evaluation_situation": "Évaluer douleur avant et 1h après. Surveiller SV et état de conscience (FR < 10 : évaluer sédation). Dépister constipation (laxatifs réguliers). Évaluer risque de mésusage.",
+                "constats_evaluation": "Douleur aiguë ; Risque d'accident ; Altération de la perception visuelle/auditive.",
+                "interventions_infirmieres": "Alerte : Surdose mortelle possible. Ne pas confondre Percocet (acétaminophène) et Percodan (aspirine). LC : NE PAS ÉCRASER/MÂCHER. OxyNEO : NE PAS PRÉTREMPER/LÉCHER. Administrer un par un avec beaucoup d'eau. Ne pas utiliser via sonde (obstruction).",
+                "enseignement_patient_proches": "Respecter la posologie. OxyNEO : précautions de déglutition (consulter si comprimé coincé). Prudence conduite. Mise au rebut sécuritaire obligatoire.",
+                "verification_effet_therapeutique": "Diminution de l'intensité de la douleur sans dépression respiratoire excessive."
+            }
+        }
+    },
+    {
+        "id": "c7_m11",
+        "title": "Oxycodone-naloxone",
+        "category": "medicaments",
+        "details": {
+            "classe": "Analgésiques opioïdes",
+            "sous_classe": "Analgésique opioïde / Antagoniste opioïde",
+            "indications": "Douleur modérée ou intense exigeant un opioïde prolongé. La naloxone réduit la constipation induite par l'oxycodone.",
+            "mode_action": "Oxycodone : agonistie opioïde (SNC). Naloxone : antagoniste local intestinal (biodisponibilité < 3% PO).",
+            "pharmacocinetique": "L'oxycodone suit sa cinétique habituelle. La naloxone agit localement dans le côlon avec un effet systémique négligeable.",
+            "pharmacodynamie": "Libération prolongée : Durée 12 h.",
+            "contre_indications": "Hypersensibilité. Insuffisance hépatique modérée/grave (Child-Pugh B/C). Insuffisance rénale grave. Occlusion GI. VOIE RECTALE INTERDITE (risque de sevrage sévère).",
+            "precautions_mises_en_garde": "Dépression respiratoire. Risque d'abus. Cancers avec carcinomatose péritonéale (non indiqué). Grossesse/Allaitement (syndrome de sevrage néonatal possible).",
+            "reactions_indesirables_effets_secondaires": "Identiques à l'oxycodone, mais incluent spécifiquement : DIARRHÉE (effet naloxone).",
+            "interaction": "Identiques à l'oxycodone. L'effet intestinal de la naloxone peut être réduit si de l'oxycodone pure est ajoutée en supplément.",
+            "voies_administration_posologie": "PO (adultes) : Init. selon équivalent quotidien divisé en 2 (q 12h). Max quotidien : 80 mg oxycodone / 40 mg naloxone. Targin 5/2,5 mg : utilisé pour la titration lente.",
+            "presentation": "Targin. Comprimés : 5/2,5 mg, 10/5 mg, 20/10 mg, 40/20 mg.",
+            "soins_infirmiers": {
+                "evaluation_situation": "Évaluer douleur et fonction intestinale. Surveiller SV et état de conscience. Suivre l'efficacité analgésique vs transit.",
+                "constats_evaluation": "Douleur aiguë/chronique ; Risque de constipation (si ajout d'autres opioïdes).",
+                "interventions_infirmieres": "Ne pas écraser les comprimés (mortel). Surveiller la réapparition de la constipation si on repasse à un opioïde pur.",
+                "enseignement_patient_proches": "Avaler entier. L'enveloppe inactive du comprimé peut se retrouver dans les selles. Signaler diarrhée persistant plus de 3 jours. Mise au rebut sécuritaire.",
+                "verification_effet_therapeutique": "Analgésie efficace accompagnée d'une amélioration ou d'un maintien du transit intestinal."
+            }
+        }
+    },
+    {
+        "id": "c7_m12",
+        "title": "Sufentanil",
+        "category": "medicaments",
+        "details": {
+            "classe": "Analgésiques opioïdes",
+            "sous_classe": "Analgésique opioïde (agoniste) / Anesthésique",
+            "indications": "Adjuvant ou anesthésique principal (chirurgie majeure). Analgésie postopératoire ou obstétricale (voie épidurale).",
+            "mode_action": "Liaison aux récepteurs opioïdes du SNC. Dépression généralisée du SNC et modification de la perception de la douleur.",
+            "pharmacocinetique": "Absorption : 100% (IV). Distribution : Pénétration lente dans les tissus adipeux (placenta/lait). Liaison : 91-93%. Métabolisme : Hépatique (CYP3A4). Demi-vie : 2,7 h.",
+            "pharmacodynamie": "IV : Début 1 min, Durée 5 min. Épidurale : Début 5-10 min, Durée 4-6 h.",
+            "contre_indications": "Hypersensibilité au sufentanil/fentanyl. IV : durant le travail/césarienne avant clampage. Épidurale : hémorragie, choc, septicémie, anticoagulants ou infection locale.",
+            "precautions_mises_en_garde": "MPOC grave. Tumeurs SNC/Hypertension intracrânienne. Obésité (calcul sur poids maig). Gériatrie (sensibilité accrue). Allaitement/Péd : innocuité peu documentée.",
+            "reactions_indesirables_effets_secondaires": "SNC : étourdissements, torpeur. Resp : APNÉE, dépression respiratoire. CV : bradycardie, hypo/hypertension, arythmies. Loc : RIGIDITÉ MUSCULAIRE (thorax). Divers : frissons, prurit.",
+            "interaction": "Dépresseurs SNC/Alcool : effet additif. IMAO (14j). Sérotoninergiques : syndrome sérotoninergique. Inhibiteurs CYP3A4 (Ritonavir, Kétoconazole) : prolongent la récupération. Inducteurs CYP3A4 : diminuent l'effet.",
+            "voies_administration_posologie": "IV (adjuvant) : Init. 0,5-2 mcg/kg. IV (anesthésique principal) : 8-30 mcg/kg. Épidurale (postop) : 30-60 mcg init. Épidurale (analgésie travail) : 10 mcg avec bupivacaïne.",
+            "presentation": "Sufenta. Solution injectable : 50 mcg/mL.",
+            "soins_infirmiers": {
+                "evaluation_situation": "Surveillance étroite : SV, Resp, ECG et pression artérielle durant et après injection. Dépister rigidité thoracique. Antidotes : Naloxone (respiration) et Atropine (bradycardie).",
+                "constats_evaluation": "Douleur aiguë ; Mode de respiration inefficace ; Risque d'accident ; Connaissances insuffisantes.",
+                "interventions_infirmieres": "Alerte : RÉANIMATION ET OXYGÈNE À PORTÉE DE MAIN. Ne pas confondre avec Fentanyl. IV directe : administrer lentement (1-2 min) pour réduire rigidité et bradycardie. Épidurale : vérifier placement cathéter avant injection.",
+                "enseignement_patient_proches": "Expliquer les sensations attendues avant chirurgie. Prudence lors des lever (hypotension orthostatique). Éviter alcool/dépresseurs dans les 24h suivant une chirurgie d'un jour.",
+                "verification_effet_therapeutique": "Analgésie profonde, apaisement généralisé et ralentissement de l'activité motrice."
+            }
+        }
+    },
+    {
+        "id": "c7_m13",
+        "title": "Tapentadol",
+        "category": "medicaments",
+        "details": {
+            "classe": "Analgésiques opioïdes",
+            "sous_classe": "Analgésique opioïde (agoniste μ / inhibiteur recapture noradrénaline)",
+            "indications": "Soulagement de la douleur modérée ou forte (IR : aiguë ; LP : continue).",
+            "mode_action": "Liaison aux récepteurs μ opioïdes. Inhibition du recaptage de la noradrénaline dans le SNC. Dépression généralisée du SNC.",
+            "pharmacocinetique": "Absorption : 32% (PO). Distribution : Large (540 L). Liaison : 20%. Métabolisme : Hépatique (glucuronidation 70%, CYP 15%). Excrétion : Rénale (99%). Demi-vie : 4-6 h.",
+            "pharmacodynamie": "PO-IR : Pic 1,25 h, Durée 4-6 h. PO-LP : Pic 3-6 h, Durée 12 h.",
+            "contre_indications": "Hypersensibilité. Occlusion GI/Iléus/Sténose. Abdomen aigu. Asthme aigu ou MPOC avec hypercapnie. Dépression respiratoire aiguë. IMAO (14j). Insuffisance hépatique grave (Child-Pugh C) ou rénale grave (ClCr < 30). Allaitement/Grossesse.",
+            "precautions_mises_en_garde": "RISQUE DE CONVULSIONS (même à dose normale, accru si facteurs de risque). Choc circulatoire. Insuffisance hépatique modérée. Risque d'abus. Gériatrie (> 65 ans). Interrompre les agents LP 48h avant une intervention réduisant rapidement la douleur.",
+            "reactions_indesirables_effets_secondaires": "SNC : CONVULSIONS, sédation, vertiges, SYNDROME SÉROTONINERGIQUE. Resp : dépression respiratoire. GI : constipation, xérostomie, nausées. Tég : rash, prurit. Divers : dépendance, réactions allergiques.",
+            "interaction": "IMAO (Contre-indiqué). Dépresseurs SNC/Alcool : effet additif. Médicaments abaissant le seuil convulsif (Neuroleptiques, Pénicillines à fortes doses). Sérotoninergiques (ISRS, IRSN, Tramadol) : risque de syndrome sérotoninergique. Millepertuis : éviter.",
+            "voies_administration_posologie": "PO-IR : 50-100 mg q 4-6h prn (Max 700 mg le 1er jour, 600 mg ensuite). PO-LP : 50-250 mg 2 fiches/j. Insuffisance hépatique modérée : 50 mg q 8h (IR) ou q 24h (LP).",
+            "presentation": "Nucynta IR, Nucynta LP. Comprimés (50, 75, 100 mg IR ; 50-250 mg LP).",
+            "soins_infirmiers": {
+                "evaluation_situation": "Surveiller SV, Resp et conscience (FR < 10 : stimulation physique). Évaluer douleur avant/au pic. Dépister convulsions et syndrome sérotoninergique (agitation, hyperréflexie). Laxatifs réguliers.",
+                "constats_evaluation": "Douleur aiguë ; Risque d'accident ; Connaissances insuffisantes.",
+                "interventions_infirmieres": "Alerte : Ne pas confondre avec Tramadol ou Toradol (kétorolac). LP : NE PAS ÉCRASER/MÂCHER (mortel). IR : Avaler entiers également. Sevrage graduel obligatoire.",
+                "enseignement_patient_proches": "Respecter la posologie (ne pas doubler une dose manquée). Signaler immédiatement convulsions ou symptômes sérotoninergiques. Prudence lors des lever. Mise au rebut sécuritaire.",
+                "verification_effet_therapeutique": "Analgésie efficace sans altération respiratoire ou neurologique majeure."
+            }
+        }
+    },
+    {
+        "id": "c7_m14",
+        "title": "Butorphanol",
+        "category": "medicaments",
+        "details": {
+            "classe": "Analgésiques opioïdes",
+            "sous_classe": "Analgésique opioïde (agoniste-antagoniste)",
+            "indications": "Soulagement de la douleur modérée ou intense (efficacité non établie au-delà de 3 jours).",
+            "mode_action": "Liaison aux récepteurs opioïdes du SNC. Propriétés antagonistes partielles (risque de sevrage chez les dépendants). Dépression généralisée du SNC.",
+            "pharmacocinetique": "Absorption : 50-75% (muqueuse nasale). Distribution : Traverse placenta et lait. Métabolisme : Hépatique. Excrétion : Rénale et fécale (11-14%). Demi-vie : 4-6 h.",
+            "pharmacodynamie": "Voie intranasale : Début 15-30 min, Pic 1-2 h, Durée 3-6 h.",
+            "contre_indications": "Hypersensibilité.",
+            "precautions_mises_en_garde": "DÉPENDANCE PHYSIQUE AUX OPIOÏDES (risque de sevrage aigu). IMAO (14j). Insuffisance rénale ou hépatique grave (espacer les doses). MPOC grave. Infarctus aigu du myocarde. Gériatrie (sensibilité accrue). Allaitement/Grossesse (syndrome de sevrage néonatal).",
+            "reactions_indesirables_effets_secondaires": "SNC : confusion, dysphorie, hallucinations, sédation. ORLO : vision trouble, myosis (fortes doses). Resp : dépression respiratoire. CV : hyper/hypotension, palpitations. GI : nausées, constipation, iléus. Divers : sueurs, dépendance.",
+            "interaction": "IMAO (Réactions graves/mortelles : réduire dose à 25%). Dépresseurs SNC/Alcool : effet additif. Peut déclencher un sevrage chez les patients dépendants aux agonistes purs. Diminue l'effet des autres opioïdes.",
+            "voies_administration_posologie": "Voie intranasale (adultes) : Init. 1 mg (1 vaporisation dans 1 narine). Reprendre après 60-90 min si besoin. Douleur intense : 2 mg d'emblée (1 par narine). Max 16 mg/j. Sujet âgé/Insuffisance : augmenter intervalle (q 6-12h).",
+            "presentation": "Stadol NS, Apo-Butorphanol. Solution nasale : 10 mg/mL (1 mg/vaporisation).",
+            "soins_infirmiers": {
+                "evaluation_situation": "Évaluer douleur avant et 60-90 min après. Surveiller SV et Resp (FR < 10 : évaluer sédation). Dépister signes de sevrage (nausées, anxiété, fièvre). Surveillance hépatique/rénale (amylase/lipase).",
+                "constats_evaluation": "Douleur aiguë ; Risque d'accident ; Trouble de la perception sensorielle ; Connaissances insuffisantes.",
+                "interventions_infirmieres": "Alerte : Ne pas confondre Stadol avec Haldol ou Sotalol. Expliquer la valeur thérapeutique. Non recommandé en 1re intention pour douleur cancéreuse.",
+                "enseignement_patient_proches": "Mode d'emploi du vaporisateur nasal (pince de protection). Rester couché après dose de 2 mg (dysphorie/somnolence). Signaler sécheresse buccale. Garder hors de portée des enfants.",
+                "verification_effet_therapeutique": "Analgésie efficace sans modification majeure de la conscience ou de la respiration."
+            }
+        }
+    },
+    {
+        "id": "c7_m15",
+        "title": "Nalbuphine",
+        "category": "medicaments",
+        "details": {
+            "classe": "Analgésiques opioïdes",
+            "sous_classe": "Analgésique opioïde (agoniste-antagoniste)",
+            "indications": "Analgésie (douleur modérée/intense), travail obstétrical, pré et peropératoire. Usage non-approuvé : prurit opioïde.",
+            "mode_action": "Liaison aux récepteurs opioïdes du SNC. Antagoniste partiel (peut induire un sevrage). Effet : Diminution de la douleur et du prurit.",
+            "pharmacocinetique": "Absorption : Bonne (IM/SC). Distribution : Traverse placenta/lait. Liaison : 50%. Métabolisme : Hépatique ; Excrétion fécale (biliaire). Demi-vie : 5 h.",
+            "pharmacodynamie": "IM/SC : Début < 15 min, Pic 30-45 min, Durée 3-6 h. IV : Début 2-3 min, Pic 30 min.",
+            "contre_indications": "Hypersensibilité.",
+            "precautions_mises_en_garde": "DÉPENDANCE PHYSIQUE AUX OPIOÏDES (syndrome de sevrage). Insuffisance hépatique ou rénale. Traumatisme crânien. MPOC grave. Gériatrie (sensibilité accrue). Allaitement : faible passage, prudence.",
+            "reactions_indesirables_effets_secondaires": "SNC : sédation, vertiges, confusion, dysphorie, rêves bizarres. Resp : dépression respiratoire. CV : hyper/hypotension. GI : nausées, constipation, xérostomie. Divers : sueurs, dépendance.",
+            "interaction": "IMAO (Réactions graves : réduire dose à 25%). Dépresseurs SNC/Alcool : effet additif. Éviter avec agonistes purs (diminue l'effet).",
+            "voies_administration_posologie": "IM, SC, IV (adultes) : 10 mg q 3-6h (Max 20 mg/dose ; 160 mg/jour). Prurit : 2,5-5 mg q 3-4h.",
+            "presentation": "Nubain. Solution pour injection : 10 mg/mL, 20 mg/mL.",
+            "soins_infirmiers": {
+                "evaluation_situation": "Évaluer douleur (avant, 30-60 min après). Surveiller SV et Resp (FR < 10 : stimulation physique). Dépister signes de sevrage (agitation, fièvre, crampes). Suivi hépatique (amylase/lipase).",
+                "constats_evaluation": "Douleur aiguë ; Risque d'accident ; Troubles de la perception.",
+                "interventions_infirmieres": "Alerte : Ne pas confondre avec Naloxone. IV directe : administrer lentement (10 mg en 3-5 min). Rotation des sites IM. Non recommandé en 1re intention pour douleur cancéreuse.",
+                "enseignement_patient_proches": "Signaler besoin d'analgésie. Prudence conduite (somnolence). Hygiène buccale (xérostomie). Prévention de la constipation.",
+                "verification_effet_therapeutique": "Analgésie efficace ou soulagement du prurit sans modification majeure de la conscience."
+            }
+        }
+    },
+    {
+        "id": "c7_m16",
+        "title": "Pentazocine",
+        "category": "medicaments",
+        "details": {
+            "classe": "Analgésiques opioïdes",
+            "sous_classe": "Analgésique opioïde (agoniste-antagoniste)",
+            "indications": "Douleurs modérées ou intenses (aiguës/chroniques). Sédation préopératoire. Analgésie durant le travail.",
+            "mode_action": "Liaison aux récepteurs opioïdes du SNC. Antagoniste partiel (peut induire un sevrage).",
+            "pharmacocinetique": "Absorption : Bonne (PO, IM, SC). Distribution : Large (placenta/lait). Liaison : 60%. Métabolisme : Hépatique. Excrétion : Rénale (60-70%). Demi-vie : 2-5 h.",
+            "pharmacodynamie": "PO : Pic 60-90 min, Durée 3 h. IM/SC : Pic 30-60 min, Durée 2-3 h. IV : Pic 15-30 min, Durée 2-3 h.",
+            "contre_indications": "Hypersensibilité aux analgésiques opioïdes. Douleur légère. Occlusion GI/Iléus. Asthme grave. IMAO (14j). PO : Allaitement/Grossesse.",
+            "precautions_mises_en_garde": "RISQUE D'HALLUCINATIONS (plus élevé que les autres opioïdes). DÉPENDANCE PHYSIQUE (sevrage). Porphyrie. Insuffisance hépatique grave (réduire dose). Allergie aux sulfites (comprimés).",
+            "reactions_indesirables_effets_secondaires": "SNC : ÉTOURDISSEMENTS, HALLUCINATIONS, dysphorie, sédation. CV : hypertension, palpitations. GI : nausées, constipation, xérostomie. Loc : lésions aux points d'injection SC.",
+            "interaction": "IMAO (Réactions graves). Tabagisme (augmente clairance). Dépresseurs SNC/Alcool : effet additif. Sérotoninergiques : syndrome sérotoninergique.",
+            "voies_administration_posologie": "PO (adultes) : 50-100 mg q 3-4h (Max 600 mg/j). IV/IM/SC : 30-60 mg q 3-4h (Max 360 mg/j). Travail : 20 mg IV ou 30 mg IM.",
+            "presentation": "Talwin. Comprimés (50 mg), Solution injectable (30 mg/mL).",
+            "soins_infirmiers": {
+                "evaluation_situation": "Évaluer douleur (avant, 60 min après PO). Surveiller SV et conscience (FR < 10 : stimuler). Surveillance étroite des hallucinations (visuelles) et confusion. Dépister sevrage chez dépendants.",
+                "constats_evaluation": "Douleur aiguë ; Risque d'accident ; Trouble de la perception visuelle/auditive.",
+                "interventions_infirmieres": "Rotation des sites d'injection (écarter SC si possible si injections fréquentes). IV directe : diluer (5 mg/1 mL), administrer lentement (5 mg/min). Sevrage graduel obligatoire après usage prolongé.",
+                "enseignement_patient_proches": "Signaler hallucinations (manifestation transitoire). Prudence lors des lever. Hygiène buccale. Exercices respiratoires.",
+                "verification_effet_therapeutique": "Analgésie sans altération importante de la respiration ou de l'état de conscience."
+            }
+        }
+    },
+    {
+        "id": "c7_m17",
+        "title": "Tramadol-acétaminophène",
+        "category": "medicaments",
+        "details": {
+            "classe": "Analgésiques opioïdes",
+            "sous_classe": "Analgésique opioïde (agoniste μ / inhibiteur recapture sérotonine-NA)",
+            "indications": "Douleur modérée ou moyennement forte (aiguë ou chronique).",
+            "mode_action": "Tramadol : Liaison aux récepteurs μ opioïdes + inhibition du recaptage de la sérotonine et noradrénaline. Acétaminophène : inhibition de la synthèse des prostaglandines au SNC.",
+            "pharmacocinetique": "Absorption : 75-95% (PO). Métabolisme : Hépatique (CYP3A4, CYP2D6). Note : Phénotype métaboliseur (lent vs ultrarapide) influence l'effet. Excrétion : Rénale. Demi-vie : 5-9 h.",
+            "pharmacodynamie": "PO : Début 1 h, Pic 2-3 h, Durée 4-6 h. LP : Pic 4-12 h, Durée 24 h.",
+            "contre_indications": "Hypersensibilité au tramadol/opioïdes. Intoxication alcool/hypnosédatifs. IMAO (14j). Insuffisance rénale grave (ClCr < 30) ou hépatique grave (Child-Pugh C). Occlusion GI. Asthme aigu. Épilepsie non contrôlée.",
+            "precautions_mises_en_garde": "RISQUE DE CONVULSIONS (accru si antiséquestres ou doses élevées). Syndrome sérotoninergique. Gériatrie (> 75 ans : max 300 mg/j). Allaitement/Grossesse (sevrage néonatal). Risque d'abus.",
+            "reactions_indesirables_effets_secondaires": "SNC : CONVULSIONS, sédation, somnolence, SYNDROME SÉROTONINERGIQUE. GI : nausées, constipation, toxicité hépatique (si surdose acétaminophène). Divers : hyponatrémie, dépendance.",
+            "interaction": "IMAO (Contre-indiqué). Dépresseurs SNC : effet additif. Sérotoninergiques (ISRS, IRSN, Millepertuis) : risque de syndrome sérotoninergique. Inhibiteurs CYP2D6/3A4 (Ritonavir, Paroxétine) : augmentent les taux.",
+            "voies_administration_posologie": "PO (adultes) : 1-2 comprimés q 4-6h (Max 8 comp/j). Titration progressive conseillée pour améliorer tolérance. Cirrhose : 50 mg q 12h (tramadol seul).",
+            "presentation": "Tramacet, PMS-Tramacet. Comprimés (37,5 mg tramadol / 325 mg acétaminophène).",
+            "soins_infirmiers": {
+                "evaluation_situation": "Évaluer douleur avant/au pic. Surveiller SV et Resp. Dépister symptômes sérotoninergiques et convulsions. Suivre fonction hépatique (ALT/AST) et électrolytes (Na+).",
+                "constats_evaluation": "Douleur aiguë ; Risque d'accident ; Connaissances insuffisantes.",
+                "interventions_infirmieres": "Alerte : Ne pas confondre avec Toradol ou Tapentadol. LP : NE PAS ÉCRASER/MÂCHER (mortel). Sevrage graduel obligatoire. Évaluer le besoin réel (naïfs vs habitués).",
+                "enseignement_patient_proches": "Respecter la posologie (Max 8/j). Signaler convulsions ou signes de syndrome sérotoninergique. Mise au rebut sécuritaire. L'enveloppe LP peut se voir dans les selles.",
+                "verification_effet_therapeutique": "Analgésie efficace sans dépression respiratoire ou complication hépatique."
+            }
+        }
+    },
+    {
+        "id": "c7_m18",
+        "title": "Tramadol",
+        "category": "medicaments",
+        "details": {
+            "classe": "Analgésiques opioïdes",
+            "sous_classe": "Analgésique opioïde (agoniste μ / inhibiteur recapture sérotonine-NA)",
+            "indications": "Soulagement des douleurs modérées à moyennement fortes. Note : Également classé dans les analgésiques non opioïdes pour sa double nature.",
+            "mode_action": "Liaison aux récepteurs μ opioïdes + inhibition du recaptage de la sérotonine et noradrénaline dans le SNC.",
+            "pharmacocinetique": "Hépatique (CYP2D6, CYP3A4) ; demi-vie prolongée en cas d'insuffisance hépatique ou rénale.",
+            "pharmacodynamie": "PO : Pic 2-3h. PO-LP : Pic 4-12h.",
+            "contre_indications": "Se référer à la fiche Tramadol-acétaminophène.",
+            "precautions_mises_en_garde": "Se référer à la fiche Tramadol-acétaminophène.",
+            "reactions_indesirables_effets_secondaires": "Se référer à la fiche Tramadol-acétaminophène.",
+            "interaction": "Se référer à la fiche Tramadol-acétaminophène.",
+            "voies_administration_posologie": "PO : 50-100 mg q 4-6h (Max 400 mg/jour). LP : 75-150 mg 1x/jour (Max 400 mg/jour).",
+            "presentation": "Ultram, Zytram. Comprimés (50 mg), LC (75-400 mg).",
+            "soins_infirmiers": {
+                "evaluation_situation": "Identiques au Tramadol-acétaminophène.",
+                "constats_evaluation": "Douleur aiguë ; Risque d'accident.",
+                "interventions_infirmieres": "Identiques au Tramadol-acétaminophène. Ne pas confondre avec Toradol ou Trazodone.",
+                "enseignement_patient_proches": "Identiques au Tramadol-acétaminophène.",
+                "verification_effet_therapeutique": "Analgésie efficace."
+            }
+        }
     }
 ]
