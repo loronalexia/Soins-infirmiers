@@ -1,5 +1,5 @@
 import { studyData } from './data-service.js';
-import { renderContent, renderHome, renderMedicationsByClass, renderPathologiesBySystem } from './ui-renderers.js';
+import { renderContent, renderHome, renderMedicationsBySubClass, renderPathologiesBySystem } from './ui-renderers.js';
 import { closeModal, openModal } from './modal-controller.js';
 import { handleSmartLink } from './smart-links.js';
 
@@ -49,10 +49,17 @@ export function navigateToSystem(systemName, category) {
     renderPathologiesBySystem(systemName, studyData[category]);
 }
 
-export function navigateToMedicationClass(className) {
+export function navigateToMedicationClass(groupName) {
     closeModal();
     loadCategory('medicaments');
-    renderMedicationsByClass(className, studyData['medicaments']);
+    // We need to filter by major group since renderMedicationsBySubClass expects the filtered list
+    const allMeds = studyData['medicaments'];
+    const filteredMeds = allMeds.filter(m => {
+        const rawName = m.details.classe || m.details.sous_classe || 'Divers';
+        // Check if the groupName is the major group or the full subclass
+        return rawName.startsWith(groupName) || rawName.includes(groupName);
+    });
+    renderMedicationsBySubClass(groupName, filteredMeds);
 }
 
 export function setupEventListeners() {
@@ -105,7 +112,7 @@ export function setupEventListeners() {
         sourcesBtn.addEventListener('click', () => {
             const sourcesData = studyData['sources'];
             if (sourcesData) {
-                openModal({ title: 'Sources & Références', category: 'sources', details: { sources: sourcesData } });
+                openModal(sourcesData);
             }
         });
     }

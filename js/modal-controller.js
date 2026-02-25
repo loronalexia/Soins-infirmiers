@@ -25,11 +25,14 @@ export function openModal(item, isBack = false) {
 
     modalBody.innerHTML = '';
     const details = item.details || {};
+    const isClassSheet = item.is_class_sheet === true;
 
     let contentHtml = `
-        <div class="detail-header">
+        <div class="detail-header ${isClassSheet ? 'class-sheet-header' : ''}">
             <div class="detail-header-badges">
-                <span class="card-category-label bg-${item.category.slice(0, 4)}">${item.category}</span>
+                <span class="card-category-label bg-${item.category.slice(0, 4)}">
+                    ${isClassSheet ? '📚 Fiche de Classe' : item.category}
+                </span>
                 ${details.classe ? `<span class="card-category-label bg-medicament">${details.classe}</span>` : ''}
             </div>
             <h2 class="detail-title">${item.title}</h2>
@@ -54,7 +57,11 @@ export function openModal(item, isBack = false) {
     }
 
     // Dynamic detail fields
-    keyOrder.forEach(key => {
+    const keysToDisplay = (item.category === 'sources' || item.category === 'recherche')
+        ? Object.keys(details)
+        : keyOrder;
+
+    keysToDisplay.forEach(key => {
         if (!details[key]) return;
 
         const value = details[key];
@@ -115,6 +122,18 @@ export function openModal(item, isBack = false) {
                 }
                 contentHtml += `</div>`;
             }
+        }
+        // Special handling for molecules_list (clickable links)
+        else if (key === 'molecules_list') {
+            const molecules = typeof value === 'string' ? value.split(',').map(m => m.trim()) : value;
+            contentHtml += `<div class="molecules-grid">`;
+            molecules.forEach(mol => {
+                contentHtml += `
+                    <div class="molecule-link" onclick="handleMedicationLink('${mol}')">
+                        <span class="mol-icon">💊</span> ${mol}
+                    </div>`;
+            });
+            contentHtml += `</div>`;
         }
         else if (Array.isArray(value)) {
             contentHtml += `<ul>`;

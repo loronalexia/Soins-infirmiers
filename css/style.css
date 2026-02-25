@@ -25,6 +25,21 @@
     padding: 0;
 }
 
+.smart-link {
+    color: var(--primary-color);
+    font-weight: 600;
+    cursor: pointer;
+    border-bottom: 1.5px dashed rgba(214, 93, 122, 0.4);
+    transition: var(--transition);
+    display: inline;
+}
+
+.smart-link:hover {
+    background-color: rgba(214, 93, 122, 0.08);
+    border-bottom-style: solid;
+    border-bottom-color: var(--primary-color);
+}
+
 body {
     font-family: 'Inter', sans-serif;
     color: var(--text-color);
@@ -262,6 +277,30 @@ html {
     transform: translateY(-8px) scale(1.01);
     box-shadow: 0 20px 30px -10px rgba(214, 93, 122, 0.2);
     border-color: var(--primary-color);
+}
+
+.card.med-class-card.has-image {
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    border: 2px solid #FFE5EC;
+}
+
+.card.med-class-card.has-image::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.92) 0%, rgba(255, 255, 255, 0.85) 100%);
+    z-index: 1;
+    border-radius: inherit;
+}
+
+.card.med-class-card.has-image>* {
+    position: relative;
+    z-index: 2;
 }
 
 .card-title {
@@ -1173,25 +1212,41 @@ body.is-home .app-container {
     margin-top: 1rem;
 }
 
-.module-card {
-    background: white;
-    padding: 2rem 2rem;
-    border-radius: var(--border-radius);
-    text-align: center;
-    transition: var(--transition);
-    cursor: pointer;
-    border: 0.5px solid #FFF0F5;
-    box-shadow: var(--shadow);
+.featured-card {
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    padding: 2.5rem;
+    border-radius: 24px;
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 1.5rem;
+    position: relative;
 }
 
-.module-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 20px 40px rgba(214, 93, 122, 0.15);
+.featured-card:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 25px 50px -12px rgba(214, 93, 122, 0.25);
     border-color: var(--primary-color);
+    background: white;
+}
+
+.module-icon-container {
+    width: 70px;
+    height: 70px;
+    background: white;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.featured-card:hover .module-icon-container {
+    transform: scale(1.1) rotate(5deg);
 }
 
 .module-card .module-icon {
@@ -1676,5 +1731,208 @@ body.is-home .app-container {
     to {
         opacity: 1;
         transform: translateY(0);
+    }
+}
+
+/* --- NEW MEDICATION SECTION STYLES --- */
+.med-intro {
+    background: white;
+    padding: 2rem;
+    border-radius: 24px;
+    margin-bottom: 2rem;
+    border: 1px solid #FFE5EC;
+    box-shadow: var(--shadow);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.med-intro-header h2 {
+    font-size: 1.8rem;
+    color: var(--secondary-color);
+    margin-bottom: 0.25rem;
+}
+
+.med-intro-header p {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+}
+
+.med-filter-bar {
+    position: relative;
+    flex-grow: 1;
+    max-width: 400px;
+}
+
+.med-filter-input {
+    width: 100%;
+    padding: 0.8rem 1.2rem 0.8rem 2.8rem;
+    border: 2px solid #F0F0F0;
+    border-radius: 50px;
+    font-size: 0.95rem;
+    transition: var(--transition);
+    outline: none;
+    font-family: inherit;
+}
+
+.med-filter-input:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 4px rgba(214, 93, 122, 0.1);
+}
+
+.med-filter-icon {
+    position: absolute;
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--text-muted);
+    font-size: 1.1rem;
+}
+
+.med-class-card {
+    text-align: left;
+    padding: 1.75rem;
+    border: 1px solid #F0F0F0;
+    position: relative;
+    /* overflow: hidden; supprimé pour éviter la troncature des titres longs */
+}
+
+.med-class-badge {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 1.25rem;
+}
+
+.med-count-badge {
+    background: #F3E5F5;
+    color: #6A4C93;
+    padding: 0.3rem 0.75rem;
+    border-radius: 50px;
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+.med-class-card .card-title {
+    font-size: 1.15rem;
+    /* Légèrement réduit pour accommoder les noms longs */
+    line-height: 1.3;
+    margin-bottom: 1rem;
+    color: var(--secondary-color);
+    overflow-wrap: break-word;
+}
+
+.med-class-card .card-preview {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: var(--text-muted);
+    margin-bottom: 1.5rem;
+}
+
+.medication-list-header {
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.med-alphabetical-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+/* Class Sheet Premium Styles */
+.class-sheet-header {
+    background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+    color: white;
+    padding: 2.5rem 2rem;
+    border-radius: 12px 12px 0 0;
+    margin: -1.5rem -1.5rem 1.5rem -1.5rem;
+}
+
+.class-sheet-header .detail-title {
+    color: white !important;
+    font-size: 2rem;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    margin-top: 1rem;
+}
+
+.class-sheet-header .card-category-label {
+    background: rgba(255, 255, 255, 0.2) !important;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: white;
+}
+
+.molecules-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 12px;
+    margin-top: 15px;
+}
+
+.molecule-link {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--accent-color);
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.molecule-link:hover {
+    background: var(--accent-color);
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.mol-icon {
+    font-size: 1.1rem;
+}
+
+.detail-section h3 {
+    border-left: 5px solid var(--accent-color);
+    padding-left: 12px;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
+    color: var(--secondary-color);
+}
+
+.nursing-subsection {
+    background: #f8f9fa;
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-left: 3px solid #dee2e6;
+}
+
+.nursing-subsection h4 {
+    color: #495057;
+    margin-bottom: 10px;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+@media (max-width: 600px) {
+    .med-intro {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 1.5rem;
+    }
+
+    .med-filter-bar {
+        max-width: 100%;
     }
 }

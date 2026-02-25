@@ -14,24 +14,40 @@ export function formatSmartLinks(text) {
             .replace(/'/g, "&#039;");
     };
 
+    // 1. Initial escape to avoid HTML issues
     let result = escapeHtml(text);
 
-    // Apply mappings
+    // 2. Prepare a list of all unique keywords and their targets
+    const keywordsMap = new Map();
     linkMapping.forEach(mapping => {
-        mapping.keywords.forEach(keyword => {
-            // Check if keyword is in the text (case insensitive)
-            // Using a simple replacement that doesn't break already created links
-            const regex = new RegExp(`\\b(${keyword}s?)\\b`, 'gi');
-
-            // We only replace if it's not already inside an <a> tag
-            // This is a bit tricky with simple regex, but let's try a safer approach
-            // We'll mark potential replacements and then replace them once to avoid nested links
-            result = result.replace(regex, (match) => {
-                // If the match is already part of a smart-link, skip it
-                // This is a simple heuristic: if there's a '>' before and no '<' or vice versa
-                return `<span class="smart-link" data-target="${mapping.target}">${match}</span>`;
-            });
+        mapping.keywords.forEach(kw => {
+            // Priority: keep the first target encountered, or could be longest keyword first
+            if (!keywordsMap.has(kw.toLowerCase())) {
+                keywordsMap.set(kw.toLowerCase(), mapping.target);
+            }
         });
+    });
+
+    // Sort keywords by length descending (match "insuffisance cardiaque" before "cardiaque")
+    const sortedKeywords = Array.from(keywordsMap.keys()).sort((a, b) => b.length - a.length);
+
+    if (sortedKeywords.length === 0) return result;
+
+    // 3. Construct a single regex to find all keywords at once
+    // This prevents double-wrapping/nesting
+    const escapeRegex = (str) => str.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    const regexSource = sortedKeywords.map(kw => `\\b${escapeRegex(kw)}s?\\b`).join('|');
+    const globalRegex = new RegExp(regexSource, 'gi');
+
+    // 4. Perform a single pass replacement
+    result = result.replace(globalRegex, (match) => {
+        const target = keywordsMap.get(match.toLowerCase()) ||
+            keywordsMap.get(match.toLowerCase().replace(/s$/, '')); // Try plural match
+
+        if (target) {
+            return `<span class="smart-link" data-target="${target}">${match}</span>`;
+        }
+        return match;
     });
 
     return result;
@@ -40,12 +56,27 @@ export function formatSmartLinks(text) {
 export function handleSmartLink(targetName) {
     console.log('Searching for smart link target:', targetName);
 
-    // Search across all data
+    // 1. Check if it's a Medication Class (Sub-category in data)
+    if (studyData['medicaments']) {
+        const isMedClass = studyData['medicaments'].some(m => {
+            const cl = (m.details.classe || '').toLowerCase();
+            const sc = (m.details.sous_classe || '').toLowerCase();
+            const tn = targetName.toLowerCase();
+            return cl === tn || cl.includes(tn) || sc === tn || sc.includes(tn);
+        });
+        if (isMedClass) {
+            import('./navigation.js').then(nav => {
+                nav.navigateToMedicationClass(targetName);
+            });
+            return;
+        }
+    }
+
+    // 2. Search across all data for specific item
     for (const category in studyData) {
         if (Array.isArray(studyData[category])) {
             const found = studyData[category].find(item =>
-                item.title.toLowerCase() === targetName.toLowerCase() ||
-                (item.details && item.details.classe && item.details.classe.toLowerCase() === targetName.toLowerCase())
+                item.title.toLowerCase() === targetName.toLowerCase()
             );
 
             if (found) {

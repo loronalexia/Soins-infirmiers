@@ -1,6 +1,7 @@
 import { preloadAllData } from './data-service.js';
 import { setupEventListeners, loadCategory, navigateToCategory, navigateToSystem, navigateToMedicationClass } from './navigation.js';
 import { openModal, closeModal } from './modal-controller.js';
+import { handleSmartLink } from './smart-links.js';
 
 async function init() {
     console.log('Initialisation du Guide de poche...');
@@ -12,6 +13,7 @@ async function init() {
     window.navigateToMedicationClass = navigateToMedicationClass;
     window.openModal = openModal;
     window.closeModal = closeModal;
+    window.handleMedicationLink = handleSmartLink;
 
     try {
         // 1. Setup global listeners (Search, Nav, Modal)
