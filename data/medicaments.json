@@ -1813,5 +1813,259 @@
                 "verification_effet_therapeutique": "Analgésie efficace."
             }
         }
+    },
+    {
+        "id": "c8",
+        "title": "Anesthésiques et adjuvants anesthésiques",
+        "category": "fiches_maitresses",
+        "details": {
+            "molecules_list": "Alfentanyl, Fentanyl, Propofol, Sufentanil, Bupivacaïne, Ropivacaïne, Lidocaïne, Proparacaïne, Tétracaïne.",
+            "indications": "Anesthésiques (à action générale, locale ou régionale) : Induction de l'anesthésie au cours d'une intervention chirurgicale, d'un accouchement, d'un procédé diagnostique ou dentaire et d'autres traitements ; on administre l'anesthésie générale par voie parentérale ou par inhalation afin d'induire une dépression du SNC par stades progressifs et réversibles. Anesthésiques locaux (par voie topique ou en injection) : Induction de l'anesthésie dans de petits territoires circonscrits. Anesthésiques régionaux : Induction de l'anesthésie dans des territoires plus étendus (rachianesthésie ou anesthésie épidurale). Adjuvants anesthésiques (anxiolytiques et hypnosédatifs, agents anticholinergiques, analgésiques opioïdes, bloqueurs neuromusculaires) : Intensification de l'effet des anesthésiques avant, pendant ou après une intervention chirurgicale.",
+            "mode_action": "Anesthésiques locaux : Inhibition réversible du passage des ions à travers les membranes neuronales, empêchant ainsi le déclenchement et la transmission des influx nerveux normaux. Adjuvants anesthésiques (alfentanil, fentanyl et sufentanil) : Liaison aux récepteurs opioïdes du SNC modifiant ainsi la perception de la douleur et la réaction à celle-ci et entraînant une dépression du SNC. Propofol : Mécanisme d'action inconnu ; effet hypnotique de courte durée et induction de l'amnésie ; aucune propriété analgésique.",
+            "contre_indications": "Hypersensibilité et risque d'hypersensibilité croisée.",
+            "precautions_mises_en_garde": "Maladies hépatique ou cardiaque. Dépression respiratoire. Choc ou bloc cardiaque. Obstétrique, allaitement : La prudence est de mise, car l'innocuité de ces agents n'a pas été établie.",
+            "interaction": "Dépression additive du SNC associée à l'administration concomitante d'autres dépresseurs du SNC. Dépression et toxicité cardiaques additives associées à l'administration concomitante de phénytoïne, d'amiodarone, de procaïnamide ou de propranolol.",
+            "soins_infirmiers": {
+                "evaluation_situation": "Déterminer le degré d'engourdissement de la région à anesthésier. Avant d'utiliser les anesthésiques par voie topique, déceler la présence d'une éventuelle lésion (appliquer seulement sur peau intacte). Évaluer l'effet anesthésique avant l'intervention (lidocaïne-prilocaïne). Signes de toxicité générale, hypotension orthostatique, déficit sensoriel et moteur non souhaité (agents épiduraux). Propofol : mesurer pouls, TA, fonction respiratoire et degré de conscience tout au long de l'administration.",
+                "constats_evaluation": "Douleur aiguë ; Mobilité physique réduite ; Mode de respiration inefficace ; Connaissances insuffisantes.",
+                "interventions_infirmieres": "Infiltration locale : lidocaïne peut être administrée avec adrénaline pour réduire l'absorption générale. Lidocaïne-prilocaïne : pansement occlusif au moins 1h avant. Titration des doses épidurales et de propofol selon la réponse. Propofol : assurer une analgésie appropriée concomitante ; technique aseptique rigoureuse.",
+                "enseignement_patient_proches": "Bloc/Infiltration : signaler toute douleur. Lidocaïne-prilocaïne : expliquer l'objectif du pansement. Épidurale : signaler tout signe de toxicité. Propofol : amnésie attendue ; éviter alcool et dépresseurs (24h) ; ne pas conduire (24h).",
+                "verification_effet_therapeutique": "Inhibition complète de la sensation de douleur. Anesthésie de la surface. Induction et maintien de l'anesthésie. Amnésie (propofol)."
+            }
+        }
+    },
+    {
+        "id": "c8_m1",
+        "title": "Alfentanyl",
+        "category": "medicaments",
+        "details": {
+            "classe": "Anesthésiques et adjuvants anesthésiques",
+            "sous_classe": "",
+            "indications": "",
+            "mode_action": "",
+            "pharmacocinetique": "",
+            "pharmacodynamie": "",
+            "contre_indications": "",
+            "precautions_mises_en_garde": "",
+            "reactions_indesirables_effets_secondaires": "",
+            "interaction": "",
+            "voies_administration_posologie": "",
+            "presentation": "",
+            "soins_infirmiers": {
+                "evaluation_situation": "",
+                "constats_evaluation": "",
+                "interventions_infirmieres": "",
+                "enseignement_patient_proches": "",
+                "verification_effet_therapeutique": ""
+            }
+        }
+    },
+    {
+        "id": "c8_m2",
+        "title": "Fentanyl (voie parentérale)",
+        "category": "medicaments",
+        "details": {
+            "classe": "Analgésique opioïde (agoniste), anesthésique et adjuvant anesthésique",
+            "sous_classe": "Analgésique opioïde (agoniste pur)",
+            "indications": "Analgésique à courte durée d'action (prémédication, induction, maintien de l'anesthésie). Supplément en anesthésie régionale. Anesthésique principal avec oxygène (chirurgie à cœur ouvert, neurochirurgie). Voie épidurale : douleur postopératoire et césarienne.",
+            "mode_action": "Liaison aux récepteurs opioïdes du SNC modifiant la perception de la douleur et entraînant une dépression du SNC.",
+            "pharmacocinetique": "Absorption : Bonne (IM). Liaison : 80-85%. Métabolisme : Hépatique/Intestinal (CYP3A4). Excrétion : Rénale (75% métabolites) ; fécale (9%). Demi-vie : 2-4 h (prolongée après circulation extracorporelle).",
+            "pharmacodynamie": "IV : Début immédiat, Pic 3-5 min, Durée 0,5-1 h. IM : Début 7-15 min, Pic 20-30 min, Durée 1-2 h.",
+            "contre_indications": "Hypersensibilité au fentanyl ou sufentanil. Épidurale/Intrathécale : Septicémie, hémorragie/choc grave, infection au point de ponction, anticoagulation.",
+            "precautions_mises_en_garde": "Risque de dépression respiratoire. Antécédents d'alcoolisme ou toxicomanie. Maladie pulmonaire grave (MPOC). Insuffisance rénale/hépatique. Hypertension intracrânienne. Gériatrie (sensibilité accrue). Péd : Risque accru < 3 mois. Nouveau-nés : Éviter conservateurs (syndrome de halètement mortel).",
+            "reactions_indesirables_effets_secondaires": "SNC : confusion, somnolence, excitation paradoxale. Resp : APNÉE (dure plus longtemps que l'analgésie), laryngospasme, bronchospasme. CV : bradycardie, hypotension, arythmies. Loc : RIGIDITÉ MUSCULAIRE (thorax). Divers : prurit, rétention urinaire.",
+            "interaction": "IMAO ou procarbazine (14j : risque mortel). Dépresseurs SNC : effet additif. Benzodiazépines : risque accru d'hypotension. Inhibiteurs CYP3A4 (Ritonavir, jus de pamplemousse) : augmente le risque toxique. Sérotoninergiques : syndrome sérotoninergique.",
+            "voies_administration_posologie": "Préop (Adulte) : 0,7-1,4 mcg/kg. Adjuvant Anesthésie : Chirurgie majeure 2-20 mcg/kg ; Complexe 20-50 mcg/kg. Anesthésie générale (Adulte) : 50-100 mcg/kg (jsq 150). Épidurale : 1,5 mcg/kg bolus.",
+            "presentation": "Sublimaze. Solution injectable : 50 mcg/mL (0,05 mg/mL).",
+            "soins_infirmiers": {
+                "evaluation_situation": "Évaluer conscience, FR et TA à intervalles fréquents. Surveiller rigidité musculaire (thorax). Péd/Gér : surveillance accrue des complications respiratoires. Évaluer douleur avant et 3-5 min après IV ou 30 min après IM.",
+                "constats_evaluation": "Douleur aiguë ; Mode de respiration inefficace ; Risque d'accident.",
+                "interventions_infirmieres": "Alerte : Ne pas confondre avec Sufentanil. Faire vérifier le calcul des doses par un tiers. Nouveau-nés/Épidurale : utiliser seulement SANS AGENT DE CONSERVATION. IV directe : administrer LENTEMENT (1-3 min). Garder naloxone et matériel de réanimation à proximité.",
+                "enseignement_patient_proches": "Expliquer l'utilité des anesthésiques. Échelle d'évaluation de la douleur. Rappeler le risque de somnolence/étourdissements. Éviter alcool/dépresseurs (24h après chirurgie d'un jour).",
+                "verification_effet_therapeutique": "Analgésie prononcée. Apaisement généralisé et réduction de l'activité motrice."
+            }
+        }
+    },
+    {
+        "id": "c8_m3",
+        "title": "Propofol",
+        "category": "medicaments",
+        "details": {
+            "classe": "Anesthésique et adjuvant anesthésique (à action générale), sédatif",
+            "sous_classe": "Hypnotique / Sédatif",
+            "indications": "Induction et maintien d'une anesthésie générale (≥ 3 ans et adulte). Élément d'anesthésie équilibrée. Sédation consciente ou en USI (ventilation assistée). Usage non approuvé : aide médicale à mourir.",
+            "mode_action": "Effet hypnotique de courte durée (mécanisme inconnu). Induction de l'amnésie. Absence d'effets analgésiques.",
+            "pharmacocinetique": "Absorption : 100% (IV). Distribution : Large, traverse BHE, placenta et lait. Liaison : 95-99%. Métabolisme : Hépatique rapide. Demi-vie : 3-12 h (Équilibre BHE : 2,9 min).",
+            "pharmacodynamie": "IV (Perte de conscience) : Début 40 s, Durée 3-5 min (réveil jsq 19 min si opioïdes associés).",
+            "contre_indications": "Hypersensibilité au propofol, soja, œuf ou lécithine. Sédation chez les enfants ≤ 18 ans en USI.",
+            "precautions_mises_en_garde": "Maladie CV (effet inotrope négatif). Choc/Hypotension. Dyslipidémie, pancréatite. Pression intracrânienne accrue. Gériatrie (> 60 ans : réduire dose). Obst : risque de dépression néonatale. Péd : Non recommandé < 18 ans pour chirurgie/diagnostic.",
+            "reactions_indesirables_effets_secondaires": "SNC : étourdissements, céphalées. Resp : apnée (fréquente), toux. CV : bradycardie, hypotension. GI : crampes, hoquet, nausées. Locaux : Brûlures ou douleurs au point d'injection. Divers : Syndrome de perfusion du propofol (acidose, rhabdomyolyse, hyperkaliémie).",
+            "interaction": "Alcool/Opioïdes/Hypnosédatifs : dépression SNC et respiratoire accrue. Émulsion lipidique : risque d'hypertriglycéridémie. Augmente les taux d'alfentanil. Fentanyl : risque de bradycardie grave chez l'enfant.",
+            "voies_administration_posologie": "Anesthésie (Adulte < 55) : Induction 40 mg q 10s (jsq 2-2,5 mg/kg) ; Maintien 0,10-0,20 mg/kg/min. Sédation (USI) : Init 0,005 mg/kg/min ; Ajustement jsq 0,05 mg/kg/min.",
+            "presentation": "Diprivan. Émulsion pour injection : 10 mg/mL (fioles de 20, 50, 100 mL).",
+            "soins_infirmiers": {
+                "evaluation_situation": "Mesurer continuellement Resp, pouls et TA (risque d'apnée ≥ 60s). Noter le degré de conscience. Surveiller signes du syndrome de perfusion du propofol (acidose, insuffisance rénale). USI : évaluer l'état d'éveil quotidiennement (ne pas cesser brusquement).",
+                "constats_evaluation": "Mode de respiration inefficace ; Risque d'accident ; Connaissances insuffisantes.",
+                "interventions_infirmieres": "Alerte : Ne pas confondre avec Diflucan. Analgésie concomitante requise (le propofol ne soulage pas la douleur). IV directe : BIEN AGITER. Technique aseptique rigoureuse (absence de conservateur) : jeter après 6-12h. Injecter dans une grosse veine pour réduire la douleur locale.",
+                "enseignement_patient_proches": "Expliquer l'amnésie post-intervention. Somnolence attendue : aide au déplacement requise. Éviter alcool, dépresseurs et activités vigilantes pendant 24h.",
+                "verification_effet_therapeutique": "Induction et maintien de l'anesthésie. Sédation efficace en USI sous ventilation. Amnésie confirmée."
+            }
+        }
+    },
+    {
+        "id": "c8_m4",
+        "title": "Sufentanil",
+        "category": "medicaments",
+        "details": {
+            "classe": "Analgésique opioïde (agoniste), anesthésique et adjuvant anesthésique",
+            "sous_classe": "Analgésique opioïde (agoniste pur)",
+            "indications": "Adjuvant analgésique (anesthésie équilibrée). Anesthésique principal (chirurgies majeures). Voie épidurale : analgésie postopératoire et travail obstétrical (adjuvant à la bupivacaïne).",
+            "mode_action": "Liaison aux récepteurs opioïdes du SNC modifiant la perception de la douleur et entraînant une dépression généralisée du SNC.",
+            "pharmacocinetique": "Absorption : 100% (IV). Liaison : 91-93%. Métabolisme : Hépatique/Intestinal (CYP3A4). Excrétion : Urine (2% inchangé). Demi-vie : 2,7 h (prolongée en cas de pontage).",
+            "pharmacodynamie": "IV : Début 1 min, Durée 5 min. Épidurale : Début 5-10 min, Durée 4-6 h.",
+            "contre_indications": "Hypersensibilité au fentanyl/sufentanil. IV : durant le travail ou avant clampage du cordon. Épidurale : hémorragie grave, choc, septicémie, infection locale, anticoagulants.",
+            "precautions_mises_en_garde": "MPOC grave. Insuffisance rénale/hépatique. Hypertension intracrânienne. Gériatrie (sensibilité accrue). Obst : somnolence néonatale possible. Risque de dépendance/abus.",
+            "reactions_indesirables_effets_secondaires": "SNC : somnolence, étourdissements. Resp : apnée, dépression respiratoire. CV : bradycardie, hypo/hypertension. GI : nausées. Loc : rigidité musculaire (thorax).",
+            "interaction": "IMAO (14j). Dépresseurs SNC/Alcool : effet additif. Sérotoninergiques : syndrome sérotoninergique. Inhibiteurs CYP3A4 (Ritonavir, etc.) : prolonge la récupération. Agonistes-antagonistes : diminue l'effet.",
+            "voies_administration_posologie": "IV Adjuvant : 0,5-2 mcg/kg. IV Anesthésique principal : 8-30 mcg/kg. Épidurale Postop : 30-60 mcg initialement. Épidurale Travail : 10 mcg.",
+            "presentation": "Sufenta. Solution injectable : 50 mcg/mL.",
+            "soins_infirmiers": {
+                "evaluation_situation": "Suivre SV, Resp, TA et ECG pendant et après l'administration. Noter que la dépression respiratoire dure plus longtemps que l'analgésie. Risque de rigidité musculaire par injection accidentelle IV lors d'une épidurale.",
+                "constats_evaluation": "Douleur aiguë ; Mode de respiration inefficace ; Risque d'accident ; Connaissances insuffisantes.",
+                "interventions_infirmieres": "Alerte : Ne pas confondre avec Fentanyl. Garder à proximité : naloxone, oxygène et matériel de réanimation. IV directe : administrer LENTEMENT (1-2 min) pour réduire la rigidité. Épidurale : vérifier position du cathéter avant injection.",
+                "enseignement_patient_proches": "Expliquer les sensations attendues avant chirurgie. Changer de position lentement (hypotension). Éviter alcool/dépresseurs (24h après chirurgie d'un jour). Ne pas conduire (24h).",
+                "verification_effet_therapeutique": "Analgésie prononcée. Apaisement généralisé et ralentissement moteur."
+            }
+        }
+    },
+    {
+        "id": "c8_m5",
+        "title": "Bupivacaïne",
+        "category": "medicaments",
+        "details": {
+            "classe": "Anesthésiques et adjuvants anesthésiques (à action locale)",
+            "sous_classe": "Anesthésique local (amide)",
+            "indications": "Anesthésie et analgésie locales ou régionales lors des interventions chirurgicales, obstétriques ou diagnostiques et pour soulager la douleur, dont la douleur postopératoire.",
+            "mode_action": "Inhibition du déclenchement et de la transmission des influx nerveux en modifiant l'influx de sodium et la sortie de potassium au niveau des neurones (ralentissement ou arrêt du signal de douleur).",
+            "pharmacocinetique": "Absorption : Absorption par voie générale (dépend de la dose, concentration, voie, hémodynamie). Distribution : Répartition globale, traverse placenta. Liaison : 95%. Métabolisme : Hépatique important. Excrétion : Rénale. Demi-vie : 1,2 à 5 h.",
+            "pharmacodynamie": "Analgésie - Péridurale : Début 5-20 min, Durée jsq 8h. Infiltration : Début 5-10 min, Durée jsq 12h.",
+            "contre_indications": "Hypersensibilité aux amides (lidocaïne, etc.). Bloc paracervical obstétrique. Infection/inflammation au site d'injection. Bloc de Bier. Hypotension marquée (choc). Solutions avec parabènes : contre-indiquées si hypersensibilité aux esters/PABA.",
+            "precautions_mises_en_garde": "Maladie hépatique/rénale grave. Dysfonction CV. Anticoagulants (risque d'hématome épidural). Gériatrie : réduire la dose (hypotension/bradycardie). Obst : 0,75% déconseillé. Péd : 0,25-0,5% pour > 2 ans ; 0,75% déconseillé < 18 ans (rachidienne).",
+            "reactions_indesirables_effets_secondaires": "SNC : convulsions, céphalées, contractions. ORLO : acouphènes. CV : collapsus, arythmies, bradycardie. GI : goût métallique. GU : rétention urinaire. SN : picotements péribuccaux. Divers : réactions allergiques, fièvre.",
+            "interaction": "Autres amides (toxicité additive). Hypertension accrue avec adrénaline + IMAO ou antidépresseurs tricycliques.",
+            "voies_administration_posologie": "Infiltration : Max 60 mL à 0,25% ou 30 mL à 0,5% (150 mg). Péridurale : Lombaire (chirurgie) 15-30 mL à 0,5% ; Travail 6-15 mL à 0,25%. Caudale : 20-30 mL à 0,25-0,5%.",
+            "presentation": "Marcaine, Sensorcaine. Solution : 0,25%, 0,5%, 0,75% (avec ou sans adrénaline).",
+            "soins_infirmiers": {
+                "evaluation_situation": "Suivre suppression et réapparition des sensations. Dépister toxicité (acouphènes, goût métallique, irritabilité). Mesurer pouls et TA (pression orthostatique avant lever). Surveiller déficit moteur/sensoriel indésirable.",
+                "constats_evaluation": "Douleur aiguë ; Mobilité physique réduite ; Connaissances insuffisantes.",
+                "interventions_infirmieres": "Informer l'anesthésiste de tout déficit moteur indésirable. Aider lors des déplacements. Retrait possible de l'anesthésique de la solution si toxicité ou hypotension rebelle.",
+                "enseignement_patient_proches": "Signaler immédiatement picotements ou acouphènes (toxicité). Demander de l'aide pour se lever (risque de chute/hypotension).",
+                "verification_effet_therapeutique": "Diminution de la douleur sans déficits moteurs ou sensoriels excessifs."
+            }
+        }
+    },
+    {
+        "id": "c8_m6",
+        "title": "Ropivacaïne",
+        "category": "medicaments",
+        "details": {
+            "classe": "Anesthésiques et adjuvants anesthésiques (à action locale)",
+            "sous_classe": "Anesthésique local (amide)",
+            "indications": "Anesthésie et analgésie locales ou régionales (chirurgie, obstétrique, douleur postopératoire).",
+            "mode_action": "Inhibition de la transmission des influx nerveux par action sur les canaux ioniques (sodium/potassium) neuronaux.",
+            "pharmacocinetique": "Liaison : 95%. Métabolisme : Hépatique important. Demi-vie : 4,1-6,5 h (péridurale) ; 5,7-8 h (plexus brachial). Traversée placentaire confirmée.",
+            "pharmacodynamie": "Péridurale : Début 5-20 min, Durée jsq 8h. Infiltration : Début 5-10 min, Durée jsq 12h.",
+            "contre_indications": "Hypersensibilité aux amides. Bloc paracervical obstétrique. Infection locale. Bloc de Bier. Hypotension marquée.",
+            "precautions_mises_en_garde": "Maladie hépatique/rénale grave. Anticoagulants (risque d'hématome). Gériatrie (réduire dose). Péd : Innocuité non établie < 18 ans.",
+            "reactions_indesirables_effets_secondaires": "SNC : convulsions, céphalées. CV : hypotension, bradycardie, arythmies. GI : goût métallique. Divers : réactions allergiques.",
+            "interaction": "Autres amides. Accroissement de l'effet par : fluvoxamine, amiodarone, ciprofloxacine, propofol.",
+            "voies_administration_posologie": "Péridurale Lombaire : Douleur aiguë 20-30 mg (intermittent) ou 12-28 mg/h (perfusion) ; Chirurgie 75-200 mg. Bloc champ opératoire : 2-200 mg.",
+            "presentation": "Naropin, Ropivacaïne. Solution : 0,2%, 0,5%, 1%.",
+            "soins_infirmiers": {
+                "evaluation_situation": "Identiques à la bupivacaïne. Surveillance étroite de la TA et du pouls si augmentation de dose.",
+                "constats_evaluation": "Douleur aiguë ; Mobilité physique réduite ; Connaissances insuffisantes.",
+                "interventions_infirmieres": "Identiques à la bupivacaïne. Titration selon la réponse clinique.",
+                "enseignement_patient_proches": "Signaler tout signe de toxicité systémique. Éviter lever seul sans évaluation de la proprioception.",
+                "verification_effet_therapeutique": "Analgésie efficace sans bloc moteur indésirable."
+            }
+        }
+    },
+    {
+        "id": "c8_m7",
+        "title": "Lidocaïne",
+        "category": "medicaments",
+        "details": {
+            "classe": "Anesthésique et adjuvant anesthésique (local, topique, muqueuses), antiarythmique (classe IB)",
+            "sous_classe": "Anesthésique local (amide) / Antiarythmique classe IB",
+            "indications": "IV : Arythmies ventriculaires. Anesthésie locale : Infiltration, anesthésie topique ou des muqueuses.",
+            "mode_action": "IV : Suppression de l'automaticité ventriculaire (flux sodium). Local : Inhibition de la conduction nerveuse par blocage des canaux sodium neuronaux.",
+            "pharmacocinetique": "Absorption : Variable après application locale. Distribution : Tout l'organisme (concentre dans tissus adipeux), traverse BHE et placenta. Métabolisme : Hépatique. Excrétion : Rénale. Demi-vie : Biphasique (7-30 min / 90-120 min).",
+            "pharmacodynamie": "IV (Antiaprythmique) : Immédiat, Durée 10-20 min. Muqueuses : Rapide, Durée 15-45 min. Topique : Rapide, Durée 1-3 h.",
+            "contre_indications": "Hypersensibilité aux amides. Syndrome d'Adams-Stokes, blocs AV avancés (grade 2 ou 3). Péd : Arythmies pédiatriques (innocuité non établie).",
+            "precautions_mises_en_garde": "Maladie hépatique/rénale/cardiaque. Dépression respiratoire, choc. Hypokaliémie, épilepsie. Gériatrie (réduire dose). Péd : Ne pas administrer < 3 ans pour poussée dentaire (risque MORTEL de convulsions/arrêt cardiaque).",
+            "reactions_indesirables_effets_secondaires": "SNC : convulsions, confusion, somnolence, tremblements. ORLO : abolition du réflexe de déglutition (muqueuses). CV : arrêt cardiaque, bradycardie, hypotension. GI : nausées. Locaux : picotements, érythème. Divers : anaphylaxie.",
+            "interaction": "Toxicité cardiaque additive : phénytoïne, amiodarone, bêtabloquants. Inhibiteurs CYP1A2/3A4 (cimétidine, fluvoxamine) : augmente risque de toxicité. Inducteurs CYP3A4 : diminue l'effet.",
+            "voies_administration_posologie": "IV Antiarythmique : Bolus 1-1,5 mg/kg ; Perfusion 1-4 mg/min. Muqueuses (Visqueuse 2%) : 5-10 mL q 3h (Max 6 doses/j). Topique : 3-4 fois/jour. Endotrachéale : 2-2,5x la dose IV diluée.",
+            "presentation": "Xylocaine, Xylocard. Injection (0,5% à 2%), Solution IV liquide/visqueuse, Gelée, Crème, Aérosol, Vaporisateur.",
+            "soins_infirmiers": {
+                "evaluation_situation": "Antiarythmique : Suivre ECG en continu, TA et Resp. Anesthésique : Déterminer le degré d'engourdissement. Toxicité : Surveiller acouphènes, confusion, goût métallique, tremblements. Suivre concentrations sériques (thérapeutique : 6-21 μmol/L).",
+                "constats_evaluation": "Débit cardiaque diminué ; Douleur aiguë ; Connaissances insuffisantes.",
+                "interventions_infirmieres": "Alerte : Absorption très rapide des muqueuses (risque toxique). Vaporisateur gorge : vérifier réflexe de déglutition avant alimentation. IV directe : utilise SEULEMENT 2% sans conservateur. Infiltration : utilisable avec adrénaline pour prolonger l'effet.",
+                "enseignement_patient_proches": "Signaler somnolence/étourdissements. Muqueuses (Péd) : Ne pas manger/mâcher pendant 60 min après application. Topique : Ne pas appliquer sur peau lésée/irritée ou avec chaleur (risque de surdose).",
+                "verification_effet_therapeutique": "Réduction des arythmies ventriculaires. Anesthésie locale efficace."
+            }
+        }
+    },
+    {
+        "id": "c8_m8",
+        "title": "Proparacaïne",
+        "category": "medicaments",
+        "details": {
+            "classe": "Anesthésiques et adjuvants anesthésiques",
+            "sous_classe": "",
+            "indications": "",
+            "mode_action": "",
+            "pharmacocinetique": "",
+            "pharmacodynamie": "",
+            "contre_indications": "",
+            "precautions_mises_en_garde": "",
+            "reactions_indesirables_effets_secondaires": "",
+            "interaction": "",
+            "voies_administration_posologie": "",
+            "presentation": "",
+            "soins_infirmiers": {
+                "evaluation_situation": "",
+                "constats_evaluation": "",
+                "interventions_infirmieres": "",
+                "enseignement_patient_proches": "",
+                "verification_effet_therapeutique": ""
+            }
+        }
+    },
+    {
+        "id": "c8_m9",
+        "title": "Tétracaïne",
+        "category": "medicaments",
+        "details": {
+            "classe": "Anesthésiques et adjuvants anesthésiques",
+            "sous_classe": "",
+            "indications": "",
+            "mode_action": "",
+            "pharmacocinetique": "",
+            "pharmacodynamie": "",
+            "contre_indications": "",
+            "precautions_mises_en_garde": "",
+            "reactions_indesirables_effets_secondaires": "",
+            "interaction": "",
+            "voies_administration_posologie": "",
+            "presentation": "",
+            "soins_infirmiers": {
+                "evaluation_situation": "",
+                "constats_evaluation": "",
+                "interventions_infirmieres": "",
+                "enseignement_patient_proches": "",
+                "verification_effet_therapeutique": ""
+            }
+        }
     }
 ]
