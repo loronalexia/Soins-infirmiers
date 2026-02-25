@@ -37,10 +37,7 @@ export function renderHome() {
         html += `
             <div class="card featured-card" onclick="loadCategory('${categoryId}')">
                 <div class="module-icon-container">${icon}</div>
-                <span class="card-category-label bg-${categoryId.slice(0, 4)}">${formatCategoryName(categoryId)}</span>
                 <h3 class="card-title">${item.title}</h3>
-                <p class="card-preview">${item.description}</p>
-                <div class="card-cta">Explorer l'univers →</div>
             </div>`;
     });
 
@@ -82,7 +79,6 @@ export function createCard(item, labelClass, itemCat) {
         <span class="card-category-label ${labelClass}">${itemCat}</span>
         <h3 class="card-title">${item.title}</h3>
         <p class="card-preview">${item.preview || 'Voir les détails...'}</p>
-        <div class="card-cta">Voir la fiche →</div>
     `;
     card.onclick = () => openModal(item);
     return card;
@@ -178,7 +174,6 @@ export function renderMedicationClasses(data) {
             <p class="card-preview">
                 Découvrez les ${medCount} molécules de cette classe clinique.
             </p>
-            <div class="card-cta">Parcourir la classe →</div>
         `;
         classCard.onclick = () => renderMedicationsBySubClass(groupName, group.meds);
         grid.appendChild(classCard);
@@ -259,7 +254,6 @@ export function renderPathologySystems(data) {
             <span class="card-category-label bg-pathology">Système</span>
             <h3 class="card-title">${system}</h3>
             <p class="card-preview">Pathologies du système ${system.toLowerCase()}.</p>
-            <div class="card-cta">Explorer →</div>
         `;
         systemCard.onclick = () => window.navigateToSystem(system, 'pathologies');
         grid.appendChild(systemCard);

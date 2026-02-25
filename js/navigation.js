@@ -10,10 +10,14 @@ export function loadCategory(category) {
     currentCategory = category;
     updateActiveTab(category);
 
+    const mainNav = document.querySelector('.main-nav');
     if (category === 'home') {
+        if (mainNav) mainNav.classList.add('nav-hidden');
         renderHome();
         return;
     }
+
+    if (mainNav) mainNav.classList.remove('nav-hidden');
 
     if (category === 'gazometrie') {
         renderContent(category, null);
@@ -132,6 +136,9 @@ function performGlobalSearch(term) {
             results.push(...matches);
         }
     });
+
+    const mainNav = document.querySelector('.main-nav');
+    if (mainNav) mainNav.classList.remove('nav-hidden');
 
     const contentArea = document.getElementById('content-area');
     contentArea.innerHTML = `<h2 class="search-results-title">Résultats pour "${term}" (${results.length})</h2>`;
