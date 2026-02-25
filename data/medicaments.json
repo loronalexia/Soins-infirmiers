@@ -774,7 +774,7 @@
         "preview": "AINS, salicylates et analgésiques divers utilisés pour la douleur, l'inflammation et la fièvre.",
         "details": {
             "classe": "Analgésiques non opioïdes",
-            "molecules_list": "aspirine, célécoxib, diclofénac, étodolac, flurbiprofene, ibuprofène, indométacine, kétoprofène, kétorolac, méloxicam, mésalamine, naproxène, osalazine, piroxicam, sulindac, acétaminophène, capsaïcine, chlorzoxazone, phénazopyridine, tramadol",
+            "molecules_list": "aspirine, célécoxib, diclofénac, étodolac, flurbiprofene, ibuprofène, indométacine, kétoprofène, kétorolac, méloxicam, mésalamine, naproxène, piroxicam, sulindac, acétaminophène, capsaïcine, chlorzoxazone, phénazopyridine, tramadol",
             "indications": "Acétaminophène et salicylates : Douleur légère/modérée, fièvre. Phénazopyridine : Douleurs urinaires. Capsaïcine : Syndromes douloureux topiques. Chlorzoxazone : Spasmes musculosquelettiques aigus.",
             "mode_action": "La plupart : Inhibition de la synthèse des prostaglandines en périphérie (analgésique) et au centre (antipyrétique). Tramadol : Action au niveau central.",
             "contre_indications": "Hypersensibilité et sensibilité croisée avec les AINS. Chlorzoxazone : Porphyrie, troubles hépatiques. Capsaïcine : Peau écorchée, lésions ouvertes, usage près des yeux.",
@@ -889,23 +889,23 @@
         "category": "medicaments",
         "details": {
             "classe": "Analgésiques non opioïdes",
-            "sous_classe": "AINS",
-            "indications": "",
-            "mode_action": "",
-            "pharmacocinetique": "",
-            "pharmacodynamie": "",
-            "contre_indications": "",
-            "precautions_mises_en_garde": "",
-            "reactions_indesirables_effets_secondaires": "",
-            "interaction": "",
-            "voies_administration_posologie": "",
-            "presentation": "",
+            "sous_classe": "AINS / Analgésique / Antipyrétique",
+            "indications": "Traitement de l'arthrose. Traitement de la polyarthrite rhumatoïde. Soulagement des douleurs légères ou modérées.",
+            "mode_action": "Inhibition de la synthèse des prostaglandines. Effet uricosurique. Effets : Suppression de l'inflammation, diminution de l'intensité de la douleur.",
+            "pharmacocinetique": "Absorption : Bonne (PO). Distribution : Tout l'organisme. Liaison protéines : > 99%. Métabolisme/Excrétion : Hépatique ; excrétion urinaire (< 1% inchangé). Demi-vie : 6-7 h.",
+            "pharmacodynamie": "PO (analgésie) : Début 0,5 h ; Pic 1-2 h ; Durée 4-12 h. PO (anti-inflammatoire) : Début plusieurs jours/semaines ; Durée 6-12 h.",
+            "contre_indications": "Hypersensibilité aux AINS/Aspirine. Douleur périopératoire (pontage coronarien). Hémorragie digestive ou ulcère actif. Insuffisance rénale grave (ClCr < 30). Insuffisance hépatique grave. 3e trimestre de grossesse (fermeture canal artériel). Enfants < 18 ans.",
+            "precautions_mises_en_garde": "Facteurs de risque cardiovasculaires (IM, AVC), cérébrovasculaires ou néphropathie. Insuffisance cardiaque. Allaitement (innocuité non établie). Gériatrie (sensibilité accrue). Prédisposition aux saignements.",
+            "reactions_indesirables_effets_secondaires": "SNC : dépression, étourdissements, somnolence, insomnie. ORLO : vision trouble, acouphènes. Resp : asthme. CV : insuffisance cardiaque, infarctus, AVC, œdème, hypertension. GI : hémorragie digestive, dyspepsie, hépatite. Tég : SJS, Lyell. Hémat : anémie, allongement du temps de saignement.",
+            "interaction": "Aspirine réduit l'efficacité. Alcool/AINS/Corticostéroïdes/Antiplaquettaires : risque GI accru. Acétaminophène (usage prolongé) : risque rénal. Lithium/Méthotrexate/Cyclosporine : risque de toxicité augmenté. Diurétiques/Antihypertenseurs : efficacité réduite. Produits naturels (ail, ginkgo, ginseng) : risque de saignement.",
+            "voies_administration_posologie": "PO (adultes) : Analgésie – 200 à 400 mg q 6-8h, max 7 jours (max 1000 mg/jour). Arthrose/Polyarthrite : 200-300 mg 2x/j ou 400-600 mg 1x/j (le soir).",
+            "presentation": "Capsules : 200 mg, 300 mg.",
             "soins_infirmiers": {
-                "evaluation_situation": "",
-                "constats_evaluation": "",
-                "interventions_infirmieres": "",
-                "enseignement_patient_proches": "",
-                "verification_effet_therapeutique": ""
+                "evaluation_situation": "Suivre rhinite/asthme/urticaire (hypersensibilité). Déceler rash initial (SJS). Évaluer douleur et mobilité articulaire avant et 1-2h après (arthrose). Tests : Hémoglobine, plaquettes, fonction hépatique (8 sem après début) et rénale.",
+                "constats_evaluation": "Douleur aiguë ; Mobilité physique réduite ; Connaissances insuffisantes.",
+                "interventions_infirmieres": "Dose minimale efficace sur la plus courte durée. Pour effet rapide : 30 min avant ou 2h après repas. Si irritation gastrique : administrer avec nourriture/lait.",
+                "enseignement_patient_proches": "Prendre avec un grand verre d'eau, rester debout 15-30 min. Respecter rigoureusement la posologie (ne pas doubler). Éviter alcool/AINS/aspirine. Signaler : rash, selles noires, gain de poids, troubles visuels.",
+                "verification_effet_therapeutique": "Diminution de la douleur et amélioration de la mobilité articulaire. Effet anti-inflammatoire complet après 2 semaines."
             }
         }
     },
@@ -1071,23 +1071,23 @@
         "category": "medicaments",
         "details": {
             "classe": "Analgésiques non opioïdes",
-            "sous_classe": "Dérivé 5-ASA",
-            "indications": "",
-            "mode_action": "",
-            "pharmacocinetique": "",
-            "pharmacodynamie": "",
-            "contre_indications": "",
-            "precautions_mises_en_garde": "",
-            "reactions_indesirables_effets_secondaires": "",
-            "interaction": "",
-            "voies_administration_posologie": "",
-            "presentation": "",
+            "sous_classe": "Anti-inflammatoire local non stéroïdien (entérocolique)",
+            "indications": "Traitement et maintien de la rémission de la colite ulcéreuse (légère, modérée, distale ou proctite). Traitement et maintien de la rémission de la maladie de Crohn (légère/modérée).",
+            "mode_action": "Action anti-inflammatoire locale au côlon par inhibition de la synthèse des prostaglandines. Effets : Réduction des symptômes des maladies inflammatoires de l'intestin (MII).",
+            "pharmacocinetique": "Absorption : 28% (PO) ; 10-30% (IR). Distribution : Libération à différents niveaux du tractus GI selon la forme (iléon, côlon, rectum). Liaison protéines : 43%. Métabolisme/Excrétion : Fèces (inchangé) et rénal. Demi-vie : 12 h (PO), 0,5-1,5 h (IR).",
+            "pharmacodynamie": "PO : Durée 6-8 h. IR : Début 3-21 jours ; Durée 24 h.",
+            "contre_indications": "Hypersensibilité aux salicylates/mésalamine. Occlusion urinaire ou intestinale. Ulcère gastrique/duodénal actif. Diathèse hémorragique. Insuffisance rénale ou hépatique grave. Enfants < 18 ans (Mezavant/Pentasa) ou < 2 ans (autres).",
+            "precautions_mises_en_garde": "Hypersensibilité aux sulfamides. Risque rénal/hépatique. Myélosuppression. Déficit en G6PD. Porphyrie. Sténose du pylore. Mousse (Mezera) : contient du propylène glycol (risque acidose) et alcool cétostéarylique (dermatite). Allaitement (innocuité non établie).",
+            "reactions_indesirables_effets_secondaires": "SNC : céphalées, étourdissements. CV : péricardite, myocardite. ORLO : pharyngite, rhinite. GI : diarrhée, flatulences, nausées. GU : néphrite interstitielle, insuffisance rénale. Tég : Syndrome de Stevens-Johnson, alopécie. Divers : Anaphylaxie, DRESS.",
+            "interaction": "Azathioprine/Mercaptopurine : augmente toxicité myélosuppressive. Sulfonylurées : intensification de l'effet hypoglycémiant. Warfarine : risque d'élévation du RNI. Agents néphrotoxiques (AINS). Vaccin varicelle (risque Syndrome de Reye).",
+            "voies_administration_posologie": "PO : 0,8 à 4,8 g/jour (selon produit/indication). IR (Lavement/Mousse/Suppo) : 1 à 4 g/jour, généralement au coucher. Ne pas interrompre brusquement le traitement.",
+            "presentation": "Comprimés entérosolubles : 400, 800 mg. Comprimés libération retard/prolongée : 500, 1000, 1200 mg. Suppositoires : 500, 1000 mg. Suspension/Mousse rectale.",
             "soins_infirmiers": {
-                "evaluation_situation": "",
-                "constats_evaluation": "",
-                "interventions_infirmieres": "",
-                "enseignement_patient_proches": "",
-                "verification_effet_therapeutique": ""
+                "evaluation_situation": "Identifier allergie sulfamides/salicylates. Suivre bilan I/E (débit urinaire ≥ 1200-1500 mL/j). Évaluer douleur abdominale et caractéristiques des selles. Tests : urée/créatinine, fonction hépatique (AST/ALT), amylase/lipase.",
+                "constats_evaluation": "Douleur aiguë ; Diarrhée ; Connaissances insuffisantes.",
+                "interventions_infirmieres": "PO : avaler entier avec eau (ne pas briser). IR : évacuer les selles avant. Suppositoire : retenir 1-3 h. Lavement/Mousse : retenir toute la nuit (~8 h). Mousse : secouer 20s, pulvériser dôme vers le bas.",
+                "enseignement_patient_proches": "Respecter rigoureusement la posologie. Prudence pour la conduite (étourdissements). Signaler : rash, maux de gorge, fièvre, saignements ou intolérance aiguë (crampes, diarrhée sanguine). Ne pas changer de marque sans avis.",
+                "verification_effet_therapeutique": "Atténuation de la diarrhée et des douleurs abdominales. Effet visible après 3 à 21 jours."
             }
         }
     },
@@ -1118,54 +1118,28 @@
         }
     },
     {
-        "id": "c6_m13",
-        "title": "Osalazine",
-        "category": "medicaments",
-        "details": {
-            "classe": "Analgésiques non opioïdes",
-            "sous_classe": "Dérivé 5-ASA",
-            "indications": "",
-            "mode_action": "",
-            "pharmacocinetique": "",
-            "pharmacodynamie": "",
-            "contre_indications": "",
-            "precautions_mises_en_garde": "",
-            "reactions_indesirables_effets_secondaires": "",
-            "interaction": "",
-            "voies_administration_posologie": "",
-            "presentation": "",
-            "soins_infirmiers": {
-                "evaluation_situation": "",
-                "constats_evaluation": "",
-                "interventions_infirmieres": "",
-                "enseignement_patient_proches": "",
-                "verification_effet_therapeutique": ""
-            }
-        }
-    },
-    {
         "id": "c6_m14",
         "title": "Piroxicam",
         "category": "medicaments",
         "details": {
             "classe": "Analgésiques non opioïdes",
-            "sous_classe": "AINS",
-            "indications": "",
-            "mode_action": "",
-            "pharmacocinetique": "",
-            "pharmacodynamie": "",
-            "contre_indications": "",
-            "precautions_mises_en_garde": "",
-            "reactions_indesirables_effets_secondaires": "",
-            "interaction": "",
-            "voies_administration_posologie": "",
-            "presentation": "",
+            "sous_classe": "AINS / Analgésique non opioïde",
+            "indications": "Traitement des troubles inflammatoires : polyarthrite rhumatoïde, arthrose, spondylarthrite ankylosante.",
+            "mode_action": "Inhibition de la synthèse des prostaglandines. Effets : Soulagement de la douleur et de l'inflammation.",
+            "pharmacocinetique": "Absorption : Bonne (PO). Distribution : Passe dans le lait maternel (faibles quantités). Métabolisme/Excrétion : Hépatique ; rénale. Demi-vie : 50 heures.",
+            "pharmacodynamie": "PO (analgésie) : Début 1 h ; Durée 48-72 h. PO (anti-inflammatoire) : Début 7-12 jours ; Pic 2-3 semaines (parfois 12 sem).",
+            "contre_indications": "Hypersensibilité aux AINS/Aspirine. Douleur périopératoire (pontage coronarien). Ulcère actif ou antécédents de saignement GI. Insuffisance rénale grave (ClCr < 30). Insuffisance hépatique grave. Hyperkaliémie. Lésions anales (suppositoires). 3e trimestre de grossesse. Allaitement. Enfants < 18 ans.",
+            "precautions_mises_en_garde": "Facteurs de risque cardiovasculaires, cérébrovasculaires ou néphropathie. Déshydratation (risque d'insuffisance rénale aiguë). Gériatrie (réduire la dose). Tendance aux saignements.",
+            "reactions_indesirables_effets_secondaires": "SNC : somnolence, céphalées, étourdissements. ORLO : vision trouble, acouphènes. CV : infarctus, insuffisance cardiaque, AVC, œdème, hypertension. GI : hémorragie digestive, hépatite médicamenteuse. Tég : SJS, Lyell. Hémat : dyscrasie sanguine, allongement temps de saignement.",
+            "interaction": "Aspirine : diminue l'efficacité. Anticoagulants/Héparine/Antiplaquettaires : risque hémorragique. Corticostéroïdes/AINS : effets GI additifs. Probénicide : augmente toxicité. Lithium : risque de toxicité. Insuline/Hypoglycémiants : risque d'hypoglycémie. Cyclosporine/IECA/Acétaminophène : risque rénal.",
+            "voies_administration_posologie": "PO (adultes) : 10 à 20 mg/jour (1 ou 2 prises). PO (personnes âgées) : Initialement 10 mg/jour.",
+            "presentation": "Capsules : 10 mg, 20 mg.",
             "soins_infirmiers": {
-                "evaluation_situation": "",
-                "constats_evaluation": "",
-                "interventions_infirmieres": "",
-                "enseignement_patient_proches": "",
-                "verification_effet_therapeutique": ""
+                "evaluation_situation": "Suivre rhinite/asthme/urticaire (hypersensibilité). Déceler rash initial (SJS). Évaluer douleur et mobilité articulaire avant et 1-2h après (arthrite). Tests : Temps de saignement (jusqu'à 2 sem après arrêt), fonction hépatique (AST/ALT) et rénale (Urée/Cr).",
+                "constats_evaluation": "Douleur aiguë ; Mobilité physique réduite ; Connaissances insuffisantes.",
+                "interventions_infirmieres": "Dose minimale efficace sur la plus courte durée. Administrer après les repas ou avec nourriture/antiacide (magnésium/aluminium) pour réduire l'irritation gastrique.",
+                "enseignement_patient_proches": "Prendre avec un grand verre d'eau, rester debout 15-30 min. Respecter rigoureusement la posologie (ne pas doubler). Éviter alcool. Utiliser un écran solaire (photosensibilité rare). Signaler : rash, selles noires, gain pondéral, syndrome grippal.",
+                "verification_effet_therapeutique": "Diminution de la douleur et amélioration de la mobilité articulaire. Soulagement partiel en 2 semaines, plein effet en 12 semaines."
             }
         }
     },
@@ -1175,23 +1149,23 @@
         "category": "medicaments",
         "details": {
             "classe": "Analgésiques non opioïdes",
-            "sous_classe": "AINS",
-            "indications": "",
-            "mode_action": "",
-            "pharmacocinetique": "",
-            "pharmacodynamie": "",
-            "contre_indications": "",
-            "precautions_mises_en_garde": "",
-            "reactions_indesirables_effets_secondaires": "",
-            "interaction": "",
-            "voies_administration_posologie": "",
-            "presentation": "",
+            "sous_classe": "AINS / Analgésique non opioïde",
+            "indications": "Traitement des maladies inflammatoires : polyarthrite rhumatoïde, arthrose, spondylarthrite ankylosante, arthrite goutteuse aiguë. Douleur légère ou modérée avec inflammation.",
+            "mode_action": "Inhibition de la synthèse des prostaglandines. Effets : Suppression de la douleur et de l'inflammation.",
+            "pharmacocinetique": "Absorption : Bonne (PO). Distribution : Passe dans le lait maternel (petites quantités). Métabolisme/Excrétion : Hépatique (métabolite actif) ; rénale. Demi-vie : 7,8 h (métabolite actif : 16,4 h).",
+            "pharmacodynamie": "PO (analgésie) : Début 1-2 jours ; Durée 12 h. PO (anti-inflammatoire) : Début quelques jours/1 semaine ; Pic ≥ 2 semaines.",
+            "contre_indications": "Hypersensibilité aux AINS/Aspirine. Douleur périopératoire (pontage coronarien). Ulcère actif ou antécédents de saignement GI. Insuffisance rénale grave (ClCr < 30). Insuffisance hépatique grave. Hyperkaliémie. 3e trimestre de grossesse. Allaitement. Enfants < 18 ans.",
+            "precautions_mises_en_garde": "Facteurs de risque cardiovasculaires, cérébrovasculaires ou néphropathie. Déshydratation. Gériatrie (sensibilité accrue). Antécédents d'ulcère. Tendance aux saignements.",
+            "reactions_indesirables_effets_secondaires": "SNC : étourdissements, céphalées, somnolence. ORLO : vision trouble, acouphènes. CV : infarctus, insuffisance cardiaque, AVC, œdème, hypertension. GI : hémorragie digestive, hépatite, pancréatite. Tég : SJS, Lyell, photosensibilité. Hémat : dyscrasie sanguine.",
+            "interaction": "Aspirine : diminue l'efficacité. Anticoagulants/Antiplaquettaires : risque de saignement. Corticostéroïdes/AINS : effets GI additifs. Lithium : risque de toxicité. Diurétiques/Antihypertenseurs : réponse diminuée. Antiacides : diminuent l'efficacité. Diméthylsulfoxyde : risque de neuropathie périphérique.",
+            "voies_administration_posologie": "PO (adultes) : 150 à 200 mg 2x/jour (max 400 mg/j). Arthrite goutteuse/douleur scapulaire : 200 mg 2x/j pendant 7-14 jours.",
+            "presentation": "Comprimés : 150 mg, 200 mg.",
             "soins_infirmiers": {
-                "evaluation_situation": "",
-                "constats_evaluation": "",
-                "interventions_infirmieres": "",
-                "enseignement_patient_proches": "",
-                "verification_effet_therapeutique": ""
+                "evaluation_situation": "Suivre rhinite/asthme/urticaire (hypersensibilité). Évaluer douleur et amplitude de mouvement (arthrite) avant et après 1-2 sem. Déceler rash initial (SJS). Tests : numération globulaire, fonction hépatique (AST/ALT, phosphatase alcaline) et rénale (Urée/Cr).",
+                "constats_evaluation": "Douleur aiguë ; Mobilité physique réduite ; Connaissances insuffisantes.",
+                "interventions_infirmieres": "Dose minimale efficace sur la plus courte durée. Administrer avec aliments, lait ou antiacide pour réduire l'irritation gastrique. Les comprimés peuvent être écrasés.",
+                "enseignement_patient_proches": "Prendre avec un grand verre d'eau, rester debout 15-30 min. Respecter rigoureusement la posologie (ne pas doubler). Éviter alcool. Utiliser un écran solaire (photosensibilité). Signaler : rash, selles noires, gain de poids, œdème, syndrome grippal.",
+                "verification_effet_therapeutique": "Soulagement de la douleur et mobilité accrue. Soulagement partiel en 7 jours, plein effet en 2 à 3 semaines."
             }
         }
     },
@@ -1244,6 +1218,32 @@
                 "interventions_infirmieres": "Ne pas confondre avec Zovirax. Porter des gants pour l'application ou se laver les mains immédiatement. Ne pas recouvrir d'un bandage occlusif. Possibilité d'appliquer lidocaïne topique au début pour réduire la gêne.",
                 "enseignement_patient_proches": "Démontrer l'application (faire pénétrer complètement). Expliquer que la brûlure initiale est normale et diminue avec le temps (ne pas réduire les doses). Éviter chaleur/douches chaudes juste après. Attendre guérison complète du zona avant application.",
                 "verification_effet_therapeutique": "Réduction de la douleur neuropathique ou arthritique (soulagement complet après 2-4 semaines)."
+            }
+        }
+    },
+    {
+        "id": "c6_m18",
+        "title": "Chlorzoxazone",
+        "category": "medicaments",
+        "details": {
+            "classe": "Analgésiques non opioïdes",
+            "sous_classe": "Relaxant musculosquelettique (à action centrale) / Analgésique",
+            "indications": "Adjuvant pour soulager les malaises associés à des troubles musculosquelettiques aigus et douloureux (myalgie, arthrite, dorsalgie, torticolis, syndromes cervicaux).",
+            "mode_action": "Relaxation des muscles squelettiques, probablement grâce à des propriétés sédatives. Effets : Relaxation musculaire et diminution de la douleur.",
+            "pharmacocinetique": "Absorption : Complète (PO). Distribution : Inconnue. Métabolisme/Excrétion : Majoritairement hépatique ; excrétion urinaire (< 1% inchangé). Demi-vie : 1,1 h.",
+            "pharmacodynamie": "PO : Début 1 h ; Pic 1-2 h ; Durée 3-4 h.",
+            "contre_indications": "Hypersensibilité. Porphyrie. Troubles hépatiques.",
+            "precautions_mises_en_garde": "Maladies cardiovasculaires ou rénales graves. Gériatrie (sensibilité accrue aux effets anticholinergiques). Obstétrique/Allaitement/Pédiatrie (innocuité non établie).",
+            "reactions_indesirables_effets_secondaires": "SNC : étourdissements, somnolence. GI : saignements GI, hépatotoxicité, constipation, brûlures d'estomac, nausées. Tég : dermatite allergique. Divers : réactions allergiques (œdème de Quincke).",
+            "interaction": "Effet additif de dépression du SNC avec : alcool, antihistaminiques, antidépresseurs, opioïdes, hypnosédatifs. Produits naturels : kava, valériane, camomille (accentuent la dépression SNC).",
+            "voies_administration_posologie": "PO (adultes et enfants > 12 ans) : 500 mg, 4 fois par jour. Dose max quotidienne : 2 g.",
+            "presentation": "Comprimés : 250 mg (souvent en association avec acétaminophène).",
+            "soins_infirmiers": {
+                "evaluation_situation": "Noter intensité douleur, rigidité musculaire et amplitude de mouvement avant et pendant le traitement. Gériatrie : surveiller somnolence et fatigue (effets anticholinergiques).",
+                "constats_evaluation": "Douleur aiguë ; Mobilité physique réduite ; Risque d'accident.",
+                "interventions_infirmieres": "Administrer avec les repas pour réduire l'irritation gastrique. Les comprimés peuvent être écrasés.",
+                "enseignement_patient_proches": "Respecter rigoureusement la posologie (ne pas doubler). Prudence pour la conduite (somnolence/étourdissements). Éviter alcool et autres dépresseurs SNC. Signaler : fièvre, anorexie, urines foncées ou ictère.",
+                "verification_effet_therapeutique": "Soulagement des spasmes musculaires associés aux troubles musculosquelettiques aigus."
             }
         }
     },
