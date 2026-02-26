@@ -2127,5 +2127,379 @@
                 "verification_effet_therapeutique": "Réduction des arythmies ventriculaires. Anesthésie locale efficace."
             }
         }
+    },
+    {
+        "id": "c9",
+        "title": "Antianémiques",
+        "category": "medicaments",
+        "is_class_sheet": true,
+        "preview": "Médicaments utilisés pour la prévention et le traitement des anémies en stimulant la production de globules rouges ou en fournissant les composants essentiels à la synthèse de l'hémoglobine.",
+        "details": {
+            "classe": "Antianémiques",
+            "molecules_list": "darbépoétine alfa, époétine alfa, fer dextran, fer saccharose, fumarate ferreux, gluconate ferreux, sulfate ferreux, vitamines b9, vitamine b12, gluconate ferrique de sodium",
+            "indications": "Prévention et traitement des anémies.",
+            "mode_action": "Fer (fer dextran, fer saccharose, fumarate ferreux, gluconate ferreux, sulfate ferreux) : Nécessaire à la synthèse de l'hémoglobine pour le transport de l'oxygène. Vitamine B12 (cyanocobalamine) et Acide folique (vitamine B9) : Vitamines nécessaires à la production de globules rouges. Darbépoétine et époétine : Stimulation de la production de globules rouges.",
+            "contre_indications": "Anémies non diagnostiquées. Fer : hémochromatose, hémosidérose, anémie hémolytique. Darbépoétine, époétine : hypertension non maîtrisée.",
+            "precautions": "Fer par voie parentérale (fer dextran, fer saccharose) : Administrer avec prudence en cas d'antécédents d'allergie ou d'hypersensibilité.",
+            "interactions": "Fer oral : peut diminuer l'absorption des tétracyclines, fluoroquinolones, pénicillamine, lévothyroxine et biphosphonates. Fer + nouveau-nés carencés en vit E : risque d'hémolyse. Acide folique : besoins augmentés par la phénytoïne et anticonvulsivants. Vitamine B12/Fer : réponse retardée par le chloramphénicol. Darbépoétine/Époétine : peuvent augmenter les besoins en héparine (hémodialyse).",
+            "soins_infirmiers": {
+                "evaluation": [
+                    "Évaluer l'état nutritionnel et les antécédents diététiques pour déterminer les causes de l'anémie.",
+                    "Suivre la réponse au traitement (fatigue, dyspnée, pâleur)."
+                ],
+                "constats": [
+                    "Intolérance à l'activité (Indications).",
+                    "Alimentation déficiente (Indications).",
+                    "Connaissances insuffisantes sur la maladie et le traitement."
+                ],
+                "enseignement": [
+                    "Encourager l'observation des recommandations diététiques (régime équilibré).",
+                    "Avertir contre le dépassement de l'apport quotidien recommandé (risques d'effets indésirables)."
+                ],
+                "interventions": [
+                    "Note : Le fer est souvent présenté en association avec de nombreuses vitamines et minéraux."
+                ]
+            },
+            "verification_effet_therapeutique": "Résolution de l'anémie."
+        }
+    },
+    {
+        "id": "c9_m1",
+        "title": "Darbépoétine alfa",
+        "category": "medicaments",
+        "details": {
+            "classe": "Antianémiques",
+            "synonymes": "Aranesp",
+            "classification": "Antianémique, hormone régulatrice d'érythropoïèse. Grossesse – catégorie C",
+            "indications": "Traitement de l'anémie associée à l'insuffisance rénale chronique (IRC), chez les patients dialysés ou non dialysés. Traitement de l'anémie chez les patients présentant des tumeurs non myéloïdes, lorsque l'anémie est due à l'effet d'une chimiothérapie concomitante.",
+            "mode_action": "Stimulation de l'érythropoïèse (production d'érythrocytes). Effets thérapeutiques : Maintien ou augmentation du nombre d'érythrocytes (réduit le besoin de transfusion) ; Correction de l'anémie et maintien des concentrations d'hémoglobine dans une gamme cible.",
+            "pharmacocinetique": "Absorption : Lente (SC) ; biodisponibilité 30-50 %. Biodisponibilité 100 % (IV). Distribution : Espaces vasculaires. Métabolisme et excrétion : Métabolisme hépatique. Demi-vie terminale : SC 27-89 heures ; IV 21 heures.",
+            "pharmacodynamie": "Profil temps-action (élévation Hb) : IV, SC : Début 2 – 6 semaines, Pic 7 – 10 semaines, Durée inconnue.",
+            "contre_indications": "Hypersensibilité aux produits dérivés de cellules de mammifères ou au polysorbate 80. Hypertension non maîtrisée. Érythroblastopénie consécutive à un traitement au moyen de toute protéine stimulant l'érythropoïèse.",
+            "precautions_mises_en_garde": "Réactions d'hypersensibilité et cutanées graves. Hypertension. Antécédents de convulsions. Érythroblastopénie et anémie grave. Maladie coronarienne, artérielle périphérique, carotidienne ou cérébrale grave (Infarctus/AVC récents). Antécédents d'événements thrombovasculaires (TVP, embolie pulmonaire). Patients cancéreux : Risque accru de mortalité ou de récurrence tumorale. Obst., allaitement, péd. : Innocuité non établie.",
+            "reactions_indesirables_effets_secondaires": {
+                "SNC": "convulsions, céphalées, étourdissements, fatigue, faiblesse.",
+                "Resp": "toux, dyspnée, bronchite.",
+                "CV": "arythmies, insuffisance cardiaque globale, infarctus du myocarde, AVC ou AIT, complications thrombotiques (Hb > 120 g/L), thrombose de l'accès vasculaire (hémodialyse), hypertension, hypotension, angine de poitrine, œdème périphérique.",
+                "GI": "douleurs abdominales, nausées, diarrhée, vomissements, constipation.",
+                "Tég": "prurit, douleurs au point d'injection.",
+                "Loc": "myalgie, arthralgie, douleurs lombaires.",
+                "Divers": "fièvre, septicémie, symptômes pseudogrippaux, réactions allergiques, aplasie érythrocytaire (théorique)."
+            },
+            "interaction": "Médicament-médicament : Aucune signalée.",
+            "voies_administration_posologie": "IRC : SC, IV (adultes) : Initiale 0,45 mcg/kg 1x/semaine (ou 1x/2 sem). Chimiothérapie : SC (adultes) : 2,25 mcg/kg 1x/semaine ou 500 mcg 1x/3 semaines. Ajustements : Pas plus de 1x/mois.",
+            "presentation": "Seringues préremplies : 10, 20, 30, 40, 50, 60, 80, 100, 130, 150, 200, 300, 500 mcg.",
+            "soins_infirmiers": {
+                "evaluation_situation": "Mesurer la PA avant et pendant le traitement (risque d'hypertension grave). Suivre les signes d'anémie (fatigue, dyspnée, pâleur). Évaluer l'accès vasculaire (frémissements/bruits) en hémodialyse. Surveiller les signes de réaction allergique (rash, urticaire, dyspnée). Tests Labo : Hb/Hct (hebdomadaire au début, puis mensuel), bilan martial (ferritine ≥ 100 mcg/L, saturation transferrine ≥ 20 %), urée, créatinine, électrolytes, plaquettes (peut augmenter).",
+                "constats_evaluation": "Intolérance à l'activité (Indications). Connaissances insuffisantes sur le traitement médicamenteux (Enseignement). Non-observance du traitement médicamenteux.",
+                "interventions_infirmieres": "Corriger les déficiences en fer ou acide folique avant le traitement. Administrer un supplément de fer concomitant. Maîtriser la PA (ajuster les antihypertenseurs). Surveiller les convulsions (Hb augmentant > 10 g/L en 2 sem). Conservation : Réfrigérateur (2-8 °C), ne pas agiter, protéger de la lumière. IV directe : non diluée, bolus dans la tubulure ou la veine.",
+                "enseignement_patient_proches": "Expliquer l'importance du fer et du traitement antihypertenseur. Contraception appropriée (retour possible de la fécondité). Prévention des blessures (convulsions) : ne pas conduire au début. Reconnaître les signes de thrombose/AVC/Infarctus (douleur jambe, confusion, faiblesse unilatérale). Régularité des doses (même jour). IRC : Restrictions alimentaires (pauvre en potassium, riche en fer) et liquidiennes.",
+                "verification_effet_therapeutique": "Élévation de l'hémoglobine (cible max 120 g/L) et amélioration des symptômes d'anémie."
+            }
+        }
+    },
+    {
+        "id": "c9_m2",
+        "title": "Époétine alfa",
+        "category": "medicaments",
+        "details": {
+            "classe": "Antianémiques",
+            "synonymes": "Eprex",
+            "classification": "Antianémique, hormone régulatrice d'érythropoïèse. Grossesse – catégorie C",
+            "indications": "Traitement de l'anémie associée à l'insuffisance rénale chronique (dialysés et non dialysés). Traitement de l'anémie secondaire à la zidovudine (VIH). Traitement de l'anémie induite par la chimiothérapie (tumeurs non myéloïdes). Prélèvement de sang autologue avant chirurgie majeure.",
+            "mode_action": "Stimulation de l'érythropoïèse (production d'érythrocytes). Effets thérapeutiques : Maintien ou augmentation du nombre d'érythrocytes (réduit le besoin de transfusion).",
+            "pharmacocinetique": "Absorption : Lente (SC) ; biodisponibilité 20 %. Distribution : Inconnue. Métabolisme et excrétion : Inconnus. Demi-vie : Adultes IRC (IV 4-13h, SC 16-67h) ; enfants (6,2-8,7h).",
+            "pharmacodynamie": "Profil temps-action (augmentation érythrocytes) : IV, SC : Début 2 – 6 semaines (hausse réticulocytes), Pic 2 mois, Durée 2 semaines (après arrêt).",
+            "contre_indications": "Érythroblastopénie consécutive à un traitement par érythropoïétine. Hypersensibilité aux produits de mammifères. Hypertension non maîtrisée. Maladie coronarienne/vasculaire grave (si chirurgie non urgente et sans autotransfusion).",
+            "precautions_mises_en_garde": "Réactions d'hypersensibilité et cutanées graves. Érythroblastopénie. Anémie grave. Hypertension. Antécédents de convulsions. Porphyrie, Goutte. Insuffisance hépatique. Maladie coronarienne/vasculaire grave (Infarctus/AVC récents). Antécédents d'événements thrombovasculaires (TVP, embolie pulmonaire). Patients cancéreux : Risque accru de mortalité ou de récurrence tumorale. Obst., allaitement : Innocuité non établie.",
+            "reactions_indesirables_effets_secondaires": {
+                "SNC": "convulsions, céphalées.",
+                "CV": "hypertension, insuffisance cardiaque globale, infarctus du myocarde, AVC, ICT, complications thrombotiques (Hb > 120 g/L).",
+                "GI": "nausées, diarrhée, vomissements, constipation.",
+                "Tég": "rash.",
+                "End": "rétablissement de la fécondité, retour des règles.",
+                "Hémat": "érythroblastopénie.",
+                "Divers": "symptômes pseudogrippaux, réactions allergiques, croissance tumorale accrue (Hb > 120 g/L)."
+            },
+            "interaction": "Médicament-médicament : Peut augmenter les besoins en héparine (hémodialyse). Interaction possible avec la cyclosporine (surveiller taux).",
+            "voies_administration_posologie": "IRC : SC, IV (adultes/enfants) : Initial 50-100 UI/kg 3x/semaine. VIH (zidovudine) : IV, SC (adultes) : Initial 100 UI/kg 3x/semaine. Chimiothérapie : SC (adultes) : 150 UI/kg 3x/semaine ou 40 000 UI 1x/semaine. Chirurgie : SC, IV (adultes) : 600 UI/kg 1x/semaine (SC) ou 300 UI/kg/jour (SC) ou 600 UI/kg 2x/semaine (IV, autotransfusion).",
+            "presentation": "Seringues préremplies : 1 000, 2 000, 3 000, 4 000, 5 000, 6 000, 8 000, 10 000, 20 000, 30 000, 40 000 UI.",
+            "soins_infirmiers": {
+                "evaluation_situation": "Mesurer la PA avant et pendant le traitement (risque d'hypertension grave). Suivre les signes d'anémie (fatigue, dyspnée, pâleur). Évaluer l'accès vasculaire (frémissements/bruits) en hémodialyse. Surveiller les signes de réaction allergique (rash, urticaire, dyspnée). Tests Labo : Hb/Hct (hebdomadaire au début, puis mensuel), bilan martial (ferritine ≥ 100 mcg/L, saturation transferrine ≥ 20 %), urée, créatinine, électrolytes, plaquettes (peut augmenter).",
+                "constats_evaluation": "Intolérance à l'activité (Indications). Connaissances insuffisantes sur le traitement médicamenteux (Enseignement). Non-observance du traitement médicamenteux.",
+                "interventions_infirmieres": "Administrer supplément de fer concomitant. Maîtriser la PA. Prévenir les convulsions (surtout 90 premiers jours). Stabilité : Réfrigérateur, 7 jours à temp. ambiante. IV directe : non diluée, 1-5 minutes ou bolus fin de dialyse.",
+                "enseignement_patient_proches": "Expliquer l'importance du fer et du traitement antihypertenseur. Contraception appropriée (retour possible de la fécondité). Prévention des blessures (convulsions) : ne pas conduire au début. Reconnaître les signes de thrombose/AVC/Infarctus (douleur jambe, confusion, faiblesse unilatérale). IRC : Restrictions alimentaires (pauvre en potassium, riche en fer) et liquidiennes.",
+                "verification_effet_therapeutique": "Augmentation de l'hématocrite et Hb, amélioration des symptômes d'anémie, réduction du besoin de transfusion."
+            }
+        }
+    },
+    {
+        "id": "c9_m3",
+        "title": "Fer dextran",
+        "category": "medicaments",
+        "details": {
+            "classe": "Antianémiques",
+            "synonymes": "Dexiron",
+            "classification": "Minéraux et électrolytes (antianémiques). Grossesse – catégorie C",
+            "indications": "IM, IV : Traitement et prévention de l'anémie ferriprive chez les patients ne pouvant tolérer les suppléments oraux.",
+            "mode_action": "Substance minérale essentielle (hémoglobine, myoglobine, enzymes). Pénètre dans la circulation et le système réticulo-endothélial (foie, rate, moelle) pour intégrer les réserves. Effets thérapeutiques : Prévention et traitement des carences en fer.",
+            "pharmacocinetique": "Absorption : Bonne (IM). Distribution : Demeure dans l'organisme plusieurs mois ; traverse la barrière placentaire et pénètre dans le lait maternel. Liaison protéines : ≥ 90 %. Métabolisme/Excrétion : Réabsorbé en majorité ; petites pertes via peau, sueur, urine et bile. Demi-vie : 6 heures.",
+            "pharmacodynamie": "Profil temps-action (érythropoïèse) : IM, IV : Début 4 jours, Pic 1 – 2 semaines, Durée plusieurs semaines/mois.",
+            "contre_indications": "Hypersensibilité. Hémochromatose, Hémosidérose. Anémies non ferriprives. Pyélonéphrite aiguë, affections hépatiques aiguës. Obst. : Début de la grossesse.",
+            "precautions_mises_en_garde": "Maladies auto-immunes et arthrite (risque allergique accru). Maladie cardiovasculaire (exacerbation possible). Gér. : Utiliser des doses initiales plus faibles. Insuffisance hépatique grave.",
+            "reactions_indesirables_effets_secondaires": {
+                "SNC": "IM, IV – convulsions, étourdissements, céphalées, syncope.",
+                "CV": "IM, IV – hypotension, hypertension, tachycardie.",
+                "GI": "nausées, vomissements, altération du goût.",
+                "Tég": "bouffées vasomotrices, urticaire.",
+                "Resp": "toux, dyspnée.",
+                "Loc": "Douleur au point d'injection IM, coloration sombre de la peau au point d'injection (permanent), phlébite (IV).",
+                "Locaux": "arthralgie, myalgie.",
+                "Divers": "réactions allergiques incluant l'anaphylaxie, fièvre, lymphadénopathie, diaphorèse."
+            },
+            "interaction": "Médicament-médicament : Tétracyclines, biphosphonates, fluoroquinolones, mycophénolate mofétil, pénicillamine, lévodopa, méthyldopa, lévothyroxine (diminution d'absorption). Chloramphénicol ou vitamine E : modifie réponse.",
+            "voies_administration_posologie": "Administrer une dose d'essai de 0,5 mL (25 mg). Attendre 1h. IM, IV (adultes/enfants > 10 kg) : Ne pas dépasser 100 mg/j. Dose totale (mL) = 0,00442 x (Hb cible - Hb obs) x Poids maigre + (0,26 x Poids maigre).",
+            "presentation": "Solution pour injection : 50 mg/mL.",
+            "soins_infirmiers": {
+                "evaluation_situation": "Évaluer nutrition/habitudes alimentaires. Surveiller fonction intestinale (constipation/diarrhée). Mesurer PA/FC fréquents après IV. Guetter anaphylaxie (rash, prurit, œdème laryngé) ; adrénaline prête. Tests Labo : Hb/Hct/Réticulocytes q3sem (2 premiers mois). Coloration brunâtre du sang possible (4h après prise).",
+                "constats_evaluation": "Intolérance à l'activité (Indications). Connaissances insuffisantes sur le traitement et la diétothérapie.",
+                "interventions_infirmieres": "Interrompre fer oral avant parentéral. Dose d'essai 25 mg (IV en 5 min, IM en Z). IM : Injecter en profondeur dans le fessier (technique en Z). IV : Rester allongé 30 min (hypotension orthostatique). IV directe : lente (50 mg/min). Perfusion : NaCl 0,9 % privilégié (rinçage 10 mL fin).",
+                "enseignement_patient_proches": "Respecter posologie. Selles vert foncé ou noires (inoffensif). Régime riche en fer. Réaction retard possible (1-7j) : signaler fièvre, frissons, douleurs musculaires.",
+                "verification_effet_therapeutique": "Élévation Hb (atteinte normale en 1-2 mois). Normalisation des réserves en 3-6 mois."
+            }
+        }
+    },
+    {
+        "id": "c9_m4",
+        "title": "Fer saccharose",
+        "category": "medicaments",
+        "details": {
+            "classe": "Antianémiques",
+            "synonymes": "Venofer",
+            "classification": "Minéraux et électrolytes (antianémiques). Grossesse – catégorie C",
+            "indications": "IV : Traitement des anémies associées à la dialyse. Déficience en fer chez les insuffisants rénaux chroniques (dialysés ou non).",
+            "mode_action": "Substance minérale essentielle (hémoglobine, myoglobine, enzymes). Pénètre dans la circulation et le système réticulo-endothélial. Effets thérapeutiques : Prévention et traitement des carences en fer.",
+            "pharmacocinetique": "Distribution : Demeure dans l'organisme plusieurs mois ; traverse la barrière placentaire et pénètre dans le lait maternel. Liaison protéines : ≥ 90 %. Métabolisme/Excrétion : Réabsorbé en majorité ; petites pertes via peau, sueur, urine et bile. Demi-vie : 6 heures.",
+            "pharmacodynamie": "Profil temps-action (érythropoïèse) : IV : Début 4 jours, Pic 1 – 2 semaines, Durée plusieurs semaines/mois.",
+            "contre_indications": "Hypersensibilité. Hémochromatose, Hémosidérose. Anémies non ferriprives. Pyélonéphrite aiguë, affections hépatiques aiguës. Obst. : Début de la grossesse.",
+            "precautions_mises_en_garde": "Maladies auto-immunes et arthrite (risque allergique accru). Gér. : Utiliser des doses initiales plus faibles. Insuffisance hépatique grave.",
+            "reactions_indesirables_effets_secondaires": {
+                "SNC": "convulsions, étourdissements, céphalées, syncope.",
+                "CV": "hypotension, hypertension, tachycardie.",
+                "GI": "nausées, vomissements, altération du goût.",
+                "Tég": "bouffées vasomotrices, urticaire.",
+                "Resp": "toux, dyspnée.",
+                "Loc": "phlébite au point d'injection.",
+                "Locaux": "arthralgie, myalgie.",
+                "Divers": "réactions allergiques incluant l'anaphylaxie, fièvre, lymphadénopathie, diaphorèse."
+            },
+            "interaction": "Médicament-médicament : Diminue absorption de : tétracyclines, biphosphonates, fluoroquinolones, mycophénolate mofétil, pénicillamine, lévodopa, méthyldopa, lévothyroxine. Chloramphénicol ou vitamine E : modifie réponse.",
+            "voies_administration_posologie": "IV (adultes) : 100 mg durant la séance de dialyse, max 3x/semaine.",
+            "presentation": "Solution pour injection : 20 mg/mL.",
+            "soins_infirmiers": {
+                "evaluation_situation": "Évaluer nutrition/habitudes alimentaires. Surveiller fonction intestinale. Mesurer PA/FC fréquents après IV. Guetter anaphylaxie ; adrénaline prête. Tests Labo : Hb/Hct/Transferrine/Ferritine à intervalles réguliers. Saturation transferrine fiable 48h après prise. Suspendre si surcharge.",
+                "constats_evaluation": "Intolérance à l'activité (Indications). Connaissances insuffisantes sur le traitement et la diétothérapie.",
+                "interventions_infirmieres": "Réservé à la voie IV. Interrompre fer oral avant parentéral. IV directe : lente (1 mL/min), max 100 mg par injection. Perfusion : Diluer dans NaCl 0,9 % ; 100 mg en 15 min, > 100 mg en 2h. Incompatibilité : Ne pas mélanger.",
+                "enseignement_patient_proches": "Signaler immédiatement toute réaction d'hypersensibilité. Respecter posologie. Selles noires. Régime riche en fer.",
+                "verification_effet_therapeutique": "Amélioration de l'anémie chez l'insuffisant rénal."
+            }
+        }
+    },
+    {
+        "id": "c9_m5",
+        "title": "Fumarate ferreux",
+        "category": "medicaments",
+        "details": {
+            "classe": "Antianémiques",
+            "synonymes": "Euro-Fer, Jamp-Fer, Neo-Fer, Palafer, Palafer CF",
+            "classification": "Minéraux et électrolytes (antianémiques). Grossesse – catégorie C",
+            "indications": "Prévention et traitement de l'anémie ferriprive.",
+            "mode_action": "Substance minérale essentielle (hémoglobine, myoglobine, enzymes). Effets thérapeutiques : Prévention et traitement des carences en fer.",
+            "pharmacocinetique": "Absorption : De 5 à 10 % (normal), jusqu'à 60 % (thérapeutique). Transport actif et passif. Distribution : Demeure plusieurs mois dans l'organisme ; placentaire, lait maternel. Liaison protéines : ≥ 90 %. Métabolisme/Excrétion : Réabsorbé en majorité ; pertes via peau, sueur, urine, bile.",
+            "pharmacodynamie": "Profil temps-action (érythropoïèse) : PO : Début 4 jours, Pic 7 – 10 jours, Durée 2 – 4 mois.",
+            "contre_indications": "Hypersensibilité. Hémochromatose, Hémosidérose. Anémies non ferriprives. Pyélonéphrite aiguë, affections hépatiques aiguës. Obst. : Début de la grossesse.",
+            "precautions_mises_en_garde": "Ulcère gastroduodénal. Insuffisance rénale. Colite ulcéreuse ou entérite régionale (aggravation possible). Utilisation abusive (risque de surcharge).",
+            "reactions_indesirables_effets_secondaires": {
+                "GI": "nausées, constipation, selles foncées, diarrhée, douleurs épigastriques, hémorragie digestive.",
+                "Divers": "coloration sombre des dents (préparations liquides), réactions allergiques."
+            },
+            "interaction": "Médicament-médicament : AntiH2, IPP, cholestyramine, tétracyclines, antiacides (diminuent absorption). Diminue absorption de : biphosphonates, fluoroquinolones, mycophénolate, pénicillamine, lévodopa, méthyldopa, lévothyroxine. Acide ascorbique (≥ 200 mg) : augmente absorption. Aliments : absorption réduite de 30-50 %.",
+            "voies_administration_posologie": "Doses exprimées en fer élémentaire (Fumarate = 33 % fer). PO (adultes) : Préventif : 8-13 mg/j. Carence : 50-100 mg 3x/jour. PO (enfants) : 3-6 mg/kg/j en 3 doses. Grossesse (T2/T3) : +5-10 mg/j.",
+            "presentation": "Capsules : 300 mg. Suspension : 300 mg/5 mL.",
+            "soins_infirmiers": {
+                "evaluation_situation": "Évaluer nutrition/habitudes alimentaires. Surveiller fonction intestinale (constipation/diarrhée). Tests Labo : Hb/Hct/Numération réticulocytaire q3sem au début. Selles foncées (peut masquer sang occulte).",
+                "constats_evaluation": "Intolérance à l'activité (Indications). Connaissances insuffisantes sur le médicament et la diétothérapie.",
+                "interventions_infirmieres": "Administrer 1h avant ou 2h après repas (ou aux repas si irritation). Capsules/Comprimés : avec un grand verre d'eau/jus. Ne pas mâcher/écraser les formes LP/entérosolubles. Liquides : diluer (240 mL eau/jus), boire à la paille (évite taches dents). Pas d'antiacides, café, thé, laitage, œufs, pain complet dans l'heure entourant la prise.",
+                "enseignement_patient_proches": "Respecter posologie. Selles vert foncé ou noires (inoffensif). Régime riche en fer. Danger : Tenir hors de portée des enfants (risques de surdosage mortel).",
+                "verification_effet_therapeutique": "Élévation Hb (atteinte normale en 1-2 mois). Normalisation des réserves en 3-6 mois."
+            }
+        }
+    },
+    {
+        "id": "c9_m6",
+        "title": "Gluconate ferreux",
+        "category": "medicaments",
+        "details": {
+            "classe": "Antianémiques",
+            "synonymes": "Apo-Gluconate Ferreux, PMS-Gluconate Ferreux",
+            "classification": "Minéraux et électrolytes (antianémiques). Grossesse – catégorie C",
+            "indications": "Prévention et traitement de l'anémie ferriprive.",
+            "mode_action": "Substance minérale essentielle (hémoglobine, myoglobine, enzymes). Effets thérapeutiques : Prévention et traitement des carences en fer.",
+            "pharmacocinetique": "Absorption : Transport actif et passif. Distribution : Demeure plusieurs mois ; placentaire, lait maternel. Liaison protéines : ≥ 90 %. Métabolisme/Excrétion : Réabsorbé en majorité.",
+            "pharmacodynamie": "Profil temps-action (érythropoïèse) : PO : Début 4 jours, Pic 7 – 10 jours, Durée 2 – 4 mois.",
+            "contre_indications": "Hypersensibilité. Hémochromatose, Hémosidérose. Anémies non ferriprives. Pyélonéphrite aiguë, affections hépatiques aiguës. Obst. : Début de la grossesse.",
+            "precautions_mises_en_garde": "Ulcère gastroduodénal. Insuffisance rénale. Colite ulcéreuse ou entérite régionale. Utilisation abusive (surcharge).",
+            "reactions_indesirables_effets_secondaires": {
+                "GI": "nausées, constipation, selles foncées, diarrhée, douleurs épigastriques, hémorragie digestive.",
+                "Divers": "coloration sombre des dents (liquides), réactions allergiques."
+            },
+            "interaction": "Médicament-médicament : AntiH2, IPP, cholestyramine, tétracyclines, antiacides (inhibent absorption). Diminue absorption de : biphosphonates, fluoroquinolones, mycophénolate, pénicillamine, lévodopa, méthyldopa, lévothyroxine. Acide ascorbique augmente absorption. Aliments : absorption réduite.",
+            "voies_administration_posologie": "Gluconate = 11,6 % fer élémentaire. PO (adultes) : Préventif : 8-13 mg/j fer élémentaire. Carence : 50-100 mg fer élémentaire 3x/jour. PO (enfants) : 3-6 mg/kg/j fer élémentaire. Grossesse (T2/T3) : suppl. 5-10 mg/j fer élémentaire.",
+            "presentation": "Comprimés : 300, 324, 325 mg. Sirop : 7 mg/mL (fer élémentaire).",
+            "soins_infirmiers": {
+                "evaluation_situation": "Nutrition/Selles/Labo (Hb, Hct, Réticulocytes). Selles foncées.",
+                "constats_evaluation": "Intolérance à l'activité (Indications). Connaissances insuffisantes.",
+                "interventions_infirmieres": "Administrer 1h avant ou 2h après repas. Capsules/Comprimés : avec un grand verre d'eau/jus. Liquides : diluer, paille. Pas d'antiacides/café/thé/lait 1h avant/après.",
+                "enseignement_patient_proches": "Respecter posologie. Selles noires. Régime riche en fer. Danger enfants (surdosage mortel).",
+                "verification_effet_therapeutique": "Élévation Hb (1-2 mois). Réserves normales en 3-6 mois."
+            }
+        }
+    },
+    {
+        "id": "c9_m7",
+        "title": "Sulfate ferreux",
+        "category": "medicaments",
+        "details": {
+            "classe": "Antianémiques",
+            "synonymes": "Apo-Sulfate Ferreux, Euro-Sulfate Ferreux, Fer-In-Sol, Pediafer, PMS-Ferrous Sulfate, Slow-FE",
+            "classification": "Minéraux et électrolytes (antianémiques). Grossesse – catégorie C",
+            "indications": "Prévention et traitement de l'anémie ferriprive.",
+            "mode_action": "Substance minérale essentielle (hémoglobine, myoglobine, enzymes). Effets thérapeutiques : Prévention et traitement des carences en fer.",
+            "pharmacocinetique": "Absorption : Transport actif et passif. Distribution : Demeure plusieurs mois ; placentaire, lait maternel. Liaison protéines : ≥ 90 %. Métabolisme/Excrétion : Réabsorbé en majorité.",
+            "pharmacodynamie": "Profil temps-action (érythropoïèse) : PO : Début 4 jours, Pic 7 – 10 jours, Durée 2 – 4 mois.",
+            "contre_indications": "Hypersensibilité. Hémochromatose, Hémosidérose. Anémies non ferriprives. Pyélonéphrite aiguë, affections hépatiques aiguës. Obst. : Début de la grossesse.",
+            "precautions_mises_en_garde": "Ulcère gastroduodénal. Insuffisance rénale. Colite ulcéreuse ou entérite régionale. Utilisation abusive (surcharge).",
+            "reactions_indesirables_effets_secondaires": {
+                "GI": "nausées, constipation, selles foncées, diarrhée, douleurs épigastriques, hémorragie digestive.",
+                "Divers": "coloration sombre des dents (liquides), réactions allergiques."
+            },
+            "interaction": "Médicament-médicament : AntiH2, IPP, cholestyramine, tétracyclines, antiacides (inhibent absorption). Diminue absorption de : biphosphonates, fluoroquinolones, mycophénolate, pénicillamine, lévodopa, méthyldopa, lévothyroxine. Acide ascorbique augmente absorption. Aliments : absorption réduite.",
+            "voies_administration_posologie": "Sulfate = 20-30 % fer élémentaire. PO (adultes) : Préventif : 8-13 mg/j fer élémentaire. Carence : 50-100 mg fer élémentaire 3x/jour. PO (enfants) : 3-6 mg/kg/j fer élémentaire. Grossesse (T2/T3) : suppl. 5-10 mg/j fer élémentaire.",
+            "presentation": "Comprimés/Capsules : 60, 300, 325 mg. Comprimés LP : 160 mg. Solutions : 75 mg/mL, 150 mg/5 mL. Gouttes : 6, 15, 25 mg/mL (fer élémentaire).",
+            "soins_infirmiers": {
+                "evaluation_situation": "Nutrition/Selles/Labo. Selles foncées.",
+                "constats_evaluation": "Intolérance à l'activité (Indications). Connaissances insuffisantes.",
+                "interventions_infirmieres": "Administrer 1h avant ou 2h après repas. Capsules/Comprimés : avec un grand verre d'eau/jus. Liquides : diluer, paille. Formes LP : ne pas mâcher/écraser. Pas d'antiacides/café/thé/lait 1h avant/après.",
+                "enseignement_patient_proches": "Respecter posologie. Selles noires. Régime riche en fer. Danger enfants (surdosage mortel).",
+                "verification_effet_therapeutique": "Élévation Hb (1-2 mois). Réserves normales en 3-6 mois."
+            }
+        }
+    },
+    {
+        "id": "c9_m8",
+        "title": "Vitamines B9 (Acide folique)",
+        "category": "medicaments",
+        "details": {
+            "classe": "Antianémiques",
+            "synonymes": "Acide folique, folate, folacine. Apo-Folic, Folvite, Novo-Folacid",
+            "classification": "Vitamine B (hydrosoluble), Hématopoïétique. Grossesse – catégorie A (C à doses élevées)",
+            "indications": "Anémies mégaloblastiques et macrocytaires (carence alimentaire, métabolique ou médicamenteuse). Grossesse : développement fœtal, prévention des malformations du tube neural. Sprue tropicale. Usages non approuvés : Prévention de la toxicité du méthotrexate.",
+            "mode_action": "Synthèse des protéines et formation de nouvelles cellules. Stimulation de la formation des globules rouges/blancs et des plaquettes. Essentiel au développement du système nerveux fœtal. Cofacteur biosynthèse acides nucléiques. Effet : Rétablissement/maintien d'une hématopoïèse normale.",
+            "pharmacocinetique": "Absorption : Bonne (PO, IM, SC) ; duodénum. Distribution : ½ de la réserve hépatique (70 mg) ; placentaire, lait maternel. Liaison protéines : Importante. Métabolisme : Hépatique et plasmatique (transformation en acide tétrahydrofolique). Excrétion : Rénale.",
+            "pharmacodynamie": "Profil temps-action (hausse réticulocytes) : PO, IM, SC, IV : Début 3 – 5 jours, Pic 5 – 10 jours.",
+            "contre_indications": "Hypersensibilité. Nouveau-nés (si alcool benzylique présent dans la préparation).",
+            "precautions_mises_en_garde": "Anémie pernicieuse non corrigée (masquage des lésions neurologiques). Maladies de l'intestin grêle (malabsorption). Pas d'effet en secours pour surdosage d'antimétaboliques (utiliser l'acide folinique).",
+            "reactions_indesirables_effets_secondaires": {
+                "SNC": "à haute dose – malaise, insomnie, irritabilité, confusion.",
+                "CV": "bouffées vasomotrices.",
+                "GI": "à haute dose – anorexie, nausées, distension abdominale, flatulence, goût amer.",
+                "Tég": "rash, prurit, érythème.",
+                "Resp": "bronchospasme.",
+                "Divers": "fièvre, réactions allergiques (urticaire)."
+            },
+            "interaction": "Médicament-médicament : Sulfamides (sulfasalazine), antiacides, cholestyramine (diminuent absorption). Contraceptifs oraux, anticonvulsivants, glucocorticoïdes (augmentent besoins). Phénytoïne (peut baisser taux sérique). Alcool (entrave absorption/métabolisme). Méthotrexate (administrer l'acide folique ≥ 24h après).",
+            "voies_administration_posologie": "Carence : PO, IM, IV, SC (adultes/enfants ≥ 4 ans) : Initial 0,25-1 mg/jour ; Entretien 0,4 mg/jour (jusqu'à 5 mg si alcoolisme/hémolyse/dialyse). Tube neural : PO (femmes) : 0,4-1 mg/jour (5 mg si haut risque). Toxicité méthotrexate : 0,4-5 mg/jour (sauf jour de prise du MTX).",
+            "presentation": "Comprimés : 0,4 mg, 1 mg, 5 mg. Solution pour injection : 5 mg/mL.",
+            "soins_infirmiers": {
+                "evaluation_situation": "Observer les signes d'anémie mégaloblastique (fatigue, dyspnée). Tests Labo : Hb/Hct, numération réticulocytaire, folate plasmatique (norme 2-10 ng/mL). Surveiller taux Vit B12 (si > 400 mcg acide folique/j).",
+                "constats_evaluation": "Alimentation déficiente (Indications). Intolérance à l'activité (Indications). Connaissances insuffisantes sur le traitement.",
+                "interventions_infirmieres": "Ne pas confondre avec l'acide folinique (forme déjà réduite). Associer à la Vit B12 si anémie pernicieuse suspectée (risque de masquer lésions neuro). PO : administrer les antiacides 2h après. Cholestyramine : 1h avant ou 4-6h après. IV directe : ≤ 5 mg en 1 min (non dilué). Perfusion intermittente : 30 min (dextrose/NaCl).",
+                "enseignement_patient_proches": "Régime équilibré (légumes, fruits, abats). L'acide folique alimentaire est détruit par la chaleur. Importance au début de la grossesse. Urine jaune plus foncé (sans gravité). Signaler tout rash (allergie). Respecter apport quotidien recommandé.",
+                "verification_effet_therapeutique": "Réticulocytose (2-5j), moelle normoblastique (48h). Résolution des symptômes d'anémie. Prévention des anomalies du tube neural."
+            }
+        }
+    },
+    {
+        "id": "c9_m9",
+        "title": "Vitamine B12 (Cyanocobalamine)",
+        "category": "medicaments",
+        "details": {
+            "classe": "Antianémiques",
+            "synonymes": "Cyanocobalamine, méthylcobalamine (Alta-B12, Beduzil, Cobex, Euro-B12 LA, M-B12) ; Hydroxocobalamine (Cyanokit).",
+            "classification": "Vitamine B (hydrosoluble) ; hématopoïétique ; antidote. Grossesse – catégories A (ANR) ou C (> ANR).",
+            "indications": "Traitement et prévention des carences en B12 (malabsorption, gastrectomie, régime végétalien). Anémie pernicieuse (maladie de Biermer). Test de Schilling. Hydroxocobalamine (IV) : Antidote de l'intoxication au cyanure.",
+            "mode_action": "Coenzyme nécessaire aux processus métaboliques (lipides, glucides, protéines). Indispensable à la formation des globules rouges et au maintien de l'intégrité de la gaine de myéline. Nécessaire à l'utilisation des folates. Antidote : l'hydroxocobalamine fixe l'ion cyanure pour former la cyanocobalamine excrétable.",
+            "pharmacocinetique": "Absorption : Bonne (IM, SC, IV, nasale). Orale : nécessite facteur intrinsèque et calcium pour absorption active (99 % de l'absorption). Diffusion passive (1 %) possible à fortes doses (> 1 mg). Distribution : Emmagasinée dans le foie (50-90 % des réserves). Traverse barrière placentaire. Demi-vie : Cyanocobalamine – 6 jours.",
+            "pharmacodynamie": "Profil temps-action (réticulocytose) : Pic 3 – 10 jours.",
+            "contre_indications": "Hypersensibilité. Nouveau-nés (si alcool benzylique présent dans la préparation injectable).",
+            "precautions_mises_en_garde": "Atrophie héréditaire du nerf optique (accélération des lésions). Urémie, carences en fer ou acide folique (modifie réponse). Hydroxocobalamine : risque fœtal à évaluer.",
+            "reactions_indesirables_effets_secondaires": {
+                "SNC": "céphalées, étourdissements, perte de mémoire (IV).",
+                "CV": "hypertension (IV), insuffisance cardiaque, œdème pulmonaire.",
+                "GI": "diarrhée, nausées.",
+                "GU": "coloration rouge de l'urine (hydroxocobalamine).",
+                "Tég": "démangeaisons, urticaire, coloration rouge de la peau (hydroxocobalamine).",
+                "HÉ": "hypokaliémie.",
+                "Hémat": "thrombocytose.",
+                "Locaux": "douleur au point d'injection IM.",
+                "Divers": "anaphylaxie."
+            },
+            "interaction": "Médicament-médicament : Aminosides, colchicine, metformine, IPP, anti-H2 (diminuent absorption). Acide folique (peut masquer la carence en B12). Alcool ou Vitamine C en excès (diminuent l'efficacité).",
+            "voies_administration_posologie": "Anémie pernicieuse : PO : 1000-2000 mcg/jour. IM, SC : 1000 mcg/jour (1 sem), puis 1000 mcg/sem (4 sem), puis 1000 mcg/mois à vie. Intoxication cyanure : IV (hydroxocobalamine) : 5 g en 15 min (max 10 g).",
+            "presentation": "Capsules/Comprimés : 25 à 2500 mcg. Solution injectable : 100 ou 1000 mcg/mL. Cyanokit : 5 g.",
+            "soins_infirmiers": {
+                "evaluation_situation": "Rechercher pâleur, neuropathie (picotements, paresthésie), trouble de la démarche, glossite. Tests Labo : B12 plasmatique (norme 74-516 pmol/L), Hb/Hct, Réticulocytes. Surveiller Potassium (risque hypokaliémie les 48h initiales).",
+                "constats_evaluation": "Alimentation déficiente (Indications). Intolérance à l'activité (Indications). Connaissances insuffisantes sur le traitement.",
+                "interventions_infirmieres": "Cyanokit : voie IV seulement. Cyanocobalamine : IM, SC privilégié car excrétion IV trop rapide. PO : administrer aux repas pour accroître l'absorption. Cyanokit : reconstituer 5 g avec 200 mL NaCl 0,9 %, ne pas agiter. Urine et peau rouges après Cyanokit.",
+                "enseignement_patient_proches": "Anémie pernicieuse : traitement à vie. Aliments riches : viandes, fruits de mer, jaune d'œuf, fromages fermentés. Signaler paresthésies ou troubles de la marche. Éviter alcool. Cyanokit : peau rouge (2 sem), urine rouge (5 sem), éviter le soleil tant que la peau est rouge.",
+                "verification_effet_therapeutique": "Résolution des symptômes de carence et de l'anémie. Amélioration neurologique (si traitée précocement). Résolution intoxication cyanure."
+            }
+        }
+    },
+    {
+        "id": "c9_m10",
+        "title": "Gluconate ferrique de sodium",
+        "category": "medicaments",
+        "details": {
+            "classe": "Antianémiques",
+            "synonymes": "Ferrlecit",
+            "classification": "Minéraux et électrolytes (antianémiques).",
+            "indications": "IV : Traitement de la déficience en fer chez les insuffisants rénaux chroniques sous dialyse recevant de l'érythropoïétine.",
+            "mode_action": "Substance minérale essentielle. Pénètre dans la circulation et le système réticulo-endothélial. Effets thérapeutiques : Traitement des carences en fer.",
+            "pharmacocinetique": "Distribution : Traverse la barrière placentaire et pénètre dans le lait maternel. Liaison protéines : ≥ 90 %. Métabolisme/Excrétion : Réabsorbé.",
+            "pharmacodynamie": "Profil temps-action (érythropoïèse) : IV : Début 4 jours, Pic 1 – 2 semaines, Durée plusieurs semaines/mois.",
+            "contre_indications": "Hypersensibilité. Hémochromatose, Hémosidérose. Anémies non ferriprives. Contient de l'alcool benzylique : ne pas utiliser chez les nouveau-nés ou prématurés.",
+            "precautions_mises_en_garde": "Hypotension. Maladies auto-immunes et arthrite (risque allergique). Gér. : Doses initiales plus faibles. Insuffisance hépatique grave.",
+            "reactions_indesirables_effets_secondaires": {
+                "SNC": "convulsions, étourdissements, céphalées, syncope.",
+                "CV": "hypotension (souvent lié à perfusion rapide), hypertension, tachycardie.",
+                "GI": "nausées, vomissements, altération du goût.",
+                "Tég": "bouffées vasomotrices, urticaire.",
+                "Resp": "toux, dyspnée.",
+                "Locaux": "arthralgie, myalgie, phlébite au point d'injection.",
+                "Divers": "réactions allergiques/anaphylaxie, fièvre, lymphadénopathie, diaphorèse."
+            },
+            "interaction": "Médicament-médicament : Diminue absorption de : tétracyclines, biphosphonates, fluoroquinolones, mycophénolate, pénicillamine, lévodopa, méthyldopa, lévothyroxine. Chloramphénicol ou vitamine E : modifie réponse.",
+            "voies_administration_posologie": "IV (adultes) : 10 mL (125 mg fer élémentaire) durant la dialyse, pour 8 séances (dose cumulative totale 1 g).",
+            "presentation": "Solution pour injection : 12.5 mg/mL.",
+            "soins_infirmiers": {
+                "evaluation_situation": "Évaluer nutrition. Mesurer PA et FC fréquents après IV (risque hypotension). Signes d'anaphylaxie (adrénaline prête). Tests Labo : Hb/Hct/Numération réticulocytaire.",
+                "constats_evaluation": "Intolérance à l'activité (Indications). Connaissances insuffisantes.",
+                "interventions_infirmieres": "Voie IV seulement. Interrompre fer oral avant parentéral. Perfusion intermittente : Diluer 10 mL (125 mg) dans 100 mL NaCl 0,9 %. Administrer immédiatement. Vitesse : en 1 heure. Ne pas mélanger.",
+                "enseignement_patient_proches": "Signaler immédiatement toute réaction d'hypersensibilité. Respecter posologie. Selles noires. Régime riche en fer.",
+                "verification_effet_therapeutique": "Amélioration de l'anémie chez l'insuffisant rénal."
+            }
+        }
     }
 ]
+```
