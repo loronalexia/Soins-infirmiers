@@ -2500,6 +2500,785 @@
                 "verification_effet_therapeutique": "Amélioration de l'anémie chez l'insuffisant rénal."
             }
         }
+    },
+    {
+        "id": "c10",
+        "title": "Antiangineux",
+        "category": "medicaments",
+        "is_class_sheet": true,
+        "preview": "Médicaments destinés à prévenir ou traiter les crises d'angine de poitrine en réduisant la consommation d'oxygène du myocarde ou en augmentant l'apport d'oxygène par vasodilatation.",
+        "details": {
+            "classe": "Antiangineux",
+            "molecules_list": "acébutolol, aténolol, bisoprolol, carvédilol, métoprolol, nadolol, nébivolol, propranolol, timolol, amlodipine, diltiazem, nifédipine, vérapamil, dinitrate d'isosorbide, mononitrate d'isosorbide, nitroglycérine",
+            "indications": "Dérivés nitrés : Prévention et traitement des crises d'angine (SL, linguale ou IV pour les crises aiguës). BCC et bêtabloquants : Prophylaxie (traitement prolongé).",
+            "mode_action": "Dérivés nitrés : Dilatation des coronaires et vasodilatation systémique (baisse précharge). BCC : Dilatation des coronaires (certains baissent la FC). Bêtabloquants : Réduction de la conso O2 par baisse de la FC.",
+            "contre_indications": "Hypersensibilité. Blocs cardiaques avancés, choc cardiogénique, insuffisance cardiaque non traitée (Bêtabloquants et BCC).",
+            "precautions": "Bêtabloquants : Diabète, maladie pulmonaire. Risque d'hypotension orthostatique.",
+            "interactions": "Effet hypotenseur additif avec autres antihypertenseurs ou alcool. Effet dépresseur myocardique (Vérapamil, Diltiazem, Bêtabloquants).",
+            "soins_infirmiers": {
+                "evaluation": [
+                    "Déterminer siège, durée, intensité et facteurs déclenchants des douleurs.",
+                    "Mesurer la PA et le pouls à intervalles réguliers."
+                ],
+                "constats": [
+                    "Douleur aiguë (Indications).",
+                    "Irrigation tissulaire inefficace (Indications).",
+                    "Connaissances insuffisantes (Enseignement)."
+                ],
+                "enseignement": [
+                    "Respecter la prise simultanée du traitement prophylactique et de la nitroglycérine au besoin (SL).",
+                    "Signaler douleur persistante/aggravée, dyspnée ou céphalées graves.",
+                    "Changements de position lents (hypotension orthostatique).",
+                    "Éviter l'alcool."
+                ],
+                "efficacite": "Diminution de la fréquence/gravité des crises, augmentation de la tolérance à l'effort."
+            }
+        }
+    },
+    {
+        "id": "c10_m1",
+        "title": "Acébutolol",
+        "category": "medicaments",
+        "details": {
+            "classe": "Antiangineux",
+            "synonymes": "Acebutolol, Apo-Acebutolol, Monitan, Mylan-Acebutolol, Sectral, Teva-Acebutolol",
+            "classification": "Antiarythmique (classe II), antihypertenseur, antiangineux (bêtabloquant sélectif). Grossesse – catégories B (T1) et D (T2, T3)",
+            "indications": "Hypertension (monothérapie ou association). Traitement à long terme de l'angine de poitrine ischémique. Usages non approuvés : Prophylaxie IM, tachyarythmies, anxiété, tremblements.",
+            "mode_action": "Blocage des récepteurs bêta1-adrénergiques (myocarde). Légère activité sympathomimétique intrinsèque. Effets : Baisse FC, baisse conduction nœud AV, baisse PA.",
+            "pharmacocinetique": "Absorption : Bonne (PO) ; 1er passage hépatique important. Distribution : Minime pénétration SNC ; traverse barrière placentaire, lait maternel. Métabolisme : Hépatique (métabolite actif : diacétolol). Excrétion : Fécale (56%), rénale (30-40%). Demi-vie : 3-4h (Acébutolol), 8-13h (Diacétolol).",
+            "pharmacodynamie": "Profil temps-action (effet sur la PA) : PO : Début 1 – 1,5 h, Pic 2 – 8 h, Durée 12 – 24 h.",
+            "contre_indications": "Insuffisance cardiaque non compensée. Insuffisance ventriculaire droite (hypertension pulmonaire). Œdème pulmonaire. Choc cardiogénique. Bradycardie sinusale ou bloc AV (2e/3e degrés). Anesthésie dépressive du myocarde.",
+            "precautions_mises_en_garde": "Insuffisance cardiaque compensée (risque décompensation). Insuffisance rénale (baisser dose si ClCr < 50). Diabète (masque hypoglycémie). Thyrotoxicose (masque symptômes). Gér. : sensibilité accrue (baisser dose initiale).",
+            "reactions_indesirables_effets_secondaires": {
+                "SNC": "fatigue, faiblesse, anxiété, dépression, étourdissements, somnolence, insomnie, cauchemars.",
+                "Resp": "bronchospasme, respiration sifflante.",
+                "CV": "bradycardie, insuffisance cardiaque, œdème pulmonaire, hypotension, vasoconstriction périphérique.",
+                "GI": "constipation, diarrhée, nausées, vomissements.",
+                "GU": "impuissance, baisse de la libido, mictions fréquentes.",
+                "End": "hyperglycémie, hypoglycémie.",
+                "Loc": "douleurs articulaires, arthralgie.",
+                "Divers": "lupus érythémateux induit."
+            },
+            "interaction": "Médicament-médicament : Diltiazem, vérapamil, anesthésiques (dépression myocardique accrue). Digoxine (bradycardie accrue). Alcool, dérivés nitrés, antihypertenseurs (hypotension additive). Cocaïne, adrénaline, éphédrine (réponse hypertensive/bradycardie). Hormones thyroïdiennes (baisse efficacité). Insuline (baisse efficacité, masque hypoglycémie).",
+            "voies_administration_posologie": "Hypertension : PO (adultes) : Initial 100 mg 2x/j ; Entretien 400-800 mg/j. Angine : PO (adultes) : Initial 200 mg 2x/j ; Entretien 200-600 mg/j (en 2 prises). Insuffisance rénale : ClCr < 50 (50 % dose) ; ClCr < 25 (25 % dose).",
+            "presentation": "Comprimés : 100 mg, 200 mg, 400 mg.",
+            "soins_infirmiers": {
+                "evaluation_situation": "Mesurer fréquemment PA et pouls. ECG pendant adaptation posologique. Bilan Ingesta/Excreta et poids quotidien. Chercher signes d'insuffisance cardiaque (dyspnée, râles, gain pondéral, jugulaires). Tests Labo : Glycémie, Potassium, Urée, Triglycérides, Acide urique, enzymes hépatiques, anticorps antinucléaires.",
+                "constats_evaluation": "Débit cardiaque diminué (Effets secondaires). Connaissances insuffisantes. Non-observance du traitement.",
+                "interventions_infirmieres": "Prendre le pouls à l'apex avant administration ; si < 50/min ou arythmie, ne pas administrer et aviser le médecin. Administrer à jeun ou avec aliments.",
+                "enseignement_patient_proches": "Respecter rigoureusement la posologie (même heure). Ne pas cesser brusquement (risque arythmie/ischémie/HTA). Mesurer pouls quotidien et PA 2x/semaine. Signaler ralentissement pouls, dyspnée. Diabétique : mesurer glycémie (tachycardie masquer). Masque de sensibilité au froid.",
+                "verification_effet_therapeutique": "Baisse PA et FC. Diminution des crises angineuses. Augmentation de la tolérance à l'effort."
+            }
+        }
+    },
+    {
+        "id": "c10_m2",
+        "title": "Aténolol",
+        "category": "medicaments",
+        "details": {
+            "classe": "Antiangineux",
+            "synonymes": "Act-Atenolol, Apo-Atenol, Atenolol, Dom-Atenolol, Jamp-Atenolol, Tenormin, Teva-Atenolol (parmi d'autres).",
+            "classification": "Antiangineux, antihypertenseur (bêtabloquant sélectif). Grossesse – catégorie D.",
+            "indications": "Hypertension (monothérapie ou association). Traitement à long terme de l'angine de poitrine ischémique. Usages non approuvés : Prophylaxie de la migraine, prévention des décès post-IM.",
+            "mode_action": "Blocage de la stimulation des récepteurs bêta1-adrénergiques (myocardiques). Effets : Abaissement de la pression artérielle, ralentissement de la fréquence cardiaque, réduction de la fréquence des crises d'angine.",
+            "pharmacocinetique": "Absorption : 50 à 60 % (PO). Distribution : Faible pénétration du SNC ; traverse la barrière placentaire et passe dans le lait maternel. Métabolisme/Excrétion : Excrétion rénale (40-50 % inchangé) ; le reste dans les fèces car non absorbé. Demi-vie : 6 à 9 heures.",
+            "pharmacodynamie": "Profil temps-action (effet cardiovasculaire) : PO : Début 1 h, Pic 2 – 4 h, Durée 24 h.",
+            "contre_indications": "Insuffisance cardiaque congestive décompensée, œdème pulmonaire, choc cardiogénique, bradycardie sinusale ou bloc AV (2e/3e degré), maladie du sinus, insuffisance ventriculaire droite (HTA pulmonaire), hypotension, maladies artérielles périphériques graves, acidose métabolique, phéochromocytome non traité.",
+            "precautions_mises_en_garde": "Insuffisance rénale (baisser dose si ClCr ≤ 35). Insuffisance cardiaque compensée. Diabète (masque tachycardie hypoglycémique). Thyrotoxicose (masque symptômes). Angor de Prinzmetal (risque d'aggravation). Gér. : sensibilité accrue. Obst./Péd. : risque de bradycardie/hypotension fœtale.",
+            "reactions_indesirables_effets_secondaires": {
+                "SNC": "fatigue, faiblesse, anxiété, dépression, étourdissements, somnolence, insomnie, cauchemars.",
+                "Resp": "bronchospasme, respiration sifflante.",
+                "CV": "bradycardie, insuffisance cardiaque, œdème pulmonaire, hypotension, vasoconstriction périphérique.",
+                "GI": "constipation, diarrhée, anomalies hépatiques, nausées, vomissements.",
+                "GU": "impuissance, baisse de la libido, mictions fréquentes.",
+                "End": "hyperglycémie, hypoglycémie.",
+                "Loc": "arthralgie, douleurs lombaires.",
+                "Divers": "lupus érythémateux induit."
+            },
+            "interaction": "Médicament-médicament : Digoxine (bradycardie accrue). Alcool, dérivés nitrés, antihypertenseurs (hypotension additive). Cocaïne, adrénaline, éphédrine (hypertension excessive, bradycardie). Diltiazem, vérapamil (hypotension grave, bradycardie, insuffisance cardiaque). Hormones thyroïdiennes (baisse efficacité). Insuline/Hypoglycémiants (masque hypoglycémie). Théophylline (baisse efficacité).",
+            "voies_administration_posologie": "Antiangineux : PO (adultes) : 50 mg 1x/j ; peut monter à 100-200 mg/j. Antihypertenseur : PO (adultes) : 25-50 mg 1x/j ; peut monter à 50-100 mg 1x/j. Insuffisance rénale : ClCr 15-35 (max 50 mg/j) ; ClCr < 15 (max 50 mg tous les 2 jours).",
+            "presentation": "Comprimés : 25 mg, 50 mg, 100 mg. Également en association avec chlorthalidone.",
+            "soins_infirmiers": {
+                "evaluation_situation": "Mesurer fréquemment PA, pouls et suivre ECG pendant l'adaptation. Bilan Ingesta/Excreta et poids quotidien. Chercher signes d'insuffisance cardiaque (dyspnée, râles, gain pondéral, jugulaires). Angine : évaluer fréquence/caractéristiques des crises. Tests Labo : Glycémie, Potassium, Urée, Triglycérides, Acide urique, anticorps antinucléaires.",
+                "constats_evaluation": "Débit cardiaque diminué (Effets secondaires). Connaissances insuffisantes. Non-observance du traitement.",
+                "interventions_infirmieres": "Prendre le pouls à l'apex avant l'administration ; si < 50/min ou arythmie, ne pas administrer et aviser le médecin.",
+                "enseignement_patient_proches": "Prendre à la même heure. Ne pas cesser brusquement (risque arythmies mortelles). Mesurer pouls quotidien et PA 2x/semaine. Signaler ralentissement pouls, dyspnée. Diabétique : transpiration non masquée (contrairement à la tachycardie). Changer de position lentement.",
+                "verification_effet_therapeutique": "Baisse PA. Réduction des crises d'angine. Prévention des infarctus. Augmentation de la tolérance à l'effort."
+            }
+        }
+    },
+    {
+        "id": "c10_m3",
+        "title": "Bisoprolol",
+        "category": "medicaments",
+        "details": {
+            "classe": "Antiangineux",
+            "synonymes": "Apo-Bisoprolol, Bisoprolol, Monocor, PMS-Bisoprolol, Sandoz-Bisoprolol, Teva-Bisoprolol",
+            "classification": "Antihypertenseur, antiangineux (bêtabloquant sélectif). Grossesse – catégories C (T1) et D (T2, T3)",
+            "indications": "Hypertension légère ou modérée. Usages non approuvés : Insuffisance cardiaque, prophylaxie de l'angine de poitrine chronique.",
+            "mode_action": "Blocage des récepteurs bêta1-adrénergiques (myocarde). Effets : Abaissement de la pression artérielle et de la fréquence cardiaque.",
+            "pharmacocinetique": "Absorption : Bonne (PO) ; biodisponibilité > 80 %. Distribution : Inconnue. Métabolisme : 20 % hépatique (1er passage) ; 50 % excrété par les reins à l'état inchangé ; le reste sous forme de métabolites inactifs. Demi-vie : 9 à 12 heures.",
+            "pharmacodynamie": "Profil temps-action (effet antihypertenseur) : PO : Début inconnu, Pic 1 – 4 h, Durée 24 h.",
+            "contre_indications": "Insuffisance cardiaque congestive décompensée, choc cardiogénique, bradycardie sinusale ou bloc AV du 2e/3e degré, insuffisance ventriculaire droite (HTA pulmonaire), hypersensibilité.",
+            "precautions_mises_en_garde": "Insuffisance cardiaque compensée. Insuffisance rénale ou hépatique (réduire la dose). Maladie pulmonaire bronchospastique (sélectivité bêta1 diminue avec doses élevées). Diabète (masque hypoglycémie). Thyrotoxicose (masque symptômes). Gér. : sensibilité accrue.",
+            "reactions_indesirables_effets_secondaires": {
+                "SNC": "fatigue, faiblesse, anxiété, dépression, étourdissements, somnolence, insomnie, cauchemars.",
+                "Resp": "bronchospasme, respiration sifflante.",
+                "CV": "bradycardie, insuffisance cardiaque, œdème pulmonaire, hypotension, vasoconstriction périphérique.",
+                "GI": "constipation, diarrhée, nausées, vomissements, dysfonction hépatique.",
+                "GU": "impuissance, baisse de la libido, mictions fréquentes.",
+                "End": "hyperglycémie, hypoglycémie.",
+                "Loc": "arthralgie, douleurs lombaires.",
+                "Divers": "lupus érythémateux induit."
+            },
+            "interaction": "Médicament-médicament : Anesthésiques, diltiazem, vérapamil (dépression myocardique accrue). Digoxine (bradycardie accrue). Alcool, antihypertenseurs, dérivés nitrés (hypotension additive). Cocaïne, adrénaline, éphédrine (hypertension excessive, bradycardie). Hormones thyroïdiennes (baisse efficacité). Insuline (masque hypoglycémie). Théophylline (baisse efficacité).",
+            "voies_administration_posologie": "Antihypertenseur : PO (adultes) : 5 mg 1x/j (écart 2,5 à 20 mg/j). Insuffisance cardiaque (non approuvé) : 1,25 mg 1x/j ; titrer jusqu'à 10 mg/j. Antiangineux (non approuvé) : 5 mg 1x/j. Insuffisance rénale/hépatique (ClCr < 40) : Initier à 5 mg 1x/j.",
+            "presentation": "Comprimés : 5 mg, 10 mg.",
+            "soins_infirmiers": {
+                "evaluation_situation": "Mesurer fréquemment PA, pouls et suivre ECG pendant l'adaptation. Bilan Ingesta/Excreta et poids quotidien. Chercher signes d'insuffisance cardiaque (dyspnée, râles, gain pondéral, jugulaires). Tests Labo : Glycémie, Potassium, Urée, Triglycérides, Acide urique, anticorps antinucléaires.",
+                "constats_evaluation": "Débit cardiaque diminué (Effets secondaires). Connaissances insuffisantes. Non-observance du traitement.",
+                "interventions_infirmieres": "Prendre le pouls à l'apex avant administration ; si < 50/min ou arythmie, ne pas administrer. Peut être administré sans égard aux repas.",
+                "enseignement_patient_proches": "Respecter rigoureusement la posologie (heures fixes). Ne pas cesser brusquement (risque arythmies mortelles). Mesurer pouls quotidien et PA 2x/semaine. Signaler ralentissement pouls, dyspnée. Éviter excès de café/thé/cola. Diabétique : transpiration non masquée.",
+                "verification_effet_therapeutique": "Abaissement de la pression artérielle."
+            }
+        }
+    },
+    {
+        "id": "c10_m4",
+        "title": "Carvédilol",
+        "category": "medicaments",
+        "details": {
+            "classe": "Antiangineux",
+            "synonymes": "Apo-Carvedilol, Auro-Carvedilol, Coreg, Jamp-Carvedilol, PMS-Carvedilol, Ratio-Carvedilol",
+            "classification": "Antihypertenseur, traitement de l'insuffisance cardiaque, antiangineux (bêtabloquant non sélectif). Grossesse – catégories C (T1) et D (T2, T3)",
+            "indications": "Insuffisance cardiaque (légère à grave) en association avec diurétiques/IECA. Usages non approuvés : Hypertension, prophylaxie de l'angine chronique, dysfonction VG post-IM.",
+            "mode_action": "Inhibition des récepteurs bêta1 (myocarde) et bêta2 (poumons, vaisseaux). Bloque aussi les récepteurs alpha1 (cause hypotension orthostatique). Effets : Amélioration fraction d'éjection, baisse FC et PA.",
+            "pharmacocinetique": "Absorption : Bonne (PO) ; 1er passage important (biodisponibilité 25-35 %). Nourriture ralentit l'absorption. Distribution : Traverse barrière placentaire, lait maternel. Liaison protéines : 98 %. Métabolisme : Important (hépatique). Excrétion : Majoritairement fécale (via bile). Demi-vie : 7 à 10 heures.",
+            "pharmacodynamie": "Profil temps-action (effet cardiovasculaire) : PO : Début 1 h, Pic 1 – 2 h, Durée 12 h.",
+            "contre_indications": "Insuffisance cardiaque non compensée (inotrope IV requis). Asthme ou bronchospasme. Bloc AV 2e/3e degré ou maladie du sinus (sans pacemaker). Œdème pulmonaire, choc cardiogénique, bradycardie grave, insuffisance hépatique grave, hypotension grave.",
+            "precautions_mises_en_garde": "Insuffisance cardiaque compensée (risque d'aggravation initiale). Diabète (masque hypoglycémie). Thyrotoxicose (masque symptômes). Maladie vasculaire périphérique. Angor de Prinzmetal. Phéochromocytome.",
+            "reactions_indesirables_effets_secondaires": {
+                "SNC": "étourdissements, fatigue, faiblesse, anxiété, dépression, somnolence, insomnie, cauchemars.",
+                "Resp": "bronchospasme, respiration sifflante.",
+                "CV": "bradycardie, insuffisance cardiaque, œdème pulmonaire, hypotension orthostatique, vasoconstriction périphérique.",
+                "GI": "diarrhée, constipation, nausées.",
+                "GU": "impuissance, baisse de la libido.",
+                "Tég": "Stevens-Johnson, épidermolyse bulleuse toxique, rash, prurit.",
+                "End": "hyperglycémie, hypoglycémie.",
+                "SN": "paresthésie.",
+                "Divers": "anaphylaxie, angioedème, lupus érythémateux induit."
+            },
+            "interaction": "Médicament-médicament : Anesthésiques, diltiazem, vérapamil (dépression myocardique accrue). Digoxine (bradycardie accrue, augmente taux digoxine). Clonidine (augmente hypotension/bradycardie). AINS (baissent effet antihypertenseur). Rifampine (baisse efficacité). Cyclosporine (augmente taux).",
+            "voies_administration_posologie": "Insuffisance cardiaque : PO (adultes) : Initial 3,125 mg 2x/j (2 sem) ; titrer graduellement jusqu'à max 25 mg 2x/j. Hypertension (non approuvé) : Initial 6,25 mg 2x/j ; titrer jusqu'à 25 mg 2x/j.",
+            "presentation": "Comprimés : 3,125 mg, 6,25 mg, 12,5 mg, 25 mg.",
+            "soins_infirmiers": {
+                "evaluation_situation": "Mesurer PA et pouls fréquemment (adaptation). Risque d'hypotension orthostatique au lever. Bilan Ingesta/Excreta et poids quotidien. Chercher surcharge liquidienne (œdème, dyspnée, râles). Tests Labo : Glycémie, Potassium, Urée, Triglycérides, Acide urique, anticorps antinucléaires.",
+                "constats_evaluation": "Débit cardiaque diminué (Effets secondaires). Connaissances insuffisantes. Non-observance du traitement.",
+                "interventions_infirmieres": "Ne pas confondre avec captopril. Prendre le pouls à l'apex avant administration (ne pas donner si < 50/min). Administrer avec de la nourriture (réduit hypotension orthostatique). Retrait clonidine : cesser le bêtabloquant d'abord.",
+                "enseignement_patient_proches": "Respecter rigoureusement la posologie. Ne pas cesser brusquement (arythmies mortelles). Mesurer pouls quotidien et PA 2x/semaine. Changer de position lentement (hypotension orthostatique). Signaler ralentissement pouls, dyspnée, mains/pieds froids.",
+                "verification_effet_therapeutique": "Diminution de la gravité de l'insuffisance cardiaque."
+            }
+        }
+    },
+    {
+        "id": "c10_m5",
+        "title": "Métoprolol",
+        "category": "medicaments",
+        "details": {
+            "classe": "Antiangineux",
+            "synonymes": "Lopresor, Lopresor SR, Apo-Metoprolol, Mylan-Metoprolol, PMS-Metoprolol, Sandoz Metoprolol",
+            "classification": "Antiangineux, antiarythmique (classe II), antihypertenseur (bêtabloquant cardiosélectif). Grossesse – catégories C (T1) et D (T2, T3)",
+            "indications": "Hypertension (légère/modérée), angine de poitrine, prévention mortalité post-IM. Usages non approuvés : Tachycardie, migraines, tremblements, anxiété.",
+            "mode_action": "Blocage sélectif des récepteurs bêta1-adrénergiques (myocarde). Effets : Baisse PA et FC, baisse fréquence crises angine, baisse mortalité cardiovasculaire post-IM.",
+            "pharmacocinetique": "Absorption : Bonne (PO) ; 1er passage important. Distribution : Traverse barrière hématoencéphalique et placentaire ; passe dans lait maternel. Métabolisme : Hépatique (CYP2D6). Environ 7 % de métaboliseurs lents (risques effets secondaires accrus). Excrétion : Rénale (95 % métabolites). Demi-vie : 3,5 h (moyenne).",
+            "pharmacodynamie": "Profil temps-action (effet cardiovasculaire) : PO : Début < 1 h, Pic 1,5 - 2 h, Durée 6 – 12 h. PO-LP : Pic 6 – 12 h, Durée 24 h. IV : Immédiat, Pic 20 min, Durée 5 – 8 h.",
+            "contre_indications": "Insuffisance cardiaque non compensée, œdème pulmonaire, choc cardiogénique, bradycardie ou bloc AV (2e/3e degré), insuffisance ventriculaire droite (HTA pulmonaire), maladie du sinus, phéochromocytome non traité, asthme (voie IV).",
+            "precautions_mises_en_garde": "Insuffisance cardiaque compensée. Insuffisance rénale ou hépatique. Maladie pulmonaire bronchospastique (sélectivité bêta1 diminue à forte dose). Diabète (masque hypoglycémie). Thyrotoxicose (masque symptômes). Gér. : baisse dose initiale recommandée.",
+            "reactions_indesirables_effets_secondaires": {
+                "SNC": "fatigue, faiblesse, étourdissements, somnolence, insomnie, pertes de mémoire, cauchemars, céphalées.",
+                "Resp": "bronchospasme, respiration sifflante.",
+                "CV": "bradycardie, insuffisance cardiaque, œdème pulmonaire, hypotension, vasoconstriction périphérique.",
+                "GI": "constipation, diarrhée, hépatite, xérostomie, flatulences, nausées, vomissements.",
+                "GU": "impuissance, baisse de la libido, mictions fréquentes.",
+                "End": "hyperglycémie, hypoglycémie.",
+                "Loc": "arthralgie, douleurs lombaires.",
+                "Divers": "syndrome lupique d'origine médicamenteuse."
+            },
+            "interaction": "Médicament-médicament : Anesthésiques, diltiazem, vérapamil (dépression myocardique accrue). Digoxine (bradycardie accrue). Alcool, antihypertenseurs, dérivés nitrés (hypotension additive). Cocaïne, adrénaline, éphédrine (hypertension excessive, bradycardie). Inhibiteurs CYP2D6 (fluoxétine, bupropion, etc.) augmentent les taux. AINS (baissent effet antihypertenseur).",
+            "voies_administration_posologie": "HTA/Angine : PO (adultes) : 100 mg/j (en 2 prises) ; titrer jusqu'à 400 mg/j. LP : 1x/j. Post-IM (précoce) : IV 5 mg (toutes les 2 min, total 3 doses) puis PO 25-50 mg toutes les 6 h. Post-IM (tardif) : PO 100 mg 2x/j.",
+            "presentation": "Comprimés : 25 mg, 50 mg, 100 mg. Comprimés LP : 100 mg, 200 mg. Injection : 1 mg/mL.",
+            "soins_infirmiers": {
+                "evaluation_situation": "Suivre PA, ECG et pouls fréquemment (adaptation et IV). Bilan Ingesta/Excreta et poids quotidien. Chercher signes d'insuffisance cardiaque. Angine : évaluer fréquence/caractéristiques. Tests Labo : Glycémie, Potassium, Urée, Enzymes hépatiques (ALT/AST/LDH/Bilirubine), anticorps antinucléaires.",
+                "constats_evaluation": "Débit cardiaque diminué (Effets secondaires). Connaissances insuffisantes. Non-observance du traitement.",
+                "interventions_infirmieres": "Vérification double pour IV (médicament vasoactif). Ne pas confondre avec misoprostol ou Tegretol. Prendre pouls apical (ne pas donner si < 50/min). IV directe : injection sur 1 min. LP : ne pas croquer/écraser.",
+                "enseignement_patient_proches": "Respecter rigoureusement la posologie (effets antihypertenseurs culminent après 1 sem). Ne pas cesser brusquement (arythmies mortelles). Mesurer pouls quotidien et PA 2x/semaine. Diabétique : seule la transpiration n'est pas masquée.",
+                "verification_effet_therapeutique": "Baisse PA et FC. Réduction des crises d'angine. Prévention de l'infarctus."
+            }
+        }
+    },
+    {
+        "id": "c10_m6",
+        "title": "Nadolol",
+        "category": "medicaments",
+        "details": {
+            "classe": "Antiangineux",
+            "synonymes": "Corgard, Nadolol, Teva-Nadolol",
+            "classification": "Antiangineux, antihypertenseur (bêtabloquant non sélectif). Grossesse – catégories C (T1) et D (T2, T3)",
+            "indications": "Prophylaxie de l'angine de poitrine, hypertension (monothérapie ou association). Usages non approuvés : Fréquence cardiaque (tachycardie supraventriculaire), prévention des hémorragies variqueuses œsophagiennes, migraines.",
+            "mode_action": "Blocage des récepteurs bêta1 (myocarde) et bêta2 (poumons, vaisseaux, utérus). Effets : Ralentissement FC, abaissement PA, réduction des crises d'angine.",
+            "pharmacocinetique": "Absorption : 30 à 40 % (PO). Distribution : Pénétration SNC infime ; traverse barrière placentaire, lait maternel. Métabolisme/Excrétion : Excrétion rénale (30 %) et fécale (70 %) sous forme inchangée. Demi-vie : 17 à 24 heures (prolongée si insuffisance rénale).",
+            "pharmacodynamie": "Profil temps-action (effet antihypertenseur - administration prolongée) : PO : Début jusqu'à 5 jours, Pic 6 – 9 jours, Durée 24 h.",
+            "contre_indications": "Hypersensibilité, insuffisance cardiaque non compensée, choc cardiogénique, bradycardie ou bloc AV (2e/3e degré), rhinite allergique, bronchospasme (asthme, MPOC grave), insuffisance ventriculaire droite (HTA pulmonaire).",
+            "precautions_mises_en_garde": "Insuffisance rénale (ajustement requis). Insuffisance cardiaque compensée. Diabète (masque hypoglycémie). Thyrotoxicose (masque symptômes). Gér. : sensibilité accrue. Obst./Péd. : innocuité non établie.",
+            "reactions_indesirables_effets_secondaires": {
+                "SNC": "fatigue, faiblesse, étourdissements, somnolence, insomnie, pertes de mémoire, cauchemars.",
+                "Resp": "bronchospasme, respiration sifflante.",
+                "CV": "arythmies, bradycardie, insuffisance cardiaque, œdème pulmonaire, hypotension orthostatique, vasoconstriction périphérique.",
+                "GI": "constipation, diarrhée, nausées.",
+                "GU": "impuissance, baisse de la libido.",
+                "End": "hyperglycémie, hypoglycémie.",
+                "Loc": "arthralgie, douleurs lombaires, crampes musculaires.",
+                "Divers": "syndrome lupique d'origine médicamenteuse."
+            },
+            "interaction": "Médicament-médicament : Anesthésiques, phénytoïne IV, diltiazem, vérapamil (dépression myocardique accrue). Digoxine (bradycardie accrue). Alcool, antihypertenseurs, dérivés nitrés (hypotension additive). Cocaïne, adrénaline, éphédrine (hypertension/bradycardie excessives). Clonidine (augmente hypotension/bradycardie). Théophyline/Dopamine/Dobutamine (baisse efficacité).",
+            "voies_administration_posologie": "Antiangineux : PO (adultes) : Initial 40 mg 1x/j ; max 240 mg/j. Antihypertenseur : PO (adultes) : Initial 40 mg 1x/j ; max 320 mg/j. Insuffisance rénale (ClCr 31-50) : Doses ultérieures toutes les 24-36h. ClCr 10-30 : Toutes les 24-48h. ClCr < 10 : Toutes les 40-60h.",
+            "presentation": "Comprimés : 40 mg, 80 mg, 160 mg.",
+            "soins_infirmiers": {
+                "evaluation_situation": "Suivre PA et pouls fréquemment (adaptation). Risque d'hypotension orthostatique (aide au lever). Bilan Ingesta/Excreta et poids quotidien. Chercher signes d'insuffisance cardiaque. Angine : évaluer caractéristiques/fréquence. Tests Labo : Glycémie, Potassium, Urée, Lipoprotéines, Acide urique, anticorps antinucléaires.",
+                "constats_evaluation": "Débit cardiaque diminué (Effets secondaires). Connaissances insuffisantes. Non-observance du traitement.",
+                "interventions_infirmieres": "Cesser clonidine graduellement (bêtabloquant d'abord). Prendre le pouls apical (ne pas donner si < 50/min). Peut être écrasé et mélangé aux aliments.",
+                "enseignement_patient_proches": "Respecter rigoureusement la posologie (même heure). Ne pas cesser brusquement (arythmies mortelles). Mesurer pouls quotidien et PA 2x/semaine. Changer de position lentement. Ne pas faire d'efforts excessifs même si angine stable.",
+                "verification_effet_therapeutique": "Baisse PA. Réduction des crises d'angine. Augmentation de la tolérance à l'effort. (Délai d'action possible de 5 jours)."
+            }
+        }
+    },
+    {
+        "id": "c10_m7",
+        "title": "Nébivolol",
+        "category": "medicaments",
+        "details": {
+            "classe": "Antiangineux",
+            "synonymes": "Bystolic",
+            "classification": "Antihypertenseur (bêtabloquant sélectif). Grossesse - catégories C (T1) et D (T2, T3)",
+            "indications": "Hypertension (monothérapie ou association).",
+            "mode_action": "Blocage hautement sélectif des récepteurs bêta1-adrénergiques (myocarde). La sélectivité peut diminuer chez les métaboliseurs lents du CYP2D6 ou à fortes doses. Effets : Abaissement de la pression artérielle et ralentissement de la fréquence cardiaque.",
+            "pharmacocinetique": "Absorption : Bonne (PO). Distribution : Inconnue. Liaison protéines : 98 %. Métabolisme : Hépatique (CYP2D6 et CYP3A4). Polymorphisme CYP2D6 : 7 % de métaboliseurs lents (risques accrus d'effets indésirables). Excrétion : Rénale (minime forme inchangée). Demi-vie : 13 h (rapides) à 22 h (lents).",
+            "pharmacodynamie": "Profil temps-action (taux sanguins) : PO : Début inconnu, Pic 1,5 – 4 h, Durée 24 h.",
+            "contre_indications": "Hypersensibilité, insuffisance cardiaque décompensée, bradycardie sinusale grave ou bloc AV (2e/3e degré), choc cardiogénique, maladie du sinus (sans pacemaker), insuffisance hépatique grave (Child-Pugh > B), maladies artérielles périphériques graves, intolérance héréditaire au galactose.",
+            "precautions_mises_en_garde": "Coronaropathie (éviter arrêt brusque). Insuffisance cardiaque compensée. Bloc AV 1er degré. Chirurgie majeure (anesthésie augmente la dépression myocardique). Maladie pulmonaire bronchospastique. Diabète (masque hypoglycémie). Thyrotoxicose (masque symptômes). Insuffisance rénale grave (baisser dose si ClCr < 30). Phéochromocytome.",
+            "reactions_indesirables_effets_secondaires": {
+                "SNC": "fatigue, faiblesse, céphalées, anxiété, dépression, étourdissements, somnolence, insomnie, pertes de mémoire, cauchemars.",
+                "Resp": "bronchospasme, respiration sifflante.",
+                "CV": "bradycardie, insuffisance cardiaque, œdème pulmonaire, hypotension, vasoconstriction périphérique.",
+                "GI": "constipation, diarrhée, nausées, vomissements, anomalies hépatiques.",
+                "GU": "impuissance, baisse de la libido, mictions fréquentes.",
+                "End": "hyperglycémie, hypoglycémie.",
+                "Loc": "arthralgie, douleurs lombaires, douleurs articulaires."
+            },
+            "interaction": "Médicament–médicament : Inhibiteurs CYP2D6 (fluoxétine, paroxétine, bupropion, ritonavir, etc.) augmentent l'exposition. Anesthésiques (éther, cyclopropane), diltiazem, vérapamil (dépression myocardique accrue). Digoxine (bradycardie accrue). Alcool, antihypertenseurs, dérivés nitrés (hypotension additive). Cocaïne, adrénaline, éphédrine (hypertension/bradycardie). Hormones thyroïdiennes (baisse efficacité). Insuline (masque hypoglycémie).",
+            "voies_administration_posologie": "PO (adultes) : Initial 5 mg 1x/j ; titrer toutes les 2 semaines jusqu'à max 40 mg/j. Insuffisance hépatique/rénale (ClCr < 30) : Initial 2,5 mg 1x/j.",
+            "presentation": "Comprimés : 2,5 mg, 5 mg, 10 mg, 20 mg.",
+            "soins_infirmiers": {
+                "evaluation_situation": "Suivre PA, ECG et pouls fréquemment (adaptation). Bilan Ingesta/Excreta et poids quotidien. Chercher signes d'insuffisance cardiaque. Tests Labo : Triglycérides (élévation), HDL (diminution), enzymes hépatiques (ALT/AST/LDH/Phosphatase alcaline).",
+                "constats_evaluation": "Débit cardiaque diminué (Effets secondaires). Connaissances insuffisantes. Non-observance du traitement.",
+                "interventions_infirmieres": "Prendre le pouls apical avant administration (ne pas donner si < 50/min). Peut être administré sans égard aux repas. Coronaropathie : sevrage très graduel (1-2 sem) ; si angine s'aggrave, reprendre temporairement.",
+                "enseignement_patient_proches": "Respecter rigoureusement la posologie (même heure). Ne pas cesser brusquement (arythmies mortelles). Mesurer pouls quotidien et PA 2x/semaine. Diabétique : ne masque pas la transpiration ni les étourdissements.",
+                "verification_effet_therapeutique": "Abaissement de la pression artérielle."
+            }
+        }
+    },
+    {
+        "id": "c10_m8",
+        "title": "Propranolol",
+        "category": "medicaments",
+        "details": {
+            "classe": "Antiangineux",
+            "synonymes": "Inderal, Inderal LA, Hemangiol, Propranolol, Teva-Propranolol",
+            "classification": "Antiangineux, antiarythmique (classe II), antihypertenseur, suppresseur de l'hémangiome infantile (bêtabloquant non sélectif). Grossesse – catégories C (T1) et D (T2, T3)",
+            "indications": "Hypertension, angine de poitrine, arythmies, post-IM, prophylaxie migraine, phéochromocytome (adjuvant), sténose sous-aortique hypertrophique, hémangiome infantile prolifératif (Hemangiol). Usages non approuvés : Tremblements essentiels, anxiété, sevrage alcoolique, hémorragies variqueuses.",
+            "mode_action": "Inhibition des récepteurs bêta1 (myocarde) et bêta2 (poumons, vaisseaux, utérus). Hémangiome : effets hémodynamiques locaux, antiangiogéniques et pro-apoptotiques. Effets : Baisse FC et PA, suppression arythmies, baisse crises angine/migraine.",
+            "pharmacocinetique": "Absorption : Bonne (PO) ; important métabolisme de 1er passage. Distribution : Pénètre dans le SNC ; traverse barrière placentaire, lait maternel. Liaison protéines : 93 %. Métabolisme : Hépatique (CYP2D6, CYP1A2, CYP2C19). Demi-vie : 3-6 h (ordinaire), 10-12 h (LP).",
+            "pharmacodynamie": "Profil temps-action (effet cardiovasculaire) : PO : Début 30 min, Pic 60 – 90 min, Durée 6 – 12 h. PO-LP : Pic 6 h, Durée 24 h. IV : Immédiat, Pic 1 min, Durée 4 – 6 h.",
+            "contre_indications": "Insuffisance cardiaque (sauf si liée à tachyarythmie), insuffisance ventriculaire droite (HTA pulmonaire), œdème pulmonaire, choc cardiogénique, bradycardie sinusale, bloc AV (2e/3e degré), bronchospasme (asthme, MPOC), rhinite allergique saisonnière, maladie de Raynaud. Hemangiol : nourrissons < 2,5 kg ou < 5 semaines.",
+            "precautions_mises_en_garde": "Insuffisance cardiaque compensée. Insuffisance rénale ou hépatique. Diabète (masque hypoglycémie). Thyrotoxicose (masque symptômes). Gér. : baisse dose initiale recommandée. Allaitement : surveiller bradycardie/hypoglycémie chez l'enfant.",
+            "reactions_indesirables_effets_secondaires": {
+                "SNC": "fatigue, faiblesse, étourdissements, somnolence, insomnie, pertes de mémoire, dépression, cauchemars.",
+                "Resp": "bronchospasme, respiration sifflante.",
+                "CV": "arythmies, bradycardie, insuffisance cardiaque, œdème pulmonaire, hypotension orthostatique, vasoconstriction périphérique.",
+                "GI": "constipation, diarrhée, nausées.",
+                "GU": "impuissance, baisse de la libido.",
+                "Tég": "Stevens-Johnson, épidermolyse bulleuse toxique, érythème polymorphe, rash.",
+                "End": "hyperglycémie, hypoglycémie.",
+                "Loc": "arthralgie, douleurs lombaires, crampes musculaires.",
+                "Divers": "anaphylaxie, syndrome lupique d'origine médicamenteuse."
+            },
+            "interaction": "Médicament-médicament : Anesthésiques, diltiazem, vérapamil (dépression myocardique accrue). Digoxine (bradycardie accrue). Alcool, antihypertenseurs, dérivés nitrés (hypotension additive). Cocaïne, adrénaline, éphédrine (hypertension/bradycardie excessives). Cimétidine (augmente toxicité). Lidocaïne (augmente toxicité). Tabagisme (baisse effet via métabolisme accru).",
+            "voies_administration_posologie": "Angine : PO (adultes) : 10-20 mg 3-4x/j ; peut monter à 320 mg/j. HTA : PO (adultes) : 40 mg 2x/j ou LP 80 mg 1x/j. Arythmie : PO 10-30 mg 3-4x/j ; IV 1-3 mg. Post-IM : 180-240 mg/j. Migraine : 80-240 mg/j. Tremblements : 120-320 mg/j. Hemangiol : 1-3 mg/kg/j.",
+            "presentation": "Comprimés : 10, 20, 40, 80 mg. Capsules LP : 60, 80, 120, 160 mg. Solution orale : 3,75 mg/mL. Injection : 1 mg/mL.",
+            "soins_infirmiers": {
+                "evaluation_situation": "Suivre PA et pouls fréquemment (adaptation). Sevrage progressif sur 2 semaines. IV : monitorage ECG et pressions centrales (PVC/PAP). Risque d'hypotension orthostatique. Péd (Hemangiol) : surveiller hypoglycémie. Tests Labo : Glycémie (hypo ou hyper), Urée, Potassium, Triglycérides, anticorps antinucléaires.",
+                "constats_evaluation": "Débit cardiaque diminué (Effets secondaires). Connaissances insuffisantes. Non-observance du traitement.",
+                "interventions_infirmieres": "Vérification double pour IV (vasoactif). Ne pas confondre avec Pravachol. Prendre pouls apical (ne pas donner si < 50/min). Administrer avec nourriture (augmente absorption). Hemangiol : donner pendant/après repas ; ne pas donner si l'enfant vomit/ne mange pas.",
+                "enseignement_patient_proches": "Respecter rigoureusement la posologie. Ne pas cesser brusquement (arythmies mortelles). Mesurer pouls quotidien et PA 2x/semaine. Changer de position lentement. Hemangiol : parents doivent lire le guide et assurer prise avec repas.",
+                "verification_effet_therapeutique": "Baisse PA et FC. Maîtrise arythmies. Réduction crises angine/migraine. Résolution de l'hémangiome infantile."
+            }
+        }
+    },
+    {
+        "id": "c10_m9",
+        "title": "Timolol",
+        "category": "medicaments",
+        "details": {
+            "classe": "Antiangineux",
+            "synonymes": "Apo-Timol, Blocadren, Teva-Timolol",
+            "classification": "Antihypertenseur, antiangineux (bêtabloquant non sélectif). Grossesse – catégories C (T1) et D (T2, T3)",
+            "indications": "Hypertension, angine de poitrine (cardiopathie ischémique), prévention de l'infarctus, prophylaxie des migraines. Usages non approuvés : Arythmies ventriculaires, tremblements essentiels, anxiété.",
+            "mode_action": "Inhibition des récepteurs adrénergiques bêta1 (myocarde) et bêta2 (poumons, vaisseaux, utérus). Effets : Baisse FC et PA, prévention de l'infarctus, baisse crises migraineuses.",
+            "pharmacocinetique": "Absorption : Bonne (PO) ; 1er passage important (50 %). Distribution : Traverse barrière placentaire ; passe dans lait maternel. Métabolisme : Hépatique important. Excrétion : Rénale (métabolites). Demi-vie : 2 à 4 heures.",
+            "pharmacodynamie": "Profil temps-action (effet cardiovasculaire) : PO : Début 30 min, Pic 1 – 2 h, Durée 12 h. (Plein effet après plusieurs semaines).",
+            "contre_indications": "Hypersensibilité, insuffisance cardiaque non compensée, choc cardiogénique, bradycardie sinusale, cardiomégalie importante, bloc AV (2e/3e degré), œdème pulmonaire, insuffisance ventriculaire droite (HTA pulmonaire), bronchospasme (asthme, MPOC grave), rhinite allergique.",
+            "precautions_mises_en_garde": "Insuffisance rénale ou hépatique. Insuffisance cardiaque compensée. Diabète (masque hypoglycémie). Thyrotoxicose (masque symptômes). Gér. : sensibilité accrue. Obst./Allaitement/Péd. : innocuité non établie.",
+            "reactions_indesirables_effets_secondaires": {
+                "SNC": "fatigue, faiblesse, étourdissements, somnolence, insomnie, pertes de mémoire, cauchemars.",
+                "Resp": "bronchospasme, respiration sifflante.",
+                "CV": "arythmies, bradycardie, insuffisance cardiaque, œdème pulmonaire, hypotension orthostatique, vasoconstriction périphérique.",
+                "GI": "constipation, diarrhée, nausées.",
+                "GU": "impuissance, baisse de la libido.",
+                "End": "hyperglycémie, hypoglycémie.",
+                "Loc": "arthralgie, douleurs lombaires, crampes musculaires.",
+                "Divers": "anaphylaxie (rare)."
+            },
+            "interaction": "Médicament-médicament : Anesthésiques, diltiazem, vérapamil (dépression myocardique accrue). Digoxine (bradycardie accrue). Alcool, antihypertenseurs, dérivés nitrés (hypotension additive). Cocaïne, adrénaline, éphédrine (hypertension/bradycardie excessives). Cimétidine (augmente toxicité). AINS (baissent effet antihypertenseur). Dopamine/Dobutamine (baisse effet).",
+            "voies_administration_posologie": "HTA : PO (adultes) : Initial 5-10 mg 2x/j ; entretien 10-20 mg 2x/j ; max 60 mg/j. Angine : PO (adultes) : Initial 5 mg 2-3x/j ; max 45 mg/j. Post-IM : 10 mg 2x/j (début 1-4 sem après IM). Migraine : 10 mg 2x/j.",
+            "presentation": "Comprimés : 5, 10, 20 mg.",
+            "soins_infirmiers": {
+                "evaluation_situation": "Suivre PA et pouls fréquemment (adaptation). Risque d'hypotension orthostatique (aide au lever). Bilan Ingesta/Excreta et poids quotidien. Chercher signes d'insuffisance cardiaque. Migraines : évaluer fréquence/caractéristiques. Tests Labo : Glycémie (élévation), Urée, Potassium, Triglycérides, Acide urique, anticorps antinucléaires.",
+                "constats_evaluation": "Débit cardiaque diminué (Effets secondaires). Connaissances insuffisantes. Non-observance du traitement.",
+                "interventions_infirmieres": "Prendre le pouls apical (ne pas donner si < 50/min). Peut être administré avec ou sans nourriture. Peut être écrasé et mélangé aux aliments.",
+                "enseignement_patient_proches": "Respecter rigoureusement la posologie (même heure). Ne pas cesser brusquement (arythmies mortelles). Mesurer pouls quotidien et PA 2x/semaine. Changer de position lentement. Le médicament peut rendre plus sensible au froid.",
+                "verification_effet_therapeutique": "Baisse PA. Réduction des symptômes d'angine. Prévention des infarctus. Prévention des céphalées vasculaires."
+            }
+        }
+    },
+    {
+        "id": "c10_m10",
+        "title": "Amlodipine",
+        "category": "medicaments",
+        "details": {
+            "classe": "Antiangineux",
+            "sous_classe": "Bloqueur des canaux calciques",
+            "synonymes": "Act-Amlodipine, Amlodipine, Apo-Amlodipine, Bio-Amlodipine, Dom-Amlodipine, GD-Amlodipine, Jamp-Amlodipine, Mar-Amlodipine, Mint-Amlodipine, Mylan-Amlodipine, Norvasc, PMS-Amlodipine, Ran-Amlodipine, Riva-Amlodipine, Sandoz-Amlodipine, Septa-Amlodipine, Teva-Amlodipine, Van-Amlodipine",
+            "classification": "Antihypertenseur, antiangineux (bloqueur des canaux calciques). Grossesse – catégorie C",
+            "indications": "Traitement de l'hypertension et de l'angine de poitrine chronique stable. Usages non approuvés : Traitement de la maladie de Raynaud.",
+            "mode_action": "Inhibition du transport du calcium dans les cellules musculaires lisses vasculaires et myocardiques. Effets : Vasodilatation artérielle périphérique (baisse de la PA) et vasodilatation coronarienne (baisse de la fréquence/gravité de l'angine).",
+            "pharmacocinetique": "Absorption : Bonne (PO – 64 à 90 %). Distribution : Traverse probablement placenta ; passe dans le lait maternel. Liaison protéines : 93 %. Métabolisme : Hépatique ; excrétion rénale des métabolites inactifs. Demi-vie : 30 à 50 heures.",
+            "pharmacodynamie": "Profil temps-action (effet cardiovasculaire) : PO : Début 1–2 h, Pic 6–12 h, Durée 24 h.",
+            "contre_indications": "Hypersensibilité (risque de sensibilité croisée) ; Pression artérielle systolique < 90 mm Hg.",
+            "precautions_mises_en_garde": "Insuffisance hépatique grave (réduire la dose) ; sténose aortique ; insuffisance cardiaque. Gér. : sensibilité accrue aux effets hypotenseurs (réduire dose initiale). Allaitement/Péd. : innocuité non établie.",
+            "reactions_indesirables_effets_secondaires": {
+                "SNC": "céphalées, étourdissements, fatigue, somnolence.",
+                "CV": "œdème périphérique, hypotension, palpitations, hypotension orthostatique, bradycardie.",
+                "GI": "hyperplasie gingivale, nausées.",
+                "Tég": "bouffées vasomotrices, photosensibilité."
+            },
+            "interaction": "Médicament-médicament : Hypotension additive avec fentanyl, antihypertenseurs, nitrés ou alcool. AINS (baissent l'effet). Inhibiteurs CYP3A4 (azolés, cimétidine, macrolides, ritonavir) augmentent l'effet. Inducteurs CYP3A4 (phénobarbital, phénytoïne, carbamazépine, rifampine) baissent l'effet. Lithium (neurotoxicité). Simvastatine (max 20 mg/j). Augmente tacrolimus/cyclosporine. Médicament-aliments : Jus de pamplemousse augmente l'effet. Produits naturels : Millepertuis baisse l'effet.",
+            "voies_administration_posologie": "PO (adultes) : 5 mg 1x/j ; max 10 mg/j. PO (Gér./rénaux) : 2,5 à 5 mg 1x/j ; max 10 mg/j. PO (IH) : 2,5 mg 1x/j ; max 10 mg/j. PO (enfants 6-17 ans) : 2,5 à 5 mg 1x/j ; max 5 mg/j.",
+            "presentation": "Comprimés : 2,5 mg, 5 mg, 10 mg. En association : atorvastatine (Caduet), telmisartan (Twynsta).",
+            "soins_infirmiers": {
+                "evaluation_situation": "Mesurer PA et pouls avant et régulièrement. Faire des ÉCG réguliers (traitement prolongé). Bilan ingesta/excreta et poids quotidien (signes d'insuffisance cardiaque). Angine : situer douleur et déclencheurs. Suivre l'observance. Calcium sérique non altéré.",
+                "constats_evaluation": "Irrigation tissulaire inefficace ; Douleur aiguë ; Connaissances insuffisantes.",
+                "interventions_infirmieres": "Ne pas confondre avec amiloride. Administrable sans égard aux repas.",
+                "enseignement_patient_proches": "Respecter la posologie (ne pas doubler si oubli). Cesser graduellement. Éviter jus de pamplemousse et alcool. Mesurer son pouls (< 50 : contacter médecin). Changer de position lentement. Hygiène buccale rigoureuse. Écran solaire requis. Signaler : dyspnée, œdème, étourdissements prononcés. Angine : continuer nitrés/bêta-bloquants, nitroglycérine PRN.",
+                "verification_effet_therapeutique": "Baisse PA. Diminution fréquence/gravité angine. Meilleure tolérance à l'effort."
+            }
+        }
+    },
+    {
+        "id": "c10_m11",
+        "title": "Diltiazem",
+        "category": "medicaments",
+        "details": {
+            "classe": "Antiangineux",
+            "sous_classe": "Bloqueur des canaux calciques",
+            "synonymes": "Act-Diltiazem CD/T, Apo-Diltiaz/CD, Cardizem CD, Diltiazem/CD/TZ, PMS-Diltiazem CD, Sandoz Diltiazem CD/T, Teva-Diltiazem/CD/HCL ER, Tiazac/Tiazac XC",
+            "classification": "Antiangineux, antiarythmique (classe IV), antihypertenseur (bloqueur des canaux calciques). Grossesse – catégorie C",
+            "indications": "Hypertension (comprimés à libération contrôlée seulement) ; angine chronique stable ; angine vasospastique (comprimés ordinaires seulement) ; Tachyarythmies supraventriculaires, flutter ou fibrillation auriculaire (IV seulement). Usages non approuvés : Maladie de Raynaud, crampes musculaires.",
+            "mode_action": "Inhibition de la pénétration des ions calcium dans les cellules des muscles lisses vasculaires et myocardiques ; diminution de la conduction dans le nœud SA et le nœud AV. Effets : Vasodilatation systémique (baisse PA), vasodilatation coronarienne (baisse angine), suppression des tachycardies supraventriculaires, ralentissement de la fréquence cardiaque.",
+            "pharmacocinetique": "Absorption : Bonne (PO), mais premier passage hépatique important (biodisponibilité 40 %). Distribution : Traverse probablement la barrière placentaire. Liaison protéines : 70 à 80 %. Métabolisme : Hépatique (CYP3A4). Demi-vie : 3,5 à 9 heures.",
+            "pharmacodynamie": "Profil temps-action (effet pression artérielle/antiarythmique) : PO : Début 30-60 min, Pic 2-3 h, Durée 6-8 h. PO (Lib. prolongée) : Début 2 h, Pic 10-14 h, Durée 24 h. IV : Début 2-5 min, Pic 2-7 min, Durée 1-3 h.",
+            "contre_indications": "Hypersensibilité ; syndrome de dysfonctionnement sinusal ou bloc AV 2e/3e degré (sauf si pacemaker) ; PA systolique < 90 mm Hg ; infarctus avec insuffisance ventriculaire gauche et congestion pulmonaire ; perfusion concomitante de dantrolène ; femmes enceintes ou en âge de procréer.",
+            "precautions_mises_en_garde": "Insuffisances hépatique, rénale ou cardiaque congestive graves. Antécédents d'arythmies ventriculaires graves. Gér. : risque accru d'hypotension. Allaitement : passe dans le lait maternel. Péd. : innocuité non établie.",
+            "reactions_indesirables_effets_secondaires": {
+                "SNC": "rêves anormaux, insomnie, anxiété, confusion, étourdissements, somnolence, céphalées, faiblesse.",
+                "ORLO": "vision trouble, trouble de l'équilibre, acouphènes, épistaxis.",
+                "Resp": "toux, dyspnée.",
+                "CV": "arythmies, insuffisance cardiaque, œdème périphérique, bradycardie, hypotension, palpitations, syncope, tachycardie.",
+                "GI": "anorexie, constipation, diarrhée, xérostomie, nausées, vomissements, dysgueusie, dyspepsie, élévation des enzymes hépatiques.",
+                "GU": "dysurie, nycturie, polyurie, dysfonctionnement sexuel.",
+                "Tég": "dermatite, érythème polymorphe, syndrome de Stevens-Johnson, bouffées vasomotrices, photosensibilité, prurit, rash.",
+                "End/Hémat": "gynécomastie, hyperglycémie, anémie, leucopénie, thrombopénie.",
+                "Loc/Métab": "raideurs articulaires, crampes musculaires, gain pondéral, paresthésie, tremblements, hyperplasie gingivale."
+            },
+            "interaction": "Médicament-médicament : Hypotension additive avec fentanyl, antihypertenseurs, nitrés ou alcool. AINS (baissent l'effet). Augmente digoxine, cyclosporine, carbamazépine, triazolam, midazolam. Bradycardie avec bêta-bloquants, digoxine, disopyramide, phénytoïne. Inhibiteurs CYP3A4 (azolés, cimétidine, macrolides, ritonavir) augmentent le diltiazem. Inducteurs CYP3A4 (rifampine, phénobarbital) baissent l'effet. Simvastatine (max 10 mg/j). Médicament-aliments : Jus de pamplemousse augmente les taux.",
+            "voies_administration_posologie": "PO (adultes) : Ordinaires : 30 à 90 mg, 3-4x/j (max 360 mg/j). CD/ER/T/TZ : 120 à 240 mg 1x/j. XC : 120 à 240 mg 1x/j au coucher. IV (adultes) : 0,25 mg/kg bolus ; répéter 0,35 mg/kg après 15 min ; perfusion continue 5-15 mg/h (usuel 10 mg/h) jusqu'à 24h.",
+            "presentation": "Comprimés : 30, 60 mg. Capsules libération prolongée (CD, ER, T, TZ, XC) : 120, 180, 240, 300, 360 mg. Injection : 5 mg/mL (fioles 5 ou 10 mL).",
+            "soins_infirmiers": {
+                "evaluation_situation": "Mesurer PA et pouls avant et régulièrement pendant le traitement. Suivre l'ÉCG (intervalles PR). Bilan ingesta/excreta et poids quotidien (signes d'insuffisance cardiaque). Dépister toxicité digitalique si applicable. Surveiller apparition de rash (Stevens-Johnson). Angine : situer douleur et déclencheurs. Tests : Potassium (risque d'arythmies), fonctions hépatique et rénale.",
+                "constats_evaluation": "Douleur aiguë (Indications) ; Débit cardiaque diminué (RA/ES) ; Connaissances insuffisantes.",
+                "interventions_infirmieres": "PO : Avec ou sans aliments (avec si irritation). Ne pas écraser/mâcher capsules/comprimés LP (vides dans selles normal). IV directe : Bolus sur 2 min. Perfusion : Diluer 125 mg/100 mL ou 250 mg/250-500 mL (NaCl 0,9%, D5%). Stable 24h. Début 10 mg/h (ajuster par 5 mg/h).",
+                "enseignement_patient_proches": "Respecter la posologie (ne pas doubler si oubli). Éviter jus de pamplemousse et alcool. Mesurer son pouls (< 50 : contacter médecin). Changer de position lentement. Hygiène buccale rigoureuse (gencives). Signaler : dyspnée, œdème, étourdissements prononcés, rash. Écran solaire requis. Angine : continuer nitrés/bêta-bloquants selon avis.",
+                "verification_effet_therapeutique": "Baisse PA. Diminution fréquence/gravité angine. Meilleure tolérance à l'effort. Suppression des tachyarythmies auriculaires."
+            }
+        }
+    },
+    {
+        "id": "c10_m12",
+        "title": "Nifédipine",
+        "category": "medicaments",
+        "details": {
+            "classe": "Antiangineux",
+            "sous_classe": "Bloqueur des canaux calciques",
+            "synonymes": "Adalat XL, MylanNifedipine ER, Nifedipine, Nifedipine ER, PMS-Nifedipine ER",
+            "classification": "Antiangineux, antihypertenseur (bloqueur des canaux calciques). Grossesse – catégorie C",
+            "indications": "Traitement de l'hypertension (LP seulement), de l'angine chronique stable et de l'angine vasospastique (LI seulement). Usages non approuvés : Traitement de la maladie de Raynaud.",
+            "mode_action": "Inhibition du transport du calcium dans les cellules musculaires lisses vasculaires et myocardiques. Effets : Vasodilatation artérielle périphérique (baisse PA) et vasodilatation coronarienne (baisse fréquence/gravité angine).",
+            "pharmacocinetique": "Absorption : Bonne (PO), mais 1er passage important ; biodisponibilité de 45 à 70 % (LI) et de 80 % (LP). Distribution : Traverse la barrière placentaire. Liaison protéines : 92 à 98 %. Métabolisme : Hépatique ; excrétion rénale (60-80 %) et fécale (20 %). Demi-vie : 2 à 5 h (ordinaire) et 10 h (LP).",
+            "pharmacodynamie": "Profil temps-action (effet sur la pression artérielle) : PO : Début 20 min, Pic 0,5 – 2h, Durée 6 – 8 h. PO – XL : Pic 6 h, Durée 24 h.",
+            "contre_indications": "Hypersensibilité ; collapsus cardiovasculaire ; PA < 90 mm Hg ; infarctus (LI) ; grossesse et allaitement ; rifampine ; poche de Kock (forme XL).",
+            "precautions_mises_en_garde": "Insuffisances hépatique ou cardiaque graves ; sténose aortique grave ; insuffisance vasculaire cérébrale ; rétrécissement GI (forme XL) ; inhibiteurs CYP3A4. Gér. : réduction de dose ; risque d'hypotension. Péd. : innocuité non établie.",
+            "reactions_indesirables_effets_secondaires": {
+                "SNC": "céphalées, rêves bizarres, anxiété, confusion, étourdissements, somnolence, agitation, nervosité, faiblesse, insomnie.",
+                "ORLO/Resp": "vision trouble, perte d'équilibre, épistaxis, acouphènes, toux, dyspnée.",
+                "CV": "arythmies, insuffisance cardiaque, œdème périphérique, bradycardie, douleurs thoraciques, hypotension, palpitations, syncope, tachycardie.",
+                "GI": "enzymes hépatiques anormales, anorexie, constipation, diarrhée, xérostomie, nausées, vomissements, dysgueusie, dyspepsie.",
+                "GU": "dysurie, nycturie, polyurie, dysfonctionnement sexuel.",
+                "Tég": "bouffées vasomotrices, dermatite, érythème polymorphe, photosensibilité, prurit, urticaire, rash, alopécie.",
+                "Divers": "syndrome de Stevens-Johnson, hyperplasie gingivale, gynécomastie, hyperglycémie, anémie, leucopénie, thrombopénie, gain pondéral, raideurs articulaires, crampes musculaires, myalgie, paresthésie, tremblements."
+            },
+            "interaction": "Médicament-médicament : Hypotension additive avec fentanyl, antihypertenseurs, nitrés ou alcool. AINS (baissent l'effet). Augmente digoxine, cyclosporine, tacrolimus, prazosine, carbamazépine. Bradycardie avec bêta-bloquants, digoxine, disopyramide, phénytoïne. Propranolol augmente la toxicité. Inhibiteurs CYP3A4 (azolés, cimétidine, macrolides, diltiazem, fluoxétine, ritonavir) augmentent la nifédipine. Inducteurs CYP3A4 (phénobarbital, phénytoïne, carbamazépine, rifampine) baissent les taux. Médicament-aliments : Jus de pamplemousse augmente les taux. Médicament-produits naturels : Millepertuis baisse l'effet.",
+            "voies_administration_posologie": "PO (adultes) : LI : 10 à 20 mg, 3x/j (max 120 mg/j). XL : Angine : 30 à 60 mg 1x/j (max 90 mg/j). Hypertension : 20 à 30 mg 1x/j (max 90 mg/j).",
+            "presentation": "Capsules : 5, 10 mg. Comprimés libération prolongée (XL, ER) : 20, 30, 60 mg.",
+            "soins_infirmiers": {
+                "evaluation_situation": "Mesurer PA et pouls avant et régulièrement. Suivre l'ÉCG (traitement prolongé). Bilan ingesta/excreta et poids quotidien (signes d'insuffisance cardiaque). Suivre toxicité digitalique si applicable. Surveiller apparition de rash (Stevens-Johnson). Gér. : Évaluer risque de chute. Tests : Potassium, fonctions hépatique et rénale. Test de Coombs et ANA (fausses positivités).",
+                "constats_evaluation": "Débit cardiaque diminué ; Douleur aiguë ; Connaissances insuffisantes.",
+                "interventions_infirmieres": "Ne pas confondre avec nimodipine. Administrable sans égard aux repas (avec si irritation). Ne pas écraser/briser/mâcher les préparations LP (vides dans selles normal). Éviter jus de pamplemousse. Voie sublinguale non recommandée.",
+                "enseignement_patient_proches": "Respecter la posologie (ne pas doubler si oubli). Cesser graduellement. Mesurer son pouls (< 50 : contacter médecin). Changer de position lentement. Gér. : prévention des chutes. Hygiène dentaire rigoureuse. Éviter alcool. Signaler : dyspnée, œdème, étourdissements prononcés. Angine : risque de tachycardie réflexe 30 min après prise (temporaire).",
+                "verification_effet_therapeutique": "Baisse PA. Diminution fréquence/gravité angine. Meilleure tolérance à l'effort."
+            }
+        }
+    },
+    {
+        "id": "c10_m13",
+        "title": "Vérapamil",
+        "category": "medicaments",
+        "details": {
+            "classe": "Antiangineux",
+            "sous_classe": "Bloqueur des canaux calciques",
+            "synonymes": "Apo-Verap, Isoptin SR, Mylan-Verapamil/SR, NovoVeramil SR, PMS-Verapamil SR, PRO-Verapamil SR, Riva-Verapamil SR, Verapamil",
+            "classification": "Antiangineux, antiarythmique (classe IV), antihypertenseur (bloqueur des canaux calciques). Grossesse – catégorie C",
+            "indications": "Hypertension essentielle légère à modérée ; Angine de poitrine d'effort stable ; Angine vasospastique (LI seulement) ; Tachycardies supraventriculaires paroxystiques ; Fibrillation auriculaire (LI et IV) ; Cardiomyopathie hypertrophique. Usages non approuvés : Prophylaxie de la migraine.",
+            "mode_action": "Inhibition du transport du calcium dans les cellules du myocarde et des muscles lisses vasculaires ; Diminution de la conduction dans le nœud SA et le nœud AV. Effets : Vasodilatation systémique (baisse PA), vasodilatation coronarienne (baisse angine), ralentissement de la fréquence cardiaque, suppression des tachycardies supraventriculaires.",
+            "pharmacocinetique": "Absorption : 90 % (PO), mais 1er passage important (biodisponibilité 20-25 %). Distribution : Traverse placenta ; passe dans le lait maternel. Liaison protéines : 90 %. Métabolisme : Hépatique ; excrétion rénale (70 % métabolites) et fécale (16 %). Demi-vie : 4,5 à 12 heures.",
+            "pharmacodynamie": "Profil temps-action (effet cardiovasculaire) : PO : Début 30–90 min, Pic 1–2 h, Durée 6–8 h. PO-LP : Début 4–5 h, Pic 4–12 h, Durée 24 h. IV : Début 1–5 min, Pic 10 min, Durée 0,5–6 h.",
+            "contre_indications": "Hypersensibilité ; infarctus compliqué ; syndrome de dysfontionnement sinusal/bloc AV (sauf si pacemaker) ; PA systolique < 90 mm Hg ; insuffisance cardiaque ; choc cardiogénique ; bradycardie importante ; voie accessoire ; bêta-bloquants IV ; tachycardie ventriculaire.",
+            "precautions_mises_en_garde": "Insuffisances hépatique ou rénale ; antécédents d'arythmies graves. Gér. : raccord de dose et perfusion lente (risque hypotension). Obst./Allaitement : innocuité non établie. Péd. : innocuité non établie.",
+            "reactions_indesirables_effets_secondaires": {
+                "SNC": "rêve anormaux, anxiété, confusion, étourdissements, somnolence, céphalées, agitation, faiblesse.",
+                "ORLO/Resp": "vision trouble, déséquilibre, épistaxis, acouphènes, toux, dyspnée.",
+                "CV": "arythmies, insuffisance cardiaque, bradycardie, douleurs thoraciques, hypotension, palpitations, œdème périphérique, syncope, tachycardie.",
+                "GI": "anorexie, constipation, diarrhée, xérostomie, nausées, vomissements, dysgueusie, dyspepsie, enzymes hépatiques anormales.",
+                "Divers": "syndrome de Stevens-Johnson, hyperplasie gingivale, dermatite, érythème polymorphe, photosensibilité, prurit, rash, gynécomastie, hyperglycémie, anémie, leucopénie, thrombopénie, gain pondéral, raideurs articulaires, crampes musculaires, paresthésie, tremblements."
+            },
+            "interaction": "Médicament-médicament : Hypotension additive avec fentanyl, antihypertenseurs, nitrés ou alcool. AINS (baissent l'effet). Augmente digoxine, cyclosporine, prazosine, dabigatran, carbamazépine. Bradycardie avec bêta-bloquants, digoxine, disopyramide, phénytoïne. Intensifie myorelaxants. Statines (max 10-20 mg/j). Vitamine D/Calcium baissent l'effet. Médicament-aliments : Jus de pamplemousse augmente taux. Produits naturels : Caféine peut s'élever ; Millepertuis baisse l'effet.",
+            "voies_administration_posologie": "PO (adultes) : 80 à 120 mg, 3-4x/j (max 480 mg/j). PO-LP : 120 à 240 mg/j (max 480 mg/j). IH/Gér. : 40 mg 3x/j. IV (adultes) : 5 à 10 mg bolus sur 2 min. IV (enfants) : 0,1 à 0,3 mg/kg bolus sur 2 min.",
+            "presentation": "Comprimés : 80, 120 mg. LP : 120, 180, 240 mg. Injection : 2,5 mg/mL. En association : trandolapril (Tarka).",
+            "soins_infirmiers": {
+                "evaluation_situation": "Mesurer PA avant et régulièrement. Suivre l'ÉCG (intervalles PR). Bilan ingesta/excreta et poids quotidien (insuffisance cardiaque). Suivre toxicité digitalique si applicable. Surveiller apparition de rash (Stevens-Johnson). Angine : situer douleur/déclencheurs. Arythmies : monitorage continu IV. Tests : Potassium, fonctions hépatique et rénale.",
+                "constats_evaluation": "Débit cardiaque diminué ; Douleur aiguë ; Connaissances insuffisantes.",
+                "interventions_infirmieres": "PO : avec aliments/lait. Ne pas écraser/briser/mâcher LP. IV : position couchée 1h après. IV directe : sans diluer, 2 min (3 min gér.). Compatibilité tubulure Y : très large (voir détails techniques manufacturer). Incompatibilités Y : acyclovir, albumine, ampicilline, diazépam, furosémide, propofol, bicarbonate de sodium.",
+                "enseignement_patient_proches": "Respecter la posologie (ne pas doubler si oubli). Cesser graduellement. Mesurer son pouls (< 50 : contacter médecin). Éviter jus de pamplemousse. Changer de position lentement. Hygiène dentaire rigoureuse. Éviter alcool. Signaler : dyspnée, œdème, étourdissements prononcés. Angine : restrictions effort physique.",
+                "verification_effet_therapeutique": "Baisse PA. Diminution fréquence/gravité angine. Meilleure tolérance à l'effort. Suppression des tachycardies supraventriculaires."
+            }
+        }
+    },
+    {
+        "id": "c10_m14",
+        "title": "Dinitrate d'isosorbide",
+        "category": "medicaments",
+        "details": {
+            "classe": "Antiangineux",
+            "sous_classe": "D\u00e9riv\u00e9 nitr\u00e9",
+            "synonymes": "isosorbide, dinitrate d', ISDN, Isordil",
+            "classification": "Antiangineux (d\u00e9riv\u00e9s nitr\u00e9s et nitrates). Grossesse \u2013 cat\u00e9gorie C",
+            "indications": "Traitement aigu des crises d'angine (forme sublinguale seulement) ; Prophylaxie prolong\u00e9e de l'angine de poitrine. Usages non approuv\u00e9s : Traitement de l'insuffisance cardiaque.",
+            "mode_action": "Vasodilatation (veineuse > art\u00e9rielle) ; diminution de la pr\u00e9charge ventriculaire gauche. Effets : R\u00e9duction de la consommation d'oxyg\u00e8ne par le myocarde, soulagement/pr\u00e9vention des crises d'angine, \u00e9l\u00e9vation du d\u00e9bit cardiaque.",
+            "pharmacocinetique": "Absorption : Bonne (PO et voie sublinguale). Distribution : Vol. distribution 0,6 \u00e0 0,7 L/kg. Liaison prot\u00e9ines : 5 %. M\u00e9tabolisme : H\u00e9patique ; excr\u00e9tion r\u00e9nale des m\u00e9tabolites. Demi-vie : 50 minutes.",
+            "pharmacodynamie": "Profil temps-action (effet cardiovasculaire) : Voie sublinguale : D\u00e9but 2-5 min, Dur\u00e9e 1-3 h. PO : D\u00e9but 20-40 min, Dur\u00e9e 4-6 h.",
+            "contre_indications": "An\u00e9mie grave ; Usage concomitant d'inhibiteurs de la PDE5 (sild\u00e9nafil, tadalafil, vard\u00e9nafil) ou de riociguat ; Collapsus cardiovasculaire/hypotension marqu\u00e9e ; Hypotension orthostatique ; Obstruction myocardique ; Pr\u00e9ssion intracr\u00e2nienne accrue ; Traumatisme cr\u00e2nien.",
+            "precautions_mises_en_garde": "Hypotension ; maladies h\u00e9patique/r\u00e9nale graves ; myocardiopathie hypertrophique ; insuffisance cardiaque ; hypox\u00e9mie ; art\u00e9rioscl\u00e9rose c\u00e9r\u00e9brale grave. G\u00e9r. : Risque d'hypotension (dose initiale plus faible). Obst. : Risque d'alt\u00e9ration ut\u00e9roplacentaire.",
+            "reactions_indesirables_effets_secondaires": {
+                "SNC": "\u00e9tourdissements, c\u00e9phal\u00e9es, faiblesse.",
+                "CV": "hypotension, tachycardie, bradycardie paradoxale, palpitations, syncope.",
+                "GI": "douleurs abdominales, naus\u00e9es, vomissements.",
+                "Divers": "tol\u00e9rance crois\u00e9e, bouff\u00e9es vasomotrices, tol\u00e9rance \u00e0 l'effet."
+            },
+            "interaction": "M\u00e9dicament-m\u00e9dicament : Inhibiteurs PDE5 (sild\u00e9nafil, tadalafil, vard\u00e9nafil) ou riociguat contre-indiqu\u00e9s (hypotension grave, risque fatal). Attendre 24h (sild\u00e9nafil/vard\u00e9nafil) ou 48h (tadalafil). Hypotension additive avec antihypertenseurs, b\u00eata-bloquants, antipsychotiques ou alcool. Alcalo\u00efdes de l'ergot inhibent les effets.",
+            "voies_administration_posologie": "Adultes : SL (crise) : 1-2 comprim\u00e9s de 5 mg ; r\u00e9p\u00e9ter q5 min prn (max 3 doses/15 min). SL (prophylaxie) : 5-10 mg q2 \u00e0 4 h ou 10-15 min avant situation d\u00e9clenchante. PO : 10 \u00e0 30 mg 3-4x/j ; derni\u00e8re dose \u00e0 19 h (intervalle sans nitr\u00e9s 8-12 h/j).",
+            "presentation": "Comprim\u00e9s sublinguaux : 5 mg. Comprim\u00e9s : 10, 30 mg.",
+            "soins_infirmiers": {
+                "evaluation_situation": "Angine : si\u00e8ge, dur\u00e9e, intensit\u00e9, facteurs d\u00e9clenchants. Mesurer PA et pouls r\u00e9guli\u00e8rement (adaptation). Tests : Cholest\u00e9rol (faussement bas), m\u00e9th\u00e9moglobine (si doses excessives), acide vanylmand\u00e9lique urinaire (augmentation).",
+                "constats_evaluation": "Irrigation tissulaire inefficace ; Intol\u00e9rance \u00e0 l'activit\u00e9 ; Connaissances insuffisantes.",
+                "interventions_infirmieres": "PO : 1 h avant ou 2 h apr\u00e8s repas avec verre d'eau. SL : garder sous la langue ; ne pas manger/boire/fumer avant dissolution. Administrer nouveau si aval\u00e9.",
+                "enseignement_patient_proches": "Respecter la posologie (ne pas doubler si oubli). Sevrage graduel. SL pour crises, PO pour prophylaxie seulement. Changer de position lentement. \u00c9viter alcool. C\u00e9phal\u00e9es fr\u00e9quentes (diminuent avec temps, utiliser ac\u00e9taminoph\u00e8ne). Signaler vision trouble/x\u00e9rostomie.",
+                "verification_effet_therapeutique": "Diminution fr\u00e9quence/intensit\u00e9 angine ; Augmentation tol\u00e9rance \u00e0 l'effort."
+            }
+        }
+    },
+    {
+        "id": "c10_m15",
+        "title": "Mononitrate d'isosorbide",
+        "category": "medicaments",
+        "details": {
+            "classe": "Antiangineux",
+            "sous_classe": "D\u00e9riv\u00e9 nitr\u00e9",
+            "synonymes": "isosorbide, mononitrate d', Apo-ISMN, Imdur, PMS-ISMN, Pro-ISMN-60",
+            "classification": "Antiangineux (d\u00e9riv\u00e9s nitr\u00e9s et nitrates). Grossesse \u2013 cat\u00e9gorie C",
+            "indications": "Prophylaxie prolong\u00e9e de l'angine de poitrine (formes LP). Non indiqu\u00e9 pour les crises aigu\u00ebs.",
+            "mode_action": "Vasodilatation (veineuse > art\u00e9rielle) ; diminution de la pr\u00e9chargue. Effets : Soulagement/pr\u00e9vention des crises d'angine et \u00e9l\u00e9vation du d\u00e9bit cardiaque.",
+            "pharmacocinetique": "Absorption : Bonne (PO). Liaison prot\u00e9ines : 5 %. M\u00e9tabolisme : H\u00e9patique ; excr\u00e9tion r\u00e9nale des m\u00e9tabolites. Demi-vie : 5 heures.",
+            "pharmacodynamie": "Profil temps-action (effet cardiovasculaire) : PO \u2013 LP : Pic 4 h, Dur\u00e9e 10 \u2013 12 h.",
+            "contre_indications": "An\u00e9mie grave ; Inhibiteurs PDE5 (sild\u00e9nafil, tadalafil, vard\u00e9nafil) ou riociguat ; Collapsus cardiovasculaire ; Pr\u00e9ssion intracr\u00e2nienne accrue.",
+            "precautions_mises_en_garde": "An\u00e9mie ; maladies h\u00e9patique/r\u00e9nale graves ; hypox\u00e9mie. G\u00e9r. : Risque d'hypotension. Obst./Allaitement/P\u00e9d. : Innocuit\u00e9 non \u00e9tablie.",
+            "reactions_indesirables_effets_secondaires": {
+                "SNC": "\u00e9tourdissements, c\u00e9phal\u00e9es, faiblesse.",
+                "CV": "hypotension, tachycardie, syncope.",
+                "GI": "naus\u00e9es, vomissements.",
+                "Divers": "tol\u00e9rance, bouff\u00e9es vasomotrices."
+            },
+            "interaction": "M\u00e9dicament-m\u00e9dicament : Inhibiteurs PDE5 ou riociguat (contre-indiqu\u00e9s, risque fatal). Hypotension additive avec antihypertenseurs, b\u00eata-bloquants, alcool.",
+            "voies_administration_posologie": "PO (adultes) : 30 \u00e0 60 mg 1x/j ; peut monter \u00e0 120-240 mg 1x/j (max 240 mg/j). Intervalle sans nitr\u00e9s requis pour \u00e9viter tol\u00e9rance.",
+            "presentation": "Comprim\u00e9s \u00e0 lib\u00e9ration prolong\u00e9e : 60 mg.",
+            "soins_infirmiers": {
+                "evaluation_situation": "Angine : si\u00e8ge, dur\u00e9e, intensit\u00e9. PA et pouls (adaptation). Test : Cholest\u00e9rol (faussement bas).",
+                "constats_evaluation": "Irrigation tissulaire inefficace ; Intol\u00e9rance \u00e0 l'activit\u00e9 ; Connaissances insuffisantes.",
+                "interventions_infirmieres": "Ne pas confondre Imdur avec Imuran, Inderal ou K-Dur. PO : comprim\u00e9s LP \u00e0 avaler tels quels ou divis\u00e9s en deux (ne pas \u00e9craser/briser/croquer). Matrice peut se retrouver dans les selles.",
+                "enseignement_patient_proches": "Respecter posologie (ne pas doubler). Sevrage graduel requis. LP pour prophylaxie seulement. \u00c9viter alcool. C\u00e9phal\u00e9es fr\u00e9quentes (ac\u00e9taminoph\u00e8ne). Pr\u00e9venir si vision trouble.",
+                "verification_effet_therapeutique": "Diminution fr\u00e9quence/intensit\u00e9 angine ; Tol\u00e9rance \u00e0 l'effort accrue."
+            }
+        }
+    },
+    {
+        "id": "c10_m16",
+        "title": "Nitroglycérine",
+        "category": "medicaments",
+        "details": {
+            "classe": "Antiangineux",
+            "sous_classe": "Dérivé nitré",
+            "synonymes": "Sublingual : Nitrostat ; IV : Nitroject, Tridil ; Timbre : Minitran, Mylan-Nitro Patch, Nitro-Dur, Transderm-Nitro, Trinipatch ; Vaporisateur : Apo-Nitroglycerin, Mylan-Nitro, Nitrolingual Pompe, Rho-Nitro Pompe",
+            "classification": "Antiangineux (dérivés nitrés et nitrates), vasodilatateurs coronariens. Grossesse – catégorie C",
+            "indications": "Vaporisateur/SL : Crises d'angine et prophylaxie courte. Timbre : Prophylaxie prolongée de l'angine. IV : Infarctus aigu du myocarde, insuffisance cardiaque congestive, contrôle de la PA en chirurgie/crise hypertensive. Usages non approuvés : Insuffisance cardiaque avec traitements inefficaces.",
+            "mode_action": "Dilatation des artères coronaires et amélioration de la circulation collatérale, vasodilatation (veineuse > artérielle), diminution de la précharge ventriculaire gauche. Effets : Soulagement/prévention des crises, élévation du débit cardiaque, diminution de la PA.",
+            "pharmacocinetique": "Absorption : Bonne pour toutes voies (PO, transcutanée, transmuqueuse, SL). Distribution : Vol. distri 3,3 L/kg (IV). Liaison protéines : 60 %. Métabolisme : Hépatique rapide/enzymes sanguines. Demi-vie : 1 à 4 minutes.",
+            "pharmacodynamie": "Profil temps-action (effet cardiovasculaire) : SL : Début 1-3 min, Durée 10-30 min. Vaporisateur : Début 2-4 min, Durée 10-30 min. Timbre : Début 40-60 min, Durée jusqu'à 24 h. IV : Début immédiat, Durée plusieurs minutes.",
+            "contre_indications": "Anémie grave ; Inhibiteurs PDE5 (sildénafil, tadalafil, vardénafil) ou riociguat ; Hypotension/hypovolémie non corrigées ; Obstruction myocardique ; Pression intracrânienne ou intraoculaire accrues ; Traumatisme crânien.",
+            "precautions_mises_en_garde": "Hypotension ; anémie ; intolérance alcool (IV fortes doses) ; insuffisance cardiaque/hépatique/rénale ; myocardiopathie hypertrophique ; hypoxémie. Retirer timbres pour IRM/cardioversion (risque brûlures). Obst./Allaitement/Péd. : Innocuité non établie.",
+            "reactions_indesirables_effets_secondaires": {
+                "SNC": "étourdissements, céphalées, agitation, faiblesse.",
+                "CV": "hypotension, bradycardie réflexe, tachycardie, palpitations, syncope.",
+                "GI": "douleurs abdominales, nausées, vomissements.",
+                "Tég": "dermatite de contact (timbre).",
+                "Hémat": "méthémoglobinémie (si doses excessives).",
+                "Divers": "intoxication à l'alcool (IV), bouffées vasomotrices, tolérance croisée."
+            },
+            "interaction": "Médicament-médicament : Inhibiteurs PDE5 ou riociguat (contre-indiqués, risque fatal de chute de PA). Attendre 24h/48h avec sildénafil/vardénafil/tadalafil. Hypotension avec antihypertenseurs, bêta-bloquants, alcool. Alcaloïdes ergot inhibent nitrates. Anticholinergiques baissent absorption SL/Vaporisateur. Résistance à héparine avec Nitro IV.",
+            "voies_administration_posologie": "SL/Vapo (adultes) : 0,3-0,6 mg ou 1-2 jets (0,4 mg/jet) ; répéter q5 min prn (max 3 doses/15 min). IV (adultes) : 5 mcg/min, augmenter prn jusqu'à 20 mcg/min, puis augmenter par paliers de 10-20. Timbre : 0,2 à 0,8 mg/h porté 12-16 h/j avec intervalle libre (8-12 h) pour éviter tolérance.",
+            "presentation": "Comprimés SL : 0,3 ou 0,6 mg. Vaporisateur : 0,4 mg/jet. Timbre : 0,2 à 0,8 mg/h. IV : 1 ou 5 mg/mL, Prémélangé : 25/50/100 mg dans D5%.",
+            "soins_infirmiers": {
+                "evaluation_situation": "Angine : siège, durée, intensité. PA et pouls avant/après administration. IV : Monitorage ECG continu, PA et paramètres hémodynamiques. Tests : Acide vanilmandélique/cathécolamines (élévées), méthémoglobine (si fortes doses), cholestérol (faussement bas).",
+                "constats_evaluation": "Douleur aiguë ; Irrigation tissulaire inefficace ; Connaissances insuffisantes.",
+                "interventions_infirmieres": "SL : Garder sous langue jusqu'à dissolution (pas manger/boire/fumer). Vapo : Soulever langue, pulvériser ; ne pas inhaler ni agiter le flacon. IV : Exige pompe perfu et tubulures spéciales (pas de PVC). Timbre : Assurer rotation sites, raser prn, pression forte; retirer avant IRM. Cesser/Diminuer IV si PA chute.",
+                "enseignement_patient_proches": "Respecter rigoureusement posologie et intervalle sans timbre. Timbres imperm\u00e9ables (douche ok). Ne pas couper le timbre. SL : Stocker dans flacon verre d'origine (max 6 mois ouvert). Crise : 3 doses max / 15 min ; sinon urgence m\u00e9dicale. \u00c9viter alcool/changement brusque de position.",
+                "verification_effet_therapeutique": "Baisse PA et diminution des crises angineuses/tol\u00e9rance \u00e0 l'effort augment\u00e9e."
+            }
+        }
+    },
+    {
+        "id": "c11",
+        "title": "Antiarythmiques",
+        "category": "medicaments",
+        "details": {
+            "indications": "Suppression des arythmies cardiaques.",
+            "mode_action": "Ces m\u00e9dicaments corrigent les arythmies cardiaques par divers m\u00e9canismes, selon la classe d'agents utilis\u00e9e. L'objectif th\u00e9rapeutique est de diminuer les sympt\u00f4mes et d'augmenter le rendement h\u00e9modynamique. Le choix du m\u00e9dicament d\u00e9pend de l'\u00e9tiologie des arythmies et des caract\u00e9ristiques de chaque patient. Avant d'amorcer la pharmacoth\u00e9rapie, il faut corriger, dans la mesure du possible, la cause de l'arythmie (p. ex., troubles \u00e9lectrolytiques, m\u00e9dicaments). Les principaux antiarythmiques sont g\u00e9n\u00e9ralement class\u00e9s selon leurs effets sur les tissus qui assurent la conduction cardiaque. On utilise \u00e9galement comme antiarythmiques l'ad\u00e9nosine, l'atropine et la digoxine.",
+            "contre_indications": "Tr\u00e8s diff\u00e9rentes, selon l'agent administr\u00e9. Consulter la monographie de chaque m\u00e9dicament.",
+            "precautions_mises_en_garde": "Tr\u00e8s diff\u00e9rentes, selon l'agent administr\u00e9. Chez les personnes \u00e2g\u00e9es et chez les patients souffrant d'insuffisance r\u00e9nale ou h\u00e9patique, il faut adapter la posologie en fonction du m\u00e9dicament administr\u00e9. On doit \u00e9valuer les causes qu'il est possible de corriger (troubles \u00e9lectrolytiques, toxicit\u00e9 m\u00e9dicamenteuse). Consulter la monographie de chaque m\u00e9dicament.",
+            "interaction": "Tr\u00e8s diff\u00e9rentes, selon l'agent administr\u00e9. Consulter la monographie de chaque m\u00e9dicament.",
+            "soins_infirmiers": {
+                "evaluation_situation": "Surveiller l'\u00c9CG, et mesurer le pouls et la pression art\u00e9rielle tout au long de l'administration par voie IV et \u00e0 intervalles r\u00e9guliers pendant le traitement par voie orale.",
+                "constats_evaluation": "D\u00e9bit cardiaque diminu\u00e9 (Indications). Connaissances insuffisantes sur le traitement m\u00e9dicamenteux (Enseignement au patient et \u00e0 ses proches).",
+                "interventions_infirmieres": "Mesurer le pouls \u00e0 l'apex du c\u0153ur avant d'administrer le m\u00e9dicament par voie orale. Si la fr\u00e9quence cardiaque est < 50 battements/min, ne pas administrer l'agent et en informer le m\u00e9decin ou un autre professionnel de la sant\u00e9. Administrer les m\u00e9dicaments par voie orale avec un grand verre d'eau. La plupart des pr\u00e9parations \u00e0 lib\u00e9ration prolong\u00e9e doivent \u00eatre aval\u00e9es telles quelles. Recommander au patient de ne pas briser, r\u00e9duire en poudre ni croquer les comprim\u00e9s et de ne pas ouvrir les capsules, \u00e0 moins d'avoir re\u00e7u des consignes claires \u00e0 ce sujet.",
+                "enseignement_patient_proches": "Expliquer au patient qu'il doit prendre le m\u00e9dicament par voie orale, \u00e0 intervalles r\u00e9guliers, en respectant rigoureusement la posologie recommand\u00e9e, m\u00eame s'il se sent mieux. Montrer au patient ou \u00e0 ses proches comment prendre le pouls. Recommander au patient de pr\u00e9venir un professionnel de la sant\u00e9 si la fr\u00e9quence ou le rythme du pouls change. Conseiller au patient de consulter un professionnel de la sant\u00e9 avant de prendre un m\u00e9dicament en vente libre. Conseiller au patient de toujours porter sur lui une pi\u00e8ce d'identit\u00e9 o\u00f9 sont inscrits son probl\u00e8me de sant\u00e9 et son traitement m\u00e9dicamenteux. Insister sur l'importance des examens de suivi permettant d'\u00e9valuer les bienfaits du traitement.",
+                "verification_effet_therapeutique": "R\u00e9duction des arythmies cardiaques sans effets nocifs."
+            }
+        }
+    },
+    {
+        "id": "c11_m01",
+        "title": "Disopyramide",
+        "category": "medicaments",
+        "details": {
+            "classe": "Antiarythmiques"
+        }
+    },
+    {
+        "id": "c11_m02",
+        "title": "Proca\u00efnamide",
+        "category": "medicaments",
+        "details": {
+            "classe": "Antiarythmiques"
+        }
+    },
+    {
+        "id": "c11_m03",
+        "title": "Lidoca\u00efne",
+        "category": "medicaments",
+        "details": {
+            "classe": "Antiarythmiques"
+        }
+    },
+    {
+        "id": "c11_m04",
+        "title": "Mexil\u00e9tine",
+        "category": "medicaments",
+        "details": {
+            "classe": "Antiarythmiques"
+        }
+    },
+    {
+        "id": "c11_m05",
+        "title": "Ph\u00e9nyto\u00efne",
+        "category": "medicaments",
+        "details": {
+            "classe": "Antiarythmiques"
+        }
+    },
+    {
+        "id": "c11_m06",
+        "title": "Fl\u00e9ca\u00efnide",
+        "category": "medicaments",
+        "details": {
+            "classe": "Antiarythmiques"
+        }
+    },
+    {
+        "id": "c11_m07",
+        "title": "Propaf\u00e9nome",
+        "category": "medicaments",
+        "details": {
+            "classe": "Antiarythmiques"
+        }
+    },
+    {
+        "id": "c11_m08",
+        "title": "Ac\u00e9butolol",
+        "category": "medicaments",
+        "details": {
+            "classe": "Antiarythmiques"
+        }
+    },
+    {
+        "id": "c11_m09",
+        "title": "Esmolol",
+        "category": "medicaments",
+        "details": {
+            "classe": "Antiarythmiques"
+        }
+    },
+    {
+        "id": "c11_m10",
+        "title": "M\u00e9toprolol",
+        "category": "medicaments",
+        "details": {
+            "classe": "Antiarythmiques"
+        }
+    },
+    {
+        "id": "c11_m11",
+        "title": "Propranolol",
+        "category": "medicaments",
+        "details": {
+            "classe": "Antiarythmiques"
+        }
+    },
+    {
+        "id": "c11_m12",
+        "title": "Amiodarone",
+        "category": "medicaments",
+        "details": {
+            "classe": "Antiarythmiques"
+        }
+    },
+    {
+        "id": "c11_m13",
+        "title": "Dron\u00e9darone",
+        "category": "medicaments",
+        "details": {
+            "classe": "Antiarythmiques"
+        }
+    },
+    {
+        "id": "c11_m14",
+        "title": "Ibutilide",
+        "category": "medicaments",
+        "details": {
+            "classe": "Antiarythmiques"
+        }
+    },
+    {
+        "id": "c11_m15",
+        "title": "Sotalol",
+        "category": "medicaments",
+        "details": {
+            "classe": "Antiarythmiques"
+        }
+    },
+    {
+        "id": "c11_m16",
+        "title": "Ad\u00e9nosine",
+        "category": "medicaments",
+        "details": {
+            "classe": "Antiarythmiques"
+        }
+    },
+    {
+        "id": "c11_m17",
+        "title": "Diltiazem",
+        "category": "medicaments",
+        "details": {
+            "classe": "Antiarythmiques"
+        }
+    },
+    {
+        "id": "c11_m18",
+        "title": "V\u00e9rapamil",
+        "category": "medicaments",
+        "details": {
+            "classe": "Antiarythmiques"
+        }
+    },
+    {
+        "id": "c11_m19",
+        "title": "Atropine",
+        "category": "medicaments",
+        "details": {
+            "classe": "Antiarythmiques"
+        }
+    },
+    {
+        "id": "c11_m20",
+        "title": "Digoxine",
+        "category": "medicaments",
+        "details": {
+            "classe": "Antiarythmiques"
+        }
     }
 ]
-```
