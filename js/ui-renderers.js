@@ -7,16 +7,12 @@ const contentArea = document.getElementById('content-area');
 export function renderHome() {
     const homeData = studyData['home'];
     if (!homeData) {
-        contentArea.innerHTML = '<div class="empty-state"><p>Bienvenue dans votre guide de poche.</p></div>';
+        contentArea.innerHTML = '<div class="empty-state"><p>Votre guide de poche est prêt.</p></div>';
         return;
     }
 
     let html = `
         <div class="home-view">
-            <div class="home-hero">
-                <h2>${homeData.hero?.title || 'Bienvenue !'}</h2>
-                <p>${homeData.hero?.subtitle || ''}</p>
-            </div>
             <div class="grid-container">`;
 
     const iconMapping = {

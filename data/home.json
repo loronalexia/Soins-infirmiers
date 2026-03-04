@@ -1,8 +1,4 @@
 ﻿{
-    "hero": {
-        "title": "Bienvenue !",
-        "subtitle": "Tout ce dont tu as besoin à un seul endroit !"
-    },
     "modules": [
         {
             "id": "pathologies",
