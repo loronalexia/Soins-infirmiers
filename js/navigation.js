@@ -58,10 +58,12 @@ export function navigateToMedicationClass(groupName) {
     loadCategory('medicaments');
     // We need to filter by major group since renderMedicationsBySubClass expects the filtered list
     const allMeds = studyData['medicaments'];
+    const lowerGroup = groupName.toLowerCase();
     const filteredMeds = allMeds.filter(m => {
         const rawName = m.details.classe || m.details.sous_classe || 'Divers';
+        const lowerRaw = rawName.toLowerCase();
         // Check if the groupName is the major group or the full subclass
-        return rawName.startsWith(groupName) || rawName.includes(groupName);
+        return lowerRaw.startsWith(lowerGroup) || lowerRaw.includes(lowerGroup);
     });
     renderMedicationsBySubClass(groupName, filteredMeds);
 }

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Link Tester</title>
+</head>
+
+<body>
+    <div id="log"></div>
+    <script type="module">
+        import { linkMapping } from './js/config.js';
+
+        async function run() {
+            const categories = ['pathologies', 'medicaments', 'examens-paracliniques', 'examens-cliniques', 'soins-de-plaies', 'interventions', 'perinatalite-pediatrie'];
+            const studyData = {};
+
+            for (const cat of categories) {
+                try {
+                    const res = await fetch(`./data/${cat}.json`);
+                    if (res.ok) {
+                        studyData[cat] = await res.json();
+                    }
+                } catch (e) { }
+            }
+
+            const logPanel = document.getElementById('log');
+            const log = (msg) => { logPanel.innerHTML += msg + '<br>'; };
+
+            const missingTargets = [];
+
+            linkMapping.forEach(mapping => {
+                const targetName = mapping.target;
+                let found = false;
+
+                // 1. Check if it's a Medication Class
+                if (studyData['medicaments']) {
+                    const isMedClass = studyData['medicaments'].some(m => {
+                        const cl = (m.details?.classe || '').toLowerCase();
+                        const sc = (m.details?.sous_classe || '').toLowerCase();
+                        const tn = targetName.toLowerCase();
+                        return cl === tn || cl.includes(tn) || sc === tn || sc.includes(tn);
+                    });
+                    if (isMedClass) found = true;
+                }
+
+                // 2. Exact Title Match
+                if (!found) {
+                    for (const category in studyData) {
+                        if (Array.isArray(studyData[category])) {
+                            const match = studyData[category].find(item =>
+                                item.title.toLowerCase() === targetName.toLowerCase()
+                            );
+                            if (match) {
+                                found = true;
+                                break;
+                            }
+                        }
+                    }
+                }
+
+                if (targetName === 'Soins de plaies') found = true;
+
+                if (!found) {
+                    missingTargets.push(targetName);
+                }
+            });
+
+            log('Testing Complete!');
+            log('<b>Missing Targets:</b>');
+            missingTargets.forEach(t => log('- ' + t));
+        }
+
+        run();
+    </script>
+</body>
+
+</html>
